@@ -1,0 +1,99 @@
+Status: FAILED
+Time Taken: 548
+Size: 214
+Timestamp: Thu Mar 09 21:19:08 SGT 2017
+TestStep: GET Request - Valid ZipCode, Valid PlayDate (compared to OT ExternalAPI)
+
+----------------- Messages ------------------------------
+[courseName is correct.] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:courseName[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:courseName[1]] in Response
+[CourseCity is correct] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:courseCity[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:courseCity[1]] in Response
+[CourseState is correct] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:courseState[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:courseState[1]] in Response
+[Latitude is correct] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:latitude[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:latitude[1]] in Response
+[Longitude is correct] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:longitude[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:longitude[1]] in Response
+[AllowPromos is correct.] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:allowPromos[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:allowPromos[1]] in Response
+[Distance is less than 50 miles] XPathContains comparison failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e/ns1:distance < 50], expecting [true], actual was [false]
+[totalTeetimesByCourse] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:totalTeeTimesByCourse[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:totalTeeTimesByCourse[1]] in Response
+[totalDealsAvailable] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:totalDealsAvailableByCourse[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:totalDealsAvailableByCourse[1]] in Response
+[MinPlayers] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:minPlayers[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:minPlayers[1]] in Response
+[MaxPlayers] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:maxPlayers[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:maxPlayers[1]] in Response
+[PriceFrom] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:priceFrom[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:priceFrom[1]] in Response
+[PriceTo] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:priceTo[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:priceTo[1]] in Response
+[firstTeeTime] XPathContains comparison failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+concat(substring-before(//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:firstTeeTime[1], ' '),':00',
+' ',substring-after(//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:firstTeeTime[1], ' '))], expecting [], actual was [:00 ]
+[lastTeeTime] XPathContains comparison failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+concat(substring-before(//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:lastTeeTime[1], ' '),':00',
+' ',substring-after(//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:lastTeeTime[1], ' '))], expecting [], actual was [:00 ]
+[maxDiscountedFromRate] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:maxDiscountedFromRate[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:maxDiscountedFromRate[1]] in Response
+[maxDiscountPercentage] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:maxDiscountPercentage[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:maxDiscountPercentage[1]] in Response
+[courseUrl is not empty] Missing token [-tee-times] in Response
+[notification] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:notifications[1]] : Exception:org.custommonkey.xmlunit.Diff
+[different] Expected presence of child nodes to be 'false' but was 'true' - comparing <notifications...> at /notifications[1] to <notifications...> at /notifications[1]
+
+[TotalCourseTimes] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:totalTeeTimesByCourse[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:totalTeeTimesByCourse[1]] in Response
+[TotalDealTimes] XPathContains assertion failed for path [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:totalDealsAvailableByCourse[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:totalDealsAvailableByCourse[1]] in Response
+
+----------------- Properties ------------------------------
+StatusCode: 200
+Method: GET
+HTTP Version: HTTP/1.1
+Endpoint: https://dist-dev.ezlinks.com
+URL: https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/60169/03-09-2017
+
+---------------- Request ---------------------------
+Host: [dist-dev.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+
+GET https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/60169/03-09-2017 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dist-dev.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+Date: [Thu, 09 Mar 2017 13:19:11 GMT]
+Transfer-Encoding: [chunked]
+#status#: [HTTP/1.1 200 OK]
+Content-Encoding: [gzip]
+Via: [1.1 FRONTEND-0]
+Content-Type: [application/json; charset=utf-8]
+Server: [Microsoft-HTTPAPI/2.0]
+
+{"success":true,"data":null,"reference":[],"errors":[],"notifications":[{"timeStamp":null,"iconCls":"warning","type":"warning","message":"TeeTime Summary Results: No Results Found."}],"page":1,"limit":10,"total":0}

@@ -1,0 +1,70 @@
+Status: OK
+Time Taken: 1504
+Size: 1203
+Timestamp: Tue Mar 07 21:01:02 SGT 2017
+TestStep: REST Request - Field 8/ZipPostalCode
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.ezlinks.com
+Method: GET
+StatusCode: 200
+URL: https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=UpdateMember&Param1=208&Param2=38504819&Param3=8600748&Param4=8&Param5=6015&Param6=85001
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [api.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=UpdateMember&Param1=208&Param2=38504819&Param3=8600748&Param4=8&Param5=6015&Param6=85001 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: api.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Cache-Control: [private]
+Server: [Microsoft-IIS/7.0]
+Connection: [close]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Date: [Tue, 07 Mar 2017 13:01:04 GMT]
+Content-Type: [text/xml]
+X-Powered-By: [ASP.NET]
+
+<?ezxml version="5.0"?>
+<UpdateMember>
+   <UpdateMemberRecord>
+      <SiteServerID>1</SiteServerID>
+      <ContactID>38504819</ContactID>
+      <LastName>Tester Updated</LastName>
+      <FirstName>Limesource Updated</FirstName>
+      <MiddleName>Cortes Updated</MiddleName>
+      <Company>Limesource Company</Company>
+      <Address1>Dimataga Village Updated</Address1>
+      <Address2>Gun-ob Updated</Address2>
+      <City>Lapu-Lapu Updated</City>
+      <State>Arizona</State>
+      <Zip>85001</Zip>
+      <Country>Philippines</Country>
+      <HomePhone>5555-5555-5555</HomePhone>
+      <WorkPhone>5555-55-5-55-5</WorkPhone>
+      <FAXPhone>55-555-5</FAXPhone>
+      <MobilPhone>09260387756</MobilPhone>
+      <PagerPhone>938393</PagerPhone>
+      <InternetUserID>member35@member.com</InternetUserID>
+      <InternetPassword>2F1B52B0DE08E25340729B644A82EFAF</InternetPassword>
+      <InternetEmail>member35@member.com</InternetEmail>
+      <InternetNotifyActivity>1</InternetNotifyActivity>
+      <ContactMembershipID>8600748</ContactMembershipID>
+      <MembershipNumber>111111</MembershipNumber>
+      <MembershipStartDate>3/7/2017</MembershipStartDate>
+      <MembershipEndDate>2/20/9999</MembershipEndDate>
+      <IntlFormatCountryID>200</IntlFormatCountryID>
+   </UpdateMemberRecord>
+</UpdateMember>

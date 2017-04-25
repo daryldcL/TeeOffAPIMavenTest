@@ -1,0 +1,41 @@
+Status: OK
+Time Taken: 918
+Size: 5052
+Timestamp: Wed Mar 08 13:33:29 SGT 2017
+TestStep: Test Request: GetCourseInformation - Non-existent courseId
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: GET
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/GetCourseInformation?sessionId=5c32adf5-b6e2-4192-83e2-1af3a8ffcec2&courseId=223233233
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/GetCourseInformation?sessionId=5c32adf5-b6e2-4192-83e2-1af3a8ffcec2&courseId=223233233 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:33:31 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":{"CourseId":3650,"FacilityId":1217,"CountryId":"1","Name":"1757 Golf Club","Address":"Route 219 North Lewisburg, WV 24901 Lewisburg WV 24901","City":"Lewisburg","State":"WV","PostalCode":"24901","Description":"1757 Golf Club, located just minutes from Washington Dulles International Airport, in Dulles, Virginia, boasts a par 70, 6,600-yard golf course routed through gently rolling terrain. Featuring large undulating greens with subtle breaks and elevation changes throughout the course, golfers are treated to dramatic views of Broad Run and the majestic Virginia landscape. 1757 Golf Club was expertly designed by David Heatwole with bent grass from tee to green, providing a fair yet challenging test of golf for everyone from the novice golfer to the seasoned veteran. The 1757 Restaurant at 1757 Golf Club is open daily for enjoyment and relaxation after your round. Book your tee time today. ","WebSite":"www.1757golfclub.com","Architect":"David Heatwole","YearEstablished":"","TotalYards":"","Latitude":37.8200225830078,"Longitude":-80.4182510375977,"PageUrl":"1757-golf-club-lewisburg-wv-24901-tee-times","Distance":3877.95,"IsDirectoryOnly":false,"DateCreated":"2013-04-19T16:17:59","DateModified":"2013-05-17T12:07:12","StatusCode":null,"AllowPromos":false,"TimeOffsetUtc":"-300","CourseAmenities":{"HasDrivingRange":true,"HasPuttingGreen":true,"HasChippingArea":true,"HasGPSAvailable":false,"HasRentalClubs":true,"HasLockerRoom":true,"HasFood":true,"HasBeverages":true,"HasRentalShoes":false,"HasPracticeBunker":true,"HasGolfShop":true,"HasNineHolesOnly":false,"HasLessons":true,"HasGolfCartIncluded":true},"CourseImages":[{"ImageSource":"//cdn.teeoff.com/course/3650/1217-000636.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/3650/1217-000637.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/3650/1217-000638.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/3650/3650-000228.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/3650/3650-32639.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/3650/3650-32640.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/3650/3650-32641.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/3650/3650-32642.jpg","AlternateText":""}],"CourseScorecards":[{"Description":"Par","Slope":"","Rating":"","Hole01":"4","Hole02":"4","Hole03":"3","Hole04":"4","Hole05":"4","Hole06":"3","Hole07":"4","Hole08":"5","Hole09":"35","OutTotal":"5","Hole10":"4","Hole11":"4","Hole12":"4","Hole13":"3","Hole14":"5","Hole15":"3","Hole16":"4","Hole17":"3","Hole18":"35","InTotal":"35","CourseTotal":"70","RecordTypeId":"2"},{"Description":"Black","Slope":"142","Rating":"71.8","Hole01":"451","Hole02":"371","Hole03":"200","Hole04":"346","Hole05":"442","Hole06":"419","Hole07":"241","Hole08":"385","Hole09":"541","OutTotal":"3396","Hole10":"561","Hole11":"387","Hole12":"308","Hole13":"456","Hole14":"180","Hole15":"584","Hole16":"181","Hole17":"405","Hole18":"165","InTotal":"3227","CourseTotal":"6623","RecordTypeId":"1"},{"Description":"Blue","Slope":"135","Rating":"69.3","Hole01":"401","Hole02":"354","Hole03":"164","Hole04":"298","Hole05":"408","Hole06":"398","Hole07":"210","Hole08":"319","Hole09":"511","OutTotal":"3063","Hole10":"538","Hole11":"372","Hole12":"288","Hole13":"448","Hole14":"149","Hole15":"560","Hole16":"160","Hole17":"379","Hole18":"148","InTotal":"3042","CourseTotal":"6105","RecordTypeId":"1"},{"Description":"White","Slope":"130","Rating":"66.7","Hole01":"346","Hole02":"326","Hole03":"152","Hole04":"291","Hole05":"363","Hole06":"388","Hole07":"200","Hole08":"260","Hole09":"415","OutTotal":"2741","Hole10":"511","Hole11":"361","Hole12":"255","Hole13":"386","Hole14":"138","Hole15":"548","Hole16":"149","Hole17":"330","Hole18":"111","InTotal":"2789","CourseTotal":"5530","RecordTypeId":"1"},{"Description":"White Ladies","Slope":"134","Rating":"72.2","Hole01":"346","Hole02":"326","Hole03":"152","Hole04":"291","Hole05":"363","Hole06":"388","Hole07":"200","Hole08":"260","Hole09":"415","OutTotal":"2741","Hole10":"511","Hole11":"361","Hole12":"255","Hole13":"386","Hole14":"138","Hole15":"548","Hole16":"149","Hole17":"330","Hole18":"111","InTotal":"2789","CourseTotal":"5530","RecordTypeId":"1"},{"Description":"Red","Slope":"118","Rating":"67.0","Hole01":"251","Hole02":"277","Hole03":"117","Hole04":"261","Hole05":"325","Hole06":"354","Hole07":"166","Hole08":"225","Hole09":"355","OutTotal":"2331","Hole10":"439","Hole11":"278","Hole12":"187","Hole13":"325","Hole14":"94","Hole15":"489","Hole16":"111","Hole17":"269","Hole18":"90","InTotal":"2282","CourseTotal":"4613","RecordTypeId":"1"},{"Description":"Handicap","Slope":"","Rating":"","Hole01":"2","Hole02":"10","Hole03":"18","Hole04":"14","Hole05":"6","Hole06":"8","Hole07":"16","Hole08":"12","Hole09":"4","OutTotal":"","Hole10":"3","Hole11":"9","Hole12":"11","Hole13":"5","Hole14":"15","Hole15":"1","Hole16":"13","Hole17":"7","Hole18":"17","InTotal":"","CourseTotal":"","RecordTypeId":"3"}]}}

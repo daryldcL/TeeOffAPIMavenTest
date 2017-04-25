@@ -1,0 +1,51 @@
+Status: FAILED
+Time Taken: 1468
+Size: 41
+Timestamp: Thu Mar 09 20:47:41 SGT 2017
+TestStep: Test Request: GetTeeTimesByCourse (Invalid PlayDate)
+
+----------------- Messages ------------------------------
+[Success is false.] XPathContains assertion failed for path [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Fault[1]/ns1:Success[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Fault[1]/ns1:Success[1]] in Response
+[We're Sorry. The operation could not be completed] XPathContains assertion failed for path [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Fault[1]/ns1:Message[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Fault[1]/ns1:Message[1]] in Response
+
+----------------- Properties ------------------------------
+StatusCode: 200
+Method: GET
+Password: test
+Username: test
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse?sessionId=c3efb643-4b4c-4d4f-a245-ec9f98d6d406&request.courseIds=2537&request.playDate=11%2F28%2F20188&request.centerPointLat=34.0489281&request.centerPointLon=-111.0937311&request.beginTime=5%3A00%20AM&request.endTime=11%3A59%20PM&request.numberOfHoles=null&request.numberOfPlayers=null&request.minPrice=0&request.maxPrice=999&request.maxDistance=null&request.minDistance=null&request.hasDrivingRange=null&request.hasPuttingGreen=null&request.hasChippingArea=null&request.hasGPS=null&request.hasClubRental=null&request.hasShoeRental=null&request.hasLockerRoom=null&request.hasFood=null&request.hasBeverages=null&request.hasPracticeBunker=null&request.hasCartIncluded=null&request.hasProShop=null&request.hasLessons=null
+
+---------------- Request ---------------------------
+Authorization: [Basic dGVzdDp0ZXN0]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse?sessionId=c3efb643-4b4c-4d4f-a245-ec9f98d6d406&request.courseIds=2537&request.playDate=11%2F28%2F20188&request.centerPointLat=34.0489281&request.centerPointLon=-111.0937311&request.beginTime=5%3A00%20AM&request.endTime=11%3A59%20PM&request.numberOfHoles=null&request.numberOfPlayers=null&request.minPrice=0&request.maxPrice=999&request.maxDistance=null&request.minDistance=null&request.hasDrivingRange=null&request.hasPuttingGreen=null&request.hasChippingArea=null&request.hasGPS=null&request.hasClubRental=null&request.hasShoeRental=null&request.hasLockerRoom=null&request.hasFood=null&request.hasBeverages=null&request.hasPracticeBunker=null&request.hasCartIncluded=null&request.hasProShop=null&request.hasLessons=null HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+Authorization: Basic dGVzdDp0ZXN0
+
+
+---------------- Response --------------------------
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Thu, 09 Mar 2017 12:47:45 GMT]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Content-Length: [159]
+Content-Encoding: [gzip]
+Access-Control-Allow-Methods: [GET]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+Server: [Microsoft-IIS/8.5]
+
+{"Success":true,"Message":null,"Data":[]}

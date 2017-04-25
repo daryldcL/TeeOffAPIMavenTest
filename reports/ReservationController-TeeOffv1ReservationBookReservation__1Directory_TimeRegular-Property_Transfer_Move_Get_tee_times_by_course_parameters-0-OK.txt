@@ -1,0 +1,60 @@
+Status: OK
+Time Taken: 7
+Size: 0
+Timestamp: Wed Mar 08 13:30:07 SGT 2017
+TestStep: Property Transfer: Move Get tee times by course parameters
+
+----------------- Messages ------------------------------
+Performed transfer [courseIds]
+Performed transfer [centerPointLat]
+Performed transfer [centerPointLon]
+Performed transfer [beginTime]
+Performed transfer [endTime]
+Performed transfer [numberOfHoles]
+Performed transfer [numberOfPlayers]
+Performed transfer [minPrice]
+Performed transfer [maxPrice]
+Performed transfer [maxDistance]
+Performed transfer [minDistance]
+Performed transfer [hasDrivingRange]
+Performed transfer [hasPuttingGreen]
+Performed transfer [hasChippingArea]
+Performed transfer [hasGPS]
+Performed transfer [hasClubRental]
+Performed transfer [hasShoeRental]
+Performed transfer [hasLockerRoom]
+Performed transfer [hasFood]
+Performed transfer [hasBeverages]
+Performed transfer [hasPracticeBunker]
+Performed transfer [hasCartIncluded]
+Performed transfer [hasProShop]
+Performed transfer [hasLessons]
+----------------------------------------------------
+courseIds transferred [[2544]] from [Properties: Get tee times by course Parameters.courseIds] to [Test Request: Get tee times by Course.request.courseIds]
+------------ source path -------------
+
+------------ target path -------------
+
+centerPointLat transferred [[34.0489281]] from [Properties: Get tee times by course Parameters.centerPointLat] to [Test Request: Get tee times by Course.request.centerPointLat]
+centerPointLon transferred [[-111.0937311]] from [Properties: Get tee times by course Parameters.centerPointLon] to [Test Request: Get tee times by Course.request.centerPointLon]
+beginTime transferred [[5:00 AM]] from [Properties: Get tee times by course Parameters.beginTime] to [Test Request: Get tee times by Course.request.beginTime]
+endTime transferred [[11:59 PM]] from [Properties: Get tee times by course Parameters.endTime] to [Test Request: Get tee times by Course.request.endTime]
+numberOfHoles transferred [[null]] from [Properties: Get tee times by course Parameters.numberOfHoles] to [Test Request: Get tee times by Course.request.numberOfHoles]
+numberOfPlayers transferred [[null]] from [Properties: Get tee times by course Parameters.numberOfPlayers] to [Test Request: Get tee times by Course.request.numberOfPlayers]
+minPrice transferred [[0]] from [Properties: Get tee times by course Parameters.minPrice] to [Test Request: Get tee times by Course.request.minPrice]
+maxPrice transferred [[999]] from [Properties: Get tee times by course Parameters.maxPrice] to [Test Request: Get tee times by Course.request.maxPrice]
+maxDistance transferred [[null]] from [Properties: Get tee times by course Parameters.maxDistance] to [Test Request: Get tee times by Course.request.maxDistance]
+minDistance transferred [[null]] from [Properties: Get tee times by course Parameters.minDistance] to [Test Request: Get tee times by Course.request.minDistance]
+hasDrivingRange transferred [[null]] from [Properties: Get tee times by course Parameters.hasDrivingRange] to [Test Request: Get tee times by Course.request.hasDrivingRange]
+hasPuttingGreen transferred [[null]] from [Properties: Get tee times by course Parameters.hasPuttingGreen] to [Test Request: Get tee times by Course.request.hasPuttingGreen]
+hasChippingArea transferred [[null]] from [Properties: Get tee times by course Parameters.hasChippingArea] to [Test Request: Get tee times by Course.request.hasChippingArea]
+hasGPS transferred [[null]] from [Properties: Get tee times by course Parameters.hasGPS] to [Test Request: Get tee times by Course.request.hasGPS]
+hasClubRental transferred [[null]] from [Properties: Get tee times by course Parameters.hasClubRental] to [Test Request: Get tee times by Course.request.hasClubRental]
+hasShoeRental transferred [[null]] from [Properties: Get tee times by course Parameters.hasShoeRental] to [Test Request: Get tee times by Course.request.hasShoeRental]
+hasLockerRoom transferred [[null]] from [Properties: Get tee times by course Parameters.hasLockerRoom] to [Test Request: Get tee times by Course.request.hasLockerRoom]
+hasFood transferred [[null]] from [Properties: Get tee times by course Parameters.hasFood] to [Test Request: Get tee times by Course.request.hasFood]
+hasBeverages transferred [[null]] from [Properties: Get tee times by course Parameters.hasBeverages] to [Test Request: Get tee times by Course.request.hasBeverages]
+hasPracticeBunker transferred [[null]] from [Properties: Get tee times by course Parameters.hasPracticeBunker] to [Test Request: Get tee times by Course.request.hasPracticeBunker]
+hasCartIncluded transferred [[null]] from [Properties: Get tee times by course Parameters.hasCartIncluded] to [Test Request: Get tee times by Course.request.hasCartIncluded]
+hasProShop transferred [[null]] from [Properties: Get tee times by course Parameters.hasProShop] to [Test Request: Get tee times by Course.request.hasProShop]
+hasLessons transferred [[null]] from [Properties: Get tee times by course Parameters.hasLessons] to [Test Request: Get tee times by Course.request.hasLessons]

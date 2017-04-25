@@ -1,0 +1,7 @@
+Status: OK
+Time Taken: 18
+Size: 0
+Timestamp: Tue Mar 07 18:30:10 SGT 2017
+TestStep: DataSource (results for 18 holes only)
+
+----------------- Messages ------------------------------

@@ -1,0 +1,41 @@
+Status: FAILED
+Time Taken: 1159
+Size: 5803
+Timestamp: Tue Mar 07 18:24:53 SGT 2017
+TestStep: Test Request: Get Future Reservations
+
+----------------- Messages ------------------------------
+[correct reserved tee time Due at Course] The XPathContains assertion failed for the following path: [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/GetFutureReservations';
+//ns1:Response[1]/ns1:Data[1]/ns1:e[3]/ns1:AmountDueAtCourse[1]]. Expected value: [136.0]; Actual value: [0.0].
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Method: GET
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/User/GetFutureReservations?sessionId=aaecd4be-03af-41b5-93ff-1b9eff7ac5af&contactId=26574452
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/User/GetFutureReservations?sessionId=aaecd4be-03af-41b5-93ff-1b9eff7ac5af&contactId=26574452 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Tue, 07 Mar 2017 10:24:56 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":[{"AffiliateAID":"","AffiliateConfirmId":"","AffiliatePID":"","AffiliateSID":"","AffiliateTrackingCode":"ExternalApi","Amount":160.00,"AmountDueAtCourse":136.00,"AmountPaid":25.51,"CanGroupAndInternetUserCancel":true,"CancelAmount":100.00,"ConfirmId":321190134,"ContactId":26574452,"CouponDiscount":0.0,"CourseAddress":"5692 W. North Loop Road, Chandler, AZ 85226","CourseId":2001,"CourseName":"Whirlwind Golf Club - Cattail","CoursePhoto":"//cdn.teeoff.com/course/2001/2001-41929.jpg","CurrencyLocaleId":1033,"ErrorId":0,"FeeId":115247,"FeeName":"","Golfers":4,"IsCaptain":true,"IsPrepaid":true,"Latitude":33.2721945,"Longitude":-111.978563,"PageURL":"whirlwind-golf-club-cattail-chandler-az-85226-tee-times","PartnerId":"","PortalId":"","PricePerPlayer":40.00,"ProtocolText":"","RegularPrice":40.00,"ReservationFeeGolferAmount":0.00,"SavedAmount":0.0,"StatusDescription":"Tee time is reserved and paid.","StatusId":1,"TaxPercent":0.0,"Taxes":0.0,"TeeTimeTypeId":1,"TransactionFee":0.00,"TeeTimeCancelDate":"2017-03-07T07:45:00","TeeTimeDate":"2017-03-09T06:45:00","TeeTimeCancelDateUtc":"2017-03-07T13:45:00","TeeTimeDateUtc":"2017-03-09T13:45:00"},{"AffiliateAID":"","AffiliateConfirmId":"","AffiliatePID":"","AffiliateSID":"","AffiliateTrackingCode":"ExternalApi","Amount":160.00,"AmountDueAtCourse":136.00,"AmountPaid":25.51,"CanGroupAndInternetUserCancel":true,"CancelAmount":100.00,"ConfirmId":321190162,"ContactId":26574452,"CouponDiscount":0.0,"CourseAddress":"5692 W. North Loop Road, Chandler, AZ 85226","CourseId":2001,"CourseName":"Whirlwind Golf Club - Cattail","CoursePhoto":"//cdn.teeoff.com/course/2001/2001-41929.jpg","CurrencyLocaleId":1033,"ErrorId":0,"FeeId":115247,"FeeName":"","Golfers":4,"IsCaptain":true,"IsPrepaid":true,"Latitude":33.2721945,"Longitude":-111.978563,"PageURL":"whirlwind-golf-club-cattail-chandler-az-85226-tee-times","PartnerId":"","PortalId":"","PricePerPlayer":40.00,"ProtocolText":"","RegularPrice":40.00,"ReservationFeeGolferAmount":0.00,"SavedAmount":0.0,"StatusDescription":"Tee time is reserved and paid.","StatusId":1,"TaxPercent":6.3,"Taxes":1.51,"TeeTimeTypeId":1,"TransactionFee":0.00,"TeeTimeCancelDate":"2017-03-07T07:36:00","TeeTimeDate":"2017-03-09T06:36:00","TeeTimeCancelDateUtc":"2017-03-07T13:36:00","TeeTimeDateUtc":"2017-03-09T13:36:00"},{"AffiliateAID":"","AffiliateConfirmId":"1488660648","AffiliatePID":"","AffiliateSID":"","AffiliateTrackingCode":"ExternalApi","Amount":100.00,"AmountDueAtCourse":0.00,"AmountPaid":106.30,"CanGroupAndInternetUserCancel":true,"CancelAmount":0.00,"ConfirmId":321190057,"ContactId":26574452,"CouponDiscount":0.0,"CourseAddress":"10600 N. Boswell Blvd., Sun City, AZ 85351","CourseId":5284,"CourseName":"Sun City Willow Creek Golf Course","CoursePhoto":"//cdn.teeoff.com/course/default3.jpg","CurrencyLocaleId":1033,"ErrorId":0,"FeeId":139749,"FeeName":"","Golfers":4,"IsCaptain":true,"IsPrepaid":true,"Latitude":33.6367581,"Longitude":-112.2773552,"PageURL":"sun-city-willow-creek-golf-course-sun-city-az-85351-tee-times","PartnerId":"","PortalId":"","PricePerPlayer":25.00,"ProtocolText":"","RegularPrice":25.00,"ReservationFeeGolferAmount":0.00,"SavedAmount":0.0,"StatusDescription":"Tee time is reserved and paid.","StatusId":1,"TaxPercent":0.0,"Taxes":0.0,"TeeTimeTypeId":4,"TransactionFee":0.00,"TeeTimeCancelDate":"2017-03-07T13:13:00","TeeTimeDate":"2017-03-08T12:13:00","TeeTimeCancelDateUtc":"2017-03-07T19:13:00","TeeTimeDateUtc":"2017-03-08T19:13:00"},{"AffiliateAID":"","AffiliateConfirmId":"","AffiliatePID":"","AffiliateSID":"","AffiliateTrackingCode":"ExternalApi","Amount":160.00,"AmountDueAtCourse":136.00,"AmountPaid":25.51,"CanGroupAndInternetUserCancel":false,"CancelAmount":100.00,"ConfirmId":321190067,"ContactId":26574452,"CouponDiscount":0.0,"CourseAddress":"5692 W. North Loop Road, Chandler, AZ 85226","CourseId":2001,"CourseName":"Whirlwind Golf Club - Cattail","CoursePhoto":"//cdn.teeoff.com/course/2001/2001-41929.jpg","CurrencyLocaleId":1033,"ErrorId":0,"FeeId":115247,"FeeName":"","Golfers":4,"IsCaptain":true,"IsPrepaid":true,"Latitude":33.2721945,"Longitude":-111.978563,"PageURL":"whirlwind-golf-club-cattail-chandler-az-85226-tee-times","PartnerId":"","PortalId":"","PricePerPlayer":40.00,"ProtocolText":"","RegularPrice":40.00,"ReservationFeeGolferAmount":0.00,"SavedAmount":0.0,"StatusDescription":"Tee time is reserved and paid.","StatusId":1,"TaxPercent":0.0,"Taxes":0.0,"TeeTimeTypeId":1,"TransactionFee":0.00,"TeeTimeCancelDate":"2017-03-06T07:45:00","TeeTimeDate":"2017-03-08T06:45:00","TeeTimeCancelDateUtc":"2017-03-06T13:45:00","TeeTimeDateUtc":"2017-03-08T13:45:00"},{"AffiliateAID":"","AffiliateConfirmId":"","AffiliatePID":"","AffiliateSID":"","AffiliateTrackingCode":"ExternalApi","Amount":160.00,"AmountDueAtCourse":136.00,"AmountPaid":25.51,"CanGroupAndInternetUserCancel":false,"CancelAmount":100.00,"ConfirmId":321190076,"ContactId":26574452,"CouponDiscount":0.0,"CourseAddress":"5692 W. North Loop Road, Chandler, AZ 85226","CourseId":2001,"CourseName":"Whirlwind Golf Club - Cattail","CoursePhoto":"//cdn.teeoff.com/course/2001/2001-41929.jpg","CurrencyLocaleId":1033,"ErrorId":0,"FeeId":115247,"FeeName":"","Golfers":4,"IsCaptain":true,"IsPrepaid":true,"Latitude":33.2721945,"Longitude":-111.978563,"PageURL":"whirlwind-golf-club-cattail-chandler-az-85226-tee-times","PartnerId":"","PortalId":"","PricePerPlayer":40.00,"ProtocolText":"","RegularPrice":40.00,"ReservationFeeGolferAmount":0.00,"SavedAmount":0.0,"StatusDescription":"Tee time is reserved and paid.","StatusId":1,"TaxPercent":0.0,"Taxes":0.0,"TeeTimeTypeId":1,"TransactionFee":0.00,"TeeTimeCancelDate":"2017-03-06T07:36:00","TeeTimeDate":"2017-03-08T06:36:00","TeeTimeCancelDateUtc":"2017-03-06T13:36:00","TeeTimeDateUtc":"2017-03-08T13:36:00"}]}

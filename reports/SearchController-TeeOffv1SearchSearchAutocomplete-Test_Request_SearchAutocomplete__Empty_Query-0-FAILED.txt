@@ -1,0 +1,44 @@
+Status: FAILED
+Time Taken: 1311
+Size: 3597
+Timestamp: Thu Mar 09 20:46:47 SGT 2017
+TestStep: Test Request: SearchAutocomplete - Empty Query
+
+----------------- Messages ------------------------------
+[Error is handled properly] Response contains token [Object reference not set to an instance of an object.]
+
+----------------- Properties ------------------------------
+StatusCode: 500
+Method: GET
+Password: test
+Username: test
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete?criteria=
+
+---------------- Request ---------------------------
+Authorization: [Basic dGVzdDp0ZXN0]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete?criteria= HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+Authorization: Basic dGVzdDp0ZXN0
+
+
+---------------- Response --------------------------
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Thu, 09 Mar 2017 12:46:52 GMT]
+#status#: [HTTP/1.1 500 Internal Server Error]
+Content-Length: [3597]
+Access-Control-Allow-Methods: [GET]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+Server: [Microsoft-IIS/8.5]
+
+{"ClassName":"System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]","Message":"Object reference not set to an instance of an object.","Data":{},"InnerException":null,"HelpURL":null,"StackTraceString":"   at System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)\r\n   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)\r\n   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)\r\n   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass5`1.<CreateGenericTask>b__4(IAsyncResult asyncResult)\r\n   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at TeeOffApi.v1.Controllers.SearchController.<>c__DisplayClass1_0.<<SearchAutocomplete>b__0>d.MoveNext() in D:\\TeamCity\\BuildAgent\\work\\809237fa412d3c7c\\Channels\\ExternalApi\\TeeOffApi.v1\\Controllers\\SearchController.cs:line 31\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at TeeOffApi.v1.Controllers.TeeOffApiController.<GetExternalData>d__4`2.MoveNext() in D:\\TeamCity\\BuildAgent\\work\\809237fa412d3c7c\\Channels\\ExternalApi\\TeeOffApi.v1\\Controllers\\TeeOffApiController.cs:line 62","RemoteStackTraceString":null,"RemoteStackIndex":0,"ExceptionMethod":"8\nThrowIfFaultUnderstood\nSystem.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\nSystem.ServiceModel.Channels.ServiceChannel\nVoid ThrowIfFaultUnderstood(System.ServiceModel.Channels.Message, System.ServiceModel.Channels.MessageFault, System.String, System.ServiceModel.Channels.MessageVersion, System.ServiceModel.Channels.FaultConverter)","HResult":-2146233087,"Source":"System.ServiceModel","WatsonBuckets":null,"code":[{"name":"InternalServiceFault","ns":"http://schemas.microsoft.com/net/2005/12/windowscommunicationfoundation/dispatcher"}],"reason":[{"xmlLang":"en-US","text":"Object reference not set to an instance of an object."}],"messageFault":null,"action":null,"detail":{"HelpLink":null,"InnerException":null,"Message":"Object reference not set to an instance of an object.","StackTrace":"   at TeeOff.Library.Search.SearchAutocomplete(String criteria) in D:\\TeamCity\\BuildAgent\\work\\8a37555ff36695ba\\Library\\Search.cs:line 58\r\n   at SyncInvokeSearchAutocomplete(Object , Object[] , Object[] )\r\n   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)\r\n   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)\r\n   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)\r\n   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)\r\n   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)","Type":"System.NullReferenceException"}}

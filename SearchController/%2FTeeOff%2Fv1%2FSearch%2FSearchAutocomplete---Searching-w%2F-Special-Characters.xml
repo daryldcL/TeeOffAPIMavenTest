@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="1576652f-99c2-4924-81d8-9db2f669b405" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/TeeOff/v1/Search/SearchAutocomplete - Searching w/ Special Characters" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="1576652f-99c2-4924-81d8-9db2f669b405fileName">%2FTeeOff%2Fv1%2FSearch%2FSearchAutocomplete---Searching-w%2F-Special-Characters</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="GET Request - Ampersand &amp;" id="9a1123de-28d7-485f-b6c9-c7be3986ccc5"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/SearchAutocomplete" methodName="SearchController_SearchAutocomplete" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET Request - Ampersand &amp;" id="551476c6-dece-4959-b776-fcd7b1bf598c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@strip-whitespaces">false</con:setting><con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@follow-redirects">true</con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete</con:originalUri><con:assertion type="MessageContentAssertion" id="e703fde3-8441-4ee6-9bc3-555998df3f30" name="Success is true"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete';
+//ns1:Response[1]/ns1:Message[1]/@null</con:xpath><con:element>@null</con:element><con:type/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>true</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete';
+//ns1:Response[1]/ns1:Success[1]</con:xpath><con:element>Success</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>true</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete">
+   <Data>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Agalarov Golf &amp; Country Club</Criteria>
+         <CriteriaAddress>Krasnogorsk, Russia</CriteriaAddress>
+         <CriteriaHeader>COURSES</CriteriaHeader>
+         <CriteriaHighlight>Agalarov Golf &lt;span id="searchHighlight">&amp;&lt;/span> Country Club</CriteriaHighlight>
+         <PageURL>agalarov-golf--country-club-krasnogorsk-ru-10100-tee-times</PageURL>
+         <SearchId>146220</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Anthem Golf &amp; Country Club - Ironwood</Criteria>
+         <CriteriaAddress>Anthem, AZ</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Anthem Golf &lt;span id="searchHighlight">&amp;&lt;/span> Country Club - Ironwood</CriteriaHighlight>
+         <PageURL>anthem-golf--country-club-ironwood-anthem-az-85086-tee-times</PageURL>
+         <SearchId>146384</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Anthem Golf &amp; Country Club - Persimmon</Criteria>
+         <CriteriaAddress>Anthem, AZ</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Anthem Golf &lt;span id="searchHighlight">&amp;&lt;/span> Country Club - Persimmon</CriteriaHighlight>
+         <PageURL>anthem-golf--country-club-persimmon-anthem-az-85086-tee-times</PageURL>
+         <SearchId>146385</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Apple Mountain Golf &amp; Country Club</Criteria>
+         <CriteriaAddress>Belvidere, NJ</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Apple Mountain Golf &lt;span id="searchHighlight">&amp;&lt;/span> Country Club</CriteriaHighlight>
+         <PageURL>apple-mountain-golf--country-club-g18-belvidere-nj-07823-tee-times</PageURL>
+         <SearchId>146414</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Athabasca Golf &amp; Country Club</Criteria>
+         <CriteriaAddress>Athabasca, AB</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Athabasca Golf &lt;span id="searchHighlight">&amp;&lt;/span> Country Club</CriteriaHighlight>
+         <PageURL>athabasca-golf--country-club-athabasca-ca-t9s2b-tee-times</PageURL>
+         <SearchId>163014</SearchId>
+      </e>
+   </Data>
+   <Message null="true"/>
+   <Success>true</Success>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="0752c2ef-6b30-4613-b360-1c9aa3c346f6" name="JsonPath Match - Success is true"><con:configuration><path>$['Success']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Simple Contains" id="5dc219c2-1d27-41ba-ae6c-817986d1171d" name="Contains '&amp;' on courses names returned"><con:configuration><token>&amp;</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="criteria" value="&amp;" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GET Request - Number Sign #" id="8e2d6229-0d76-4e6e-90e7-50d8b073dee8"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/SearchAutocomplete" methodName="SearchController_SearchAutocomplete" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET Request - Number Sign #" id="551476c6-dece-4959-b776-fcd7b1bf598c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete</con:originalUri><con:assertion type="MessageContentAssertion" id="e7121238-d6eb-4091-906f-37cf6ed9e23f" name="Success is true"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete';
+//ns1:Response[1]/ns1:Message[1]/@null</con:xpath><con:element>@null</con:element><con:type/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>true</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete';
+//ns1:Response[1]/ns1:Success[1]</con:xpath><con:element>Success</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>true</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete">
+   <Data>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Bent Creek Golf Course # 123</Criteria>
+         <CriteriaAddress>Jacksonville, FL</CriteriaAddress>
+         <CriteriaHeader>COURSES</CriteriaHeader>
+         <CriteriaHighlight>Bent Creek Golf Course &lt;span id="searchHighlight">#&lt;/span> 123</CriteriaHighlight>
+         <PageURL>bent-creek-golf-course--123-jacksonville-fl-32222-tee-times</PageURL>
+         <SearchId>161247</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 2 - Ravines</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 2 - Ravines</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--2-ravines-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148632</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 3</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 3</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--3-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148633</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 4 - Dubsdread</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 4 - Dubsdread</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--4-dubsdread-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148634</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Pinehurst Resort #1-5 - #1</Criteria>
+         <CriteriaAddress>Pinehurst, NC</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Pinehurst Resort &lt;span id="searchHighlight">#&lt;/span>1-5 - &lt;span id="searchHighlight">#&lt;/span>1</CriteriaHighlight>
+         <PageURL>pinehurst-resort-1-5-1-pinehurst-nc-28374-tee-times</PageURL>
+         <SearchId>155699</SearchId>
+      </e>
+   </Data>
+   <Message null="true"/>
+   <Success>true</Success>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="3e81a5d1-d86b-47a7-b076-c12e9f9bf961" name="JsonPath Match - Success is true"><con:configuration><path>$['Success']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Simple Contains" id="5dc219c2-1d27-41ba-ae6c-817986d1171d" name="Contains '#' on courses names returned"><con:configuration><token>#</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="criteria" value="#" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GET Request - Percent %" id="025b221a-9b62-40ff-9c4b-7b6227f9f15f"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/SearchAutocomplete" methodName="SearchController_SearchAutocomplete" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET Request - Percent %" id="551476c6-dece-4959-b776-fcd7b1bf598c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete</con:originalUri><con:assertion type="MessageContentAssertion" id="e7121238-d6eb-4091-906f-37cf6ed9e23f" name="Success is true"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete';
+//ns1:Response[1]/ns1:Message[1]/@null</con:xpath><con:element>@null</con:element><con:type/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>true</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete';
+//ns1:Response[1]/ns1:Success[1]</con:xpath><con:element>Success</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>true</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete">
+   <Data>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Bent Creek Golf Course # 123</Criteria>
+         <CriteriaAddress>Jacksonville, FL</CriteriaAddress>
+         <CriteriaHeader>COURSES</CriteriaHeader>
+         <CriteriaHighlight>Bent Creek Golf Course &lt;span id="searchHighlight">#&lt;/span> 123</CriteriaHighlight>
+         <PageURL>bent-creek-golf-course--123-jacksonville-fl-32222-tee-times</PageURL>
+         <SearchId>161247</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 2 - Ravines</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 2 - Ravines</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--2-ravines-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148632</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 3</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 3</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--3-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148633</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 4 - Dubsdread</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 4 - Dubsdread</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--4-dubsdread-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148634</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Pinehurst Resort #1-5 - #1</Criteria>
+         <CriteriaAddress>Pinehurst, NC</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Pinehurst Resort &lt;span id="searchHighlight">#&lt;/span>1-5 - &lt;span id="searchHighlight">#&lt;/span>1</CriteriaHighlight>
+         <PageURL>pinehurst-resort-1-5-1-pinehurst-nc-28374-tee-times</PageURL>
+         <SearchId>155699</SearchId>
+      </e>
+   </Data>
+   <Message null="true"/>
+   <Success>true</Success>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="670e132d-380f-4c6b-acfe-b84867bb84e5" name="JsonPath Match - Success is true"><con:configuration><path>$['Success']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="882422e3-b29f-4956-b55c-4a0bc356593e" name="Match content of [Criteria] using RegEx"><con:configuration><path>$['Data'][0]['Criteria']</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>null</regEx></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="criteria" value="%" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GET Request - Quotation Mark &quot;" id="9883cd66-076e-4436-9f16-dd00da1737f3"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/SearchAutocomplete" methodName="SearchController_SearchAutocomplete" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET Request - Quotation Mark &quot;" id="551476c6-dece-4959-b776-fcd7b1bf598c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete</con:originalUri><con:assertion type="MessageContentAssertion" id="e7121238-d6eb-4091-906f-37cf6ed9e23f" name="Success is true"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete';
+//ns1:Response[1]/ns1:Message[1]/@null</con:xpath><con:element>@null</con:element><con:type/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>true</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete';
+//ns1:Response[1]/ns1:Success[1]</con:xpath><con:element>Success</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>true</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete">
+   <Data>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Bent Creek Golf Course # 123</Criteria>
+         <CriteriaAddress>Jacksonville, FL</CriteriaAddress>
+         <CriteriaHeader>COURSES</CriteriaHeader>
+         <CriteriaHighlight>Bent Creek Golf Course &lt;span id="searchHighlight">#&lt;/span> 123</CriteriaHighlight>
+         <PageURL>bent-creek-golf-course--123-jacksonville-fl-32222-tee-times</PageURL>
+         <SearchId>161247</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 2 - Ravines</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 2 - Ravines</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--2-ravines-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148632</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 3</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 3</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--3-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148633</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 4 - Dubsdread</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 4 - Dubsdread</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--4-dubsdread-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148634</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Pinehurst Resort #1-5 - #1</Criteria>
+         <CriteriaAddress>Pinehurst, NC</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Pinehurst Resort &lt;span id="searchHighlight">#&lt;/span>1-5 - &lt;span id="searchHighlight">#&lt;/span>1</CriteriaHighlight>
+         <PageURL>pinehurst-resort-1-5-1-pinehurst-nc-28374-tee-times</PageURL>
+         <SearchId>155699</SearchId>
+      </e>
+   </Data>
+   <Message null="true"/>
+   <Success>true</Success>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="3e4ba0d1-6f12-494b-b811-d112540eb9d4" name="JsonPath Match - Success is true"><con:configuration><path>$['Success']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Simple Contains" id="70aaaa0e-fe5f-4685-9081-e9ccd359c87d" name="Contains Quotation Mark in result"><con:configuration><token>"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="criteria" value="&quot;" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GET Request - Apostrophe '" id="8c6d4c6a-fe04-4873-8ed6-4f0309ed2568"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/SearchAutocomplete" methodName="SearchController_SearchAutocomplete" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET Request - Apostrophe '" id="551476c6-dece-4959-b776-fcd7b1bf598c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete</con:originalUri><con:assertion type="MessageContentAssertion" id="e7121238-d6eb-4091-906f-37cf6ed9e23f" name="Success is true"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete';
+//ns1:Response[1]/ns1:Message[1]/@null</con:xpath><con:element>@null</con:element><con:type/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>true</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete';
+//ns1:Response[1]/ns1:Success[1]</con:xpath><con:element>Success</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>true</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete">
+   <Data>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Bent Creek Golf Course # 123</Criteria>
+         <CriteriaAddress>Jacksonville, FL</CriteriaAddress>
+         <CriteriaHeader>COURSES</CriteriaHeader>
+         <CriteriaHighlight>Bent Creek Golf Course &lt;span id="searchHighlight">#&lt;/span> 123</CriteriaHighlight>
+         <PageURL>bent-creek-golf-course--123-jacksonville-fl-32222-tee-times</PageURL>
+         <SearchId>161247</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 2 - Ravines</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 2 - Ravines</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--2-ravines-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148632</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 3</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 3</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--3-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148633</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 4 - Dubsdread</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 4 - Dubsdread</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--4-dubsdread-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148634</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Pinehurst Resort #1-5 - #1</Criteria>
+         <CriteriaAddress>Pinehurst, NC</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Pinehurst Resort &lt;span id="searchHighlight">#&lt;/span>1-5 - &lt;span id="searchHighlight">#&lt;/span>1</CriteriaHighlight>
+         <PageURL>pinehurst-resort-1-5-1-pinehurst-nc-28374-tee-times</PageURL>
+         <SearchId>155699</SearchId>
+      </e>
+   </Data>
+   <Message null="true"/>
+   <Success>true</Success>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="c79eb1ba-63a4-408e-bd18-7a6109321a61" name="JsonPath Match - Success is true"><con:configuration><path>$['Success']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Simple Contains" id="70aaaa0e-fe5f-4685-9081-e9ccd359c87d" name="Contains Apostrophe in result"><con:configuration><token>'</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="criteria" value="'" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GET Request - Underscore _" id="8a21e7d9-637e-4e7d-ac04-bf78fd870827"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/SearchAutocomplete" methodName="SearchController_SearchAutocomplete" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET Request - Underscore _" id="551476c6-dece-4959-b776-fcd7b1bf598c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete</con:originalUri><con:assertion type="MessageContentAssertion" id="e7121238-d6eb-4091-906f-37cf6ed9e23f" name="Success is true"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete';
+//ns1:Response[1]/ns1:Message[1]/@null</con:xpath><con:element>@null</con:element><con:type/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>true</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete';
+//ns1:Response[1]/ns1:Success[1]</con:xpath><con:element>Success</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>true</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete">
+   <Data>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Bent Creek Golf Course # 123</Criteria>
+         <CriteriaAddress>Jacksonville, FL</CriteriaAddress>
+         <CriteriaHeader>COURSES</CriteriaHeader>
+         <CriteriaHighlight>Bent Creek Golf Course &lt;span id="searchHighlight">#&lt;/span> 123</CriteriaHighlight>
+         <PageURL>bent-creek-golf-course--123-jacksonville-fl-32222-tee-times</PageURL>
+         <SearchId>161247</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 2 - Ravines</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 2 - Ravines</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--2-ravines-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148632</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 3</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 3</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--3-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148633</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 4 - Dubsdread</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 4 - Dubsdread</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--4-dubsdread-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148634</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Pinehurst Resort #1-5 - #1</Criteria>
+         <CriteriaAddress>Pinehurst, NC</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Pinehurst Resort &lt;span id="searchHighlight">#&lt;/span>1-5 - &lt;span id="searchHighlight">#&lt;/span>1</CriteriaHighlight>
+         <PageURL>pinehurst-resort-1-5-1-pinehurst-nc-28374-tee-times</PageURL>
+         <SearchId>155699</SearchId>
+      </e>
+   </Data>
+   <Message null="true"/>
+   <Success>true</Success>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="a8be5a9f-d073-4f3a-9181-9a4dbbc0475a" name="JsonPath Match - Success is true"><con:configuration><path>$['Success']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="165c48d2-97c3-42c6-9f4b-e99edee64ab5" name="JsonPath RegEx Match"><con:configuration><path>$['Data'][0]['Criteria']</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>null</regEx></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="criteria" value="_" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GET Request - Dash -" id="029277dc-6633-44b7-ae2d-5c77ce2cc871"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/SearchAutocomplete" methodName="SearchController_SearchAutocomplete" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET Request - Dash -" id="551476c6-dece-4959-b776-fcd7b1bf598c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete</con:originalUri><con:assertion type="MessageContentAssertion" id="e7121238-d6eb-4091-906f-37cf6ed9e23f" name="Success is true"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete';
+//ns1:Response[1]/ns1:Message[1]/@null</con:xpath><con:element>@null</con:element><con:type/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>true</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete';
+//ns1:Response[1]/ns1:Success[1]</con:xpath><con:element>Success</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>true</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete">
+   <Data>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Bent Creek Golf Course # 123</Criteria>
+         <CriteriaAddress>Jacksonville, FL</CriteriaAddress>
+         <CriteriaHeader>COURSES</CriteriaHeader>
+         <CriteriaHighlight>Bent Creek Golf Course &lt;span id="searchHighlight">#&lt;/span> 123</CriteriaHighlight>
+         <PageURL>bent-creek-golf-course--123-jacksonville-fl-32222-tee-times</PageURL>
+         <SearchId>161247</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 2 - Ravines</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 2 - Ravines</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--2-ravines-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148632</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 3</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 3</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--3-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148633</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Cog Hill Golf &amp; Country Club - # 4 - Dubsdread</Criteria>
+         <CriteriaAddress>Lemont, IL</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Cog Hill Golf &amp; Country Club - &lt;span id="searchHighlight">#&lt;/span> 4 - Dubsdread</CriteriaHighlight>
+         <PageURL>cog-hill-golf--country-club--4-dubsdread-lemont-il-60439-tee-times</PageURL>
+         <SearchId>148634</SearchId>
+      </e>
+      <e>
+         <Class>Course</Class>
+         <Criteria>Pinehurst Resort #1-5 - #1</Criteria>
+         <CriteriaAddress>Pinehurst, NC</CriteriaAddress>
+         <CriteriaHeader/>
+         <CriteriaHighlight>Pinehurst Resort &lt;span id="searchHighlight">#&lt;/span>1-5 - &lt;span id="searchHighlight">#&lt;/span>1</CriteriaHighlight>
+         <PageURL>pinehurst-resort-1-5-1-pinehurst-nc-28374-tee-times</PageURL>
+         <SearchId>155699</SearchId>
+      </e>
+   </Data>
+   <Message null="true"/>
+   <Success>true</Success>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="e4a17e26-ecbb-47b9-82c8-23bea7cc2eac" name="JsonPath Match - Success is true"><con:configuration><path>$['Success']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Simple Contains" id="70aaaa0e-fe5f-4685-9081-e9ccd359c87d" name="Contains Apostrophe in result"><con:configuration><token>-</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="criteria" value="-" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

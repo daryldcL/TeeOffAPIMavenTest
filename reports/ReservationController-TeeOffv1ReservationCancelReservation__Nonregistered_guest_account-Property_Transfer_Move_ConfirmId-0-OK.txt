@@ -1,0 +1,15 @@
+Status: OK
+Time Taken: 0
+Size: 0
+Timestamp: Tue Mar 07 18:29:23 SGT 2017
+TestStep: Property Transfer: Move ConfirmId
+
+----------------- Messages ------------------------------
+Performed transfer [ConfirmId]
+----------------------------------------------------
+ConfirmId transferred [[null]] from [Test Request: Book Reservation.ResponseAsXml] to [Test Request: Cancel Reservation.confirmId]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Reservation/BookReservation';
+//ns1:Response[1]/ns1:Data[1]/ns1:e[1]/ns1:ConfirmId[1]
+------------ target path -------------
+

@@ -1,0 +1,46 @@
+Status: FAILED
+Time Taken: 1458
+Size: 157
+Timestamp: Thu Mar 09 21:22:11 SGT 2017
+TestStep: REST Request - Valid
+
+----------------- Messages ------------------------------
+[InternetEmail is the same] XPathContains assertion failed for path [//AddMember[1]/AddMemberRecord[1]/InternetEmail[1]] : Exception:Missing content for xpath [//AddMember[1]/AddMemberRecord[1]/InternetEmail[1]] in Response
+
+----------------- Properties ------------------------------
+StatusCode: 200
+Method: GET
+HTTP Version: HTTP/1.1
+Endpoint: https://api.ezlinks.com
+URL: https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=AddMember&Param1=208&Param2=Tester&Param3=Limesource&Param4=Cortes&Param5=Limesource&Param6=Dimataga%20Village&Param7=Gun-ob&Param8=Lapu-Lapu&Param9=None&Param10=6015&Param11=Philippines&Param12=5555-5555-5555&Param13=5555-55-5-55-5&Param14=55-555-5&Param15=09260387756&Param16=938393&Param17=member39%40member.com&Param18=limesource%3F01&Param19=member39%40member.com&Param20=1&Param21=111111&Param22=03%2F09%2F2017&Param23=02%2F20%2F9999&Param24=3518&Param25=0
+
+---------------- Request ---------------------------
+Host: [api.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+
+GET https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=AddMember&Param1=208&Param2=Tester&Param3=Limesource&Param4=Cortes&Param5=Limesource&Param6=Dimataga%20Village&Param7=Gun-ob&Param8=Lapu-Lapu&Param9=None&Param10=6015&Param11=Philippines&Param12=5555-5555-5555&Param13=5555-55-5-55-5&Param14=55-555-5&Param15=09260387756&Param16=938393&Param17=member39%40member.com&Param18=limesource%3F01&Param19=member39%40member.com&Param20=1&Param21=111111&Param22=03%2F09%2F2017&Param23=02%2F20%2F9999&Param24=3518&Param25=0 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: api.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Vary: [Accept-Encoding]
+Date: [Thu, 09 Mar 2017 13:22:15 GMT]
+#status#: [HTTP/1.1 200 OK]
+Content-Encoding: [gzip]
+Connection: [close]
+Content-Type: [text/xml]
+X-Powered-By: [ASP.NET]
+Server: [Microsoft-IIS/7.0]
+Cache-Control: [private]
+
+<?ezxml version="5.0"?>
+<Error>
+   <ErrorValue>35</ErrorValue>
+   <ErrorDescription>DUPLICATE_INTERNET_USER_ID</ErrorDescription>
+</Error>

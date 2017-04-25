@@ -1,0 +1,60 @@
+Status: OK
+Time Taken: 655
+Size: 102
+Timestamp: Tue Mar 07 18:24:16 SGT 2017
+TestStep: Test Request: Edit Account Details (Empty Lastname)
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: POST
+StatusCode: 400
+URL: https://dev-api.opentee.com/TeeOff/v1/User/UpdateUser?sessionId=3a07ee82-811d-48e0-9755-d43fca411dda
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [397]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/User/UpdateUser?sessionId=3a07ee82-811d-48e0-9755-d43fca411dda HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 397
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+{
+   "CountryId": "0",
+   "UserPasswordCurrent": "limesource?01",
+   "Email": "limesourcetester01@gmail.com",
+   "CountryName": "Philippines",
+   "FirstName": "Daisy Updated",
+   "Address2": "Humay-Humay",
+   "UserPassword": "limesource?02",
+   "PostalCode": "80909",
+   "ContactId": "26574452",
+   "Address1": "Dimataga",
+   "City": "Lapu-Lapu",
+   "HomePhone": "09260387756",
+   "LastName": ""
+}
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [POST]
+#status#: [HTTP/1.1 400 Bad Request]
+Content-Length: [102]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Tue, 07 Mar 2017 10:24:18 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":false,"Message":"Your password must be different than your previous password!","Data":null}

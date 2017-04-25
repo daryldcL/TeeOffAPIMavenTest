@@ -1,0 +1,41 @@
+Status: OK
+Time Taken: 1069
+Size: 3229
+Timestamp: Wed Mar 08 13:32:37 SGT 2017
+TestStep: Test Request: GetTeeTimesSummaries (Filter: NumberOfHoles -  9)
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: GET
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesSummaries?sessionId=a3375c69-35e8-4fe9-a020-46f3ae115bf2&request.courseIds=485&request.playDate=03%2F10%2F2017&request.centerPointLat=null&request.centerPointLon=null&request.beginTime=5%3A00%20AM&request.endTime=11%3A59%20PM&request.numberOfHoles=9&request.numberOfPlayers=null&request.minPrice=0&request.maxPrice=999&request.maxDistance=null&request.minDistance=null&request.hasDrivingRange=null&request.hasPuttingGreen=null&request.hasChippingArea=null&request.hasGPS=null&request.hasClubRental=null&request.hasShoeRental=null&request.hasLockerRoom=null&request.hasFood=null&request.hasBeverages=null&request.hasPracticeBunker=null&request.hasCartIncluded=null&request.hasProShop=null&request.hasLessons=null
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesSummaries?sessionId=a3375c69-35e8-4fe9-a020-46f3ae115bf2&request.courseIds=485&request.playDate=03%2F10%2F2017&request.centerPointLat=null&request.centerPointLon=null&request.beginTime=5%3A00%20AM&request.endTime=11%3A59%20PM&request.numberOfHoles=9&request.numberOfPlayers=null&request.minPrice=0&request.maxPrice=999&request.maxDistance=null&request.minDistance=null&request.hasDrivingRange=null&request.hasPuttingGreen=null&request.hasChippingArea=null&request.hasGPS=null&request.hasClubRental=null&request.hasShoeRental=null&request.hasLockerRoom=null&request.hasFood=null&request.hasBeverages=null&request.hasPracticeBunker=null&request.hasCartIncluded=null&request.hasProShop=null&request.hasLessons=null HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:32:40 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":{"TeeTimeSummaryResult":[{"Id":1,"CourseIds":"485","BeginTime":"3/10/2017 4:00:00 AM","EndTime":"3/10/2017 4:59:59 AM","FromPrice":0.0,"ToPrice":0.0,"AvailableCourses":"0","AvailableTeeTimes":"0","DealsAvailable":"0"},{"Id":2,"CourseIds":"485","BeginTime":"3/10/2017 5:00:00 AM","EndTime":"3/10/2017 5:59:59 AM","FromPrice":0.0,"ToPrice":0.0,"AvailableCourses":"0","AvailableTeeTimes":"0","DealsAvailable":"0"},{"Id":3,"CourseIds":"485","BeginTime":"3/10/2017 6:00:00 AM","EndTime":"3/10/2017 6:59:59 AM","FromPrice":0.0,"ToPrice":0.0,"AvailableCourses":"0","AvailableTeeTimes":"0","DealsAvailable":"0"},{"Id":4,"CourseIds":"485","BeginTime":"3/10/2017 7:00:00 AM","EndTime":"3/10/2017 7:59:59 AM","FromPrice":0.0,"ToPrice":0.0,"AvailableCourses":"0","AvailableTeeTimes":"0","DealsAvailable":"0"},{"Id":5,"CourseIds":"485","BeginTime":"3/10/2017 8:00:00 AM","EndTime":"3/10/2017 8:59:59 AM","FromPrice":0.0,"ToPrice":0.0,"AvailableCourses":"0","AvailableTeeTimes":"0","DealsAvailable":"0"},{"Id":6,"CourseIds":"485","BeginTime":"3/10/2017 9:00:00 AM","EndTime":"3/10/2017 9:59:59 AM","FromPrice":0.0,"ToPrice":0.0,"AvailableCourses":"0","AvailableTeeTimes":"0","DealsAvailable":"0"},{"Id":7,"CourseIds":"485","BeginTime":"3/10/2017 10:00:00 AM","EndTime":"3/10/2017 10:59:59 AM","FromPrice":0.0,"ToPrice":0.0,"AvailableCourses":"0","AvailableTeeTimes":"0","DealsAvailable":"0"},{"Id":8,"CourseIds":"485","BeginTime":"3/10/2017 11:00:00 AM","EndTime":"3/10/2017 11:59:59 AM","FromPrice":0.0,"ToPrice":0.0,"AvailableCourses":"0","AvailableTeeTimes":"0","DealsAvailable":"0"},{"Id":9,"CourseIds":"485","BeginTime":"3/10/2017 12:00:00 PM","EndTime":"3/10/2017 12:59:59 PM","FromPrice":0.0,"ToPrice":0.0,"AvailableCourses":"0","AvailableTeeTimes":"0","DealsAvailable":"0"},{"Id":10,"CourseIds":"485","BeginTime":"3/10/2017 1:00:00 PM","EndTime":"3/10/2017 1:59:59 PM","FromPrice":0.0,"ToPrice":0.0,"AvailableCourses":"0","AvailableTeeTimes":"0","DealsAvailable":"0"},{"Id":11,"CourseIds":"485","BeginTime":"3/10/2017 2:00:00 PM","EndTime":"3/10/2017 2:59:59 PM","FromPrice":0.0,"ToPrice":0.0,"AvailableCourses":"0","AvailableTeeTimes":"0","DealsAvailable":"0"},{"Id":12,"CourseIds":"485","BeginTime":"3/10/2017 3:00:00 PM","EndTime":"3/10/2017 3:59:59 PM","FromPrice":0.0,"ToPrice":0.0,"AvailableCourses":"0","AvailableTeeTimes":"0","DealsAvailable":"0"},{"Id":13,"CourseIds":"485","BeginTime":"3/10/2017 4:00:00 PM","EndTime":"3/10/2017 4:59:59 PM","FromPrice":0.0,"ToPrice":0.0,"AvailableCourses":"0","AvailableTeeTimes":"0","DealsAvailable":"0"},{"Id":14,"CourseIds":"485","BeginTime":"3/10/2017 5:00:00 PM","EndTime":"3/10/2017 5:59:59 PM","FromPrice":0.0,"ToPrice":0.0,"AvailableCourses":"0","AvailableTeeTimes":"0","DealsAvailable":"0"},{"Id":15,"CourseIds":"485","BeginTime":"3/10/2017 6:00:00 PM","EndTime":"3/10/2017 6:59:59 PM","FromPrice":0.0,"ToPrice":0.0,"AvailableCourses":"0","AvailableTeeTimes":"0","DealsAvailable":"0"},{"Id":16,"CourseIds":"485","BeginTime":"3/10/2017 7:00:00 PM","EndTime":"3/10/2017 7:59:59 PM","FromPrice":0.0,"ToPrice":0.0,"AvailableCourses":"0","AvailableTeeTimes":"0","DealsAvailable":"0"}],"ReferenceData":{"totalNumberOfCourses":"0","courseIds":"485"}}}

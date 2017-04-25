@@ -1,0 +1,39 @@
+Status: OK
+Time Taken: 841
+Size: 473
+Timestamp: Wed Mar 08 13:31:59 SGT 2017
+TestStep: Get Request - searching course with apostrophe ' on its name
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Method: GET
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/SearchCourses?sessionId=ba17f365-3a75-4b9e-9b8d-9476fd25a809&criteria=Sun%20%27n%20Lake%20Golf%20Club%20-%20Deer%20Run&includeDirectoryCourses=true
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/SearchCourses?sessionId=ba17f365-3a75-4b9e-9b8d-9476fd25a809&criteria=Sun%20%27n%20Lake%20Golf%20Club%20-%20Deer%20Run&includeDirectoryCourses=true HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:32:01 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":{"SearchResult":[{"CourseId":7262,"Latitude":27.5334911346436,"Longitude":-81.5170135498047,"IsDirectoryOnly":true}],"ReferenceData":{"centerPointLat":"27.5334911346436","centerPointLon":"-81.5170135498047","searchCriteria":"Sun 'n Lake Golf Club - Deer Run","searchTypeId":"6","landingPageId":"6","breadcrumbCountry":"United States","breadcrumbRegion":"Florida","breadcrumbArea":"Streamsong, FL Area","breadcrumbCity":"Sebring, FL"}}}

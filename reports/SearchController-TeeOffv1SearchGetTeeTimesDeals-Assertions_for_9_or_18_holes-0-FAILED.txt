@@ -1,0 +1,9 @@
+Status: FAILED
+Time Taken: 0
+Size: 0
+Timestamp: Tue Mar 07 18:30:45 SGT 2017
+TestStep: Assertions for 9 or 18 holes
+
+----------------- Messages ------------------------------
+[18 holes only] Simple Equals  FAILED
+[9 holes only] Simple Equals  FAILED

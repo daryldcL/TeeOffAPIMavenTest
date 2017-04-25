@@ -1,0 +1,41 @@
+Status: OK
+Time Taken: 905
+Size: 2194
+Timestamp: Wed Mar 08 13:33:11 SGT 2017
+TestStep: Test Request: GetCourseInformation
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: GET
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/GetCourseInformation?sessionId=5c32adf5-b6e2-4192-83e2-1af3a8ffcec2&courseId=4957
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/GetCourseInformation?sessionId=5c32adf5-b6e2-4192-83e2-1af3a8ffcec2&courseId=4957 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:33:13 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":{"CourseId":4957,"FacilityId":1834,"CountryId":"1","Name":"Tonto Verde - Ranch","Address":"18401 El Circulo Drive Rio Verde, AZ 85263 Rio Verde AZ 85263","City":"Rio Verde","State":"AZ","PostalCode":"85263","Description":"With two different and challenging 18-hole championship golf courses and spectacular views, Tonto Verde is a desert gem acclaimed by national recognition for its charm and playability. Renowned golf course architects David Graham and Gary Panks chose to keep the natural contours of the land as they designed the 6,744-yard Peaks course. The newer Panks-designed Ranch course stretches out to 6,988 yards and has hosted a number of professional and amateur events since opening for play in 2002. While both courses are desert, or target golf layouts, the architects took special care to ensure that golf would be enjoyable no matter what the skill level of the golfer. The Peaks course layout is shorter in length and narrower off of the tee than the Ranch course, but still provides an enjoyable test for any golfer. The Ranch course will take on the big hitters with its length and challenge your short game with large, well-bunkered and sloping greens. Rounding out Tonto's distinctive golfing attractions is a uniquely designed 18-hole putting course for the enjoyment of all residents and guests.","WebSite":"","Architect":"David Graham & Gary Panks","YearEstablished":"","TotalYards":"","Latitude":33.7345,"Longitude":-111.68,"PageUrl":"tonto-verde-ranch-rio-verde-az-85263-tee-times","Distance":4811.61,"IsDirectoryOnly":false,"DateCreated":"2013-05-07T00:42:16","DateModified":"2013-12-29T10:28:13","StatusCode":null,"AllowPromos":false,"TimeOffsetUtc":"-420","CourseAmenities":{"HasDrivingRange":false,"HasPuttingGreen":false,"HasChippingArea":false,"HasGPSAvailable":false,"HasRentalClubs":false,"HasLockerRoom":false,"HasFood":false,"HasBeverages":false,"HasRentalShoes":false,"HasPracticeBunker":false,"HasGolfShop":false,"HasNineHolesOnly":false,"HasLessons":false,"HasGolfCartIncluded":false},"CourseImages":[{"ImageSource":"//cdn.teeoff.com/course/default2.jpg","AlternateText":"Default Image"}],"CourseScorecards":[]}}

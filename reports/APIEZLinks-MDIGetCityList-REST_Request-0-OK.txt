@@ -1,0 +1,66 @@
+Status: OK
+Time Taken: 1822
+Size: 695
+Timestamp: Wed Mar 08 13:34:23 SGT 2017
+TestStep: REST Request
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.ezlinks.com
+Method: GET
+StatusCode: 200
+URL: https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectID=MDIGetCityList&Param1=208
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [api.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectID=MDIGetCityList&Param1=208 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: api.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Cache-Control: [private]
+Server: [Microsoft-IIS/7.0]
+Connection: [close]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Date: [Wed, 08 Mar 2017 05:34:27 GMT]
+Content-Type: [text/xml]
+X-Powered-By: [ASP.NET]
+
+<?ezxml version="5.0"?>
+<MDIGetCityList>
+   <MDIGetCityListRecord>
+      <SiteServerID>1</SiteServerID>
+      <CityID>456</CityID>
+      <CityName>Sykeston</CityName>
+      <State>WI</State>
+      <Country>USA</Country>
+      <AreaID>242</AreaID>
+   </MDIGetCityListRecord>
+   <MDIGetCityListRecord>
+      <SiteServerID>1</SiteServerID>
+      <CityID>947</CityID>
+      <CityName>Vilamoura</CityName>
+      <State>Portugal</State>
+      <Country>Portugal</Country>
+      <AreaID>370</AreaID>
+   </MDIGetCityListRecord>
+   <MDIGetCityListRecord>
+      <SiteServerID>1</SiteServerID>
+      <CityID>454</CityID>
+      <CityName>Wrightsville</CityName>
+      <State>WI</State>
+      <Country>USA</Country>
+      <AreaID>242</AreaID>
+   </MDIGetCityListRecord>
+</MDIGetCityList>

@@ -1,0 +1,46 @@
+Status: FAILED
+Time Taken: 1658
+Size: 146
+Timestamp: Thu Mar 09 21:21:50 SGT 2017
+TestStep: REST Request - Empty Param4/FirstName
+
+----------------- Messages ------------------------------
+[REQUIRE_FIRSTNAME] XPathContains comparison failed for path [//Error[1]/ErrorDescription[1]], expecting [REQUIRE_FIRSTNAME], actual was [REQUIRE_LASTNAME]
+
+----------------- Properties ------------------------------
+StatusCode: 200
+Method: GET
+HTTP Version: HTTP/1.1
+Endpoint: https://api.ezlinks.com
+URL: https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=UserChangeRegistration&Param1=user1%40gmail.com&Param2=limesource%3F01&Param3=Tester&Param5=Dimataga&Param6=Gun-ob&Param7=Lapu-Lapu&Param8=Cebu&Param9=6015&Param10=PH&Param11=5555-5555-5555&Param12=895040&Param13=user1%40gmail.com&Param14=0
+
+---------------- Request ---------------------------
+Host: [api.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+
+GET https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=UserChangeRegistration&Param1=user1%40gmail.com&Param2=limesource%3F01&Param3=Tester&Param5=Dimataga&Param6=Gun-ob&Param7=Lapu-Lapu&Param8=Cebu&Param9=6015&Param10=PH&Param11=5555-5555-5555&Param12=895040&Param13=user1%40gmail.com&Param14=0 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: api.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Vary: [Accept-Encoding]
+Date: [Thu, 09 Mar 2017 13:21:54 GMT]
+#status#: [HTTP/1.1 200 OK]
+Content-Encoding: [gzip]
+Connection: [close]
+Content-Type: [text/xml]
+X-Powered-By: [ASP.NET]
+Server: [Microsoft-IIS/7.0]
+Cache-Control: [private]
+
+<?ezxml version="5.0"?>
+<Error>
+   <ErrorValue>5</ErrorValue>
+   <ErrorDescription>REQUIRE_LASTNAME</ErrorDescription>
+</Error>

@@ -1,0 +1,41 @@
+Status: OK
+Time Taken: 838
+Size: 67
+Timestamp: Wed Mar 08 13:31:42 SGT 2017
+TestStep: GET Request - No Results
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: GET
+StatusCode: 400
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/SearchCourses?sessionId=f132a3b7-1a4d-4b56-bb17-b88a65d74f8e&criteria=hththth
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/SearchCourses?sessionId=f132a3b7-1a4d-4b56-bb17-b88a65d74f8e&criteria=hththth HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+#status#: [HTTP/1.1 400 Bad Request]
+Content-Length: [67]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:31:44 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":false,"Message":"No matching results found","Data":null}

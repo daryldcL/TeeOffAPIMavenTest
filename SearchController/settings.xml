@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="94698a27-6b80-4e0f-a28a-d809c16fe007" name="SearchController" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="94698a27-6b80-4e0f-a28a-d809c16fe007fileName">SearchController</con:setting><con:setting id="FlowLayout">false</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

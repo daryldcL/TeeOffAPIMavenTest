@@ -1,0 +1,37 @@
+Status: FAILED
+Time Taken: 859
+Size: 219
+Timestamp: Thu Mar 09 21:19:05 SGT 2017
+TestStep: GET Request - Valid ZipCode 85405, Valid PlayDate
+
+----------------- Messages ------------------------------
+[should not contain "ZipCode is not valid"] Response contains token [ZipCode is not valid.]
+
+----------------- Properties ------------------------------
+StatusCode: 400
+Method: GET
+HTTP Version: HTTP/1.1
+Endpoint: https://dist-dev.ezlinks.com
+URL: https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85405/03-11-2017
+
+---------------- Request ---------------------------
+Host: [dist-dev.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+
+GET https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85405/03-11-2017 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dist-dev.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+Date: [Thu, 09 Mar 2017 13:19:07 GMT]
+Transfer-Encoding: [chunked]
+#status#: [HTTP/1.1 400 Bad Request]
+Via: [1.1 FRONTEND-0]
+Server: [Microsoft-HTTPAPI/2.0]
+
+{"Success":false,"Data":null,"Reference":[],"Errors":[],"Notifications":[{"TimeStamp":null,"IconCls":"warning","Type":"warning","Message":"TeeTime Summary Results: ZipCode is not valid."}],"Page":1,"Limit":10,"Total":0}

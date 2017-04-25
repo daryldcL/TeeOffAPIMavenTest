@@ -1,0 +1,56 @@
+Status: FAILED
+Time Taken: 3437
+Size: 159
+Timestamp: Thu Mar 09 20:46:30 SGT 2017
+TestStep: Test Request: Book Reservation
+
+----------------- Messages ------------------------------
+[Success] XPathContains assertion failed for path [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Reservation/BookReservation';
+//ns1:Response[1]/ns1:Success[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Reservation/BookReservation';
+//ns1:Response[1]/ns1:Success[1]] in Response
+[Message] XPathContains comparison failed for path [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Reservation/BookReservation';
+//ns1:Fault[1]/ns1:Message[1]], expecting [], actual was [Credit Card Error: Your payment failed. Please reenter payment information. Need help? Call us: 1-855-383-3633. (R02)]
+
+----------------- Properties ------------------------------
+StatusCode: 400
+Method: POST
+Password: test
+Username: test
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+URL: https://dev-api.opentee.com/TeeOff/v1/Reservation/BookReservation?sessionId=cc73182a-122a-4813-84a1-03013199da77
+
+---------------- Request ---------------------------
+Authorization: [Basic dGVzdDp0ZXN0]
+Host: [dev-api.opentee.com]
+Content-Length: [63]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/Reservation/BookReservation?sessionId=cc73182a-122a-4813-84a1-03013199da77 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 63
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+Authorization: Basic dGVzdDp0ZXN0
+
+{
+   "CardId": "29665",
+   "OriginatingContactId": "26573678"
+}
+
+---------------- Response --------------------------
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Thu, 09 Mar 2017 12:46:36 GMT]
+#status#: [HTTP/1.1 400 Bad Request]
+Content-Length: [159]
+Access-Control-Allow-Methods: [POST]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+Server: [Microsoft-IIS/8.5]
+
+{"Success":false,"Message":"Credit Card Error: Your payment failed. Please reenter payment information. Need help? Call us: 1-855-383-3633. (R02)","Data":null}

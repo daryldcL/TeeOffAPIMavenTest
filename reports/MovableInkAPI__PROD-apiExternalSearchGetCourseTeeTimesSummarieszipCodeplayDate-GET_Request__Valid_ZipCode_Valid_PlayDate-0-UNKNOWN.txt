@@ -1,0 +1,37 @@
+Status: UNKNOWN
+Time Taken: 560
+Size: 5653
+Timestamp: Wed Mar 08 13:34:00 SGT 2017
+TestStep: GET Request - Valid ZipCode, Valid PlayDate
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dist.ezlinks.com
+Method: GET
+StatusCode: 200
+URL: https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/89107/03-08-2017
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dist.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/89107/03-08-2017 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dist.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Server: [Microsoft-HTTPAPI/2.0]
+#status#: [HTTP/1.1 200 OK]
+Date: [Wed, 08 Mar 2017 05:34:04 GMT]
+Via: [1.1 FrontEnd-2]
+Content-Type: [application/json; charset=utf-8]
+
+{"success":true,"data":[{"courseId":1025,"courseName":"Las Vegas Golf Club","courseCity":"Las Vegas","courseState":"NV","courseUrl":"las-vegas-golf-club-las-vegas-nv-89107-tee-times","coursePhoto":"//cdn.teeoff.com/course/1025/1025-000002.jpg","latitude":36.1810913085937,"longitude":-115.198066711426,"totalTeeTimesByCourse":31,"totalDealsAvailableByCourse":0,"priceFrom":35.00,"priceTo":55.00,"firstTeeTime":"7:30 AM","lastTeeTime":"5:45 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":65.00,"maxDiscountPercentage":36.0,"allowPromos":false,"distance":0.96},{"courseId":5177,"courseName":"Angel Park GC - Mountain","courseCity":"Las Vegas","courseState":"NV","courseUrl":"angel-park-golf-club-mountain-las-vegas-nv-89145-tee-times","coursePhoto":"//cdn.teeoff.com/course/5177/5177-000175.jpg","latitude":36.17305,"longitude":-115.28575,"totalTeeTimesByCourse":25,"totalDealsAvailableByCourse":1,"priceFrom":32.00,"priceTo":94.00,"firstTeeTime":"6:46 AM","lastTeeTime":"4:06 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":99.00,"maxDiscountPercentage":54.0,"allowPromos":false,"distance":4.31},{"courseId":5178,"courseName":"Angel Park GC - Palm","courseCity":"Las Vegas","courseState":"NV","courseUrl":"angel-park-golf-club-palm-las-vegas-nv-89145-tee-times","coursePhoto":"//cdn.teeoff.com/course/5178/5178-000128.jpg","latitude":36.17305,"longitude":-115.28575,"totalTeeTimesByCourse":43,"totalDealsAvailableByCourse":8,"priceFrom":28.00,"priceTo":94.00,"firstTeeTime":"6:46 AM","lastTeeTime":"4:06 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":99.00,"maxDiscountPercentage":54.0,"allowPromos":false,"distance":4.31},{"courseId":22006,"courseName":"Angel Park GC - Cloud 9","courseCity":"Las Vegas","courseState":"NV","courseUrl":"angel-park-golf-club-cloud-9-las-vegas-nv-89145-tee-times","coursePhoto":"//cdn.teeoff.com/course/default1.jpg","latitude":36.17305,"longitude":-115.28575,"totalTeeTimesByCourse":40,"totalDealsAvailableByCourse":0,"priceFrom":19.00,"priceTo":19.00,"firstTeeTime":"7:30 AM","lastTeeTime":"2:50 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":19.00,"maxDiscountPercentage":0.0,"allowPromos":false,"distance":4.31},{"courseId":21851,"courseName":"Las Vegas National","courseCity":"Las Vegas","courseState":"NV","courseUrl":"las-vegas-national-golf-club-las-vegas-nv-89169-tee-times","coursePhoto":"//cdn.teeoff.com/course/default2.jpg","latitude":36.1298522949219,"longitude":-115.125785827637,"totalTeeTimesByCourse":34,"totalDealsAvailableByCourse":0,"priceFrom":79.00,"priceTo":119.00,"firstTeeTime":"6:40 AM","lastTeeTime":"7:00 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":119.00,"maxDiscountPercentage":0.0,"allowPromos":false,"distance":5.4},{"courseId":4104,"courseName":"Durango Hills Golf Club","courseCity":"Las Vegas","courseState":"NV","courseUrl":"durango-hills-golf-club-las-vegas-nv-89129-tee-times","coursePhoto":"//cdn.teeoff.com/course/4104/4104-27640.jpg","latitude":36.2232474,"longitude":-115.2801275,"totalTeeTimesByCourse":10,"totalDealsAvailableByCourse":1,"priceFrom":10.00,"priceTo":30.00,"firstTeeTime":"6:05 AM","lastTeeTime":"1:50 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":35.00,"maxDiscountPercentage":60.0,"allowPromos":false,"distance":5.42},{"courseId":5170,"courseName":"Palm Valley Golf Course","courseCity":"Las Vegas","courseState":"NV","courseUrl":"palm-valley-golf-course-las-vegas-nv-89134-tee-times","coursePhoto":"//cdn.teeoff.com/course/default1.jpg","latitude":36.2107867,"longitude":-115.2956432,"totalTeeTimesByCourse":28,"totalDealsAvailableByCourse":0,"priceFrom":35.00,"priceTo":89.00,"firstTeeTime":"6:50 AM","lastTeeTime":"3:38 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":89.00,"maxDiscountPercentage":0.0,"allowPromos":false,"distance":5.61},{"courseId":16413,"courseName":"Los Prados Golf Course","courseCity":"Las Vegas","courseState":"NV","courseUrl":"los-prados-golf-course-las-vegas-nv-89130-tee-times","coursePhoto":"//cdn.teeoff.com/course/16413/16413-000155.jpg","latitude":36.250964,"longitude":-115.218861,"totalTeeTimesByCourse":22,"totalDealsAvailableByCourse":1,"priceFrom":21.00,"priceTo":37.00,"firstTeeTime":"6:03 AM","lastTeeTime":"3:39 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":40.00,"maxDiscountPercentage":42.0,"allowPromos":true,"distance":5.62},{"courseId":5426,"courseName":"Spanish Trail Golf Club - Canyon/Lakes","courseCity":"Las Vegas","courseState":"NV","courseUrl":"spanish-trail-golf-club-canyon-lakes-las-vegas-nv-89113-tee-times","coursePhoto":"//cdn.teeoff.com/course/default2.jpg","latitude":36.0970420837402,"longitude":-115.254837036133,"totalTeeTimesByCourse":13,"totalDealsAvailableByCourse":0,"priceFrom":69.00,"priceTo":125.00,"firstTeeTime":"8:20 AM","lastTeeTime":"5:00 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":125.00,"maxDiscountPercentage":0.0,"allowPromos":false,"distance":5.68},{"courseId":5167,"courseName":"Spanish Trail Golf Club - Sunrise/Canyon","courseCity":"Las Vegas","courseState":"NV","courseUrl":"spanish-trail-golf-club-sunrise-canyon-las-vegas-nv-89113-tee-times","coursePhoto":"//cdn.teeoff.com/course/default2.jpg","latitude":36.09703,"longitude":-115.25482,"totalTeeTimesByCourse":22,"totalDealsAvailableByCourse":0,"priceFrom":95.00,"priceTo":125.00,"firstTeeTime":"7:30 AM","lastTeeTime":"1:20 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":125.00,"maxDiscountPercentage":0.0,"allowPromos":false,"distance":5.68}],"reference":[{"field":"TotalDealTimes","value":"11"},{"field":"TotalCourseTimes","value":"257"}],"errors":[],"notifications":[],"page":1,"limit":10,"total":10}

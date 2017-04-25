@@ -1,0 +1,70 @@
+Status: OK
+Time Taken: 2550
+Size: 1517
+Timestamp: Tue Mar 07 18:28:02 SGT 2017
+TestStep: Test Request: ProcessTeeTimeCheckout
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: POST
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Reservation/ProcessTeeTimeCheckout?sessionId=ede4dfb6-ce12-40a8-aef5-1724afc86ddd
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [642]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/Reservation/ProcessTeeTimeCheckout?sessionId=ede4dfb6-ce12-40a8-aef5-1724afc86ddd HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 642
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+{
+   "CancellationPeriod": "24",
+   "AllowFive": "false",
+   "ReservationTypeId": "8175",
+   "NumberOfPlayers": "4",
+   "FeeId": "139749",
+   "TransactionFee": "1.99",
+   "AllowThree": "true",
+   "AllowTwo": "true",
+   "MaxPlayers": "4",
+   "ReservationString": "F21286D6588FF257E751D5B14BE8BE52",
+   "AllowOne": "false",
+   "OriginatingContactId": "26574452",
+   "Utilization": "50.0",
+   "CourseId": "9213",
+   "SavedAmount": "12.0",
+   "TeeTimeTypeId": "4",
+   "Price": "18.0",
+   "MinPlayers": "2",
+   "CurrencyLocaleId": "1033",
+   "AllowFour": "true",
+   "RegularPrice": "30.0",
+   "TeeTime": "2017-01-27T13:00:00",
+   "Sku": "string"
+}
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [POST]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Tue, 07 Mar 2017 10:28:06 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":[{"ResultMessage":"","ResultCode":0,"CartId":107895,"CartReservationItemId":113213,"SponsorId":6085,"ItineraryId":0,"ConfirmId":0,"OrderNumber":"","ReservationTypeId":8175,"ReservationProtocolId":0,"ProtocolText":"","TeeTime":"2017-01-27T13:00:00","TeeTimeCancelBy":"1/26/2017 1:00:00 PM","NumberOfPlayers":4,"HasCourseNote":false,"CourseNote":"","AllowPromos":true,"TeeTimeTypeId":9,"CancellationPeriod":24,"CourseInfo":{"CourseId":9213,"CourseName":"Abita Springs Golf Club-(*G18*)","CourseAddress":"73433 Oliver Street, Abita Springs, LA 70420","CourseLocation":"","Distance":6215.55,"Latitude":0.0,"Longitude":0.0,"CurrencyLocaleId":0,"CoursePhoto":"","AllowPromos":true,"TimeOffsetUtc":""},"Purchase":{"Price":18.0000,"TransactionFee":0.0000,"Total":72.0000,"DueNow":0.0000,"DueAtCourse":18.0000,"SavedAmount":12.0000,"SavedPercent":40.0000,"GrandTotal":72.0000,"Taxes":0.0,"TaxPercent":0.0,"TotalTransactionFees":0.0000,"TotalDueNow":0.0000,"TotalDueAtCourse":72.0000,"TotalSavedAmount":48.0000,"CouponDescription":"","CouponDiscount":0.0,"TotalDueNowAfterCoupon":0.0000},"TeeTimeRules":{"MaxPlayers":4,"MinPlayers":2,"AllowOne":false,"AllowTwo":true,"AllowThree":true,"AllowFour":true,"AllowFive":false},"IsDealTime":false,"ShowPromoBox":false,"AddResultCode":7,"AddResultMessage":"Tee time type has been changed.","PersistentNote":null,"MessageType":"Share Ratio - Course Times","MessageHeader":"RESERVATION INFORMATION","Message":"Course cancellation policies apply."}]}

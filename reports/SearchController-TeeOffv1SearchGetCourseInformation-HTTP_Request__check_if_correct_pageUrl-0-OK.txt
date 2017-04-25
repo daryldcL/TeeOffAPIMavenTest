@@ -1,0 +1,1677 @@
+Status: OK
+Time Taken: 8493
+Size: 77852
+Timestamp: Wed Mar 08 13:33:18 SGT 2017
+TestStep: HTTP Request - check if correct pageUrl
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-azure.teeoff.com/golf-course/tonto-verde-ranch-rio-verde-az-85263-tee-times
+Method: GET
+StatusCode: 200
+URL: https://dev-azure.teeoff.com/golf-course/tonto-verde-ranch-rio-verde-az-85263-tee-times
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-azure.teeoff.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-azure.teeoff.com/golf-course/tonto-verde-ranch-rio-verde-az-85263-tee-times HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-azure.teeoff.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Pragma: [no-cache]
+P3P: [CP="CURa ADMa DEVa PSAa IVAa CONo HISa OUR UNR IND DSP CAO COR"]
+Date: [Wed, 08 Mar 2017 05:33:27 GMT]
+X-AspNetMvc-Version: [4.0]
+Cache-Control: [no-cache]
+X-AspNet-Version: [4.0.30319]
+Vary: [Accept-Encoding]
+Set-Cookie: [ASP.NET_SessionId=chel0preo4btu2bqeo2harxs; path=/; HttpOnly, .ASPXAUTH=; expires=Tue, 12-Oct-1999 00:00:00 GMT; path=/; HttpOnly, TeeOffClientCookie=True; path=/]
+Expires: [-1]
+#status#: [HTTP/1.1 200 OK]
+Content-Type: [text/html; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+    <script src="//assets.adobedtm.com/c337417ac2211135614343d419b942c5032684fe/satelliteLib-9dd00906584fa5e0d0d0c570bfa445b2321843e0-staging.js"></script>
+
+   
+    <!--  Version: 0.8.6270 Version date: 3/2/2017 3:42:48 PM Server IP: 115.85.56.122 -->
+    <meta name="author" content="EZLinks Golf LLC">
+    <meta name="apple-itunes-app" content="app-id=1163927178">
+    <meta name="google-play-app" content="app-id=com.teeoff.teeoff_mobile_android">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta charset="utf-8" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon" />
+    <link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
+    <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+    <link href="/apple-touch-icon-76x76-precomposed.png" rel="apple-touch-icon" sizes="76x76" />
+    <link href="/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
+    <link href="/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114" />
+    <link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+    <link href="/apple-touch-icon-120x120-precomposed.png" rel="apple-touch-icon" sizes="120x120" />
+    <link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+    <link href="/apple-touch-icon-152x152-precomposed.png" rel="apple-touch-icon" sizes="152x152" />
+<link href="//cdn.teeoff.com/dev/501/styles/libs/ui-lightness/jquery-ui-1.11.2.css" rel="stylesheet"/>
+<script src="//cdn.teeoff.com/dev/501/scripts/libs/jquery-1.10.2.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>
+Tonto Verde - Ranch Rio Verde AZ Tee Times &amp; Deals | TeeOff.com
+    </title>
+
+<link href="//cdn.teeoff.com/dev/501/styles/libs/jquery.datepick.css" rel="stylesheet"/>
+
+    <!--<meta name="keywords" content="" />-->
+<!--<meta name="author" content="" />-->
+<!--<meta name="publisher" content="" />-->
+<meta name="og:site_name" content="TeeOff.com" />
+<meta name="og:image" content="http://cdn.teeoff.com/link/deals-owg.png=" />
+
+
+
+        <meta name="description" content="With two different and challenging 18-hole championship golf courses and spectacular views, Tonto Verde is a desert gem acclaimed by national recognition for its charm and playability. Renowned golf course architects David Graham and Gary Panks chose to keep the natural contours of the land as they designed the 6,744-yard Peaks course. The newer Panks-designed Ranch course stretches out to 6,988 yards and has hosted a number of professional and amateur events since opening for play in 2002. While both courses are desert, or target golf layouts, the architects took special care to ensure that golf would be enjoyable no matter what the skill level of the golfer. The Peaks course layout is shorter in length and narrower off of the tee than the Ranch course, but still provides an enjoyable test for any golfer. The Ranch course will take on the big hitters with its length and challenge your short game with large, well-bunkered and sloping greens. Rounding out Tonto&#39;s distinctive golfing attractions is a uniquely designed 18-hole putting course for the enjoyment of all residents and guests." />
+
+
+
+
+    <meta property="og:type" content="website" />
+
+
+        <link rel="canonical" href="https://www.teeoff.com/golf-course/tonto-verde-ranch-rio-verde-az-85263-tee-times" />
+
+
+<script src="//cdn.teeoff.com/dev/501/scripts/libs/modernizr-2.6.2.js"></script>
+
+    <!-- Foundation 4 for IE 9 and earlier -->
+    <!--[if gt IE 8]><!-->
+<link href="//cdn.teeoff.com/dev/501/styles/libs/foundation-4.3.1.css" rel="stylesheet"/>
+    <!--<![endif]-->
+    <!-- Foundation 3 for IE 8 and earlier -->
+    <!--[if lt IE 9]>
+<link href="//cdn.teeoff.com/dev/501/styles/libs/foundation-3.5.css" rel="stylesheet"/>
+    <![endif]-->
+
+<link href="//cdn.teeoff.com/dev/501/styles/optimized-modern.css?bust=2017032154048" rel="stylesheet"/>
+
+
+
+
+        <link rel="stylesheet" type="text/css" media="print" href="//cdn.teeoff.com/dev/501/styles/print.css?bust=2017032154048" />
+
+
+    <!-- bandaid to fix double loading of optimizely script currently with aarp - Will be fixed using white label page NOT flex page -->
+    <!--<script src="//cdn.optimizely.com/js/1120691653.js"></script>-->
+<script src="//cdn.optimizely.com/js/1120691653.js"></script>
+
+    <!--[if IE 9]>
+<link href="//cdn.teeoff.com/dev/501/styles/optimized-IE9.css?bust=2017032154048" rel="stylesheet"/>
+
+    <!--[if IE 8]>
+<link href="//cdn.teeoff.com/dev/501/styles/optimized-IE8.css?bust=2017032154048" rel="stylesheet"/>
+    <![endif]-->
+
+
+
+    <!-- jQuery.SmartBanner -->
+<link href="//cdn.teeoff.com/dev/501/styles/libs/jquery.smartbanner.css" rel="stylesheet"/>
+    
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1564228740535614');
+    fbq('track', "PageView");
+        fbq('track', 'ViewContent', {
+          content_name: '4957'
+        });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1564228740535614&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script type='text/javascript'>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script type='text/javascript'>
+        var gptAdSlots = [],
+            resizeTimer;
+
+        googletag.cmd.push(function () {
+
+            var mapping = googletag.sizeMapping().
+                addSize([970, 0], [970, 90]).
+                addSize([728, 0], [728, 90]).
+                addSize([0, 0], [320, 50]).
+                build();
+
+            var mappingAddToCart = googletag.sizeMapping().
+                addSize([766, 0], [498, 83]).
+                addSize([0, 0], [298, 50]).
+                build();
+
+            gptAdSlots[0] = googletag.defineSlot('/24277406/Course-Page-Bottom-Ad', [[728, 90], [320, 50], [970, 90]], 'div-gpt-ad-1470420022243-0').defineSizeMapping(mapping).addService(googletag.pubads());
+            gptAdSlots[1] = googletag.defineSlot('/24277406/Course-Page-Middle-Ad', [[728, 90], [320, 50], [970, 90]], 'div-gpt-ad-1470420022243-1').defineSizeMapping(mapping).addService(googletag.pubads());
+            gptAdSlots[2] = googletag.defineSlot('/24277406/Course-Page-Top-Ad', [[728, 90], [320, 50], [970, 90]], 'div-gpt-ad-1470420022243-2').defineSizeMapping(mapping).addService(googletag.pubads());
+            gptAdSlots[3] = googletag.defineSlot('/24277406/Add-To-Cart-Modal-Ad-Unit', [[298, 50], [498, 83]], 'div-gpt-ad-1470421002055-3').defineSizeMapping(mappingAddToCart).addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs(true, true); // collapses ad space before ad fetch = if(ads){expand and fill add space with ads}
+            googletag.enableServices();
+        });
+
+        (function() {
+            //Event to handle resizing
+            window.onresize = function () {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(updateAds, 100);
+            };
+        })();
+
+        function updateAds() {
+            googletag.cmd.push(function () {
+                googletag.pubads().refresh([gptAdSlots[0], gptAdSlots[1], gptAdSlots[2], gptAdSlots[3]
+                ]);
+            });
+        };
+    </script>
+
+    <script>
+        //Causes issue
+        //googletag.pubads().collapseEmptyDivs(); // hide ad units when empty.
+    </script>
+</head>
+<body id="CourseDetail">
+    <script>
+        var dataLayer = dataLayer || [];
+        dataLayer.push({
+            'GA Web Property ID': 'UA-170256-10',
+            'GA Use Debug': true
+        });
+    </script>
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KS3WXS"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KS3WXS');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <div class="bodyslide">
+        <input id="isDeals" value="false" type="hidden"/>
+<input id="isWhiteLabel" value="false" type="hidden" />
+<input name='sessionId' value='chel0preo4btu2bqeo2harxs' type='hidden' />
+<input name='contactId' value='' type='hidden' />
+
+
+<input id='ipLatitude' name='ipLatitude' value='0' type='hidden' />
+<input id='ipLongitude' name='ipLongitude' value='0' type='hidden' />
+<input id='isAuthenticatedUser' value='False' type='hidden' />
+<input id='sid' name='sid' value='chel0preo4btu2bqeo2harxs' type='hidden' />
+<input id='isSessionCookieless' name='isSessionCookieless' value='False' type='hidden' />
+<input id='apiHost' name='apiHost' value='http://api.dev.teeoff.com/WebServices/Service.svc' type='hidden' />
+<input id='teeOffCDN' name='teeOffCDN' value='//cdn.teeoff.com/dev/501' type='hidden' />
+
+
+        
+    <div style="min-height: 0;">
+        <div class="top-ad">
+    <div class="horizontal-ad-container">
+        <!-- top-ad -->
+        <div id='div-gpt-ad-1470420022243-2' class="horizontal-ad">
+            <script type='text/javascript'>
+                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1470420022243-2'); });
+            </script>
+        </div>
+    </div>
+</div>
+    </div>
+
+
+
+        
+<header id="mainHeader">
+    <div class="row">
+        <div class="eight small-6 large-8 columns logo-area print-show">
+            <div class="teeoff-print-logo-container">
+
+
+                    <img src="//cdn.teeoff.com/dev/501/images/TeeOff-logo-blk.png" class="small-logo" rel="Teeoff.com" />
+            </div>
+        </div>
+        <div class="eight small-8 large-6 columns logo-area print-hide">
+            <ul class="top-main-nav show-for-medium-up">
+                <!-- <li><a href="/" class="home-lnk">Find Tee Times</a></li>
+                <li><a href="/blog" class="blog-lnk">Clubhouse Blog</a></li> -->
+                <!--li><a href="#">My Game</a></li-->
+            </ul>
+            <div class="top-main-logo-container">
+                <a href="/">
+                        <div class="top-main-logo" rel="Teeoff.com"></div>
+                </a>
+            </div>
+            
+        </div>
+        <div class="three small-4 large-6 columns text-right account-menu-section">
+            <p class="phone print-hide hide"> <span class="sprite phone-icon"></span>1-855-383-3633 </p>
+            <div class="mobile-account-menu">
+                
+                <div class="myaccount" context="AccountMenu">
+ <!-- Show this if use is not logged in -->
+                        <button type="button" class="menulines hide-for-medium-up" context="Button" action="accountmenu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="account-menu" context="Menu">
+                            <ul>
+                                <li><a href="/" class="home-lnk">Find Tee Times</a></li>
+                                <!-- <li><a href="/blog" class="blog-lnk">Clubhouse Blog</a></li> -->
+                                <li><a href="http://www.pgatour.com/" target="_blank">PGA Tour</a></li>
+                            </ul>
+                            <div class="account-details-bottom">
+                                <a class="" href="/signin?ReturnUrl=%2Fgolf-course%2Ftonto-verde-ranch-rio-verde-az-85263-tee-times">Sign In</a>
+                            </div>
+                        </div>
+                        <div class="signInContainer">
+                            <a class="small button button-orange-style radius signin-button" href="/signin?ReturnUrl=%2Fgolf-course%2Ftonto-verde-ranch-rio-verde-az-85263-tee-times">Sign In</a>
+                        </div>
+                </div>                
+<div context="NewsletterForm">
+    <div class="newsletterform">
+        <a href="#" class="newsletter" action="open">Subscribe to our Newsletter</a>        
+        <div class="form" context="Form">
+            <header>
+                Newsletters
+            </header>
+            <a href="#" action="close" class="close-newsletter sprite colored-close-icon"></a>
+            <form id="newslettersignup" action="//broadcaster.ezlinksgolf.com/bin/listctrl" method="POST"
+                submitel="submitNewsletter">
+                <input type="hidden" name="slid" value="5C84B893BD6D939E5B654751F91C7E63" />
+                <input type="hidden" id="custom_teeoff_opt_in" name="custom_teeoff_opt_in" value="1" />
+                <input type="hidden" name="cmd" value="subscribe" />
+                <input type="hidden" name="goto" value='https://dev-azure.teeoff.com/NewsletterThanks' />
+                <input type="hidden" name="errors_to" value='https://dev-azure.teeoff.com/Message/NewsletterFaild' />
+
+                <label for="email">Email Address</label>
+                <input type="text"
+                    tabindex="101"
+                    id="email"
+                    name="email"
+                    validation="required email"
+                    autocapitalize="off" />
+
+                <label for="first">First Name</label>
+                <input type="text"
+                    tabindex="102"
+                    id="first"
+                    name="first"/>
+
+                <label for="last">Last Name</label>
+                <input type="text"
+                    tabindex="103"
+                    id="last"
+                    name="last"/>
+
+                <label for="country">Country</label>
+                <select id="country" name="country" tabindex="104"><option value="">Please Select</option>
+<option value="1">United States</option>
+<option value="2">Mexico</option>
+<option value="3">Canada</option>
+<option value="4">France</option>
+<option value="6">Australia</option>
+<option value="7">Egypt</option>
+<option value="8">Costa Rica</option>
+<option value="9">Portugal</option>
+<option value="13">United Arab Emirates (UAE)</option>
+<option value="14">British West Indies (BWI/Caribbean)</option>
+<option value="15">Turkey</option>
+<option value="16">Afghanistan</option>
+<option value="17">Akrotiri</option>
+<option value="18">Albania</option>
+<option value="19">Algeria</option>
+<option value="20">American Samoa</option>
+<option value="21">Andorra</option>
+<option value="22">Angola</option>
+<option value="23">Anguilla</option>
+<option value="24">Antarctica</option>
+<option value="25">Antigua and Barbuda</option>
+<option value="26">Arctic Ocean</option>
+<option value="27">Argentina</option>
+<option value="28">Armenia</option>
+<option value="29">Aruba</option>
+<option value="30">Ashmore and Cartier Islands</option>
+<option value="31">Atlantic Ocean</option>
+<option value="32">Austria</option>
+<option value="33">Azerbaijan</option>
+<option value="34">Bahamas, The</option>
+<option value="35">Bahrain</option>
+<option value="36">Baker Island</option>
+<option value="37">Bangladesh</option>
+<option value="38">Barbados</option>
+<option value="39">Belarus</option>
+<option value="40">Belgium</option>
+<option value="41">Belize</option>
+<option value="42">Benin</option>
+<option value="43">Bermuda</option>
+<option value="44">Bhutan</option>
+<option value="45">Bolivia</option>
+<option value="46">Bosnia and Herzegovina</option>
+<option value="47">Botswana</option>
+<option value="48">Bouvet Island</option>
+<option value="49">Brazil</option>
+<option value="50">British Indian Ocean Territory</option>
+<option value="51">British Virgin Islands</option>
+<option value="52">Brunei</option>
+<option value="53">Bulgaria</option>
+<option value="54">Burkina Faso</option>
+<option value="55">Burma</option>
+<option value="56">Burundi</option>
+<option value="57">Cambodia</option>
+<option value="58">Cameroon</option>
+<option value="59">Cape Verde</option>
+<option value="60">Cayman Islands</option>
+<option value="61">Central African Republic</option>
+<option value="62">Chad</option>
+<option value="63">Chile</option>
+<option value="64">China</option>
+<option value="65">Christmas Island</option>
+<option value="66">Clipperton Island</option>
+<option value="67">Cocos (Keeling) Islands</option>
+<option value="68">Colombia</option>
+<option value="69">Comoros</option>
+<option value="70">Congo, Democratic Republic of the</option>
+<option value="71">Congo, Republic of the</option>
+<option value="72">Cook Islands</option>
+<option value="73">Coral Sea Islands</option>
+<option value="74">Cote d&#39;Ivoire</option>
+<option value="75">Croatia</option>
+<option value="76">Cuba</option>
+<option value="77">Cyprus</option>
+<option value="78">Czech Republic</option>
+<option value="79">Denmark</option>
+<option value="80">Dhekelia</option>
+<option value="81">Djibouti</option>
+<option value="82">Dominica</option>
+<option value="83">Dominican Republic</option>
+<option value="84">Ecuador</option>
+<option value="85">El Salvador</option>
+<option value="86">Equatorial Guinea</option>
+<option value="87">Eritrea</option>
+<option value="88">Estonia</option>
+<option value="89">Ethiopia</option>
+<option value="90">Falkland Islands (Islas Malvinas)</option>
+<option value="91">Faroe Islands</option>
+<option value="92">Fiji</option>
+<option value="93">Finland</option>
+<option value="94">French Polynesia</option>
+<option value="95">French Southern and Antarctic Lands</option>
+<option value="96">Gabon</option>
+<option value="97">Gambia, The</option>
+<option value="98">Gaza Strip</option>
+<option value="99">Georgia</option>
+<option value="100">Germany</option>
+<option value="101">Ghana</option>
+<option value="102">Gibraltar</option>
+<option value="103">Greece</option>
+<option value="104">Greenland</option>
+<option value="105">Grenada</option>
+<option value="106">Guam</option>
+<option value="107">Guatemala</option>
+<option value="108">Guernsey</option>
+<option value="109">Guinea</option>
+<option value="110">Guinea-Bissau</option>
+<option value="111">Guyana</option>
+<option value="112">Haiti</option>
+<option value="113">Heard Island and McDonald Islands</option>
+<option value="114">Holy See (Vatican City)</option>
+<option value="115">Honduras</option>
+<option value="116">Hong Kong</option>
+<option value="117">Howland Island</option>
+<option value="118">Hungary</option>
+<option value="119">Iceland</option>
+<option value="120">India</option>
+<option value="121">Indian Ocean</option>
+<option value="122">Indonesia</option>
+<option value="123">Iran</option>
+<option value="124">Iraq</option>
+<option value="125">Ireland</option>
+<option value="126">Isle of Man</option>
+<option value="127">Israel</option>
+<option value="128">Italy</option>
+<option value="129">Jamaica</option>
+<option value="130">Jan Mayen</option>
+<option value="131">Japan</option>
+<option value="132">Jarvis Island</option>
+<option value="133">Jersey</option>
+<option value="134">Johnston Atoll</option>
+<option value="135">Jordan</option>
+<option value="136">Kazakhstan</option>
+<option value="137">Kenya</option>
+<option value="138">Kingman Reef</option>
+<option value="139">Kiribati</option>
+<option value="140">Korea, North</option>
+<option value="141">Korea, South</option>
+<option value="142">Kosovo</option>
+<option value="143">Kuwait</option>
+<option value="144">Kyrgyzstan</option>
+<option value="145">Laos</option>
+<option value="146">Latvia</option>
+<option value="147">Lebanon</option>
+<option value="148">Lesotho</option>
+<option value="149">Liberia</option>
+<option value="150">Libya</option>
+<option value="151">Liechtenstein</option>
+<option value="152">Lithuania</option>
+<option value="153">Luxembourg</option>
+<option value="154">Macau</option>
+<option value="155">Macedonia</option>
+<option value="156">Madagascar</option>
+<option value="157">Malawi</option>
+<option value="158">Malaysia</option>
+<option value="159">Maldives</option>
+<option value="160">Mali</option>
+<option value="161">Malta</option>
+<option value="162">Marshall Islands</option>
+<option value="163">Mauritania</option>
+<option value="164">Mauritius</option>
+<option value="165">Mayotte</option>
+<option value="166">Micronesia, Federated States of</option>
+<option value="167">Midway Islands</option>
+<option value="168">Moldova</option>
+<option value="169">Monaco</option>
+<option value="170">Mongolia</option>
+<option value="171">Montenegro</option>
+<option value="172">Montserrat</option>
+<option value="173">Morocco</option>
+<option value="174">Mozambique</option>
+<option value="175">Namibia</option>
+<option value="176">Nauru</option>
+<option value="177">Navassa Island</option>
+<option value="178">Nepal</option>
+<option value="179">Netherlands</option>
+<option value="180">Netherlands Antilles</option>
+<option value="181">New Caledonia</option>
+<option value="182">New Zealand</option>
+<option value="183">Nicaragua</option>
+<option value="184">Niger</option>
+<option value="185">Nigeria</option>
+<option value="186">Niue</option>
+<option value="187">Norfolk Island</option>
+<option value="188">Northern Mariana Islands</option>
+<option value="189">Norway</option>
+<option value="190">Oman</option>
+<option value="191">Pacific Ocean</option>
+<option value="192">Pakistan</option>
+<option value="193">Palau</option>
+<option value="194">Palmyra Atoll</option>
+<option value="195">Panama</option>
+<option value="196">Papua New Guinea</option>
+<option value="197">Paracel Islands</option>
+<option value="198">Paraguay</option>
+<option value="199">Peru</option>
+<option value="200">Philippines</option>
+<option value="201">Pitcairn Islands</option>
+<option value="202">Poland</option>
+<option value="203">Puerto Rico</option>
+<option value="204">Qatar</option>
+<option value="205">Romania</option>
+<option value="206">Russia</option>
+<option value="207">Rwanda</option>
+<option value="208">Saint Barthelemy</option>
+<option value="209">Saint Helena</option>
+<option value="210">Saint Kitts and Nevis</option>
+<option value="211">Saint Lucia</option>
+<option value="212">Saint Martin</option>
+<option value="213">Saint Pierre and Miquelon</option>
+<option value="214">Saint Vincent and the Grenadines</option>
+<option value="215">Samoa</option>
+<option value="216">San Marino</option>
+<option value="217">Sao Tome and Principe</option>
+<option value="218">Saudi Arabia</option>
+<option value="219">Senegal</option>
+<option value="220">Serbia</option>
+<option value="221">Seychelles</option>
+<option value="222">Sierra Leone</option>
+<option value="223">Singapore</option>
+<option value="224">Slovakia</option>
+<option value="225">Slovenia</option>
+<option value="226">Solomon Islands</option>
+<option value="227">Somalia</option>
+<option value="228">South Africa</option>
+<option value="229">South Georgia and The South Sandwich Islands</option>
+<option value="230">Southern Ocean</option>
+<option value="231">Spain</option>
+<option value="232">Spratly Islands</option>
+<option value="233">Sri Lanka</option>
+<option value="234">Sudan</option>
+<option value="235">Suriname</option>
+<option value="236">Svalbard</option>
+<option value="237">Swaziland</option>
+<option value="238">Sweden</option>
+<option value="239">Switzerland</option>
+<option value="240">Syria</option>
+<option value="241">Tajikistan</option>
+<option value="242">Tanzania</option>
+<option value="243">Thailand</option>
+<option value="244">Timor-Leste</option>
+<option value="245">Togo</option>
+<option value="246">Tokelau</option>
+<option value="247">Tonga</option>
+<option value="248">Trinidad and Tobago</option>
+<option value="249">Tunisia</option>
+<option value="250">Turkmenistan</option>
+<option value="251">Turks and Caicos Islands</option>
+<option value="252">Tuvalu</option>
+<option value="253">Uganda</option>
+<option value="254">Ukraine</option>
+<option value="255">United Kingdom</option>
+<option value="257">Uruguay</option>
+<option value="258">Uzbekistan</option>
+<option value="259">Vanuatu</option>
+<option value="260">Venezuela</option>
+<option value="261">Vietnam</option>
+<option value="262">Virgin Islands</option>
+<option value="263">Wake Island</option>
+<option value="264">Wallis and Futuna</option>
+<option value="265">West Bank</option>
+<option value="266">Western Sahara</option>
+<option value="267">Yemen</option>
+<option value="268">Zambia</option>
+<option value="269">Zimbabwe</option>
+<option value="270">Taiwan</option>
+<option value="271">European Union</option>
+</select>
+
+                <div context="dropdownState" style="display:none;">
+                    <label for="state">State</label>
+                    <select id="state" name="state" requiredif="#country|==|1" tabindex="105" validation="requiredif"><option value="">Please Select</option>
+<option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AZ">Arizona</option>
+<option value="AR">Arkansas</option>
+<option value="CA">California</option>
+<option value="CO">Colorado</option>
+<option value="CT">Connecticut</option>
+<option value="DE">Delaware</option>
+<option value="DC">District of Columbia</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="HI">Hawaii</option>
+<option value="ID">Idaho</option>
+<option value="IL">Illinois</option>
+<option value="IN">Indiana</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="ME">Maine</option>
+<option value="MD">Maryland</option>
+<option value="MA">Massachusetts</option>
+<option value="MI">Michigan</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NV">Nevada</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NM">New Mexico</option>
+<option value="NY">New York</option>
+<option value="NC">North Carolina</option>
+<option value="ND">North Dakota</option>
+<option value="OH">Ohio</option>
+<option value="OK">Oklahoma</option>
+<option value="OR">Oregon</option>
+<option value="PA">Pennsylvania</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="SD">South Dakota</option>
+<option value="TN">Tennessee</option>
+<option value="TX">Texas</option>
+<option value="UT">Utah</option>
+<option value="VT">Vermont</option>
+<option value="VA">Virginia</option>
+<option value="WA">Washington</option>
+<option value="WV">West Virginia</option>
+<option value="WI">Wisconsin</option>
+<option value="WY">Wyoming</option>
+<option value="NA">Not Applicable</option>
+</select>
+                </div>
+                <div context="dropdownProvince" style="display:none;">
+                    <label for="province">Province</label>
+                    <select id="province" name="province" requiredif="#country|==|3" tabindex="106" validation="requiredif"><option value="">Please Select</option>
+<option value="AB">Alberta</option>
+<option value="BC">British Columbia</option>
+<option value="MB">Manitoba</option>
+<option value="NB">New Brunswick</option>
+<option value="NL">Newfoundland and Labrador</option>
+<option value="NS">Nova Scotia</option>
+<option value="ON">Ontario</option>
+<option value="PE">Prince Edward Island</option>
+<option value="QC">Quebec</option>
+<option value="SK">Saskatchewan</option>
+<option value="NT">Northwest Territories</option>
+<option value="NU">Nunavut</option>
+<option value="YT">Yukon</option>
+</select>
+                </div>
+
+                <label for="zip">Postal / Zip</label>
+                <input type="text"
+                    tabindex="107"
+                    id="zip"
+                    name="zip"/>
+                <a href="#"
+                        class="small button button-orange-style radius"
+                        context="Button"
+                        tabindex="108"
+                        id="submitNewsletter">Subscribe</a>
+            </form>
+            
+        </div>
+    </div>
+</div>
+                   
+            </div>
+        </div>
+    </div>
+</header>
+
+
+        
+    <div style="min-height: 0;">
+        <div class="middle-ad">
+    <div class="horizontal-ad-container">
+        <!-- middle-ad -->
+        <div id='div-gpt-ad-1470420022243-1' class="horizontal-ad">
+            <script type='text/javascript'>
+                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1470420022243-1'); });
+            </script>
+        </div>
+    </div>
+</div>
+    </div>
+
+
+
+        <!-- Main Content -->
+        <div role="main">
+            <!-- Foundation 3 for IE 8 and earlier -->
+            <!--[if lt IE 9]>
+                <div class="fullbackground">
+                    <img class="fullbackground" src="/public/images/banner.jpg" />
+                </div>
+            <![endif]-->
+            
+
+            
+
+
+
+
+
+
+<input type="hidden" id="isCartHaveItem" value="False"/>
+
+<input type="hidden" id="CourseId" value="4957" />
+<input type="hidden" id="experimentMode" class="experiment" />
+
+<div class="search-bar">
+    <div class="row">
+        <div class="large-8 small-8 columns">
+            <div class="row">
+                <div context="SearchLabel" class="large-3 small-3 columns">
+                    <label>Search Again:</label>
+                </div>
+                <div context="OpenSearchDiv" class="large-5 small-6 columns">
+                    <input type="text" context="OpenSearch" class="open-serchbox" placeholder="City, Region, State, Zip or Course" autocomplete="off" />
+                </div>
+                <div context="DateDiv" class="large-4 small-6 columns">
+                    <div class="input-default-height">
+                        <input type="text" placeholder="Select Date" context="SelectDate" class="select-date-input newdp" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="large-4 small-4 columns">
+            <div class="row">
+                <div class="large-2 columns">
+                    <button context="SubmitSearch" class="button button-date-search radius caps-button">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header class="row pageheader bottom-pad">
+    <div class="nine large-9 columns">
+        <h1>
+            <span id="course-name">Tonto Verde - Ranch</span>
+            
+
+            <span class="sprite-large-amenity no-promo-icon-courseName">
+                <a id="snowflakeCourseDetail" href="#" onclick="return false;" title="">
+                    
+                        <img src="//cdn.teeoff.com/dev/501/images/no-promo.png" class="snowFlakeCourseDetail" />
+                    
+                </a>
+            </span>
+        </h1>
+        <ul class="inline-list courseDetails-info-location-header">
+            <li>18401 El Circulo Drive Rio Verde, AZ 85263</li>
+            <li>
+                <a href="http://maps.google.com/maps?daddr=18401+El+Circulo+Drive+Rio+Verde%2c+AZ+85263&amp;saddr=0,0" target="_blank" class="read-more">Get Directions</a>
+            </li>
+        </ul>
+    </div>
+        <div class="three large-3 columns">
+            <a href="#booking" class="button button-orange-style radius caps-button" tabindex="6" submit>Book Now</a>
+        </div>
+</header>
+
+<div class="row">
+    <div class="eight large-8 columns">
+        <div context="Hero"
+             class="hero bottom-pad margin-bottom GoogleMap"
+             purpose="GoogleMap"
+             long="-111.68"
+             lat="33.7345"
+             style="display:none;">
+        </div>
+        <div context="Hero"
+             purpose="PhotoSlider"
+             class="hero bottom-pad margin-bottom" style="position: absolute; right: 99999px;">
+                <img src="//cdn.teeoff.com/course/default3.jpg" alt="Default Image" />
+        </div>
+
+        <div class="row">
+            <div class="six large-6 columns">
+                <ul class="button-group radius" context="HeroToggle">
+                    <li><a href="#" action="photo" class="medium button button-white-style active">PHOTOS</a></li>
+                    <li><a href="#" action="map" class="medium button button-white-style">MAP</a></li>
+                </ul>
+            </div>
+            <div class="six large-6 columns align-right hide-for-small ">
+                
+<meta property="og:title" content="Let&#39;s play! Check out Tonto Verde - Ranch "/>
+<div class="social-bar">
+    <ul>
+        <li class="share">Share:</li>
+        <li>
+            <a href="#" onclick="window.open(&#39;http://www.facebook.com/sharer.php?s=100&amp;p[title]=Let\&#39;s play! Check out Tonto Verde - Ranch on www.TeeOff.com&amp;p[url]=&#39;+encodeURIComponent(location.href)+&#39;&amp;p[images][0]=&#39;+encodeURIComponent(&#39;//cdn.teeoff.com/course/default3.jpg&#39;), '_blank','width=600,height=600'); return false; ">
+                <span class="social-icon facebook-icon"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#" onclick="window.open('http://twitter.com/share?text=Let\&#39;s play! Check out Tonto Verde - Ranch on www.TeeOff.com @teeoffbypgatour','', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                <span class="social-icon twitter-icon"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#" onclick=" javascript:window.open('https://plus.google.com/share?url='+encodeURIComponent(location.href), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false; "><span class="social-icon google-icon"></span></a>
+        </li>
+    </ul>
+    
+</div>
+
+            </div>
+        </div>
+        <div class="description" context="Description">
+            <div>
+                <p>With two different and challenging 18-hole championship golf courses and spectacular views, Tonto Verde is a desert gem acclaimed by national recognition for its charm and playability. Renowned golf course architects David Graham and Gary Panks chose to keep the natural contours of the land as they designed the 6,744-yard Peaks course. The newer Panks-designed Ranch course stretches out to 6,988 yards and has hosted a number of professional and amateur events since opening for play in 2002. While both courses are desert, or target golf layouts, the architects took special care to ensure that golf would be enjoyable no matter what the skill level of the golfer. The Peaks course layout is shorter in length and narrower off of the tee than the Ranch course, but still provides an enjoyable test for any golfer. The Ranch course will take on the big hitters with its length and challenge your short game with large, well-bunkered and sloping greens. Rounding out Tonto&#39;s distinctive golfing attractions is a uniquely designed 18-hole putting course for the enjoyment of all residents and guests.</p>
+            </div>
+            <a href="http://" action="toggle" class="read-more">Read <span class="span-toggle ">More</span></a>
+        </div>
+
+    </div>
+    <div class="four large-4 columns">
+        <div class="hide-for-small ">
+        </div>
+        <div class="panel courseDetails-amenities">
+            <section class="amenities-category" context="AmenitiesCategory">
+
+                    <div class="amenities-section">
+                        <h2 action="toggle">Course Amenities<span class="sprite inline-sprite orange-down-arrow"></span></h2>
+                        <ul>
+
+                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                        <em>Please confirm with course.</em>
+                        <a href="#" action="toggle" class="amenities-expand">View <span class="span-toggle">More</span></a>
+                    </div>
+
+            </section>
+        </div>
+    </div>
+</div>
+
+<a name="booking"></a>
+
+        <form id="searchform" action="#" method="post" class="teeTimesForm">
+            <div class="orangehero teeTimes" context="horizControls">
+                <div class="row">
+                    <div class="ten large-12 columns">
+                        <div class="three large-3 columns">
+                            <h1 class="wl-headers">Tee Times</h1>
+                        </div>
+                        <div class="three large-3 columns">
+                            <div class="input-default-height">
+                                <input id="date" type="text" placeholder="Select Date" class="date-input newdpcourse" tabindex="7" readonly>
+                            </div>
+                        </div>
+                        <div class="three large-3 columns">
+                            <select id="time" tabindex="8" class=""></select>
+                        </div>
+                        <div class="three large-3 columns">
+                            <select id="numofplayers" tabindex="9" class="">
+                                <option value="-1">Number of Players</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="orangehero teeTimes with-deals" context="vertControls" style="display: none">
+                <div class="row show-for-large-up">
+                    <div class="columns large-3">
+                        <h1>Search Tee Times</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="columns large-3 small-12 tee-times-search-form">
+                        <div class="hide-for-large-up">
+                            <h1>Search Tee Times</h1>
+                        </div>
+                        <div class="teeTimesForm">
+                            <!-- using class name to get vertical spacing between controls (jjd) -->
+                            <div class="row">
+                                <div class="twelve small-12 columns">
+                                    <div class="input-default-height">
+                                        <input id="date2" type="text" placeholder="Select Date" class="date-input newdpcourse" tabindex="7" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="twelve small-12 columns">
+                                    <select id="time2" tabindex="8" class=""></select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="twelve small-12 columns">
+                                    <select id="numofplayers2" tabindex="9" class="">
+                                        <option value="-1">Number of Players</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                        </div>  <!-- teeTimesForm -->
+
+                    </div> <!-- columns -->
+                    <div class="columns large-6 small-12 tee-info">
+                        <div class="six small-12 columns tee-slider" context="TeeSlider2">
+                            <div context="scroller2" class="scroller">
+                                <div context="noTeeTimeText">
+                                    <ul></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- columns -->
+                </div> <!-- row -->
+            </div> <!-- vertControls -->
+        </form>
+        <div class="orangehero teeTimes" context="teeTimeContainer">
+            <div class="row teeTimes-available">
+                <div class="five large-5 columns"><hr /></div>
+                <div class="two large-2 columns align-center wl-bodyText"><span context="AvailableTeeTimes"></span> Available</div>
+                <div class="five large-5 columns"><hr /></div>
+            </div>
+            <div class="row">
+                <div class="twelve large-12 columns tee-slider" context="TeeSlider">
+                    <div context="scroller" class="scroller">
+                        <ul class="teeTimesTicketBlock" style="display: none;"></ul>
+                    </div>
+                    <a title="previous" href="#" class="prev" action="prev" style="display: none;"><span style="display: block;" class="sprite white-left-circular-arrow"></span></a>
+                    <a title="next" href="#" class="next" action="next" style="display: none;"><span style="display: block;" class="sprite white-right-circular-arrow"></span></a>
+                </div>
+            </div>
+        </div>
+<div class="blackhero">
+    <div class="searchNearbyTeaTimes">
+        <div class="row">
+            <div class="twelve large-12">
+                <h3 class="inline">Find Tee Times Near This Course</h3>
+                <a id="search-page-link" href="/search/#location=85263" class="medium button radius button-black-style inline">Find Tee Times</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="show-for-small" id="CourseScoreCard">
+</div>
+<div class="hide-for-small ">
+    <a name="scorecard"></a>
+</div>
+
+<script id="courseTemplate" type="text/template">    
+    <div class="tee-time">
+        <header>
+            <h4>
+                <a href="/golf-course/<%=pageUrl%>?date=<%=playDate%>"><%=courseName%></a>
+                <% if(!allowPromos){ %>
+                    <a id="snowflake" href="#" onclick="return false;" title="" class="sprite-small-amenity no-promo-icon-courseName">
+                            <img src="//cdn.teeoff.com/dev/501/images/no-promo.png" />
+                    </a>
+                <% } %>
+            </h4>
+            <%=courseAddress%> | <span class="distance">Distance <span class="bold"><%=distance%> mi</span></span>
+        </header>    
+        <div class="scrolling">
+            <ul class="teeTimesTicketBlock">
+            </ul>
+        </div>
+        <a href="#" class="prev"><span class="sprite white-left-circular-arrow"></span></a>
+        <a href="#" class="next"><span class="sprite white-right-circular-arrow"></span></a>
+    </div>
+    <div class="deal-time">
+        <header>
+            <h5>Deal<span>Times</span></h5>
+        </header>
+        <div class="scrolling">
+            <ul class="teeTimesTicketBlock"></ul>
+        </div>
+        <a href="#" class="expander">
+            <span class="sprite grey-left-arrow"></span>
+        </a>
+    </div>
+    <div class="deal-time-filter-switcher show-deals-only">
+        <span class="sprite ico"></span>
+        <span class="text">Deals only</span>        
+    </div>
+    <div style="clear: both; height: 0px;"></div>
+</script>
+
+<script id="courseNullTemplateTitle" type="text/template">
+    <li class="tee-time-null-title">
+        <h4><%=count%> AREA COURSES DO NOT MEET YOUR SEARCH CRITERIA</h4>
+    </li>   
+</script>
+
+<script id="courseNullTemplate" type="text/template">
+    <div class="tee-time tee-time-null">
+        <header>
+            <h4><a href="/golf-course/<%=pageUrl%>"><%=name%></a></h4>
+            <%=address%> | Distance <span class="bold"><%=distance%> mi</span>
+        </header>
+    </div>
+   
+    <div style="clear: both; height: 0px;"></div>
+</script>
+
+<script id="courseTeeTimeTemplate" type="text/template">
+    <div class="teeTimesTicketSectionLight">
+        <% if (teeTimeTypeId == 4 || teeTimeTypeId == 2 || teeTimeTypeId == 5 || teeTimeTypeId == 16 || teeTimeTypeId == 17) { %>
+		    <span class="tag sprite green-tag"></span>
+        <% } %>
+		
+		<% if (purchase.savingsPercentage > 0) { %>
+			<span class="teeTimesTicketDiscount"><%=purchase.savingsPercentage%>% OFF</span>
+        <% } %>
+        <% if (teeTimeTypeId == 5) { %>
+            <span class="teeTimesTicketPrice">BOOKED</span>
+        <% } else { %>
+		    <span class="teeTimesTicketPrice">$<%=purchase.dprice%></span>
+        <% } %>
+
+        <% if (purchase.savingsPercentage > 0) { %>
+		<span><del class="teeTimesTicketOldPrice">$<%=purchase.dregularPrice%></del></span>
+        <% } %>
+
+    </div>
+    <div class="teeTimesTicketSectionDark">
+        <span class="teeTimesTicketTime"><%=time%></span>
+        <span class="teeTimesTicketPlayers"><%=rules.minPlayers%>-<%=rules.maxPlayers%> Players</span>
+    </div>
+</script>
+
+<script id="timeTemplate" type="text/template">
+    <div>
+        <div class="timeInfo">
+            <strong><%=time%></strong>
+                <span purpose="teetimeCount"><%=availableTeeTimes%></span> Tee Times |             <span purpose="courseCount"><%=availableCourses%></span> Courses | 
+            <span purpose="dealsCount"><%=dealsAvailable%></span> Deals
+        </div>
+
+        <div class="timeButton">
+            <a href="#" class="button button-orange-style radius caps-button" action="ToggleTable">View This Hour</a>
+
+        </div>
+
+        
+        
+        
+        <div style="clear: both; height: 0px; float: none;"></div>
+    </div>
+</script>
+
+<script id="timeTableTemplate" type="text/template">
+    <table class="teetime-table">
+        <thead>
+            <tr>
+                <th sort="teeTime" order="desc" class="sort teetime-table-time">Tee Time <span class="sprite order-arrow "></span>
+                </th>
+                <th sort="courseName" order="asc" class="teetime-table-course">Course <span class="sprite order-arrow column-course "></span>
+                </th>
+                <th sort="distance" order="asc" class=" hide-for-xsmall teetime-table-distance">Distance <span class="sprite order-arrow "></span>
+                </th>
+                <th sort="price" order="asc" class="teetime-table-price">Price <span class="sprite order-arrow "></span>
+                </th>
+                <th sort="maxPlayers" order="asc" class="teetime-table-players">Players <span class="sprite order-arrow up "></span> 
+                </th>
+                <th sort="book" order="asc" class="teetime-table-booked">Book</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="spinner-center">
+                    <div class="small-spinner">
+                            <img src="//cdn.teeoff.com/dev/501/images/spinner_small.gif" />
+                    </div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</script>
+
+<script id="timeTableRowTemplate" type="text/template">
+    <td class="column-tee-time teetime-table-time"><strong><%=time%></strong></td>
+    <td class="column-course teetime-table-course">
+        <span>
+            <a href="/golf-course/<%=pageUrl%>"><%=courseInfo.courseName%> 
+                <% if(rateIcons.hasNineHolesOnly==true) { %>
+                    <span class="nineHole-icon-small sprite sprite-small-amenity" title="9 Holes Only"></span>
+                <% } %>
+                <% if(!allowPromos) { %>
+                    <span>
+                        <a id="snowflake" href="#" onclick="return false;" title="" class="no-promo-icon-courseName">
+                                <img src="//cdn.teeoff.com/dev/501/images/no-promo.png" class="sprite-small-amenity" />
+                        </a> 
+                    </span>
+                <% } %>                
+            </a>             
+        </span>
+    </td>
+    <td class="column-distance hide-for-xsmall teetime-table-distance"><%=courseInfo.distance%> mi</td>
+    <td class="column-price teetime-table-price">
+
+        <% if (teeTimeTypeId == 5) { %>
+            <span class="price">BOOKED</span>
+        <% } else { %>
+            <span class="price">$<%=purchase.dprice%>
+            <% if (teeTimeTypeId == 4 || teeTimeTypeId == 2 || teeTimeTypeId == 16 || teeTimeTypeId == 17) {%>
+                <span class="sprite teetime-table-deal-savings-tag"></span> 
+            <% } %>
+            </span>
+        <% } %>
+        
+        <% if (purchase.savingsPercentage > 0) { %>
+            <span class="deal-savings">
+                <%=purchase.savingsPercentage%>% OFF <br>
+            	<del>$<%=purchase.dregularPrice%></del>
+            </span>
+        <% } %>
+
+    </td>
+    <td class="players-available column-players teetime-table-players"><%=maxPlayers%></td>
+    <td width="8%" class="book-button teetime-table-book"><a context="bookit" href="#" class="small button button-orange-style radius caps-button">Book</a></td>
+</script>
+
+<script id="dealTemplate" type="text/template">
+        <header>
+            <span class="sprite green-tag deal-tag"></span>
+            <div class="deal-discount">
+                <% if (purchase.savingsPercentage != 0) { %>
+            	    <%=purchase.savingsPercentage%>% OFF
+            	    <del>$<%=purchase.dregularPrice%></del>
+                <% } %>
+            </div>
+            <div class="clearfix"></div>
+        </header>
+        <div>
+            <ul>
+                <li class="deal-price">$<%=purchase.dprice%></li>
+                <li class="deal-location"><a href="/golf-course/<%=pageUrl%>?date=<%=playDate%>"><%=courseInfo.courseName%></a></li>
+                <li class="deal-city-state"><%=courseInfo.courseLocation%></li>
+                <li class="deal-distance">Distance:<strong> <%=courseInfo.distance%> mi</strong></li>
+                <li>
+                    <% if(rateIcons.hasNineHolesOnly) { %><span class="nineHole-icon-small sprite sprite-small-amenity" title="9 Holes Only"></span> <% } %>
+                    
+                    <% if(rateIcons.hasEighteenHoles) { %><span class="eighteenHoles-icon-small sprite sprite-small-amenity" title="18 Hole Course"></span> <% } %>
+                    
+                    <% if(rateIcons.hasCartIncluded) { %>
+                        <span class="cartIncluded-icon-small sprite sprite-small-amenity" title="Cart Included"></span>
+                    <% } else { %>
+                        <span class="cartNotIncluded-icon-small sprite sprite-small-amenity" title="Cart Not Included"></span>
+                    <% } %>
+
+                    <% if(rateIcons.hasPracticeBalls) { %><span class="practiceBallsIncluded-icon-small sprite sprite-small-amenity" title="Practice Balls Included"></span> <% } %>                   
+                    
+                    <% if(rateIcons.hasFood) { %><span class="food-icon-small sprite sprite-small-amenity" title="Food"></span> <% } %>
+
+                    <% if(rateIcons.hasBeverages) { %><span class="beverage-icon-small sprite sprite-small-amenity" title="Beverage"></span> <% } %>
+                    
+                    <% if(rateIcons.hasCaddyIncluded) { %><span class="caddie-icon-small sprite sprite-small-amenity" title="Caddy Included"></span> <% } %>
+                    
+                    <% if(rateIcons.hasGPSIncluded) { %><span class="gps-icon-small sprite sprite-small-amenity" title="GPS Included"></span> <% } %>
+                    
+                    <% if(rateIcons.hasGift) { %><span class="gift-icon-small sprite sprite-small-amenity" title="Gift"></span> <% } %>
+                    
+                    <% if(rateIcons.hasUnlimitedPlay) { %><span class="unlimitedPlay-icon-small sprite sprite-small-amenity" title="Unlimited Play"></span> <% } %>            
+                    
+                    <% if(rateIcons.hasJuniorFee) { %><span class="juniors-icon-small sprite sprite-small-amenity" title="Junior Fee"></span> <% } %>
+                    
+                    <% if(rateIcons.hasMemberFee) { %><span class="members-icon-small sprite sprite-small-amenity" title="Member Fee"></span> <% } %>
+                    
+                    <% if(rateIcons.hasSeniorFee) { %><span class="seniors-icon-small sprite sprite-small-amenity" title="Senior Fee"></span> <% } %>                   
+                    
+                    <% if(rateIcons.hasResidentFee) { %><span class="resident-icon-small sprite sprite-small-amenity" title="Resident Fee"></span> <% } %>          
+                    
+                    <% if(rateIcons.hasPrePaid) { %><span class="prePaidTeeTime-icon-small sprite sprite-small-amenity" title="Prepaid Tee Time"></span> <% } %>
+
+                    <% if ((teeTimeTypeId == '7' || teeTimeTypeId == '8') && rateIcons.hasPrePaid ) { %><span class="portionPrepaidTeeTime-icon-small sprite sprite-small-amenity" title="Tee Time Deposit"></span> <% } %>
+
+                    <% if(!allowPromos) { %>
+                    <span>
+                        <a id="snowflake" href="#" onclick="return false;" title="" class="no-promo-deals">
+                                <img src="//cdn.teeoff.com/dev/501/images/no-promo.png" class="sprite-small-amenity" />
+                        </a>
+                    </span> 
+                    <% } %>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <div>
+                <span class="deal-ticket-time"><%=time%></span>
+                <span class="deal-ticket-date"><%=shortDate%></span>
+                <span class="deal-ticket-players"><%=rules.minPlayers%>-<%=rules.maxPlayers%> Players</span>
+            </div>
+            <a href="#" context="Openmodal" class="button button-orange-style radius caps-button">Book</a>
+            <div class="clearfix"></div>
+        </footer>
+</script>
+
+<script id="podTemplate" type="text/template">
+    <header>
+        <% if (teeTimeTypeId == 2 || teeTimeTypeId == 4 || teeTimeTypeId == 5 || teeTimeTypeId == 16 || teeTimeTypeId == 17) { %>
+        <span class="sprite green-tag pod-tag"></span>
+        <% } %>
+        <div class="pod-discount">
+            <% if (purchase.savingsPercentage != 0) { %>
+            <%=purchase.savingsPercentage%>% OFF
+            <del>$<%=purchase.dregularPrice%></del>
+            <% } %>
+        </div>
+    </header>
+    <div>
+        <ul>
+            <li class="pod-price">$<%=purchase.dprice%></li>
+            <li class="pod-location"><a href="/golf-course/<%=pageUrl%>?date=<%=playDate%>"><%=courseInfo.courseName%></a></li>
+            <li class="pod-city-state"><%=courseInfo.courseLocation%></li>
+            <li class="pod-distance">Distance:<strong> <%=courseInfo.distance%> mi</strong></li>
+            <li>
+                <% if(rateIcons.hasNineHolesOnly) { %><span class="nineHole-icon-small sprite sprite-small-amenity" title="9 Holes Only"></span> <% } %>
+
+                <% if(rateIcons.hasEighteenHoles) { %><span class="eighteenHoles-icon-small sprite sprite-small-amenity" title="18 Hole Course"></span> <% } %>
+
+                <% if(rateIcons.hasCartIncluded) { %>
+                <span class="cartIncluded-icon-small sprite sprite-small-amenity" title="Cart Included"></span>
+                <% } else { %>
+                <span class="cartNotIncluded-icon-small sprite sprite-small-amenity" title="Cart Not Included"></span>
+                <% } %>
+
+                <% if(rateIcons.hasPracticeBalls) { %><span class="practiceBallsIncluded-icon-small sprite sprite-small-amenity" title="Practice Balls Included"></span> <% } %>
+
+                <% if(rateIcons.hasFood) { %><span class="food-icon-small sprite sprite-small-amenity" title="Food"></span> <% } %>
+
+                <% if(rateIcons.hasBeverages) { %><span class="beverage-icon-small sprite sprite-small-amenity" title="Beverage"></span> <% } %>
+
+                <% if(rateIcons.hasCaddyIncluded) { %><span class="caddie-icon-small sprite sprite-small-amenity" title="Caddy Included"></span> <% } %>
+
+                <% if(rateIcons.hasGPSIncluded) { %><span class="gps-icon-small sprite sprite-small-amenity" title="GPS Included"></span> <% } %>
+
+                <% if(rateIcons.hasGift) { %><span class="gift-icon-small sprite sprite-small-amenity" title="Gift"></span> <% } %>
+
+                <% if(rateIcons.hasUnlimitedPlay) { %><span class="unlimitedPlay-icon-small sprite sprite-small-amenity" title="Unlimited Play"></span> <% } %>
+
+                <% if(rateIcons.hasJuniorFee) { %><span class="juniors-icon-small sprite sprite-small-amenity" title="Junior Fee"></span> <% } %>
+
+                <% if(rateIcons.hasMemberFee) { %><span class="members-icon-small sprite sprite-small-amenity" title="Member Fee"></span> <% } %>
+
+                <% if(rateIcons.hasSeniorFee) { %><span class="seniors-icon-small sprite sprite-small-amenity" title="Senior Fee"></span> <% } %>
+
+                <% if(rateIcons.hasResidentFee) { %><span class="resident-icon-small sprite sprite-small-amenity" title="Resident Fee"></span> <% } %>
+
+                <% if(rateIcons.hasPrePaid) { %><span class="prePaidTeeTime-icon-small sprite sprite-small-amenity" title="Prepaid Tee Time"></span> <% } %>
+
+                <% if ((teeTimeTypeId == '7' || teeTimeTypeId == '8') && rateIcons.hasPrePaid ) { %><span class="portionPrepaidTeeTime-icon-small sprite sprite-small-amenity" title="Tee Time Deposit"></span> <% } %>
+
+                <% if(!allowPromos) { %>
+                    <span>
+                        <a id="snowflake" href="#" onclick="return false;" title="" class="no-promo-icon-courseName">
+                                <img src="//cdn.teeoff.com/dev/501/images/no-promo.png" class="sprite-small-amenity" />
+                        </a>
+                    </span>
+                 <% } %>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div>
+            <span class="pod-ticket-time"><%=time%></span>
+            <span class="pod-ticket-date"><%=shortDate%></span>
+            <span class="pod-ticket-players"><%=rules.minPlayers%>-<%=rules.maxPlayers%> Players</span>
+        </div>
+        <a href="#" context="Openmodal" class="button button-green-style radius caps-button">Book</a>
+        <div class="clearfix"></div>
+    </footer>
+</script>
+
+<script id="courseDetailDealsNullMessage" type="text/template">
+    <li class="null-message">There are currently deal times available at this course</li>
+</script>
+
+<script id="courseDetailNullMessage" type="text/template">
+    <li class="null-message">Sorry, no tee times available. Please adjust your search & continue your Battle vs. Par!</li>
+</script>
+
+<script id="courseDetailAllNullMessage" type="text/template">
+    <li class="null-message">No tee times are available at this time</li>
+</script>
+
+<script id="searchResultNullMessage" type="text/template">
+    <div class="noResults">
+        <h3>No tee times match your search.</h3>
+        <p>Update area, time, players, or date to expand search.</p>
+    </div>
+</script>
+
+<script id="searchResultNullMessageDeals" type="text/template">
+    <div class="noResults">
+        <h3>No Deal Times currently available.</h3>
+        <p>Try altering your time, players, or date to find tee times.</p>
+    </div>
+</script>
+
+<script id="loading-spinner" type="text/template">
+    <div class="spinner">
+            <img src="//cdn.teeoff.com/dev/501/images/spinner.gif" />
+        
+    </div>
+</script>
+
+<script id="wl-loading-spinner" type="text/template">
+    <div class="spinner">
+            <img src="//cdn.teeoff.com/dev/501/images/spinner.gif" />
+    </div>
+</script>
+
+<script id="small-loading-spinner" type="text/template">
+    <div class="small-spinner">
+            <img src="//cdn.teeoff.com/dev/501/images/spinner_small.gif" />
+    </div>
+</script>
+
+<div id="add-cart-model-ajax" opentrigger="[action=addtocartajax]" style="display: none;">
+    <header>
+        <h3>Add to cart</h3>
+    </header>
+    <form method="post" action="/cart/addtocart">
+        <section class="add-to-cart">
+            <div class="row" context="CartSummary">
+
+                <div class="columns four large-8 cart-summary">
+                    <h4></h4>
+                    <span purpose="teetime"></span>
+                </div>
+                <div class="columns three large-4 cart-price">
+                    <span purpose="cost" class="modal-cost"></span>
+                    <span class="modal-player">per&nbsp;player</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four small-6 large-6 columns">
+                    <select name="numberOfPlayersSelect" id="number-of-players-select"></select>
+                    <input type="hidden" name="numberOfPlayers" id="number-of-players" />
+                </div>
+                <div class="three small-6 large-6 columns align-right">
+                    <button type="submit" id="addToCartButton" class="button radius medium button-orange-style">Add to Cart</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="seven large-12 columns">
+                    <div purpose="messageCartHaveItem" style="color: red; margin-top: 20px;">
+                        This tee time will replace the tee time already in your <a href='/cart'>cart</a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="amenities">
+            <h4>Tee Time Details:</h4>
+            <ul>
+                <li style="display: none;" context="hasNineHolesOnly"><span class="sprite sprite-small-amenity nineHole-icon-small"></span>9 Holes Only
+                </li>
+                <li style="display: none;" context="hasEighteenHoles"><span class="sprite sprite-small-amenity eighteenHoles-icon-small"></span>18 Hole Course
+                </li>
+                <li style="display: none;" context="hasCartIncluded"><span class="sprite sprite-small-amenity cartIncluded-icon-small"></span>Cart Included
+                </li>
+                <li style="display: none;" context="hasCartNotIncluded"><span class="sprite sprite-small-amenity cartNotIncluded-icon-small"></span>Cart Not Included
+                </li>
+                <li style="display: none;" context="hasPracticeBalls"><span class="sprite sprite-small-amenity practiceBallsIncluded-icon-small"></span>Practice Balls Included
+                </li>
+                <li style="display: none;" context="hasFood"><span class="sprite sprite-small-amenity  food-icon-small"></span>Food
+                </li>
+                <li style="display: none;" context="hasBeverages"><span class="sprite sprite-small-amenity  beverage-icon-small"></span>Beverage
+                </li>
+                <li style="display: none;" context="hasCaddyIncluded"><span class="sprite sprite-small-amenity caddie-icon-small"></span>Caddy Included
+                </li>
+                <li style="display: none;" context="hasGPSIncluded"><span class="sprite sprite-small-amenity gps-icon-green-small"></span>GPS Included
+                </li>
+                <li style="display: none;" context="hasGift"><span class="sprite sprite-small-amenity gift-icon-small"></span>Gift
+                </li>
+                <li style="display: none;" context="hasUnlimitedPlay"><span class="sprite sprite-small-amenity unlimitedPlay-icon-small"></span>Unlimited Play
+                </li>
+                <li style="display: none;" context="hasJuniorFee"><span class="sprite sprite-small-amenity juniors-icon-small"></span>Junior Fee
+                </li>
+                <li style="display: none;" context="hasSeniorFee"><span class="sprite sprite-small-amenity seniors-icon-small"></span>Senior Fee
+                </li>
+                <li style="display: none;" context="hasMemberFee"><span class="sprite sprite-small-amenity members-icon-small"></span>Member Fee
+                </li>
+                <li style="display: none;" context="hasResidentFee"><span class="sprite sprite-small-amenity resident-icon-small"></span>Resident Fee
+                </li>                
+                <li style="display: none;" context="hasPrePaid"><span class="sprite sprite-small-amenity prePaidTeeTime-icon-small"></span>Prepaid Tee Time
+                </li>
+                <li style="display: none;" context="hasPortionPrePaid" class="tooltipPortion">
+                    <span class="sprite sprite-small-amenity portionPrepaidTeeTime-icon-small"></span>Tee Time Deposit
+                    <div>
+                        <span class="tooltipPortionBackground">
+                            <b>Tee Time Deposit</b><br/>To reserve this tee time, a deposit is required.
+                        </span>
+                    </div>
+                </li>
+                <li style="display: none;" context="hasAllowPromo" class="tooltipPortion">
+                    <span class="sprite-small-amenity">
+                            <img src="//cdn.teeoff.com/dev/501/images/no-promo.png" />
+                    </span><span class="cart-no-promo-label">Promos Not Accepted</span>
+                    <div>
+                        <span class="tooltipPortionBackground">
+                            Promo codes are not valid on this tee time.
+                        </span>
+                    </div>
+                </li>               
+            </ul>
+            <div style="height: 0px; clear: both;"></div>
+        </section>
+        <div class="alerts">
+            <h3 context="AlertHeader" style="display:none;">
+            <span class="sprite white-alert-icon modal-alert"></span> Alert: Important Course Information</h3>
+        </div>
+        <section class="alerts">
+            <div id="courseNote" class="course-notes modal-course-notes"></div>
+        </section>
+        <section class="alerts">
+            <div id="courseProtocol" class="modal-course-protocol"></div>
+        </section>
+        <input type="hidden" name="sessionId">
+        <input type="hidden" name="courseId">
+        <input type="hidden" name="price">
+        <input type="hidden" name="regularPrice">
+        <input type="hidden" name="TransactionFee">
+        <input type="hidden" name="savedAmount">
+        <input type="hidden" name="reservationString">
+        <input type="hidden" name="reservationTypeId">
+        <input type="hidden" name="feeId">
+        <input type="hidden" name="cancellationPeriod">
+        <input type="hidden" name="teeTime">
+        <input type="hidden" name="teeTimeTypeId">
+        <input type="hidden" name="currencyLocaleId">
+        <input type="hidden" name="originatingContactId">
+        <input type="hidden" name="utilization">
+        <input type="hidden" name="sku">
+        <input type="hidden" name="minPlayers">
+        <input type="hidden" name="maxPlayers">
+        <input type="hidden" name="allowOne">
+        <input type="hidden" name="allowTwo">
+        <input type="hidden" name="allowThree">
+        <input type="hidden" name="allowFour">
+        <input type="hidden" name="allowFive">
+        <input type="hidden" name="rateIcons">
+        <input type="hidden" name="allowPromos">
+    </form>
+    <a class="close"></a>
+    
+    <div style="min-height: 0;">
+        <div class="add-to-cart-ad">
+    <div class="horizontal-ad-container">
+        <!-- add-to-cart-ad -->
+        <div id='div-gpt-ad-1470421002055-3' class="horizontal-ad">
+            <script type='text/javascript'>
+                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1470421002055-3'); });
+            </script>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+        </div>
+        
+    <div style="min-height: 0;">
+        <div class="bottom-ad">
+    <div class="horizontal-ad-container">
+        <!-- bottom-ad -->
+        <div id='div-gpt-ad-1470420022243-0' class="horizontal-ad">
+            <script type='text/javascript'>
+                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1470420022243-0'); });
+            </script>
+        </div>
+    </div>
+</div>
+    </div>
+
+
+        
+<footer context="MainFooter">
+    <!-- Main Footer Nav -->
+    <div class="row page-footer">
+        <nav>
+            <ul class="six medium-12 large-6 columns links">
+                <li><a href="/contact-teeoff">Contact Us</a></li>
+                <li><a href="/about-teeoff">About Us</a></li>
+                <li><a href="/frequently-asked-questions">FAQs</a></li>
+                <li><a href="/gift-cards">Gift Cards</a></li>
+                <li class="hide-for-460-down"><a href="/affiliate/sign-up">Affiliate</a></li>
+                <li class="border-none"><a href="http://www.ezlinksgolf.com/teeoff-sign-up.html" target="_blank">Course Operators</a></li>
+            </ul>
+        </nav>
+        <div class="three medium-12 large-3 columns social-bar text-center">
+            <ul>
+                <li><a href='http://www.facebook.com/TeeOffGolf' target="_blank"><span class="social-icon facebook-icon"></span></a></li>
+                <li><a href='https://twitter.com/TeeOffbyPGATOUR' target="_blank"><span class="social-icon twitter-icon"></span></a></li>
+                <li><a href='https://www.instagram.com/teeoffbypgatour/' target="_blank"><span class="social-icon instagram-icon"></span></a></li>
+                <li><a href='https://www.youtube.com/c/Teeoffgolf' target="_blank"><span class="social-icon youtube-icon"></span></a></li>
+                <li><a href='https://plus.google.com/107642707536783989369/posts' target="_blank"><span class="social-icon google-icon"></span></a></li>
+            </ul>
+        </div>
+        <div class="three medium-12 large-3 columns badge-bar text-center">
+            <ul>
+                <li><a href="https://itunes.apple.com/us/app/teeoff.com-by-pga-tour-book/id1163927178"><span class="mobile-badge ios-badge"></span></a></li>
+                <li><a href="http://play.google.com/store/apps/details?id=com.teeoff.teeoff_mobile_android"><span class="mobile-badge android-badge"></span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Popular Sections -->
+    <div class="row most-popular hide-for-991-down">
+        <section>
+            <div class="four small-4 large-4 columns section">
+                <h5>Featured Cities</h5>
+
+<ul>
+	<li><a href="/search/#location=San Francisco, CA">Bay Area, CA</a></li>
+	<li><a href="/search/#location=Bradenton%2FSarasota">Bradenton/Sarasota, FL</a></li>
+	<li><a href="/search/#location=Los Angeles, CA">Los Angeles, CA</a></li>
+	<li><a href="/search/#location=Chicago, IL">Chicago, IL</a></li>
+	<li><a href="/search/#location=Palm%20Springs">Palm Springs, CA</a></li>
+	<li><a href="/search/#location=Phoenix%2fScottsdale%2c+AZ+Area">Phoenix/Scottsdale, AZ</a></li>
+	<li><a href="/search/#location=San%20Diego">San Diego, CA</a></li>
+	<li><a href="/search/#location=Tucson, AZ">Tucson, AZ</a></li>
+</ul>
+
+            </div>
+        </section>
+        <section>
+            <div class="four small-4 large-4 columns section">
+                <h5>Featured States</h5>
+
+<ul>
+	<li><a href="/search/#location=Arizona">Arizona</a></li>
+	<li><a href="/search/#location=California">California</a></li>
+	<li><a href="/search/#location=Florida">Florida</a></li>
+	<li><a href="/search/#location=Georgia">Georgia</a></li>
+	<li><a href="/search/#location=Hawaii">Hawaii</a></li>
+	<li><a href="/search/#location=New York">New York</a></li>
+	<li><a href="/search/#location=Ohio">Ohio</a></li>
+	<li><a href="/search/#location=Virginia">Virginia</a></li>
+</ul>
+
+            </div>
+        </section>
+        <section>
+            <div class="four small-4 large-4 columns section">
+                <h5>Featured Courses</h5>
+
+<ul>
+	<li><a href="/golf-course/old-corkscrew-estero-fl-34134-tee-times">C</a><a href="http://www.teeoff.com/golf-course/chambers-bay-golf-club-university-place-wa-98467-tee-times">hambers Bay GC</a></li>
+	<li><a href="/golf-course/falcons-fire-golf-club-kissimmee-fl-34746-tee-times">M</a><a href="http://www.teeoff.com/golf-course/maderas-golf-club-san-diego-ca-92108-tee-times">aderas GC</a></li>
+	<li><a href="/golf-course/st-marlo-country-club-duluth-ga-30097-tee-times">St. Marlo GC</a></li>
+	<li><a href="/golf-course/sewailo-golf-club-tucson-az-85757-tee-times">W</a><a href="http://www.teeoff.com/golf-course/whiskey-creek-golf-club-ijamsville-md-21754-tee-times">hiskey Creek GC</a></li>
+	<li><a href="/golf-course/legacy-golf-club-bradenton-fl-34202-tee-times">R</a><a href="http://www.teeoff.com/golf-course/richter-park-golf-club-danbury-ct-06811-tee-times">ichter Park GC</a></li>
+	<li><a href="/golf-course/the-bridges-golf-club-san-ramon-ca-94582-tee-times">The Bridges GC </a></li>
+	<li><a href="http://www.teeoff.com/golf-course/superior-national-lutsen-mn-55612-tee-times">P</a><a href="http://www.teeoff.com/golf-course/payne-stewart-golf-club-branson-mo-65616-tee-times">ayne Stewart GC</a></li>
+	<li><a href="http://www.teeoff.com/golf-course/longaberger-golf-club-nashport-oh-43830-tee-times">S</a><a href="http://www.teeoff.com/golf-course/superior-national-lutsen-mn-55612-tee-times">uperior National GC</a></li>
+</ul>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Policy Nav -->
+    <div class="row policy">
+        <nav>
+            <div class="nine medium-12 large-9 columns">
+                <ul class="policy-links">
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+                    <li><a href="/sales-policy">Sales Policy</a></li>
+                    <li><a href="/cookie-policy">Cookie Policy</a></li>
+                    <li><a href="/sitemap">Sitemap</a></li>
+                    <!-- <li class="hide-for-small">Copyright <span class="copyright-year">2000</span> EZLinks. All Rights Reserved.</li> -->
+                </ul>
+                <p class="copyright">Copyright <span class="copyright-year">2000</span> <a class="ezlink-footer-url" href="http://www.ezlinksgolf.com/" target="_blank">EZLinks Golf LLC</a>, a <a href='http://www.pgatour.com/' target="_blank">PGA TOUR affiliated company</a></p>
+            </div>
+        </nav>
+
+        <div class="three medium-12 large-3 columns text-center ">
+            <div class="mini-logo replaceText">TeeOff.com, by EZLinks</div>
+        </div>
+    </div>
+</footer>
+
+
+        
+
+        <script type="text/template" id="AlertsTempError">
+    <div class="ui-widget alert" context="alert">
+        <div class="ui-state-error ui-corner-all">
+            <p class="error-icon">
+                <strong><%=heading%></strong>
+                <%=message%>
+            </p>
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="AlertsTempInfo">
+    <div class="ui-widget" context="info">
+        <div class="ui-state-highlight ui-corner-all">
+            <p class="success-alert signin-alert">
+                <strong><%=heading%></strong>
+                <%=message%>
+            </p>
+        </div>
+    </div>
+</script>
+
+        <div id="dealsmodal" opentrigger="[context=teeoff-link] a" style="display:none;" class="deals-modal">
+            <p>Find More Courses and Tee Times</p>
+<img src="//cdn.teeoff.com/dev/501/images/teeoff_logo.png" alt="">
+
+            <!-- <span class="logo-teeoff"></span> -->
+            <p>Promo Codes and Gift Cards Valid on <span class="deal-times"><i></i>DEAL Times</span> only.</p>
+            <a class="button button-orange-style radius caps-button" href="http://www.teeoff.com">FIND TEE TIMES</a>
+            <p>(Click above to proceed or you will be redirected shortly.)</p>
+        </div>
+
+
+            <script src="//cdn.teeoff.com/dev/501/scripts/optimized.js?bust=2017032154048"></script>
+
+    </div>
+
+    <script type="text/javascript">_satellite.pageBottom();</script>
+
+</body>
+
+</html>

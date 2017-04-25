@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="055c29ee-9f85-42a4-b1d0-cbc91467fdae" name="UserController" xmlns:con="http://eviware.com/soapui/config"><con:description/><con:settings><con:setting id="055c29ee-9f85-42a4-b1d0-cbc91467fdaefileName">UserControl</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

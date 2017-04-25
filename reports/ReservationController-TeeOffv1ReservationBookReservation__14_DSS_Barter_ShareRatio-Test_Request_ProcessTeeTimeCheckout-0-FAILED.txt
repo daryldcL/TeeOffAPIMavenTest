@@ -1,0 +1,72 @@
+Status: FAILED
+Time Taken: 803
+Size: 92
+Timestamp: Tue Mar 07 18:28:17 SGT 2017
+TestStep: Test Request: ProcessTeeTimeCheckout
+
+----------------- Messages ------------------------------
+[Success] The XPathContains assertion failed for the following path: [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Reservation/ProcessTeeTimeCheckout';
+//ns1:Response[1]/ns1:Success[1]]. Expected value: [true]; Actual value: [].
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: POST
+StatusCode: 400
+URL: https://dev-api.opentee.com/TeeOff/v1/Reservation/ProcessTeeTimeCheckout?sessionId=8ef8e8d6-fff1-4232-8869-e57245f72d70
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [641]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/Reservation/ProcessTeeTimeCheckout?sessionId=8ef8e8d6-fff1-4232-8869-e57245f72d70 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 641
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+{
+   "CancellationPeriod": "24",
+   "AllowFive": "false",
+   "ReservationTypeId": "25587",
+   "NumberOfPlayers": "4",
+   "FeeId": "179719",
+   "TransactionFee": "5.99",
+   "AllowThree": "true",
+   "AllowTwo": "true",
+   "MaxPlayers": "4",
+   "ReservationString": "B0A5856540149E44AC1C8F3ED411663C",
+   "AllowOne": "true",
+   "OriginatingContactId": "26574452",
+   "Utilization": "50.0",
+   "CourseId": "3309",
+   "SavedAmount": "0.0",
+   "TeeTimeTypeId": "1",
+   "Price": "60.0",
+   "MinPlayers": "1",
+   "CurrencyLocaleId": "1033",
+   "AllowFour": "true",
+   "RegularPrice": "60.0",
+   "TeeTime": "2017-01-26T07:00:00",
+   "Sku": "string"
+}
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [POST]
+#status#: [HTTP/1.1 400 Bad Request]
+Content-Length: [92]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Tue, 07 Mar 2017 10:28:18 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":false,"Message":"<b>Sorry, We Need a Mulligan.</b> Let's try again.","Data":null}

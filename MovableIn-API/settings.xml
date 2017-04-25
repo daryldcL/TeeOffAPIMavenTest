@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="b7a165ee-dc24-40e4-8652-90d6bf394119" name="MovableInk-API - DEV" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="4079ba1c-f1a7-47d4-819e-fe64ecbbc309fileName">MI-TestSuite</con:setting><con:setting id="b7a165ee-dc24-40e4-8652-90d6bf394119fileName">MovableIn-API</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

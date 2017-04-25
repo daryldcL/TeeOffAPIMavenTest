@@ -1,0 +1,90 @@
+Status: OK
+Time Taken: 1481
+Size: 1591
+Timestamp: Wed Mar 08 13:39:49 SGT 2017
+TestStep: REST Request - Valid
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.ezlinks.com
+Method: GET
+StatusCode: 200
+URL: https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=UpdateTeeTimeSlotAndContactInfo&Param1=392359539&Param2=1&Param3=4&Param4=38340272&Param5=Daisy
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [api.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=UpdateTeeTimeSlotAndContactInfo&Param1=392359539&Param2=1&Param3=4&Param4=38340272&Param5=Daisy HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: api.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Cache-Control: [private]
+Server: [Microsoft-IIS/7.0]
+Connection: [close]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Date: [Wed, 08 Mar 2017 05:39:52 GMT]
+Content-Type: [text/xml]
+X-Powered-By: [ASP.NET]
+
+<?ezxml version="5.0"?>
+<UpdateTeeTimeSlotAndContactInfo>
+   <UpdateTeeTimeSlotAndContactInfoRecord>
+      <SiteServerID>1</SiteServerID>
+      <VirtualSlot>1</VirtualSlot>
+      <CourseID>530</CourseID>
+      <TTDate>3/10/2017 6:00:00 AM</TTDate>
+      <Slot>1</Slot>
+      <SlotName>Tester</SlotName>
+      <ContactID>38340272</ContactID>
+      <Reserved>1</Reserved>
+      <TTID>1127482433</TTID>
+      <TTDataID>662088953</TTDataID>
+   </UpdateTeeTimeSlotAndContactInfoRecord>
+   <UpdateTeeTimeSlotAndContactInfoRecord>
+      <SiteServerID>1</SiteServerID>
+      <VirtualSlot>2</VirtualSlot>
+      <CourseID>530</CourseID>
+      <TTDate>3/10/2017 6:00:00 AM</TTDate>
+      <Slot>2</Slot>
+      <SlotName>Tester</SlotName>
+      <ContactID>38340272</ContactID>
+      <Reserved>1</Reserved>
+      <TTID>1127482434</TTID>
+      <TTDataID>662088953</TTDataID>
+   </UpdateTeeTimeSlotAndContactInfoRecord>
+   <UpdateTeeTimeSlotAndContactInfoRecord>
+      <SiteServerID>1</SiteServerID>
+      <VirtualSlot>3</VirtualSlot>
+      <CourseID>530</CourseID>
+      <TTDate>3/10/2017 6:00:00 AM</TTDate>
+      <Slot>3</Slot>
+      <SlotName>Tester</SlotName>
+      <ContactID>38340272</ContactID>
+      <Reserved>1</Reserved>
+      <TTID>1127482435</TTID>
+      <TTDataID>662088953</TTDataID>
+   </UpdateTeeTimeSlotAndContactInfoRecord>
+   <UpdateTeeTimeSlotAndContactInfoRecord>
+      <SiteServerID>1</SiteServerID>
+      <VirtualSlot>4</VirtualSlot>
+      <CourseID>530</CourseID>
+      <TTDate>3/10/2017 6:00:00 AM</TTDate>
+      <Slot>4</Slot>
+      <SlotName>Daisy</SlotName>
+      <ContactID>38340272</ContactID>
+      <Reserved>1</Reserved>
+      <TTID>1127482436</TTID>
+      <TTDataID>662088968</TTDataID>
+   </UpdateTeeTimeSlotAndContactInfoRecord>
+</UpdateTeeTimeSlotAndContactInfo>

@@ -1,0 +1,20 @@
+Status: OK
+Time Taken: 1
+Size: 0
+Timestamp: Wed Mar 08 13:33:47 SGT 2017
+TestStep: PropertyTransfer: Transfer concatenated CourseUrl
+
+----------------- Messages ------------------------------
+Performed transfer [courseUrl]
+Performed transfer [coursePhoto]
+----------------------------------------------------
+courseUrl transferred [[https://dev-azure.teeoff.com/golf-course/]] from [GET Request - Valid ZipCode, Valid PlayDate (compared to OT ExternalAPI).ResponseAsXml] to [HTTP Request - check url if it will redirect to existing page in DEV-teeOff.Endpoint]
+------------ source path -------------
+declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+concat('https://dev-azure.teeoff.com/golf-course/', //ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:courseUrl[1])
+------------ target path -------------
+
+coursePhoto transferred [[https:]] from [GET Request - Valid ZipCode, Valid PlayDate (compared to OT ExternalAPI).ResponseAsXml] to [HTTP Request - checking coursePhoto as valid url.Endpoint]
+------------ source path -------------
+declare namespace ns1='https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummariesByZipCode';
+concat('https:', //ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:coursePhoto[1])

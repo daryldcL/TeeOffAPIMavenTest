@@ -1,0 +1,76 @@
+Status: FAILED
+Time Taken: 5474
+Size: 1511
+Timestamp: Thu Mar 09 20:45:26 SGT 2017
+TestStep: Test Request: ProcessTeeTimeCheckout
+
+----------------- Messages ------------------------------
+[TeeTime successfully added to cart] XPathContains comparison failed for path [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Reservation/ProcessTeeTimeCheckout';
+//ns1:Response[1]/ns1:Data[1]/ns1:e[1]/ns1:AddResultMessage[1]], expecting [The tee time was successfully added to the cart.], actual was [Tee time type has been changed.]
+
+----------------- Properties ------------------------------
+StatusCode: 200
+Method: POST
+Password: test
+Username: test
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+URL: https://dev-api.opentee.com/TeeOff/v1/Reservation/ProcessTeeTimeCheckout?sessionId=50e016ec-7a9e-40d8-95dd-eae08057fcde
+
+---------------- Request ---------------------------
+Authorization: [Basic dGVzdDp0ZXN0]
+Host: [dev-api.opentee.com]
+Content-Length: [642]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/Reservation/ProcessTeeTimeCheckout?sessionId=50e016ec-7a9e-40d8-95dd-eae08057fcde HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 642
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+Authorization: Basic dGVzdDp0ZXN0
+
+{
+   "MinPlayers": "2",
+   "TeeTime": "2017-01-26T08:04:00",
+   "SavedAmount": "10.5",
+   "AllowFive": "false",
+   "MaxPlayers": "4",
+   "ReservationTypeId": "8175",
+   "TransactionFee": "1.99",
+   "OriginatingContactId": "26574452",
+   "NumberOfPlayers": "4",
+   "Utilization": "50.0",
+   "CancellationPeriod": "24",
+   "Sku": "string",
+   "TeeTimeTypeId": "4",
+   "CurrencyLocaleId": "1033",
+   "ReservationString": "0EE644F8A37093C0BC18657887FCB75E",
+   "CourseId": "5716",
+   "FeeId": "139749",
+   "RegularPrice": "30.0",
+   "AllowFour": "true",
+   "Price": "19.5",
+   "AllowTwo": "true",
+   "AllowThree": "true",
+   "AllowOne": "false"
+}
+
+---------------- Response --------------------------
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Thu, 09 Mar 2017 12:45:35 GMT]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Content-Length: [943]
+Content-Encoding: [gzip]
+Access-Control-Allow-Methods: [POST]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+Server: [Microsoft-IIS/8.5]
+
+{"Success":true,"Message":null,"Data":[{"ResultMessage":"","ResultCode":0,"CartId":108007,"CartReservationItemId":113318,"SponsorId":6085,"ItineraryId":0,"ConfirmId":0,"OrderNumber":"","ReservationTypeId":8175,"ReservationProtocolId":0,"ProtocolText":"","TeeTime":"2017-01-26T08:04:00","TeeTimeCancelBy":"1/25/2017 8:04:00 AM","NumberOfPlayers":4,"HasCourseNote":false,"CourseNote":"","AllowPromos":true,"TeeTimeTypeId":9,"CancellationPeriod":24,"CourseInfo":{"CourseId":5716,"CourseName":"Chaparral Golf & Country Club","CourseAddress":"1260 Mohave Drive, Bullhead City, AZ 86442","CourseLocation":"","Distance":4842.08,"Latitude":0.0,"Longitude":0.0,"CurrencyLocaleId":0,"CoursePhoto":"","AllowPromos":true,"TimeOffsetUtc":""},"Purchase":{"Price":19.5000,"TransactionFee":0.0000,"Total":78.0000,"DueNow":0.0000,"DueAtCourse":19.5000,"SavedAmount":10.5000,"SavedPercent":35.0000,"GrandTotal":78.0000,"Taxes":0.0,"TaxPercent":0.0,"TotalTransactionFees":0.0000,"TotalDueNow":0.0000,"TotalDueAtCourse":78.0000,"TotalSavedAmount":42.0000,"CouponDescription":"","CouponDiscount":0.0,"TotalDueNowAfterCoupon":0.0000},"TeeTimeRules":{"MaxPlayers":4,"MinPlayers":2,"AllowOne":false,"AllowTwo":true,"AllowThree":true,"AllowFour":true,"AllowFive":false},"IsDealTime":false,"ShowPromoBox":false,"AddResultCode":7,"AddResultMessage":"Tee time type has been changed.","PersistentNote":"","MessageType":"Share Ratio - Course Times","MessageHeader":"RESERVATION INFORMATION","Message":"Course cancellation policies apply."}]}

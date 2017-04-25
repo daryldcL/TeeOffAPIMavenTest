@@ -1,0 +1,20 @@
+Status: OK
+Time Taken: 3
+Size: 0
+Timestamp: Wed Mar 08 13:27:55 SGT 2017
+TestStep: Property Transfer: Move SessionID
+
+----------------- Messages ------------------------------
+Performed transfer [TransferSessionID]
+Performed transfer [TransferSessionIDToGetCreditCard]
+----------------------------------------------------
+TransferSessionID transferred [[944df1a4-f163-4294-ac9f-06668592fc5f]] from [Test Request: Start Session.ResponseAsXml] to [Test Request: Signin.sessionId]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart';
+//ns1:Response[1]/ns1:Data[1]
+------------ target path -------------
+
+TransferSessionIDToGetCreditCard transferred [[944df1a4-f163-4294-ac9f-06668592fc5f]] from [Test Request: Start Session.ResponseAsXml] to [Test Request: Get Credit Card.sessionId]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart';
+//ns1:Response[1]/ns1:Data[1]

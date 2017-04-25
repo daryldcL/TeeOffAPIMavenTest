@@ -1,0 +1,55 @@
+Status: FAILED
+Time Taken: 1227
+Size: 44
+Timestamp: Thu Mar 09 20:42:22 SGT 2017
+TestStep: Test Request: Delete Credit Card (Previously Deleted Card)
+
+----------------- Messages ------------------------------
+[Should not return successful deletion] XPathContains comparison failed for path [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/DeleteCreditCard';
+//ns1:Response[1]/ns1:Success[1]], expecting [false], actual was [true]
+
+----------------- Properties ------------------------------
+StatusCode: 200
+Method: POST
+Password: test
+Username: test
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+URL: https://dev-api.opentee.com/TeeOff/v1/User/DeleteCreditCard?sessionId=f9f3080e-b020-41b7-9554-65794f03699f
+
+---------------- Request ---------------------------
+Authorization: [Basic dGVzdDp0ZXN0]
+Host: [dev-api.opentee.com]
+Content-Length: [52]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/User/DeleteCreditCard?sessionId=f9f3080e-b020-41b7-9554-65794f03699f HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 52
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+Authorization: Basic dGVzdDp0ZXN0
+
+{
+   "CardId": "29652",
+   "ContactId": "26571295"
+}
+
+---------------- Response --------------------------
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Thu, 09 Mar 2017 12:42:26 GMT]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Content-Length: [162]
+Content-Encoding: [gzip]
+Access-Control-Allow-Methods: [POST]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+Server: [Microsoft-IIS/8.5]
+
+{"Success":true,"Message":null,"Data":29652}

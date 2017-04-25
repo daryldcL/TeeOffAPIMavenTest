@@ -1,0 +1,41 @@
+Status: OK
+Time Taken: 1020
+Size: 4915
+Timestamp: Wed Mar 08 13:31:28 SGT 2017
+TestStep: Test Request: GetCourseInformation
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: GET
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/GetCourseInformation?sessionId=&courseId=2537
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/GetCourseInformation?sessionId=&courseId=2537 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:31:31 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":{"CourseId":2537,"FacilityId":679,"CountryId":"1","Name":"Desert Canyon","Address":"10440 Indian Wells Fountain Hills, AZ 85268 Fountain Hills AZ 85268","City":"Fountain Hills","State":"AZ","PostalCode":"85268","Description":"Desert Canyon Golf Club in Fountain Hills, Arizona, is an 18-hole, desert-style golf course that winds through the natural canyons and hills just east of Phoenix. The golf course features few forced carries but many doglegs and elevation changes, which makes it a fun yet challenging facility. Desert Canyon was designed by John Allen, and features a view of mountains and Fountain Hills’ signature 550-foot fountain, the world’s tallest. Desert Canyon Golf Club provides a full-service practice facility that includes a driving range, two chipping and putting greens along with a practice bunker. Book your tee time today at one of Arizona’s top golf courses.","WebSite":"www.desertcanyongolf.com","Architect":"John Allen","YearEstablished":"","TotalYards":"","Latitude":33.584806,"Longitude":-111.71245,"PageUrl":"desert-canyon-fountain-hills-az-85268-tee-times","Distance":0.0,"IsDirectoryOnly":false,"DateCreated":"2013-04-19T16:26:15","DateModified":"2013-05-17T11:49:49","StatusCode":null,"AllowPromos":false,"TimeOffsetUtc":"-420","CourseAmenities":{"HasDrivingRange":true,"HasPuttingGreen":true,"HasChippingArea":true,"HasGPSAvailable":false,"HasRentalClubs":true,"HasLockerRoom":true,"HasFood":true,"HasBeverages":true,"HasRentalShoes":false,"HasPracticeBunker":true,"HasGolfShop":true,"HasNineHolesOnly":false,"HasLessons":true,"HasGolfCartIncluded":true},"CourseImages":[{"ImageSource":"//cdn.teeoff.com/course/2537/679-003017.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2537/679-003018.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2537/679-003019.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2537/679-003020.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2537/2537-000105.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2537/2537-01563.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2537/2537-01564.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2537/2537-01565.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2537/2537-01566.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2537/2537-01567.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2537/2537-01568.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2537/2537-01569.jpg","AlternateText":""}],"CourseScorecards":[{"Description":"Par","Slope":"","Rating":"","Hole01":"4","Hole02":"4","Hole03":"5","Hole04":"3","Hole05":"5","Hole06":"4","Hole07":"3","Hole08":"4","Hole09":"4","OutTotal":"36","Hole10":"4","Hole11":"3","Hole12":"4","Hole13":"5","Hole14":"4","Hole15":"4","Hole16":"4","Hole17":"3","Hole18":"4","InTotal":"35","CourseTotal":"71","RecordTypeId":"2"},{"Description":"Blue","Slope":"123","Rating":"69.0","Hole01":"328","Hole02":"398","Hole03":"507","Hole04":"181","Hole05":"527","Hole06":"423","Hole07":"154","Hole08":"361","Hole09":"369","OutTotal":"3248","Hole10":"372","Hole11":"199","Hole12":"403","Hole13":"523","Hole14":"377","Hole15":"371","Hole16":"349","Hole17":"160","Hole18":"413","InTotal":"3167","CourseTotal":"6415","RecordTypeId":"1"},{"Description":"White","Slope":"117","Rating":"67.1","Hole01":"312","Hole02":"379","Hole03":"488","Hole04":"165","Hole05":"507","Hole06":"396","Hole07":"144","Hole08":"337","Hole09":"33","OutTotal":"3067","Hole10":"354","Hole11":"180","Hole12":"385","Hole13":"503","Hole14":"349","Hole15":"344","Hole16":"322","Hole17":"145","Hole18":"396","InTotal":"2978","CourseTotal":"6045","RecordTypeId":"1"},{"Description":"Red","Slope":"117","Rating":"70.5","Hole01":"281","Hole02":"339","Hole03":"452","Hole04":"150","Hole05":"475","Hole06":"362","Hole07":"102","Hole08":"311","Hole09":"265","OutTotal":"2737","Hole10":"292","Hole11":"134","Hole12":"356","Hole13":"452","Hole14":"307","Hole15":"298","Hole16":"290","Hole17":"128","Hole18":"358","InTotal":"2615","CourseTotal":"5352","RecordTypeId":"1"},{"Description":"Men's Handicap","Slope":"","Rating":"","Hole01":"15","Hole02":"5","Hole03":"13","Hole04":"9","Hole05":"3","Hole06":"1","Hole07":"17","Hole08":"11","Hole09":"7","OutTotal":"","Hole10":"6","Hole11":"8","Hole12":"4","Hole13":"16","Hole14":"10","Hole15":"12","Hole16":"14","Hole17":"18","Hole18":"2","InTotal":"","CourseTotal":"","RecordTypeId":"3"},{"Description":"Ladies Handicap","Slope":"","Rating":"","Hole01":"13","Hole02":"9","Hole03":"7","Hole04":"15","Hole05":"1","Hole06":"3","Hole07":"177","Hole08":"11","Hole09":"5","OutTotal":"","Hole10":"12","Hole11":"16","Hole12":"2","Hole13":"4","Hole14":"14","Hole15":"8","Hole16":"10","Hole17":"18","Hole18":"6","InTotal":"","CourseTotal":"","RecordTypeId":"3"}]}}

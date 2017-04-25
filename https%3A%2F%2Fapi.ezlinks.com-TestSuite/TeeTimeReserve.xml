@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="8c12de77-2d53-44d4-94c4-06596076c14e" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="true" name="TeeTimeReserve" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="8c12de77-2d53-44d4-94c4-06596076c14efileName">TeeTimeReserve</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="TeeTimeSearch - Valid" id="6223429b-eda4-41f1-ad49-f4e04b1ea297"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="TeeTimeReservations_TeeTimeSearch" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="TeeTimeSearch - Valid" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="Simple Contains" id="cff804be-f430-4bf9-9b80-f726d0996611" name="Contains"><con:configuration><token>TeeTimeSearchRecord</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="ObjectId" value="TeeTimeSearch"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param4" value="4"/>
+  <con:entry key="Param3" value="${#Project#playDate}"/>
+  <con:entry key="Param2" value="530"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Password" value="ttdemo14"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Valid" id="7808ab40-e08c-4b8d-b613-08b5f8775b56"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="TeeTimeReservations_TeeTimeReserve" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Valid" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="Simple Contains" id="c36b5620-bb62-4cd3-b620-dba73d8d319c" name="Contains"><con:configuration><token>TeeTimeReserveRecord</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="ObjectId" value="TeeTimeReserve"/>
+  <con:entry key="Param7" value="11/19"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="5555555555554444"/>
+  <con:entry key="Param5" value="${#Project#feeId}"/>
+  <con:entry key="Param4" value="${TeeTimeSearch - Valid#ResponseAsXml#//TeeTimeSearch[1]/TeeTimeSearchRecord[1]/ReserveString[1]}"/>
+  <con:entry key="Param3" value="limesource?01"/>
+  <con:entry key="Param2" value="user1@gmail.com"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Password" value="ttdemo14"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - TeeTime Already Reserved" id="0557a605-5117-405f-a283-ceb58f742b69"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="TeeTimeReservations_TeeTimeReserve" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - TeeTime Already Reserved" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="cbee185e-85a5-4f4e-ab97-d8c04f4f407e" name="INVALID_RESERVE_STRING"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>INVALID_RESERVE_STRING</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="ObjectId" value="TeeTimeReserve"/>
+  <con:entry key="Param7" value="11/19"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="5555555555554444"/>
+  <con:entry key="Param5" value="${#Project#feeId}"/>
+  <con:entry key="Param4" value="${TeeTimeSearch - Valid#ResponseAsXml#//TeeTimeSearch[1]/TeeTimeSearchRecord[1]/ReserveString[1]}"/>
+  <con:entry key="Param3" value="limesource?01"/>
+  <con:entry key="Param2" value="user1@gmail.com"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Password" value="ttdemo14"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param2/UserID" id="e26bebfe-ae0a-47a4-8d77-3bd90d33ec1a"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="TeeTimeReservations_TeeTimeReserve" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param2/UserID" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="70152f39-16c8-4b12-a341-2b3e93ca364a" name="INVALID_USERID"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>INVALID_USERID</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="ObjectId" value="TeeTimeReserve"/>
+  <con:entry key="Param7" value="11/19"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="5555555555554444"/>
+  <con:entry key="Param5" value="12728"/>
+  <con:entry key="Param4" value="${#[API.EZLinks#TeeTimeSearch#REST Request - Valid]#ResponseAsXml#//TeeTimeSearch[1]/TeeTimeSearchRecord[1]/ReserveString[1]}"/>
+  <con:entry key="Param3" value="limesource?01"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Password" value="ttdemo14"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param3/ InternetPassword" id="ff9f448b-b686-4860-bfbe-971011582a2d"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="TeeTimeReservations_TeeTimeReserve" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param3/ InternetPassword" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="6adb90b9-46f9-472d-bc9b-4484bbe86bfe" name="INVALID_PASSWORD"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>INVALID_PASSWORD</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="ObjectId" value="TeeTimeReserve"/>
+  <con:entry key="Param7" value="11/19"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="5555555555554444"/>
+  <con:entry key="Param5" value="12728"/>
+  <con:entry key="Param4" value="${#[API.EZLinks#TeeTimeSearch#REST Request - Valid]#ResponseAsXml#//TeeTimeSearch[1]/TeeTimeSearchRecord[1]/ReserveString[1]}"/>
+  <con:entry key="Param2" value="user1@gmail.com"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Password" value="ttdemo14"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param4/ ReserveString" id="ba7c8b5c-bc58-4e04-8f85-1643b3564f07"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="TeeTimeReservations_TeeTimeReserve" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param4/ ReserveString" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="bd33b684-64d8-4d80-b739-b2e325e2b9de" name="INVALID_RESERVE_STRING"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>INVALID_RESERVE_STRING</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="ObjectId" value="TeeTimeReserve"/>
+  <con:entry key="Param7" value="11/19"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="5555555555554444"/>
+  <con:entry key="Param5" value="12728"/>
+  <con:entry key="Param4" value="${REST Request - Valid#Param4}sd"/>
+  <con:entry key="Param3" value="limesource?01"/>
+  <con:entry key="Param2" value="user1@gmail.com"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Password" value="ttdemo14"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="TeeTimeSearch" id="39e6d293-2904-4bba-ba04-65003e59016b"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="TeeTimeReservations_TeeTimeSearch" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="TeeTimeSearch" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="Simple Contains" id="cff804be-f430-4bf9-9b80-f726d0996611" name="Contains"><con:configuration><token>TeeTimeSearchRecord</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="ObjectId" value="TeeTimeSearch"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param4" value="4"/>
+  <con:entry key="Param3" value="${#Project#playDate}"/>
+  <con:entry key="Param2" value="530"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Password" value="ttdemo14"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param5/FeeID" id="7950f3ee-63fe-480c-9890-308d92b90429"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="TeeTimeReservations_TeeTimeReserve" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param5/FeeID" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="0f7b958a-8db9-4eee-aed8-1740cae531d1" name="INVALID_TEE_TIME"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>INVALID_TEE_TIME</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="ObjectId" value="TeeTimeReserve"/>
+  <con:entry key="Param7" value="11/19"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="5555555555554444"/>
+  <con:entry key="Param4" value="${TeeTimeSearch#ResponseAsXml#//TeeTimeSearch[1]/TeeTimeSearchRecord[1]/ReserveString[1]}"/>
+  <con:entry key="Param3" value="limesource?01"/>
+  <con:entry key="Param2" value="user1@gmail.com"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Password" value="ttdemo14"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param6/CCNumber" id="240f34af-6292-4d99-b0d2-5bc23f6100d2"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="TeeTimeReservations_TeeTimeReserve" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param6/CCNumber" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="Simple Contains" id="c36b5620-bb62-4cd3-b620-dba73d8d319c" name="Contains INVALID_CREDIT_CARD_NUMBER"><con:configuration><token>INVALID_CREDIT_CARD_NUMBER</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="ObjectId" value="TeeTimeReserve"/>
+  <con:entry key="Param7" value="11/19"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param5" value="${#Project#feeId}"/>
+  <con:entry key="Param4" value="${TeeTimeSearch#ResponseAsXml#//TeeTimeSearch[1]/TeeTimeSearchRecord[1]/ReserveString[1]}"/>
+  <con:entry key="Param3" value="limesource?01"/>
+  <con:entry key="Param2" value="user1@gmail.com"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Password" value="ttdemo14"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param7/CCExpiration" id="ca61275a-f994-4c35-93b9-227a894dde89"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="TeeTimeReservations_TeeTimeReserve" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param7/CCExpiration" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="Simple NotContains" id="2ec4cd63-6cad-47f4-a1e2-0e6ab6adbfef" name="Not Contains TeeTimeRecord"><con:configuration><token>TeeTimeReserveRecord</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="ObjectId" value="TeeTimeReserve"/>
+  <con:entry key="Param7" value="11/12"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="5555555555554444"/>
+  <con:entry key="Param5" value="${#Project#feeId}"/>
+  <con:entry key="Param4" value="${TeeTimeSearch#ResponseAsXml#//TeeTimeSearch[1]/TeeTimeSearchRecord[1]/ReserveString[1]}"/>
+  <con:entry key="Param3" value="limesource?01"/>
+  <con:entry key="Param2" value="user1@gmail.com"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Password" value="ttdemo14"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Expired CC" id="12918134-ed18-4123-9c47-c27c81c794d6"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="TeeTimeReservations_TeeTimeReserve" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Expired CC" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="Simple Contains" id="c36b5620-bb62-4cd3-b620-dba73d8d319c" name="Contains EXPIRED_CREDIT_CARD"><con:configuration><token>EXPIRED_CREDIT_CARD</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="ObjectId" value="TeeTimeReserve"/>
+  <con:entry key="Param7" value="11/12"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="5555555555554444"/>
+  <con:entry key="Param5" value="${#Project#feeId}"/>
+  <con:entry key="Param4" value="${TeeTimeSearch#ResponseAsXml#//TeeTimeSearch[1]/TeeTimeSearchRecord[1]/ReserveString[1]}"/>
+  <con:entry key="Param3" value="limesource?01"/>
+  <con:entry key="Param2" value="user1@gmail.com"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Password" value="ttdemo14"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>39e6d293-2904-4bba-ba04-65003e59016b</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>0557a605-5117-405f-a283-ceb58f742b69</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>6223429b-eda4-41f1-ad49-f4e04b1ea297</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase>

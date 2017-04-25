@@ -1,0 +1,30 @@
+Status: OK
+Time Taken: 7
+Size: 0
+Timestamp: Wed Mar 08 13:27:26 SGT 2017
+TestStep: Property Transfer: Move SessionID
+
+----------------- Messages ------------------------------
+Performed transfer [TransferSessionID]
+Performed transfer [TransferSessionIDToGetTeetimesByCourse]
+Performed transfer [TransferSessionIDToProcessTeeTimeCheckout]
+Performed transfer [TransferSessionIDToBookReservation]
+----------------------------------------------------
+TransferSessionID transferred [[393f83cf-00f0-4d24-8321-3c5b3e1ace58]] from [Test Request: Start Session.ResponseAsXml] to [Test Request: Signin.sessionId]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart';
+//ns1:Response[1]/ns1:Data[1]
+------------ target path -------------
+
+TransferSessionIDToGetTeetimesByCourse transferred [[393f83cf-00f0-4d24-8321-3c5b3e1ace58]] from [Test Request: Start Session.ResponseAsXml] to [Test Request: Get tee times by Course.sessionId]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart';
+//ns1:Response[1]/ns1:Data[1]
+TransferSessionIDToProcessTeeTimeCheckout transferred [[393f83cf-00f0-4d24-8321-3c5b3e1ace58]] from [Test Request: Start Session.ResponseAsXml] to [Test Request: ProcessTeeTimeCheckout.sessionId]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart';
+//ns1:Response[1]/ns1:Data[1]
+TransferSessionIDToBookReservation transferred [[393f83cf-00f0-4d24-8321-3c5b3e1ace58]] from [Test Request: Start Session.ResponseAsXml] to [Test Request: Book Reservation - Successful.sessionId]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart';
+//ns1:Response[1]/ns1:Data[1]

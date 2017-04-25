@@ -1,0 +1,58 @@
+Status: OK
+Time Taken: 1482
+Size: 599
+Timestamp: Wed Mar 08 13:35:35 SGT 2017
+TestStep: REST Request - Check if able to signin after UserChangeUserID
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.ezlinks.com
+Method: GET
+StatusCode: 200
+URL: https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=UserGetRegistration&Param1=user01&Param2=limesource%3F01
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [api.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=UserGetRegistration&Param1=user01&Param2=limesource%3F01 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: api.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Cache-Control: [private]
+Server: [Microsoft-IIS/7.0]
+Connection: [close]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Date: [Wed, 08 Mar 2017 05:35:38 GMT]
+Content-Type: [text/xml]
+X-Powered-By: [ASP.NET]
+
+<?ezxml version="5.0"?>
+<UserGetRegistration>
+   <UserGetRegistrationRecord>
+      <SiteServerID>1</SiteServerID>
+      <LastName>Tester</LastName>
+      <FirstName>Limesource</FirstName>
+      <Address1>Dimataga</Address1>
+      <Address2>Gun-ob</Address2>
+      <City>Lapu-Lapu</City>
+      <State>Cebu</State>
+      <Zip>6015</Zip>
+      <Country>PH</Country>
+      <HomePhone>555555555555</HomePhone>
+      <WorkPhone>22222222</WorkPhone>
+      <InternetEmail>user1@gmail.com</InternetEmail>
+      <InternetNotifyActivity>0</InternetNotifyActivity>
+      <ContactID>38340272</ContactID>
+   </UserGetRegistrationRecord>
+</UserGetRegistration>

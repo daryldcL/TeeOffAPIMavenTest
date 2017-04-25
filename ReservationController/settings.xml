@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="10a9b23d-c513-428a-8705-5739629bea82" name="ReservationController" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="10a9b23d-c513-428a-8705-5739629bea82fileName">ReservationController</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

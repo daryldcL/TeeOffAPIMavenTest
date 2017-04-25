@@ -1,0 +1,50 @@
+Status: OK
+Time Taken: 894
+Size: 2217
+Timestamp: Wed Mar 08 13:27:05 SGT 2017
+TestStep: Test Request: Register Guest (Valid Guest Details using Unregistered Account)
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: POST
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/User/RegisterGuest?sessionId=f51a504d-4128-4787-9e1b-cf2687310d83
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [118]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/User/RegisterGuest?sessionId=f51a504d-4128-4787-9e1b-cf2687310d83 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 118
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+{
+   "GuestEmail": "limesourcetesters1102@gmail.com",
+   "GuestFirstName": "Limesource",
+   "GuestLastName": "Guest"
+}
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [POST]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:27:07 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":{"Address01":"","Address02":"","AddressType":"Home","Alerts":false,"BrandOfClubs":"","BrandOfIrons":"","City":"","ClubsYear":"","ContactId":26573965,"CountryId":"1","CustomGolfDestination":"","DateBirth":"","DateCreated":"11/24/2016 9:54:25 PM","DateModified":"11/24/2016 9:54:25 PM","DealsDiscounts":false,"DominantHand":"","Email":"limesourcetesters1102@gmail.com","EmailNotify":"0","ErrorId":"0","FavoriteBrandOfBalls":"","FavoriteGolfDestinations":[{"DestinationId":1,"DestinationName":"Atlanta","IsSelected":false},{"DestinationId":2,"DestinationName":"Caribbean","IsSelected":false},{"DestinationId":3,"DestinationName":"Chicago","IsSelected":false},{"DestinationId":4,"DestinationName":"Hawaii","IsSelected":false},{"DestinationId":5,"DestinationName":"Las Vegas","IsSelected":false},{"DestinationId":6,"DestinationName":"Mexico","IsSelected":false},{"DestinationId":7,"DestinationName":"New York Metro Area","IsSelected":false},{"DestinationId":8,"DestinationName":"Northern California","IsSelected":false},{"DestinationId":9,"DestinationName":"Northern Michigan","IsSelected":false},{"DestinationId":10,"DestinationName":"Orlando","IsSelected":false},{"DestinationId":11,"DestinationName":"Palm Springs","IsSelected":false},{"DestinationId":12,"DestinationName":"Phoenix/Scottsdale","IsSelected":false},{"DestinationId":13,"DestinationName":"South Florida","IsSelected":false},{"DestinationId":14,"DestinationName":"Tucson","IsSelected":false},{"DestinationId":15,"DestinationName":"Washington DC","IsSelected":false}],"FirstName":"Limesource","Gender":"","Handicap":"","HomePhone":"","IronsYear":"","IsOneTimeUsePassword":false,"LastName":"Guest","LowestScore18":0,"LowestScore9":0,"Message":"","MobileNumber":"","NewsLetter":false,"Notes":"","PartnershipOffers":false,"PlayFrequency":"","PostalCode":"","PreferFriday":false,"PreferMonday":false,"PreferSaturday":false,"PreferSunday":false,"PreferThursday":false,"PreferTuesday":false,"PreferWednesday":false,"Province":"","ReturnCode":"","SessionId":"f51a504d-4128-4787-9e1b-cf2687310d83","StartTime":"","State":"","Username":"TOUN-80B6533F-8896-4E69-B0A5-33DCA2D2288A","Password":"","WorkNumber":"","YearsPlaying":0}}

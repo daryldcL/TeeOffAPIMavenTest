@@ -1,0 +1,41 @@
+Status: OK
+Time Taken: 825
+Size: 1908
+Timestamp: Wed Mar 08 13:31:39 SGT 2017
+TestStep: GET Request - Apostrophe '
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: GET
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete?criteria=%27
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete?criteria=%27 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:31:42 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":[{"SearchId":116533,"Criteria":"Coeur d'Alene, ID","CriteriaHighlight":"Coeur d<span id=\"searchHighlight\">'</span>Alene, ID","CriteriaAddress":"","CriteriaHeader":"LOCATION","Class":"City","PageURL":""},{"SearchId":140164,"Criteria":"Murrell's Inlet, SC","CriteriaHighlight":"Murrell<span id=\"searchHighlight\">'</span>s Inlet, SC","CriteriaAddress":"","CriteriaHeader":"","Class":"City","PageURL":""},{"SearchId":165287,"Criteria":"Sea 'N Air Golf Course","CriteriaHighlight":"Sea <span id=\"searchHighlight\">'</span>N Air Golf Course","CriteriaAddress":"San Diego, CA","CriteriaHeader":"COURSES","Class":"Course","PageURL":"sea--air-golf-course-san-diego-ca-92135-tee-times"},{"SearchId":149556,"Criteria":"Double 'R' Ranch Resort","CriteriaHighlight":"Double <span id=\"searchHighlight\">'</span>R<span id=\"searchHighlight\">'</span> Ranch Resort","CriteriaAddress":"Belding, MI","CriteriaHeader":"","Class":"Course","PageURL":"double-r-ranch-resort-belding-mi-48809-tee-times"},{"SearchId":158202,"Criteria":"Sun 'n Lake Golf Club - Deer Run","CriteriaHighlight":"Sun <span id=\"searchHighlight\">'</span>n Lake Golf Club - Deer Run","CriteriaAddress":"Sebring, FL","CriteriaHeader":"","Class":"Course","PageURL":"sun-n-lake-golf-club-deer-run-sebring-fl-33872-tee-times"},{"SearchId":158203,"Criteria":"Sun 'n Lake Golf Club - Turtle Run","CriteriaHighlight":"Sun <span id=\"searchHighlight\">'</span>n Lake Golf Club - Turtle Run","CriteriaAddress":"Sebring, FL","CriteriaHeader":"","Class":"Course","PageURL":"sun-n-lake-golf-club-turtle-run-sebring-fl-33872-tee-times"},{"SearchId":146813,"Criteria":"Bayview Retiree's Golf Course","CriteriaHighlight":"Bayview Retiree<span id=\"searchHighlight\">'</span>s Golf Course","CriteriaAddress":"Toledo, OH","CriteriaHeader":"","Class":"Course","PageURL":"bayview-retirees-golf-course-toledo-oh-43611-tee-times"}]}

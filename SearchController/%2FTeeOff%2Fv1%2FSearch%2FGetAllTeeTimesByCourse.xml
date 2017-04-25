@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="f3a33c74-f497-43ae-a887-0f51d5ea737d" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/TeeOff/v1/Search/GetAllTeeTimesByCourse" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="f3a33c74-f497-43ae-a887-0f51d5ea737dfileName">%2FTeeOff%2Fv1%2FSearch%2FGetAllTeeTimesByCourse</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Test Request: Start Session" id="12a9bd7a-28b8-4d45-a5f5-4addd0931c98"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/User/SessionStart" methodName="UserController_SessionStart" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: Start Session" id="361af8ca-7e28-4076-9924-c385f0b5db38" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/User/SessionStart</con:originalUri><con:assertion type="XPath Match" id="a91ad1b8-c8c3-49bb-8f6d-67ac3fed9906" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request: GetAllTeeTimesByCourse" id="4874b3dc-758b-4e86-a192-903ed35a2721"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/GetAllTeeTimesByCourse" methodName="SearchController_GetAllTeeTimesByCourse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: GetAllTeeTimesByCourse" id="799fd6b0-02b5-4085-bc64-c2d29d88a834" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/GetAllTeeTimesByCourse</con:originalUri><con:assertion type="XPath Match" id="94016460-fe28-433e-80b8-aa5742b6f9b3" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetAllTeeTimesByCourse';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="centerPointLon" value="-111.0937311"/>
+  <con:entry key="courseIds" value="100077,100082,100084,100078,100076,100074,100070,100075,100071,100083,3843,2530,2798,2531,2411,4623,3137,2883,2885,4619,2961,3381,2889,2753,3417,5007,2897,1225,4659,2827,4114,4113,2881,3964,2941,3415,2887,2899,3398,2901,1717,2891,3988,5008,4997,4998,1489,2895,4418,4621,2978,2831,2833,2943,2755,4219,3412,3177,3112,3226,3227,3228,2835,5000,4999,3668,3426,2489,2984,2982,3399,1716,1715,1714,2408,100051,100026,100025,100297,100052,100031,100030,100059,100044,100038,100037,100299,100045,100053,100050,100049,100043"/>
+  <con:entry key="playDate" value="${#Project#playDate}"/>
+  <con:entry key="centerPointLat" value="34.0489281"/>
+  <con:entry key="sessionId" value="${Test Request: Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request: GetAllTeeTimesByCourse (Invalid PlayDate)" id="20166fc2-a179-4539-a954-0eb610fde529"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/GetAllTeeTimesByCourse" methodName="SearchController_GetAllTeeTimesByCourse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: GetAllTeeTimesByCourse (Invalid PlayDate)" id="799fd6b0-02b5-4085-bc64-c2d29d88a834" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/GetAllTeeTimesByCourse</con:originalUri><con:assertion type="XPath Match" id="04119d60-f386-4b66-b746-4a5798f460bc" name="The request is invalid."><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetAllTeeTimesByCourse';
+//ns1:Fault[1]/ns1:Message[1]</path><content>The request is invalid.</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="centerPointLon" value="-111.0937311"/>
+  <con:entry key="courseIds" value="100051,100026,100025,100297,100052,100031,100030,100059,100044,100038,100037,100299,100045,100053,100050,100049,100043"/>
+  <con:entry key="playDate" value="11/22/20162"/>
+  <con:entry key="centerPointLat" value="34.0489281"/>
+  <con:entry key="sessionId" value="${Test Request: Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request: GetAllTeeTimesByCourse (Empty CourseIds)" id="c797eb3c-6db5-4b61-a60a-4df5e1a705f0"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/GetAllTeeTimesByCourse" methodName="SearchController_GetAllTeeTimesByCourse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: GetAllTeeTimesByCourse (Empty CourseIds)" id="799fd6b0-02b5-4085-bc64-c2d29d88a834" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/GetAllTeeTimesByCourse</con:originalUri><con:assertion type="XPath Match" id="04119d60-f386-4b66-b746-4a5798f460bc" name="Invalid/missing request object"><con:configuration><path>//data[1]</path><content>&lt;data contentType="text/plain; charset=utf-8" contentLength="31">Invalid/missing request object.&lt;/data></content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="centerPointLon" value="-111.0937311"/>
+  <con:entry key="playDate" value="11/29/2016"/>
+  <con:entry key="centerPointLat" value="34.0489281"/>
+  <con:entry key="sessionId" value="${Test Request: Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request: GetAllTeeTimesByCourse (No Results - Past Date)" id="dcde9b9c-1858-4ff8-89a2-7e68cc6a2178"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/GetAllTeeTimesByCourse" methodName="SearchController_GetAllTeeTimesByCourse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: GetAllTeeTimesByCourse (No Results - Past Date)" id="799fd6b0-02b5-4085-bc64-c2d29d88a834" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/GetAllTeeTimesByCourse</con:originalUri><con:assertion type="XPath Match" id="94016460-fe28-433e-80b8-aa5742b6f9b3" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetAllTeeTimesByCourse';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Count" id="3fc2b057-322a-4418-8c68-52fc36ed0fec" name="Data Count is 0."><con:configuration><path>$['Data']</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="centerPointLon" value="-111.0937311"/>
+  <con:entry key="courseIds" value="100051,100026,100025,100297,100052,100031,100030,100059,100044,100038,100037,100299,100045,100053,100050,100049,100043"/>
+  <con:entry key="playDate" value="10/12/2016"/>
+  <con:entry key="centerPointLat" value="34.0489281"/>
+  <con:entry key="sessionId" value="${Test Request: Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script: Assertions for checking correct PlayDate, if correct courseIds" id="c852ac12-af5b-459e-b485-5f1143d236f0"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+def response = context.expand( '${Test Request: GetAllTeeTimesByCourse#Response#$[\'Data\'][0][\'TeeTimes\']}' )
+def jsonTeeTimesElements = new JsonSlurper().parseText(response)
+
+def courseIdsRequest = context.expand( '${Test Request: GetAllTeeTimesByCourse#courseIds}' )
+def jsonCourseIds = new JsonSlurper().parseText(courseIdsRequest)
+
+def responseCourseIds = context.expand( '${Test Request: GetAllTeeTimesByCourse#Response#$[\'Data\']}' )
+def jsonCourseIdsResponse = new JsonSlurper().parseText(responseCourseIds)
+
+def playDate = context.expand( '${#Project#playDate}' )
+def teeTimes = []
+def courseIdsResult = []
+
+//def BeginTimeEndTimeResponse = context.expand( '${Test Request: GetTeeTimesByCourse (Setting beginTime/endTime))#Response#$[\'Data\'][0][\'TeeTimes\']}' )
+//def jsonBETeeTimesElements = new JsonSlurper().parseText(BeginTimeEndTimeResponse)
+
+//check if correct Playdate
+for ( value in jsonTeeTimesElements ) {
+   def newerdate = Date.parse("yyyy-MM-dd", value["CourseTeeTime"].take(10))
+   String formattedDate = newerdate.format( 'MM/dd/yyyy' )
+   teeTimes.add(formattedDate)
+
+   //Assert if correct playDate
+   assert formattedDate == playDate
+}
+
+
+//check if correct courseIds
+for ( value in jsonCourseIdsResponse ) {
+   courseIdsResult.add(value["CourseId"])
+   assert courseIdsRequest.toString().contains(value["CourseId"].toString())
+   //assert formattedDate == playDate
+}
+
+log.info courseIdsRequest
+log.info courseIdsResult
+log.info teeTimes
+
+</script></con:config></con:testStep><con:setupScript>def dateToday = new Date()
+
+playDate = dateToday + 2
+playDateMoreThanSevenDays = dateToday + 8
+
+testRunner.testCase.testSuite.project.setPropertyValue("playDate", playDate.format("MM/dd/yyyy"))
+testRunner.testCase.testSuite.project.setPropertyValue("playDateMoreThanSevenDays", playDateMoreThanSevenDays.format("MM/dd/yyyy"))
+testRunner.testCase.testSuite.project.setPropertyValue("dateToday", dateToday.format("MM/dd/yyyy"))</con:setupScript><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>12a9bd7a-28b8-4d45-a5f5-4addd0931c98</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase>

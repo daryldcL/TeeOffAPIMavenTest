@@ -1,0 +1,61 @@
+Status: FAILED
+Time Taken: 1443
+Size: 2262
+Timestamp: Thu Mar 09 20:40:17 SGT 2017
+TestStep: Test Request: Update User (Excluding CountryID in parameter)
+
+----------------- Messages ------------------------------
+[CountryID is the same] XPathContains comparison failed for path [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/UpdateUser';
+//ns1:Response[1]/ns1:Data[1]/ns1:CountryId[1]], expecting [1], actual was [0]
+[Gender is correct after update] XPathContains comparison failed for path [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/UpdateUser';
+//ns1:Response[1]/ns1:Data[1]/ns1:Gender[1]], expecting [M], actual was [null]
+
+----------------- Properties ------------------------------
+StatusCode: 200
+Method: POST
+Password: test
+Username: test
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+URL: https://dev-api.opentee.com/TeeOff/v1/User/UpdateUser?sessionId=17105eb4-d89a-40b6-acf4-69595b3b98fd
+
+---------------- Request ---------------------------
+Authorization: [Basic dGVzdDp0ZXN0]
+Host: [dev-api.opentee.com]
+Content-Length: [198]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/User/UpdateUser?sessionId=17105eb4-d89a-40b6-acf4-69595b3b98fd HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 198
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+Authorization: Basic dGVzdDp0ZXN0
+
+{
+   "Gender": "M",
+   "FirstName": "Limesource Updated",
+   "ContactId": "26574452",
+   "UserPassword": "limesource?02",
+   "LastName": "Tester Updated",
+   "UserPasswordCurrent": "limesource?01"
+}
+
+---------------- Response --------------------------
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Thu, 09 Mar 2017 12:40:22 GMT]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Content-Length: [1029]
+Content-Encoding: [gzip]
+Access-Control-Allow-Methods: [POST]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+Server: [Microsoft-IIS/8.5]
+
+{"Success":true,"Message":null,"Data":{"Address01":"Dimataga","Address02":"Humay-Humay","AddressType":"Home","Alerts":true,"BrandOfClubs":"","BrandOfIrons":"","City":"Lapu-Lapu","ClubsYear":"","ContactId":26574452,"CountryId":"0","CustomGolfDestination":"","DateBirth":"","DateCreated":"12/15/2016 12:14:36 AM","DateModified":"3/9/2017 6:40:21 AM","DealsDiscounts":true,"DominantHand":"","Email":"limesourcetester01@gmail.com","EmailNotify":"0","ErrorId":"0","FavoriteBrandOfBalls":"","FavoriteGolfDestinations":[{"DestinationId":1,"DestinationName":"Atlanta","IsSelected":false},{"DestinationId":2,"DestinationName":"Caribbean","IsSelected":false},{"DestinationId":3,"DestinationName":"Chicago","IsSelected":false},{"DestinationId":4,"DestinationName":"Hawaii","IsSelected":false},{"DestinationId":5,"DestinationName":"Las Vegas","IsSelected":false},{"DestinationId":6,"DestinationName":"Mexico","IsSelected":false},{"DestinationId":7,"DestinationName":"New York Metro Area","IsSelected":false},{"DestinationId":8,"DestinationName":"Northern California","IsSelected":false},{"DestinationId":9,"DestinationName":"Northern Michigan","IsSelected":false},{"DestinationId":10,"DestinationName":"Orlando","IsSelected":false},{"DestinationId":11,"DestinationName":"Palm Springs","IsSelected":false},{"DestinationId":12,"DestinationName":"Phoenix/Scottsdale","IsSelected":false},{"DestinationId":13,"DestinationName":"South Florida","IsSelected":false},{"DestinationId":14,"DestinationName":"Tucson","IsSelected":false},{"DestinationId":15,"DestinationName":"Washington DC","IsSelected":false}],"FirstName":"Limesource Updated","Gender":"","Handicap":"","HomePhone":"09260387756","IronsYear":"","IsOneTimeUsePassword":false,"LastName":"Tester Updated","LowestScore18":0,"LowestScore9":0,"Message":"","MobileNumber":"","NewsLetter":true,"Notes":"","PartnershipOffers":false,"PlayFrequency":"","PostalCode":"80909","PreferFriday":false,"PreferMonday":false,"PreferSaturday":false,"PreferSunday":false,"PreferThursday":false,"PreferTuesday":false,"PreferWednesday":false,"Province":"CA","ReturnCode":"","SessionId":"17105eb4-d89a-40b6-acf4-69595b3b98fd","StartTime":"","State":"CA","Username":"limesourcetester01@gmail.com","Password":"","WorkNumber":"","YearsPlaying":0}}

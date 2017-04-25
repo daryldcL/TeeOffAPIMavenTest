@@ -1,0 +1,12 @@
+Status: FAILED
+Time Taken: 33
+Size: 0
+Timestamp: Thu Mar 09 21:19:09 SGT 2017
+TestStep: Groovy Script: Other Assertions
+Error:groovy.json.JsonException: A JSON payload should start with an openning curly brace '{' or an openning square bracket '['.
+Instead, 'null' was found on line: 1, column: 1
+
+----------------- Messages ------------------------------
+groovy.json.JsonException: A JSON payload should start with an openning curly brace '{' or an openning square bracket '['.
+Instead, 'null' was found on line: 1, column: 1
+error at line: 4

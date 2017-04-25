@@ -1,0 +1,41 @@
+Status: OK
+Time Taken: 835
+Size: 2292
+Timestamp: Wed Mar 08 13:31:29 SGT 2017
+TestStep: Test Request: SearchAutocomplete  - Region
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: GET
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete?criteria=Arizona
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete?criteria=Arizona HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:31:31 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":[{"SearchId":1001,"Criteria":"Arizona","CriteriaHighlight":"<span id=\"searchHighlight\">Arizona</span>","CriteriaAddress":"","CriteriaHeader":"LOCATION","Class":"Region","PageURL":""},{"SearchId":118372,"Criteria":"Arizona City, AZ","CriteriaHighlight":"<span id=\"searchHighlight\">Arizona</span> City, AZ","CriteriaAddress":"","CriteriaHeader":"","Class":"City","PageURL":""},{"SearchId":165260,"Criteria":"Eastern Arizona","CriteriaHighlight":"Eastern <span id=\"searchHighlight\">Arizona</span>","CriteriaAddress":"","CriteriaHeader":"","Class":"Area","PageURL":""},{"SearchId":163412,"Criteria":"Northern Arizona","CriteriaHighlight":"Northern <span id=\"searchHighlight\">Arizona</span>","CriteriaAddress":"","CriteriaHeader":"","Class":"Area","PageURL":""},{"SearchId":146454,"Criteria":"Arizona Biltmore Golf Club - Adobe","CriteriaHighlight":"<span id=\"searchHighlight\">Arizona</span> Biltmore Golf Club - Adobe","CriteriaAddress":"Phoenix, AZ","CriteriaHeader":"COURSES","Class":"Course","PageURL":"arizona-biltmore-golf-club-adobe-phoenix-az-85016-tee-times"},{"SearchId":146453,"Criteria":"Arizona Biltmore Golf Club - Links","CriteriaHighlight":"<span id=\"searchHighlight\">Arizona</span> Biltmore Golf Club - Links","CriteriaAddress":"Phoenix, AZ","CriteriaHeader":"","Class":"Course","PageURL":"arizona-biltmore-golf-club-links-phoenix-az-85016-tee-times"},{"SearchId":146455,"Criteria":"Arizona Biltmore Golf Club/Adobe","CriteriaHighlight":"<span id=\"searchHighlight\">Arizona</span> Biltmore Golf Club/Adobe","CriteriaAddress":"Phoenix, AZ","CriteriaHeader":"","Class":"Course","PageURL":"gs-arizona-biltmore-golf-clubadobe-phoenix-az-85016-tee-times"},{"SearchId":146456,"Criteria":"Arizona Biltmore Golf Club/Links","CriteriaHighlight":"<span id=\"searchHighlight\">Arizona</span> Biltmore Golf Club/Links","CriteriaAddress":"Phoenix, AZ","CriteriaHeader":"","Class":"Course","PageURL":"gs-arizona-biltmore-golf-clublinks-phoenix-az-85016-tee-times"},{"SearchId":161369,"Criteria":"Arizona Grand Golf Course","CriteriaHighlight":"<span id=\"searchHighlight\">Arizona</span> Grand Golf Course","CriteriaAddress":"Phoenix, AZ","CriteriaHeader":"","Class":"Course","PageURL":"arizona-grand-golf-course-phoenix-az-85044-tee-times"}]}

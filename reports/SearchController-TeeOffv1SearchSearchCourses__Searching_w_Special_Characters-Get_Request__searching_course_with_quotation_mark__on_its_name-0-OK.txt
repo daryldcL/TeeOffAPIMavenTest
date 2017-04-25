@@ -1,0 +1,39 @@
+Status: OK
+Time Taken: 841
+Size: 446
+Timestamp: Wed Mar 08 13:32:01 SGT 2017
+TestStep: Get Request - searching course with quotation mark " on its name
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Method: GET
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/SearchCourses?sessionId=ba17f365-3a75-4b9e-9b8d-9476fd25a809&criteria=Alfred%20%22Tup%22%20Holmes%20Golf%20Course&includeDirectoryCourses=true
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/SearchCourses?sessionId=ba17f365-3a75-4b9e-9b8d-9476fd25a809&criteria=Alfred%20%22Tup%22%20Holmes%20Golf%20Course&includeDirectoryCourses=true HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:32:03 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":{"SearchResult":[{"CourseId":3072,"Latitude":33.7150373,"Longitude":-84.463686,"IsDirectoryOnly":false}],"ReferenceData":{"centerPointLat":"33.7150373","centerPointLon":"-84.463686","searchCriteria":"Alfred \"Tup\" Holmes Golf Course","searchTypeId":"6","landingPageId":"6","breadcrumbCountry":"United States","breadcrumbRegion":"Georgia","breadcrumbArea":"Atlanta, GA Area","breadcrumbCity":"Atlanta, GA"}}}

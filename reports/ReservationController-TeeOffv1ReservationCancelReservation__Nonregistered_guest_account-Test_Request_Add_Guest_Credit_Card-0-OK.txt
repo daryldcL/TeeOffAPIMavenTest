@@ -1,0 +1,57 @@
+Status: OK
+Time Taken: 3892
+Size: 157
+Timestamp: Wed Mar 08 13:31:17 SGT 2017
+TestStep: Test Request: Add Guest Credit Card
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: POST
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/User/AddCreditCardInfo?sessionId=bdbac361-71d9-4f20-bc6a-ea5eb191f88a
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [267]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/User/AddCreditCardInfo?sessionId=bdbac361-71d9-4f20-bc6a-ea5eb191f88a HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 267
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+{
+   "IsDefault": "true",
+   "CardToken": "5555945780064444",
+   "IsStored": "true",
+   "CardType": "mastercard",
+   "ZipCode": "8909",
+   "NameOnCard": "Guest User",
+   "LastFour": "4444",
+   "ContactId": "26573678",
+   "ExpireMonth": "10",
+   "ExpireYear": "2018"
+}
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [POST]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:31:23 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":[{"CardId":29626,"LastFour":4444,"CardType":"mastercard","ExpireDate":"1018","BillingPostal":"8909","IsDefault":true}]}

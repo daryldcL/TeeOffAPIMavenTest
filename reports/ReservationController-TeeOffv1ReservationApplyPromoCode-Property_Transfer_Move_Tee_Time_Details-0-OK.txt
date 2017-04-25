@@ -1,0 +1,168 @@
+Status: OK
+Time Taken: 177
+Size: 0
+Timestamp: Wed Mar 08 13:29:22 SGT 2017
+TestStep: Property Transfer: Move Tee Time Details
+
+----------------- Messages ------------------------------
+Performed transfer [courseId]
+Performed transfer [TeeTime]
+Performed transfer [TeeTimeTypeId]
+Performed transfer [Price]
+Performed transfer [TransactionFee]
+Performed transfer [RegularPrice]
+Performed transfer [SavedAmount]
+Performed transfer [CancellationPeriod]
+Performed transfer [CurrencyLocaled]
+Performed transfer [FeeId]
+Performed transfer [ReservationTypeId]
+Performed transfer [NumberOfPlayers]
+Performed transfer [OriginatingContactId]
+Performed transfer [Utilization]
+Performed transfer [Sku]
+Performed transfer [MinPlayers]
+Performed transfer [MaxPlayers]
+Performed transfer [AllowOne]
+Performed transfer [AllowTwo]
+Performed transfer [AllowThree]
+Performed transfer [AllowFour]
+Performed transfer [AllowFive]
+Performed transfer [ReservationString]
+----------------------------------------------------
+courseId transferred [[5091]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:CourseInformation[1]/ns1:CourseId[1]
+------------ target path -------------
+$['CourseId']
+TeeTime transferred [[2017-03-08T11:09:00]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:CourseTeeTime[1]
+------------ target path -------------
+$['TeeTime']
+TeeTimeTypeId transferred [[4]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:TeeTimeTypeId[1]
+------------ target path -------------
+$['TeeTimeTypeId']
+Price transferred [[35.0]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:TeeTimePurchase[1]/ns1:Price[1]
+------------ target path -------------
+$['Price']
+TransactionFee transferred [[2.15]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:TeeTimePurchase[1]/ns1:TransactionFee[1]
+------------ target path -------------
+$['TransactionFee']
+RegularPrice transferred [[57.0]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:TeeTimePurchase[1]/ns1:RegularPrice[1]
+------------ target path -------------
+$['RegularPrice']
+SavedAmount transferred [[22.0]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:TeeTimePurchase[1]/ns1:SavingsAmount[1]
+------------ target path -------------
+$['SavedAmount']
+CancellationPeriod transferred [[24]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:TeeTimeInformation[1]/ns1:CancellationPeriod[1]
+------------ target path -------------
+$['CancellationPeriod']
+CurrencyLocaled transferred [[1033]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:CourseInformation[1]/ns1:CurrencyLocaleId[1]
+------------ target path -------------
+$['CurrencyLocaleId']
+FeeId transferred [[139749]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:FeeId[1]
+------------ target path -------------
+$['FeeId']
+ReservationTypeId transferred [[8175]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:ReservationTypeId[1]
+------------ target path -------------
+$['ReservationTypeId']
+NumberOfPlayers transferred [[4]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:TeeTimeInformation[1]/ns1:PlayersAvailable[1]
+------------ target path -------------
+$['NumberOfPlayers']
+OriginatingContactId transferred [[26574452]] from [Test Request: Signin.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AuthenticateUser';
+//ns1:Response[1]/ns1:Data[1]/ns1:ContactId[1]
+------------ target path -------------
+$['OriginatingContactId']
+Utilization transferred [[50.0]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:TeeTimeInformation[1]/ns1:Utilization[1]
+------------ target path -------------
+$['Utilization']
+Sku transferred [[null]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+null
+------------ target path -------------
+$['Sku']
+MinPlayers transferred [[1]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:TeeTimeRules[1]/ns1:MinPlayers[1]
+------------ target path -------------
+$['MinPlayers']
+MaxPlayers transferred [[4]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:TeeTimeRules[1]/ns1:MaxPlayers[1]
+------------ target path -------------
+$['MaxPlayers']
+AllowOne transferred [[true]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:TeeTimeRules[1]/ns1:AllowOne[1]
+------------ target path -------------
+$['AllowOne']
+AllowTwo transferred [[true]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:TeeTimeRules[1]/ns1:AllowTwo[1]
+------------ target path -------------
+$['AllowTwo']
+AllowThree transferred [[true]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:TeeTimeRules[1]/ns1:AllowThree[1]
+------------ target path -------------
+$['AllowThree']
+AllowFour transferred [[true]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:TeeTimeRules[1]/ns1:AllowFour[1]
+------------ target path -------------
+$['AllowFour']
+AllowFive transferred [[false]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:TeeTimeRules[1]/ns1:AllowFive[1]
+------------ target path -------------
+$['AllowFive']
+ReservationString transferred [[CF815BE9F18777818777D7D5F131FEC1]] from [Test Request: Get Deal Times.ResponseAsXml] to [Test Request: Apply Promo Code - Only valid on the Mobile app.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:TeeTimeDealsResult[1]/ns1:e[1]/ns1:ReservationString[1]
+------------ target path -------------
+$['ReservationString']

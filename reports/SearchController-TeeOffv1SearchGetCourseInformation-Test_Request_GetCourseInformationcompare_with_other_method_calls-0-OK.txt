@@ -1,0 +1,41 @@
+Status: OK
+Time Taken: 910
+Size: 4884
+Timestamp: Wed Mar 08 13:33:15 SGT 2017
+TestStep: Test Request: GetCourseInformation(compare with other method calls)
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: GET
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/GetCourseInformation?sessionId=5c32adf5-b6e2-4192-83e2-1af3a8ffcec2&courseId=2679
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/GetCourseInformation?sessionId=5c32adf5-b6e2-4192-83e2-1af3a8ffcec2&courseId=2679 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:33:17 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":{"CourseId":2679,"FacilityId":719,"CountryId":"1","Name":"Bass Lake","Address":"3000 Alexandrite Dr. Rescue, CA 95672 Rescue CA 95672","City":"Rescue","State":"CA","PostalCode":"95672","Description":"Bass Lake Golf Course in Rescue, California, is tight, tricky and requires accuracy and the use of every club in the bag. The golf course is situated just west of Sacramento, California, in a stunning Sierra Foothills setting near Eldorado Hills and the Cameron Park Airport. Bass Lake is a unique golf course with visually appealing and challenging holes. There are four sets of tees, allowing the golf course to be enjoyed by players of all abilities. Bass Lake features a 30-stall driving range and practice greens. Book your tee time today at this beautiful and challenging golf facility.","WebSite":"www.basslakegolfcourse.com","Architect":"Gene Thorne, David Dale","YearEstablished":"","TotalYards":"","Latitude":38.7009,"Longitude":-121.01,"PageUrl":"bass-lake-rescue-ca-95672-tee-times","Distance":5433.99,"IsDirectoryOnly":false,"DateCreated":"2013-04-19T16:19:39","DateModified":"2013-05-17T11:51:21","StatusCode":null,"AllowPromos":false,"TimeOffsetUtc":"-480","CourseAmenities":{"HasDrivingRange":true,"HasPuttingGreen":true,"HasChippingArea":true,"HasGPSAvailable":false,"HasRentalClubs":true,"HasLockerRoom":false,"HasFood":true,"HasBeverages":true,"HasRentalShoes":false,"HasPracticeBunker":true,"HasGolfShop":true,"HasNineHolesOnly":false,"HasLessons":true,"HasGolfCartIncluded":true},"CourseImages":[{"ImageSource":"//cdn.teeoff.com/course/2679/719-003121.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2679/719-003122.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2679/2679-24892.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2679/2679-24893.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2679/2679-24894.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2679/2679-24895.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2679/2679-24896.jpg","AlternateText":""},{"ImageSource":"//cdn.teeoff.com/course/2679/2679-24897.jpg","AlternateText":""}],"CourseScorecards":[{"Description":"Par","Slope":"","Rating":"","Hole01":"5","Hole02":"4","Hole03":"3","Hole04":"4","Hole05":"4","Hole06":"4","Hole07":"4","Hole08":"4","Hole09":"5","OutTotal":"37","Hole10":"3","Hole11":"4","Hole12":"4","Hole13":"4","Hole14":"3","Hole15":"4","Hole16":"5","Hole17":"3","Hole18":"5","InTotal":"35","CourseTotal":"72","RecordTypeId":"2"},{"Description":"Blue","Slope":"124","Rating":"69.4","Hole01":"515","Hole02":"366","Hole03":"169","Hole04":"344","Hole05":"379","Hole06":"366","Hole07":"298","Hole08":"394","Hole09":"471","OutTotal":"3302","Hole10":"149","Hole11":"345","Hole12":"273","Hole13":"351","Hole14":"180","Hole15":"327","Hole16":"447","Hole17":"132","Hole18":"432","InTotal":"2636","CourseTotal":"5938","RecordTypeId":"1"},{"Description":"White","Slope":"121","Rating":"67.4","Hole01":"491","Hole02":"358","Hole03":"155","Hole04":"322","Hole05":"350","Hole06":"353","Hole07":"280","Hole08":"344","Hole09":"426","OutTotal":"3079","Hole10":"145","Hole11":"337","Hole12":"258","Hole13":"325","Hole14":"156","Hole15":"280","Hole16":"412","Hole17":"119","Hole18":"405","InTotal":"2437","CourseTotal":"5516","RecordTypeId":"1"},{"Description":"Yellow","Slope":"","Rating":"","Hole01":"457","Hole02":"313","Hole03":"111","Hole04":"268","Hole05":"337","Hole06":"332","Hole07":"257","Hole08":"289","Hole09":"403","OutTotal":"2767","Hole10":"93","Hole11":"306","Hole12":"220","Hole13":"309","Hole14":"148","Hole15":"268","Hole16":"406","Hole17":"109","Hole18":"377","InTotal":"2236","CourseTotal":"5003","RecordTypeId":"1"},{"Description":"Men's Handicap","Slope":"","Rating":"","Hole01":"3","Hole02":"5","Hole03":"11","Hole04":"15","Hole05":"7","Hole06":"1","Hole07":"17","Hole08":"9","Hole09":"13","OutTotal":"","Hole10":"16","Hole11":"10","Hole12":"14","Hole13":"4","Hole14":"12","Hole15":"2","Hole16":"6","Hole17":"18","Hole18":"8","InTotal":"","CourseTotal":"","RecordTypeId":"3"},{"Description":"Red","Slope":"113","Rating":"70.0","Hole01":"405","Hole02":"311","Hole03":"106","Hole04":"237","Hole05":"301","Hole06":"324","Hole07":"217","Hole08":"283","Hole09":"379","OutTotal":"2563","Hole10":"81","Hole11":"254","Hole12":"213","Hole13":"281","Hole14":"115","Hole15":"247","Hole16":"383","Hole17":"77","Hole18":"371","InTotal":"2022","CourseTotal":"4585","RecordTypeId":"1"},{"Description":"Women's Handicap","Slope":"","Rating":"","Hole01":"3","Hole02":"5","Hole03":"11","Hole04":"15","Hole05":"7","Hole06":"9","Hole07":"17","Hole08":"1","Hole09":"13","OutTotal":"","Hole10":"18","Hole11":"12","Hole12":"14","Hole13":"4","Hole14":"10","Hole15":"6","Hole16":"2","Hole17":"16","Hole18":"8","InTotal":"","CourseTotal":"","RecordTypeId":"3"}]}}

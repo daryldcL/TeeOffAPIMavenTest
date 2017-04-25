@@ -1,0 +1,60 @@
+Status: FAILED
+Time Taken: 2291
+Size: 648
+Timestamp: Thu Mar 09 21:24:43 SGT 2017
+TestStep: REST Request - Empty Param6/CCNumber
+
+----------------- Messages ------------------------------
+[Contains INVALID_CREDIT_CARD_NUMBER] Missing token [INVALID_CREDIT_CARD_NUMBER] in Response
+
+----------------- Properties ------------------------------
+StatusCode: 200
+Method: GET
+HTTP Version: HTTP/1.1
+Endpoint: https://api.ezlinks.com
+URL: https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=TeeTimeReserve&Param1=208&Param2=user1%40gmail.com&Param3=limesource%3F01&Param4=530%2C03%2F11%2F2017%2006%3A32%3A00%2C4%2C06%3A32%3A00%2C4%2C4&Param5=36938&Param7=11%2F19
+
+---------------- Request ---------------------------
+Host: [api.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+
+GET https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=TeeTimeReserve&Param1=208&Param2=user1%40gmail.com&Param3=limesource%3F01&Param4=530%2C03%2F11%2F2017%2006%3A32%3A00%2C4%2C06%3A32%3A00%2C4%2C4&Param5=36938&Param7=11%2F19 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: api.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Vary: [Accept-Encoding]
+Date: [Thu, 09 Mar 2017 13:24:48 GMT]
+#status#: [HTTP/1.1 200 OK]
+Content-Encoding: [gzip]
+Connection: [close]
+Content-Type: [text/xml]
+X-Powered-By: [ASP.NET]
+Server: [Microsoft-IIS/7.0]
+Cache-Control: [private]
+
+<?ezxml version="5.0"?>
+<TeeTimeReserve>
+   <TeeTimeReserveRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/11/2017 6:32:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <Fee>Weekend (Advanced)</Fee>
+      <Amount>352</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>352</CancellationFee>
+      <CancellationDate>3/10/2017 6:32:00 AM</CancellationDate>
+      <ConfirmID>392437233</ConfirmID>
+      <CCAuthorizationType_RFG>0</CCAuthorizationType_RFG>
+      <CCAuthorizationType_GF>0</CCAuthorizationType_GF>
+      <TotalTaxes>0</TotalTaxes>
+      <TotalPrepaid>0</TotalPrepaid>
+   </TeeTimeReserveRecord>
+</TeeTimeReserve>

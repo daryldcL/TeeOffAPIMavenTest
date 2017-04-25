@@ -1,0 +1,70 @@
+Status: OK
+Time Taken: 1109
+Size: 1586
+Timestamp: Wed Mar 08 13:29:25 SGT 2017
+TestStep: Test Request: Apply Promo Code - Invalid Promo Code
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: POST
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Reservation/ApplyPromoCode?sessionId=4f8c1c0b-0e26-4f5a-8e5c-c91481cb4c4b&promoCode=invalidpromo
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [716]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/Reservation/ApplyPromoCode?sessionId=4f8c1c0b-0e26-4f5a-8e5c-c91481cb4c4b&promoCode=invalidpromo HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 716
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+{
+   "CancellationPeriod": "24",
+   "AllowFive": "false",
+   "ReservationTypeId": "8175",
+   "NumberOfPlayers": "4",
+   "FeeId": "139749",
+   "TransactionFee": "2.15",
+   "AllowThree": "true",
+   "AllowTwo": "true",
+   "MaxPlayers": "4",
+   "AllowOne": "true",
+   "ReservationString": "CF815BE9F18777818777D7D5F131FEC1",
+   "CourseId": "5091",
+   "OriginatingContactId": "26574452",
+   "Utilization": "50.0",
+   "TeeTimeTypeId": "4",
+   "Price": "35.0",
+   "SavedAmount": "22.0",
+   "CurrencyLocaleId": "1033",
+   "MinPlayers": "1",
+   "AllowFour": "true",
+   "RegularPrice": "57.0",
+   "TeeTime": "2017-03-08T11:09:00",
+   "Sku": "<SKU xmlns=\"https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse\"/>"
+}
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [POST]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:29:29 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":[{"ResultMessage":"Coupon code is invalid. Coupon does not exist or is inactive.","ResultCode":-10,"CartId":107951,"CartReservationItemId":113266,"SponsorId":6085,"ItineraryId":0,"ConfirmId":0,"OrderNumber":"","ReservationTypeId":8175,"ReservationProtocolId":0,"ProtocolText":"","TeeTime":"2017-03-08T11:09:00","TeeTimeCancelBy":"3/7/2017 11:09:00 AM","NumberOfPlayers":4,"HasCourseNote":false,"CourseNote":"","AllowPromos":true,"TeeTimeTypeId":4,"CancellationPeriod":24,"CourseInfo":{"CourseId":5091,"CourseName":"Scottsdale Silverado Golf Club","CourseAddress":"7605 E. Indian Bend, Scottsdale, AZ 85250","CourseLocation":"","Distance":4966.0,"Latitude":0.0,"Longitude":0.0,"CurrencyLocaleId":0,"CoursePhoto":"","AllowPromos":true,"TimeOffsetUtc":""},"Purchase":{"Price":35.0000,"TransactionFee":0.0000,"Total":140.0000,"DueNow":36.7625,"DueAtCourse":0.0000,"SavedAmount":22.0000,"SavedPercent":39.0000,"GrandTotal":147.0500,"Taxes":7.0500,"TaxPercent":6.3,"TotalTransactionFees":0.0000,"TotalDueNow":147.0500,"TotalDueAtCourse":0.0000,"TotalSavedAmount":88.0000,"CouponDescription":"","CouponDiscount":0.0,"TotalDueNowAfterCoupon":147.0500},"TeeTimeRules":{"MaxPlayers":4,"MinPlayers":1,"AllowOne":true,"AllowTwo":true,"AllowThree":true,"AllowFour":true,"AllowFive":false},"IsDealTime":true,"ShowPromoBox":true,"AddResultCode":0,"AddResultMessage":null,"PersistentNote":null,"MessageType":"GolfSwitch Deal Times","MessageHeader":"DEAL TIMES","Message":"DEAL Times are fully refundable if reservation is cancelled 24 hours in advance of play."}]}

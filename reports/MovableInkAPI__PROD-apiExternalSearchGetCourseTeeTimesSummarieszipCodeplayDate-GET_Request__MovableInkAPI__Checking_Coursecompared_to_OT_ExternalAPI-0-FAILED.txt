@@ -1,0 +1,68 @@
+Status: FAILED
+Time Taken: 973
+Size: 5658
+Timestamp: Thu Mar 09 21:19:49 SGT 2017
+TestStep: GET Request - MovableInkAPI - Checking Course(compared to OT ExternalAPI)
+
+----------------- Messages ------------------------------
+[courseName is correct.] XPathContains comparison failed for path [declare namespace ns1='https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85263/10-19-2015';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:courseName[1]], expecting [], actual was [Las Vegas Golf Club]
+[CourseCity is correct] XPathContains comparison failed for path [declare namespace ns1='https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85263/10-19-2015';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:courseCity[1]], expecting [], actual was [Las Vegas]
+[CourseState is correct] XPathContains comparison failed for path [declare namespace ns1='https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85263/10-19-2015';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:courseState[1]], expecting [], actual was [NV]
+[AllowPromos is correct.] XPathContains comparison failed for path [declare namespace ns1='https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85263/10-19-2015';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:allowPromos[1]], expecting [], actual was [false]
+[totalTeetimesByCourse] XPathContains comparison failed for path [declare namespace ns1='https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85263/10-19-2015';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:totalTeeTimesByCourse[1]], expecting [], actual was [27]
+[totalDealsAvailableByCourse] XPathContains comparison failed for path [declare namespace ns1='https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85263/10-19-2015';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:totalDealsAvailableByCourse[1]], expecting [], actual was [0]
+[MinPlayers] XPathContains comparison failed for path [declare namespace ns1='https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85263/10-19-2015';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:minPlayers[1]], expecting [], actual was [1]
+[MaxPlayers] XPathContains comparison failed for path [declare namespace ns1='https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85263/10-19-2015';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:maxPlayers[1]], expecting [], actual was [4]
+[PriceFrom] XPathContains comparison failed for path [declare namespace ns1='https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85263/10-19-2015';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:priceFrom[1]], expecting [], actual was [35.0]
+[PriceTo] XPathContains comparison failed for path [declare namespace ns1='https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85263/10-19-2015';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:priceTo[1]], expecting [], actual was [55.0]
+[firstTeeTime] XPathContains comparison failed for path [declare namespace ns1='https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85263/10-19-2015';
+concat(substring-before(//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:firstTeeTime[1], ' '),':00',
+' ',substring-after(//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:firstTeeTime[1], ' '))], expecting [], actual was [11:23:00 AM]
+[lastTeeTime] XPathContains comparison failed for path [declare namespace ns1='https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85263/10-19-2015';
+concat(substring-before(//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:lastTeeTime[1], ' '),':00',
+' ',substring-after(//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:lastTeeTime[1], ' '))], expecting [], actual was [5:45:00 PM]
+[maxDiscountedFromRate] XPathContains comparison failed for path [declare namespace ns1='https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85263/10-19-2015';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:maxDiscountedFromRate[1]], expecting [], actual was [65.0]
+[maxDiscountPercentage] XPathContains comparison failed for path [declare namespace ns1='https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85263/10-19-2015';
+//ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:maxDiscountPercentage[1]], expecting [], actual was [36.0]
+
+----------------- Properties ------------------------------
+StatusCode: 200
+Method: GET
+HTTP Version: HTTP/1.1
+Endpoint: https://dist.ezlinks.com
+URL: https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/89107/03-09-2017
+
+---------------- Request ---------------------------
+Host: [dist.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+
+GET https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/89107/03-09-2017 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dist.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+Date: [Thu, 09 Mar 2017 13:19:53 GMT]
+Transfer-Encoding: [chunked]
+#status#: [HTTP/1.1 200 OK]
+Content-Encoding: [gzip]
+Via: [1.1 FrontEnd-2]
+Content-Type: [application/json; charset=utf-8]
+Server: [Microsoft-HTTPAPI/2.0]
+
+{"success":true,"data":[{"courseId":1025,"courseName":"Las Vegas Golf Club","courseCity":"Las Vegas","courseState":"NV","courseUrl":"las-vegas-golf-club-las-vegas-nv-89107-tee-times","coursePhoto":"//cdn.teeoff.com/course/1025/1025-000002.jpg","latitude":36.1810913085937,"longitude":-115.198066711426,"totalTeeTimesByCourse":27,"totalDealsAvailableByCourse":0,"priceFrom":35.00,"priceTo":55.00,"firstTeeTime":"11:23 AM","lastTeeTime":"5:45 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":65.00,"maxDiscountPercentage":36.0,"allowPromos":false,"distance":0.96},{"courseId":5177,"courseName":"Angel Park GC - Mountain","courseCity":"Las Vegas","courseState":"NV","courseUrl":"angel-park-golf-club-mountain-las-vegas-nv-89145-tee-times","coursePhoto":"//cdn.teeoff.com/course/5177/5177-000175.jpg","latitude":36.17305,"longitude":-115.28575,"totalTeeTimesByCourse":19,"totalDealsAvailableByCourse":0,"priceFrom":32.00,"priceTo":75.00,"firstTeeTime":"6:54 AM","lastTeeTime":"4:06 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":99.00,"maxDiscountPercentage":49.0,"allowPromos":false,"distance":4.31},{"courseId":5178,"courseName":"Angel Park GC - Palm","courseCity":"Las Vegas","courseState":"NV","courseUrl":"angel-park-golf-club-palm-las-vegas-nv-89145-tee-times","coursePhoto":"//cdn.teeoff.com/course/5178/5178-000128.jpg","latitude":36.17305,"longitude":-115.28575,"totalTeeTimesByCourse":32,"totalDealsAvailableByCourse":10,"priceFrom":28.00,"priceTo":91.00,"firstTeeTime":"6:46 AM","lastTeeTime":"4:06 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":99.00,"maxDiscountPercentage":54.0,"allowPromos":false,"distance":4.31},{"courseId":22006,"courseName":"Angel Park GC - Cloud 9","courseCity":"Las Vegas","courseState":"NV","courseUrl":"angel-park-golf-club-cloud-9-las-vegas-nv-89145-tee-times","coursePhoto":"//cdn.teeoff.com/course/default1.jpg","latitude":36.17305,"longitude":-115.28575,"totalTeeTimesByCourse":41,"totalDealsAvailableByCourse":0,"priceFrom":19.00,"priceTo":19.00,"firstTeeTime":"7:40 AM","lastTeeTime":"2:50 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":19.00,"maxDiscountPercentage":0.0,"allowPromos":false,"distance":4.31},{"courseId":21851,"courseName":"Las Vegas National","courseCity":"Las Vegas","courseState":"NV","courseUrl":"las-vegas-national-golf-club-las-vegas-nv-89169-tee-times","coursePhoto":"//cdn.teeoff.com/course/default2.jpg","latitude":36.1298522949219,"longitude":-115.125785827637,"totalTeeTimesByCourse":25,"totalDealsAvailableByCourse":0,"priceFrom":89.00,"priceTo":139.00,"firstTeeTime":"6:40 AM","lastTeeTime":"6:00 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":139.00,"maxDiscountPercentage":0.0,"allowPromos":false,"distance":5.4},{"courseId":4104,"courseName":"Durango Hills Golf Club","courseCity":"Las Vegas","courseState":"NV","courseUrl":"durango-hills-golf-club-las-vegas-nv-89129-tee-times","coursePhoto":"//cdn.teeoff.com/course/4104/4104-27640.jpg","latitude":36.2232474,"longitude":-115.2801275,"totalTeeTimesByCourse":9,"totalDealsAvailableByCourse":1,"priceFrom":10.00,"priceTo":30.00,"firstTeeTime":"6:05 AM","lastTeeTime":"1:57 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":35.00,"maxDiscountPercentage":60.0,"allowPromos":false,"distance":5.42},{"courseId":5170,"courseName":"Palm Valley Golf Course","courseCity":"Las Vegas","courseState":"NV","courseUrl":"palm-valley-golf-course-las-vegas-nv-89134-tee-times","coursePhoto":"//cdn.teeoff.com/course/default1.jpg","latitude":36.2107867,"longitude":-115.2956432,"totalTeeTimesByCourse":14,"totalDealsAvailableByCourse":0,"priceFrom":35.00,"priceTo":89.00,"firstTeeTime":"12:34 PM","lastTeeTime":"4:58 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":89.00,"maxDiscountPercentage":0.0,"allowPromos":false,"distance":5.61},{"courseId":16413,"courseName":"Los Prados Golf Course","courseCity":"Las Vegas","courseState":"NV","courseUrl":"los-prados-golf-course-las-vegas-nv-89130-tee-times","coursePhoto":"//cdn.teeoff.com/course/16413/16413-000155.jpg","latitude":36.250964,"longitude":-115.218861,"totalTeeTimesByCourse":15,"totalDealsAvailableByCourse":0,"priceFrom":21.00,"priceTo":36.00,"firstTeeTime":"12:39 PM","lastTeeTime":"3:39 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":36.00,"maxDiscountPercentage":16.0,"allowPromos":false,"distance":5.62},{"courseId":5426,"courseName":"Spanish Trail Golf Club - Canyon/Lakes","courseCity":"Las Vegas","courseState":"NV","courseUrl":"spanish-trail-golf-club-canyon-lakes-las-vegas-nv-89113-tee-times","coursePhoto":"//cdn.teeoff.com/course/default2.jpg","latitude":36.0970420837402,"longitude":-115.254837036133,"totalTeeTimesByCourse":4,"totalDealsAvailableByCourse":0,"priceFrom":95.00,"priceTo":125.00,"firstTeeTime":"7:30 AM","lastTeeTime":"12:40 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":125.00,"maxDiscountPercentage":0.0,"allowPromos":false,"distance":5.68},{"courseId":5167,"courseName":"Spanish Trail Golf Club - Sunrise/Canyon","courseCity":"Las Vegas","courseState":"NV","courseUrl":"spanish-trail-golf-club-sunrise-canyon-las-vegas-nv-89113-tee-times","coursePhoto":"//cdn.teeoff.com/course/default2.jpg","latitude":36.09703,"longitude":-115.25482,"totalTeeTimesByCourse":13,"totalDealsAvailableByCourse":0,"priceFrom":95.00,"priceTo":125.00,"firstTeeTime":"11:40 AM","lastTeeTime":"2:30 PM","minPlayers":1,"maxPlayers":4,"maxDiscountedFromRate":125.00,"maxDiscountPercentage":0.0,"allowPromos":false,"distance":5.68}],"reference":[{"field":"TotalDealTimes","value":"11"},{"field":"TotalCourseTimes","value":"188"}],"errors":[],"notifications":[],"page":1,"limit":10,"total":10}

@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="9e9845a4-229f-471b-960e-eff17ce95a4f" discardOkResults="true" failOnError="false" failTestCaseOnErrors="true" keepSession="true" name="AddMember" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="9e9845a4-229f-471b-960e-eff17ce95a4ffileName">AddMember</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="REST Request - Valid" id="bd5685bc-08d9-4291-ad38-7e7aee75c41e"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="GolferInformation_AddMember" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Valid" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="e99ba0ca-fd36-48ac-81fb-c3e9d952f753" name="InternetEmail is the same"><con:configuration><path>//AddMember[1]/AddMemberRecord[1]/InternetEmail[1]</path><content>${REST Request - Valid#Param19}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Param21" value="111111"/>
+  <con:entry key="Param22" value="${#Project#dateToday}"/>
+  <con:entry key="Param23" value="02/20/9999"/>
+  <con:entry key="Param24" value="3518"/>
+  <con:entry key="Param20" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="Param25" value="0"/>
+  <con:entry key="Password" value="ttdemo14"/>
+  <con:entry key="Param10" value="6015"/>
+  <con:entry key="Param11" value="Philippines"/>
+  <con:entry key="Param12" value="5555-5555-5555"/>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Param9" value="None"/>
+  <con:entry key="Param13" value="5555-55-5-55-5"/>
+  <con:entry key="Param8" value="Lapu-Lapu"/>
+  <con:entry key="ObjectId" value="AddMember"/>
+  <con:entry key="Param7" value="Gun-ob"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="Dimataga Village"/>
+  <con:entry key="Param5" value="Limesource"/>
+  <con:entry key="Param4" value="Cortes"/>
+  <con:entry key="Param3" value="Limesource"/>
+  <con:entry key="Param2" value="Tester"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Param18" value="limesource?01"/>
+  <con:entry key="Param19" value="${#Project#member}"/>
+  <con:entry key="Param14" value="55-555-5"/>
+  <con:entry key="Param15" value="09260387756"/>
+  <con:entry key="Param16" value="938393"/>
+  <con:entry key="Param17" value="${#Project#member}"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry><con:entry>Param10</con:entry><con:entry>Param11</con:entry><con:entry>Param12</con:entry><con:entry>Param13</con:entry><con:entry>Param14</con:entry><con:entry>Param15</con:entry><con:entry>Param16</con:entry><con:entry>Param17</con:entry><con:entry>Param18</con:entry><con:entry>Param19</con:entry><con:entry>Param20</con:entry><con:entry>Param21</con:entry><con:entry>Param22</con:entry><con:entry>Param23</con:entry><con:entry>Param24</con:entry><con:entry>Param25</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Duplicate UserID" id="8baec138-f09c-4954-b07b-7eacfe9c209f"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="GolferInformation_AddMember" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Duplicate UserID" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="592d877f-646b-45ff-9788-f2a551e199cc" name="DUPLICATE_INTERNET_USER_ID"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>DUPLICATE_INTERNET_USER_ID</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Param21" value="111111"/>
+  <con:entry key="Param22" value="02/20/2017"/>
+  <con:entry key="Param23" value="02/20/2019"/>
+  <con:entry key="Param24" value="3518"/>
+  <con:entry key="Param20" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="Param25" value="0"/>
+  <con:entry key="Password" value="ttdemo14"/>
+  <con:entry key="Param10" value="6015"/>
+  <con:entry key="Param11" value="Philippines"/>
+  <con:entry key="Param12" value="5555-5555-5555"/>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Param9" value="None"/>
+  <con:entry key="Param13" value="5555-55-5-55-5"/>
+  <con:entry key="Param8" value="Lapu-Lapu"/>
+  <con:entry key="ObjectId" value="AddMember"/>
+  <con:entry key="Param7" value="Gun-ob"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="Dimataga Village"/>
+  <con:entry key="Param5" value="Limesource"/>
+  <con:entry key="Param4" value="Cortes"/>
+  <con:entry key="Param3" value="Daisy"/>
+  <con:entry key="Param2" value="Atim"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Param18" value="limesource?01"/>
+  <con:entry key="Param19" value="daisy@limesource.se"/>
+  <con:entry key="Param14" value="55-555-5"/>
+  <con:entry key="Param15" value="09260387756"/>
+  <con:entry key="Param16" value="938393"/>
+  <con:entry key="Param17" value="limesourcetester"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry><con:entry>Param10</con:entry><con:entry>Param11</con:entry><con:entry>Param12</con:entry><con:entry>Param13</con:entry><con:entry>Param14</con:entry><con:entry>Param15</con:entry><con:entry>Param16</con:entry><con:entry>Param17</con:entry><con:entry>Param18</con:entry><con:entry>Param19</con:entry><con:entry>Param20</con:entry><con:entry>Param21</con:entry><con:entry>Param22</con:entry><con:entry>Param23</con:entry><con:entry>Param24</con:entry><con:entry>Param25</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param1/SponsorID" id="80eb771f-5f25-4156-baf2-aecf91eb8de7"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="GolferInformation_AddMember" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param1/SponsorID" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="e99ba0ca-fd36-48ac-81fb-c3e9d952f753" name="INVALID_SPONSOR_ID"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>INVALID_SPONSOR_ID</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Param21" value="111111"/>
+  <con:entry key="Param22" value="${#Project#dateToday}"/>
+  <con:entry key="Param23" value="02/20/9999"/>
+  <con:entry key="Param24" value="3518"/>
+  <con:entry key="Param20" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="Param25" value="0"/>
+  <con:entry key="Password" value="ttdemo14"/>
+  <con:entry key="Param10" value="6015"/>
+  <con:entry key="Param11" value="Philippines"/>
+  <con:entry key="Param12" value="5555-5555-5555"/>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Param9" value="None"/>
+  <con:entry key="Param13" value="5555-55-5-55-5"/>
+  <con:entry key="Param8" value="Lapu-Lapu"/>
+  <con:entry key="ObjectId" value="AddMember"/>
+  <con:entry key="Param7" value="Gun-ob"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="Dimataga Village"/>
+  <con:entry key="Param5" value="Limesource"/>
+  <con:entry key="Param4" value="Cortes"/>
+  <con:entry key="Param3" value="Limesource"/>
+  <con:entry key="Param2" value="Tester"/>
+  <con:entry key="Param18" value="limesource?01"/>
+  <con:entry key="Param19" value="${#Project#member}"/>
+  <con:entry key="Param14" value="55-555-5"/>
+  <con:entry key="Param15" value="09260387756"/>
+  <con:entry key="Param16" value="938393"/>
+  <con:entry key="Param17" value="${#Project#member}"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry><con:entry>Param10</con:entry><con:entry>Param11</con:entry><con:entry>Param12</con:entry><con:entry>Param13</con:entry><con:entry>Param14</con:entry><con:entry>Param15</con:entry><con:entry>Param16</con:entry><con:entry>Param17</con:entry><con:entry>Param18</con:entry><con:entry>Param19</con:entry><con:entry>Param20</con:entry><con:entry>Param21</con:entry><con:entry>Param22</con:entry><con:entry>Param23</con:entry><con:entry>Param24</con:entry><con:entry>Param25</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param2/LastName" id="ad2160c2-6293-407b-910e-19373dd462cd"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="GolferInformation_AddMember" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param2/LastName" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="b97676c6-ef5d-43c6-82e8-5074a14e8fcd" name="REQUIRE_LASTNAME"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>REQUIRE_LASTNAME</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Param21" value="111111"/>
+  <con:entry key="Param22" value="${#Project#dateToday}"/>
+  <con:entry key="Param23" value="02/20/9999"/>
+  <con:entry key="Param24" value="3518"/>
+  <con:entry key="Param20" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="Param25" value="0"/>
+  <con:entry key="Password" value="ttdemo14"/>
+  <con:entry key="Param10" value="6015"/>
+  <con:entry key="Param11" value="Philippines"/>
+  <con:entry key="Param12" value="5555-5555-5555"/>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Param9" value="None"/>
+  <con:entry key="Param13" value="5555-55-5-55-5"/>
+  <con:entry key="Param8" value="Lapu-Lapu"/>
+  <con:entry key="ObjectId" value="AddMember"/>
+  <con:entry key="Param7" value="Gun-ob"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="Dimataga Village"/>
+  <con:entry key="Param5" value="Limesource"/>
+  <con:entry key="Param4" value="Cortes"/>
+  <con:entry key="Param3" value="Limesource"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Param18" value="limesource?01"/>
+  <con:entry key="Param19" value="${#Project#member}"/>
+  <con:entry key="Param14" value="55-555-5"/>
+  <con:entry key="Param15" value="09260387756"/>
+  <con:entry key="Param16" value="938393"/>
+  <con:entry key="Param17" value="${#Project#member}"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry><con:entry>Param10</con:entry><con:entry>Param11</con:entry><con:entry>Param12</con:entry><con:entry>Param13</con:entry><con:entry>Param14</con:entry><con:entry>Param15</con:entry><con:entry>Param16</con:entry><con:entry>Param17</con:entry><con:entry>Param18</con:entry><con:entry>Param19</con:entry><con:entry>Param20</con:entry><con:entry>Param21</con:entry><con:entry>Param22</con:entry><con:entry>Param23</con:entry><con:entry>Param24</con:entry><con:entry>Param25</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param3/FirstName" id="1fafdeed-5966-43bd-b0c4-088f946b7dd3"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="GolferInformation_AddMember" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param3/FirstName" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="f4704cea-2383-493d-85a3-3d497c1a7b37" name="REQUIRE_FIRSTNAME"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>REQUIRE_FIRSTNAME</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Param21" value="111111"/>
+  <con:entry key="Param22" value="${#Project#dateToday}"/>
+  <con:entry key="Param23" value="02/20/9999"/>
+  <con:entry key="Param24" value="3518"/>
+  <con:entry key="Param20" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="Param25" value="0"/>
+  <con:entry key="Password" value="ttdemo14"/>
+  <con:entry key="Param10" value="6015"/>
+  <con:entry key="Param11" value="Philippines"/>
+  <con:entry key="Param12" value="5555-5555-5555"/>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Param9" value="None"/>
+  <con:entry key="Param13" value="5555-55-5-55-5"/>
+  <con:entry key="Param8" value="Lapu-Lapu"/>
+  <con:entry key="ObjectId" value="AddMember"/>
+  <con:entry key="Param7" value="Gun-ob"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="Dimataga Village"/>
+  <con:entry key="Param5" value="Limesource"/>
+  <con:entry key="Param4" value="Cortes"/>
+  <con:entry key="Param2" value="Tester"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Param18" value="limesource?01"/>
+  <con:entry key="Param19" value="${#Project#member}"/>
+  <con:entry key="Param14" value="55-555-5"/>
+  <con:entry key="Param15" value="09260387756"/>
+  <con:entry key="Param16" value="938393"/>
+  <con:entry key="Param17" value="${#Project#member}"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry><con:entry>Param10</con:entry><con:entry>Param11</con:entry><con:entry>Param12</con:entry><con:entry>Param13</con:entry><con:entry>Param14</con:entry><con:entry>Param15</con:entry><con:entry>Param16</con:entry><con:entry>Param17</con:entry><con:entry>Param18</con:entry><con:entry>Param19</con:entry><con:entry>Param20</con:entry><con:entry>Param21</con:entry><con:entry>Param22</con:entry><con:entry>Param23</con:entry><con:entry>Param24</con:entry><con:entry>Param25</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param6/Address1" id="485f0511-e42a-4fea-a911-ef07857a1e65"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="GolferInformation_AddMember" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param6/Address1" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="f79bb68d-559c-4b0e-9f8a-689da5932887" name="REQUIRE_ADDRESS"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>REQUIRE_ADDRESS</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Param21" value="111111"/>
+  <con:entry key="Param22" value="${#Project#dateToday}"/>
+  <con:entry key="Param23" value="02/20/9999"/>
+  <con:entry key="Param24" value="3518"/>
+  <con:entry key="Param20" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="Param25" value="0"/>
+  <con:entry key="Password" value="ttdemo14"/>
+  <con:entry key="Param10" value="6015"/>
+  <con:entry key="Param11" value="Philippines"/>
+  <con:entry key="Param12" value="5555-5555-5555"/>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Param9" value="None"/>
+  <con:entry key="Param13" value="5555-55-5-55-5"/>
+  <con:entry key="Param8" value="Lapu-Lapu"/>
+  <con:entry key="ObjectId" value="AddMember"/>
+  <con:entry key="Param7" value="Gun-ob"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param5" value="Limesource"/>
+  <con:entry key="Param4" value="Cortes"/>
+  <con:entry key="Param3" value="Limesource"/>
+  <con:entry key="Param2" value="Tester"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Param18" value="limesource?01"/>
+  <con:entry key="Param19" value="${#Project#member}"/>
+  <con:entry key="Param14" value="55-555-5"/>
+  <con:entry key="Param15" value="09260387756"/>
+  <con:entry key="Param16" value="938393"/>
+  <con:entry key="Param17" value="${#Project#member}"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry><con:entry>Param10</con:entry><con:entry>Param11</con:entry><con:entry>Param12</con:entry><con:entry>Param13</con:entry><con:entry>Param14</con:entry><con:entry>Param15</con:entry><con:entry>Param16</con:entry><con:entry>Param17</con:entry><con:entry>Param18</con:entry><con:entry>Param19</con:entry><con:entry>Param20</con:entry><con:entry>Param21</con:entry><con:entry>Param22</con:entry><con:entry>Param23</con:entry><con:entry>Param24</con:entry><con:entry>Param25</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param8/City" id="27d7807d-2fe8-4b28-bb90-47ace215e6a0"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="GolferInformation_AddMember" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param8/City" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="b951e955-d436-4c95-ba3d-ff963268ed45" name="REQUIRE_CITY"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>REQUIRE_CITY</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Param21" value="111111"/>
+  <con:entry key="Param22" value="${#Project#dateToday}"/>
+  <con:entry key="Param23" value="02/20/9999"/>
+  <con:entry key="Param24" value="3518"/>
+  <con:entry key="Param20" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="Param25" value="0"/>
+  <con:entry key="Password" value="ttdemo14"/>
+  <con:entry key="Param10" value="6015"/>
+  <con:entry key="Param11" value="Philippines"/>
+  <con:entry key="Param12" value="5555-5555-5555"/>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Param9" value="None"/>
+  <con:entry key="Param13" value="5555-55-5-55-5"/>
+  <con:entry key="ObjectId" value="AddMember"/>
+  <con:entry key="Param7" value="Gun-ob"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="Dimataga Village"/>
+  <con:entry key="Param5" value="Limesource"/>
+  <con:entry key="Param4" value="Cortes"/>
+  <con:entry key="Param3" value="Limesource"/>
+  <con:entry key="Param2" value="Tester"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Param18" value="limesource?01"/>
+  <con:entry key="Param19" value="${#Project#member}"/>
+  <con:entry key="Param14" value="55-555-5"/>
+  <con:entry key="Param15" value="09260387756"/>
+  <con:entry key="Param16" value="938393"/>
+  <con:entry key="Param17" value="${#Project#member}"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry><con:entry>Param10</con:entry><con:entry>Param11</con:entry><con:entry>Param12</con:entry><con:entry>Param13</con:entry><con:entry>Param14</con:entry><con:entry>Param15</con:entry><con:entry>Param16</con:entry><con:entry>Param17</con:entry><con:entry>Param18</con:entry><con:entry>Param19</con:entry><con:entry>Param20</con:entry><con:entry>Param21</con:entry><con:entry>Param22</con:entry><con:entry>Param23</con:entry><con:entry>Param24</con:entry><con:entry>Param25</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param9/StateProvince" id="ae545fbb-d8c2-425d-a656-5b42ca254119"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="GolferInformation_AddMember" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param9/StateProvince" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="449a341b-8426-46ba-820e-0c7ff1d13ada" name="REQUIRE_STATE_PROVINCE"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>REQUIRE_STATE_PROVINCE</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Param21" value="111111"/>
+  <con:entry key="Param22" value="${#Project#dateToday}"/>
+  <con:entry key="Param23" value="02/20/9999"/>
+  <con:entry key="Param24" value="3518"/>
+  <con:entry key="Param20" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="Param25" value="0"/>
+  <con:entry key="Password" value="ttdemo14"/>
+  <con:entry key="Param10" value="6015"/>
+  <con:entry key="Param11" value="Philippines"/>
+  <con:entry key="Param12" value="5555-5555-5555"/>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Param13" value="5555-55-5-55-5"/>
+  <con:entry key="Param8" value="Lapu-Lapu"/>
+  <con:entry key="ObjectId" value="AddMember"/>
+  <con:entry key="Param7" value="Gun-ob"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="Dimataga Village"/>
+  <con:entry key="Param5" value="Limesource"/>
+  <con:entry key="Param4" value="Cortes"/>
+  <con:entry key="Param3" value="Limesource"/>
+  <con:entry key="Param2" value="Tester"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Param18" value="limesource?01"/>
+  <con:entry key="Param19" value="${#Project#member}"/>
+  <con:entry key="Param14" value="55-555-5"/>
+  <con:entry key="Param15" value="09260387756"/>
+  <con:entry key="Param16" value="938393"/>
+  <con:entry key="Param17" value="${#Project#member}"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry><con:entry>Param10</con:entry><con:entry>Param11</con:entry><con:entry>Param12</con:entry><con:entry>Param13</con:entry><con:entry>Param14</con:entry><con:entry>Param15</con:entry><con:entry>Param16</con:entry><con:entry>Param17</con:entry><con:entry>Param18</con:entry><con:entry>Param19</con:entry><con:entry>Param20</con:entry><con:entry>Param21</con:entry><con:entry>Param22</con:entry><con:entry>Param23</con:entry><con:entry>Param24</con:entry><con:entry>Param25</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param10/ZipPostalCode" id="2173cc73-7baf-4983-9fbb-c3477dd89e24"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="GolferInformation_AddMember" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param10/ZipPostalCode" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="6774fe82-c8b1-4f9a-93a1-37f224acd5b6" name="REQUIRE_ZIP_POSTAL_CODE"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>REQUIRE_ZIP_POSTAL_CODE</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Param21" value="111111"/>
+  <con:entry key="Param22" value="${#Project#dateToday}"/>
+  <con:entry key="Param23" value="02/20/9999"/>
+  <con:entry key="Param24" value="3518"/>
+  <con:entry key="Param20" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="Param25" value="0"/>
+  <con:entry key="Password" value="ttdemo14"/>
+  <con:entry key="Param11" value="Philippines"/>
+  <con:entry key="Param12" value="5555-5555-5555"/>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Param9" value="None"/>
+  <con:entry key="Param13" value="5555-55-5-55-5"/>
+  <con:entry key="Param8" value="Lapu-Lapu"/>
+  <con:entry key="ObjectId" value="AddMember"/>
+  <con:entry key="Param7" value="Gun-ob"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="Dimataga Village"/>
+  <con:entry key="Param5" value="Limesource"/>
+  <con:entry key="Param4" value="Cortes"/>
+  <con:entry key="Param3" value="Limesource"/>
+  <con:entry key="Param2" value="Tester"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Param18" value="limesource?01"/>
+  <con:entry key="Param19" value="${#Project#member}"/>
+  <con:entry key="Param14" value="55-555-5"/>
+  <con:entry key="Param15" value="09260387756"/>
+  <con:entry key="Param16" value="938393"/>
+  <con:entry key="Param17" value="${#Project#member}"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry><con:entry>Param10</con:entry><con:entry>Param11</con:entry><con:entry>Param12</con:entry><con:entry>Param13</con:entry><con:entry>Param14</con:entry><con:entry>Param15</con:entry><con:entry>Param16</con:entry><con:entry>Param17</con:entry><con:entry>Param18</con:entry><con:entry>Param19</con:entry><con:entry>Param20</con:entry><con:entry>Param21</con:entry><con:entry>Param22</con:entry><con:entry>Param23</con:entry><con:entry>Param24</con:entry><con:entry>Param25</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param12/HomePhone" id="5fc3ee25-359b-4a18-80d7-d4d50d6eed3d"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="GolferInformation_AddMember" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param12/HomePhone" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="d348dc34-88e6-40d4-81d2-85c1f3ed98dc" name="REQUIRE_PHONE"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>REQUIRE_PHONE</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Param21" value="111111"/>
+  <con:entry key="Param22" value="${#Project#dateToday}"/>
+  <con:entry key="Param23" value="02/20/9999"/>
+  <con:entry key="Param24" value="3518"/>
+  <con:entry key="Param20" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="Param25" value="0"/>
+  <con:entry key="Password" value="ttdemo14"/>
+  <con:entry key="Param10" value="6015"/>
+  <con:entry key="Param11" value="Philippines"/>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Param9" value="None"/>
+  <con:entry key="Param8" value="Lapu-Lapu"/>
+  <con:entry key="ObjectId" value="AddMember"/>
+  <con:entry key="Param7" value="Gun-ob"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="Dimataga Village"/>
+  <con:entry key="Param5" value="Limesource"/>
+  <con:entry key="Param4" value="Cortes"/>
+  <con:entry key="Param3" value="Limesource"/>
+  <con:entry key="Param2" value="Tester"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Param18" value="limesource?01"/>
+  <con:entry key="Param19" value="${#Project#member}"/>
+  <con:entry key="Param14" value="55-555-5"/>
+  <con:entry key="Param15" value="09260387756"/>
+  <con:entry key="Param16" value="938393"/>
+  <con:entry key="Param17" value="${#Project#member}"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry><con:entry>Param10</con:entry><con:entry>Param11</con:entry><con:entry>Param12</con:entry><con:entry>Param13</con:entry><con:entry>Param14</con:entry><con:entry>Param15</con:entry><con:entry>Param16</con:entry><con:entry>Param17</con:entry><con:entry>Param18</con:entry><con:entry>Param19</con:entry><con:entry>Param20</con:entry><con:entry>Param21</con:entry><con:entry>Param22</con:entry><con:entry>Param23</con:entry><con:entry>Param24</con:entry><con:entry>Param25</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param17/InternetUserID" id="3a99ef6f-5140-485e-a563-536a6fd94d30"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="GolferInformation_AddMember" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param17/InternetUserID" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="ca1ee2f3-1857-4d7d-96ca-ab7e0bba818a" name="INVALID_USERID"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>INVALID_USERID</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Param21" value="111111"/>
+  <con:entry key="Param22" value="${#Project#dateToday}"/>
+  <con:entry key="Param23" value="02/20/9999"/>
+  <con:entry key="Param24" value="3518"/>
+  <con:entry key="Param20" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="Param25" value="0"/>
+  <con:entry key="Password" value="ttdemo14"/>
+  <con:entry key="Param10" value="6015"/>
+  <con:entry key="Param11" value="Philippines"/>
+  <con:entry key="Param12" value="5555-5555-5555"/>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Param9" value="None"/>
+  <con:entry key="Param13" value="5555-55-5-55-5"/>
+  <con:entry key="Param8" value="Lapu-Lapu"/>
+  <con:entry key="ObjectId" value="AddMember"/>
+  <con:entry key="Param7" value="Gun-ob"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="Dimataga Village"/>
+  <con:entry key="Param5" value="Limesource"/>
+  <con:entry key="Param4" value="Cortes"/>
+  <con:entry key="Param3" value="Limesource"/>
+  <con:entry key="Param2" value="Tester"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Param18" value="limesource?01"/>
+  <con:entry key="Param19" value="${#Project#member}"/>
+  <con:entry key="Param14" value="55-555-5"/>
+  <con:entry key="Param15" value="09260387756"/>
+  <con:entry key="Param16" value="938393"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry><con:entry>Param10</con:entry><con:entry>Param11</con:entry><con:entry>Param12</con:entry><con:entry>Param13</con:entry><con:entry>Param14</con:entry><con:entry>Param15</con:entry><con:entry>Param16</con:entry><con:entry>Param17</con:entry><con:entry>Param18</con:entry><con:entry>Param19</con:entry><con:entry>Param20</con:entry><con:entry>Param21</con:entry><con:entry>Param22</con:entry><con:entry>Param23</con:entry><con:entry>Param24</con:entry><con:entry>Param25</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param18/InternetPassword" id="0bc5ce21-fc7b-42b5-ac8e-ac871d8ba0dc"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="GolferInformation_AddMember" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param18/InternetPassword" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="48510cc5-1744-40c1-961e-a1a604252f2d" name="INVALID_PASSWORD"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>INVALID_PASSWORD</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Param21" value="111111"/>
+  <con:entry key="Param22" value="${#Project#dateToday}"/>
+  <con:entry key="Param23" value="02/20/9999"/>
+  <con:entry key="Param24" value="3518"/>
+  <con:entry key="Param20" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="Param25" value="0"/>
+  <con:entry key="Password" value="ttdemo14"/>
+  <con:entry key="Param10" value="6015"/>
+  <con:entry key="Param11" value="Philippines"/>
+  <con:entry key="Param12" value="5555-5555-5555"/>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Param9" value="None"/>
+  <con:entry key="Param13" value="5555-55-5-55-5"/>
+  <con:entry key="Param8" value="Lapu-Lapu"/>
+  <con:entry key="ObjectId" value="AddMember"/>
+  <con:entry key="Param7" value="Gun-ob"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="Dimataga Village"/>
+  <con:entry key="Param5" value="Limesource"/>
+  <con:entry key="Param4" value="Cortes"/>
+  <con:entry key="Param3" value="Limesource"/>
+  <con:entry key="Param2" value="Tester"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Param19" value="${#Project#member}"/>
+  <con:entry key="Param14" value="55-555-5"/>
+  <con:entry key="Param15" value="09260387756"/>
+  <con:entry key="Param16" value="938393"/>
+  <con:entry key="Param17" value="${#Project#member}"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry><con:entry>Param10</con:entry><con:entry>Param11</con:entry><con:entry>Param12</con:entry><con:entry>Param13</con:entry><con:entry>Param14</con:entry><con:entry>Param15</con:entry><con:entry>Param16</con:entry><con:entry>Param17</con:entry><con:entry>Param18</con:entry><con:entry>Param19</con:entry><con:entry>Param20</con:entry><con:entry>Param21</con:entry><con:entry>Param22</con:entry><con:entry>Param23</con:entry><con:entry>Param24</con:entry><con:entry>Param25</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param19/InternetEmail" id="cd137357-b6fc-45e9-9193-9bf2606eb45f"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="GolferInformation_AddMember" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param19/InternetEmail" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="2d1b7bb8-4910-4011-9111-54f40902fc3c" name="REQUIRE_EMAIL"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>REQUIRE_EMAIL</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Param21" value="111111"/>
+  <con:entry key="Param22" value="${#Project#dateToday}"/>
+  <con:entry key="Param23" value="02/20/9999"/>
+  <con:entry key="Param24" value="3518"/>
+  <con:entry key="Param20" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="Param25" value="0"/>
+  <con:entry key="Password" value="ttdemo14"/>
+  <con:entry key="Param10" value="6015"/>
+  <con:entry key="Param11" value="Philippines"/>
+  <con:entry key="Param12" value="5555-5555-5555"/>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Param9" value="None"/>
+  <con:entry key="Param13" value="5555-55-5-55-5"/>
+  <con:entry key="Param8" value="Lapu-Lapu"/>
+  <con:entry key="ObjectId" value="AddMember"/>
+  <con:entry key="Param7" value="Gun-ob"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="Dimataga Village"/>
+  <con:entry key="Param5" value="Limesource"/>
+  <con:entry key="Param4" value="Cortes"/>
+  <con:entry key="Param3" value="Limesource"/>
+  <con:entry key="Param2" value="Tester"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Param18" value="limesource?01"/>
+  <con:entry key="Param14" value="55-555-5"/>
+  <con:entry key="Param15" value="09260387756"/>
+  <con:entry key="Param16" value="938393"/>
+  <con:entry key="Param17" value="${#Project#member}"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry><con:entry>Param10</con:entry><con:entry>Param11</con:entry><con:entry>Param12</con:entry><con:entry>Param13</con:entry><con:entry>Param14</con:entry><con:entry>Param15</con:entry><con:entry>Param16</con:entry><con:entry>Param17</con:entry><con:entry>Param18</con:entry><con:entry>Param19</con:entry><con:entry>Param20</con:entry><con:entry>Param21</con:entry><con:entry>Param22</con:entry><con:entry>Param23</con:entry><con:entry>Param24</con:entry><con:entry>Param25</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param22/ MembershipStartDate" id="0b702ea1-7474-4bc0-8cbe-775f5f89fc5b"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="GolferInformation_AddMember" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param22/ MembershipStartDate" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="af6dfdfc-e139-490e-ab90-16a641b3aa33" name="INVALID_DATETIME"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>INVALID_DATETIME</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Param21" value="111111"/>
+  <con:entry key="Param23" value="02/20/9999"/>
+  <con:entry key="Param24" value="3518"/>
+  <con:entry key="Param20" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="Param25" value="0"/>
+  <con:entry key="Password" value="ttdemo14"/>
+  <con:entry key="Param10" value="6015"/>
+  <con:entry key="Param11" value="Philippines"/>
+  <con:entry key="Param12" value="5555-5555-5555"/>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Param9" value="None"/>
+  <con:entry key="Param13" value="5555-55-5-55-5"/>
+  <con:entry key="Param8" value="Lapu-Lapu"/>
+  <con:entry key="ObjectId" value="AddMember"/>
+  <con:entry key="Param7" value="Gun-ob"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="Dimataga Village"/>
+  <con:entry key="Param5" value="Limesource"/>
+  <con:entry key="Param4" value="Cortes"/>
+  <con:entry key="Param3" value="Limesource"/>
+  <con:entry key="Param2" value="Tester"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Param18" value="limesource?01"/>
+  <con:entry key="Param19" value="${#Project#member}"/>
+  <con:entry key="Param14" value="55-555-5"/>
+  <con:entry key="Param15" value="09260387756"/>
+  <con:entry key="Param16" value="938393"/>
+  <con:entry key="Param17" value="${#Project#member}"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry><con:entry>Param10</con:entry><con:entry>Param11</con:entry><con:entry>Param12</con:entry><con:entry>Param13</con:entry><con:entry>Param14</con:entry><con:entry>Param15</con:entry><con:entry>Param16</con:entry><con:entry>Param17</con:entry><con:entry>Param18</con:entry><con:entry>Param19</con:entry><con:entry>Param20</con:entry><con:entry>Param21</con:entry><con:entry>Param22</con:entry><con:entry>Param23</con:entry><con:entry>Param24</con:entry><con:entry>Param25</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param23/MembershipEndDate" id="1c51ef7c-6b66-4ae3-806f-33a67a033a2a"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="GolferInformation_AddMember" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param23/MembershipEndDate" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="a591d8dd-4d74-49b7-a8f9-14351dece307" name="INVALID_DATETIME"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>INVALID_DATETIME</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Param21" value="111111"/>
+  <con:entry key="Param22" value="${#Project#dateToday}"/>
+  <con:entry key="Param24" value="3518"/>
+  <con:entry key="Param20" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="Param25" value="0"/>
+  <con:entry key="Password" value="ttdemo14"/>
+  <con:entry key="Param10" value="6015"/>
+  <con:entry key="Param11" value="Philippines"/>
+  <con:entry key="Param12" value="5555-5555-5555"/>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Param9" value="None"/>
+  <con:entry key="Param13" value="5555-55-5-55-5"/>
+  <con:entry key="Param8" value="Lapu-Lapu"/>
+  <con:entry key="ObjectId" value="AddMember"/>
+  <con:entry key="Param7" value="Gun-ob"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="Dimataga Village"/>
+  <con:entry key="Param5" value="Limesource"/>
+  <con:entry key="Param4" value="Cortes"/>
+  <con:entry key="Param3" value="Limesource"/>
+  <con:entry key="Param2" value="Tester"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Param18" value="limesource?01"/>
+  <con:entry key="Param19" value="${#Project#member}"/>
+  <con:entry key="Param14" value="55-555-5"/>
+  <con:entry key="Param15" value="09260387756"/>
+  <con:entry key="Param16" value="938393"/>
+  <con:entry key="Param17" value="${#Project#member}"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry><con:entry>Param10</con:entry><con:entry>Param11</con:entry><con:entry>Param12</con:entry><con:entry>Param13</con:entry><con:entry>Param14</con:entry><con:entry>Param15</con:entry><con:entry>Param16</con:entry><con:entry>Param17</con:entry><con:entry>Param18</con:entry><con:entry>Param19</con:entry><con:entry>Param20</con:entry><con:entry>Param21</con:entry><con:entry>Param22</con:entry><con:entry>Param23</con:entry><con:entry>Param24</con:entry><con:entry>Param25</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request - Empty Param 24/ MembershipTypeID" id="d75b84cd-bb47-426d-943b-fba0960c5df3"><con:settings/><con:config service="API.EZLinks" resourcePath="/ETNObject.asp" methodName="GolferInformation_AddMember" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request - Empty Param 24/ MembershipTypeID" id="8de13891-11d2-4540-baf2-d584b53e486d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.ezlinks.com</con:endpoint><con:request/><con:originalUri>https://api.ezlinks.com/ETNObject.asp</con:originalUri><con:assertion type="XPath Match" id="72566b8b-477d-4438-b8c5-af937c722289" name="INVALID_MEMBERSHIP_TYPE_ID"><con:configuration><path>//Error[1]/ErrorDescription[1]</path><content>INVALID_MEMBERSHIP_TYPE_ID</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Param21" value="111111"/>
+  <con:entry key="Param22" value="${#Project#dateToday}"/>
+  <con:entry key="Param23" value="02/20/9999"/>
+  <con:entry key="Param20" value="1"/>
+  <con:entry key="Subscriber" value="XMLDemo"/>
+  <con:entry key="Param25" value="0"/>
+  <con:entry key="Password" value="ttdemo14"/>
+  <con:entry key="Param10" value="6015"/>
+  <con:entry key="Param11" value="Philippines"/>
+  <con:entry key="Param12" value="5555-5555-5555"/>
+  <con:entry key="DOM" value="1"/>
+  <con:entry key="Param9" value="None"/>
+  <con:entry key="Param13" value="5555-55-5-55-5"/>
+  <con:entry key="Param8" value="Lapu-Lapu"/>
+  <con:entry key="ObjectId" value="AddMember"/>
+  <con:entry key="Param7" value="Gun-ob"/>
+  <con:entry key="Timeout" value="60"/>
+  <con:entry key="Param6" value="Dimataga Village"/>
+  <con:entry key="Param5" value="Limesource"/>
+  <con:entry key="Param4" value="Cortes"/>
+  <con:entry key="Param3" value="Limesource"/>
+  <con:entry key="Param2" value="Tester"/>
+  <con:entry key="Param1" value="208"/>
+  <con:entry key="Param18" value="limesource?01"/>
+  <con:entry key="Param19" value="${#Project#member}"/>
+  <con:entry key="Param14" value="55-555-5"/>
+  <con:entry key="Param15" value="09260387756"/>
+  <con:entry key="Param16" value="938393"/>
+  <con:entry key="Param17" value="${#Project#member}"/>
+</con:parameters><con:parameterOrder><con:entry>DOM</con:entry><con:entry>Timeout</con:entry><con:entry>Subscriber</con:entry><con:entry>Password</con:entry><con:entry>ObjectId</con:entry><con:entry>Param1</con:entry><con:entry>Param2</con:entry><con:entry>Param3</con:entry><con:entry>Param4</con:entry><con:entry>Param5</con:entry><con:entry>Param6</con:entry><con:entry>Param7</con:entry><con:entry>Param8</con:entry><con:entry>Param9</con:entry><con:entry>Param10</con:entry><con:entry>Param11</con:entry><con:entry>Param12</con:entry><con:entry>Param13</con:entry><con:entry>Param14</con:entry><con:entry>Param15</con:entry><con:entry>Param16</con:entry><con:entry>Param17</con:entry><con:entry>Param18</con:entry><con:entry>Param19</con:entry><con:entry>Param20</con:entry><con:entry>Param21</con:entry><con:entry>Param22</con:entry><con:entry>Param23</con:entry><con:entry>Param24</con:entry><con:entry>Param25</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:setupScript>// read the property as a string
+def uniqueUserInc = testRunner.testCase.testSuite.project.getPropertyValue("uniqueUserInc")
+def member = testRunner.testCase.testSuite.project.getPropertyValue("member")
+def memberUserIDUpdated = testRunner.testCase.testSuite.project.getPropertyValue("memberUserIDUpdated")
+// convert it to an Integer, and increment
+def uniqueUserPortionInc = uniqueUserInc.toInteger() + 1
+// set the property back as string
+testRunner.testCase.testSuite.project.setPropertyValue("uniqueUserInc", uniqueUserPortionInc.toString())
+testRunner.testCase.testSuite.project.setPropertyValue("member", "member" + uniqueUserPortionInc.toString() + "@member.com")
+testRunner.testCase.testSuite.project.setPropertyValue("memberUserIDUpdated", "memberUserIDUpdated" + uniqueUserPortionInc.toString() + "@memberUserID.com")
+
+// check
+log.info testRunner.testCase.testSuite.project.getPropertyValue("uniqueUserInc")
+
+def dateToday = new Date()
+
+playDate = dateToday + 2
+playDateMoreThanSevenDays = dateToday + 8
+
+testRunner.testCase.testSuite.project.setPropertyValue("playDate", playDate.format("MM/dd/yyyy"))
+testRunner.testCase.testSuite.project.setPropertyValue("playDateMoreThanSevenDays", playDateMoreThanSevenDays.format("MM/dd/yyyy"))
+testRunner.testCase.testSuite.project.setPropertyValue("dateToday", dateToday.format("MM/dd/yyyy"))</con:setupScript><con:properties/><con:reportParameters/></con:testCase>

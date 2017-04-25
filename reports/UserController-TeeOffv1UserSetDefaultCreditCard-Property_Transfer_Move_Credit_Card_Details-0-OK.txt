@@ -1,0 +1,46 @@
+Status: OK
+Time Taken: 7
+Size: 0
+Timestamp: Wed Mar 08 13:28:47 SGT 2017
+TestStep: Property Transfer: Move Credit Card Details
+
+----------------- Messages ------------------------------
+Performed transfer [TransferCardToken]
+Performed transfer [TransferCardType]
+Performed transfer [TransferLastFour]
+Performed transfer [TransferExpireMonth]
+Performed transfer [TransferExpireYear]
+Performed transfer [TransferZipCode]
+Performed transfer [TransferNameOnCard]
+Performed transfer [TransferIsDefault]
+Performed transfer [TransferIsStored]
+----------------------------------------------------
+TransferCardToken transferred [[5555945780064444]] from [Properties: Credit Card Details.CardToken] to [Test Request: Add Credit Card (Valid Details).Request]
+------------ source path -------------
+
+------------ target path -------------
+$['CardToken']
+TransferCardType transferred [[mastercard]] from [Properties: Credit Card Details.CardType] to [Test Request: Add Credit Card (Valid Details).Request]
+------------ target path -------------
+$['CardType']
+TransferLastFour transferred [[4444]] from [Properties: Credit Card Details.LastFour] to [Test Request: Add Credit Card (Valid Details).Request]
+------------ target path -------------
+$['LastFour']
+TransferExpireMonth transferred [[12]] from [Properties: Credit Card Details.ExpireMonth] to [Test Request: Add Credit Card (Valid Details).Request]
+------------ target path -------------
+$['ExpireMonth']
+TransferExpireYear transferred [[2020]] from [Properties: Credit Card Details.ExpireYear] to [Test Request: Add Credit Card (Valid Details).Request]
+------------ target path -------------
+$['ExpireYear']
+TransferZipCode transferred [[98280]] from [Properties: Credit Card Details.ZipCode] to [Test Request: Add Credit Card (Valid Details).Request]
+------------ target path -------------
+$['ZipCode']
+TransferNameOnCard transferred [[Daisy Atim]] from [Properties: Credit Card Details.NameOnCard] to [Test Request: Add Credit Card (Valid Details).Request]
+------------ target path -------------
+$['NameOnCard']
+TransferIsDefault transferred [[false]] from [Properties: Credit Card Details.IsDefault] to [Test Request: Add Credit Card (Valid Details).Request]
+------------ target path -------------
+$['IsDefault']
+TransferIsStored transferred [[true]] from [Properties: Credit Card Details.IsStored] to [Test Request: Add Credit Card (Valid Details).Request]
+------------ target path -------------
+$['IsStored']

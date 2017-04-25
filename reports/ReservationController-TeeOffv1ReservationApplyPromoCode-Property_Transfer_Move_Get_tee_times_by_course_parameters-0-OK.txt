@@ -1,0 +1,60 @@
+Status: OK
+Time Taken: 7
+Size: 0
+Timestamp: Wed Mar 08 13:29:20 SGT 2017
+TestStep: Property Transfer: Move Get tee times by course parameters
+
+----------------- Messages ------------------------------
+Performed transfer [courseIds]
+Performed transfer [centerPointLat]
+Performed transfer [centerPointLon]
+Performed transfer [beginTime]
+Performed transfer [endTime]
+Performed transfer [numberOfHoles]
+Performed transfer [numberOfPlayers]
+Performed transfer [minPrice]
+Performed transfer [maxPrice]
+Performed transfer [maxDistance]
+Performed transfer [minDistance]
+Performed transfer [hasDrivingRange]
+Performed transfer [hasPuttingGreen]
+Performed transfer [hasChippingArea]
+Performed transfer [hasGPS]
+Performed transfer [hasClubRental]
+Performed transfer [hasShoeRental]
+Performed transfer [hasLockerRoom]
+Performed transfer [hasFood]
+Performed transfer [hasBeverages]
+Performed transfer [hasPracticeBunker]
+Performed transfer [hasCartIncluded]
+Performed transfer [hasProShop]
+Performed transfer [hasLessons]
+----------------------------------------------------
+courseIds transferred [[4970,4969,4980,482,483,2061,2550,5290,498,4976,22039,5090,2957,2269,3447,3187,2537,4968,5287,5262,4960,1499,1498,1500,3189,2552,2554,269,3191,4985,1081,5288,5289,3673,5093,487,489,488,4975,982,984,983,882,5094,4963,5095,1863,1959,2555,4974,2526,2528,4961,4982,5236,2768,5237,5238,5092,5102,4725,5184,2559,3481,4979,2934,1247,1581,2191,3193,4973,4977,4962,2792,4983,2224,3208,2222,5091,4981,5377,2985,3195,3986,1861,4959,2846,888,1070,3954,4965,5286,5285,5284,4964,4978,4972,764,765,2540,2570,2572,3579,4966,2265,2266,2267,4984,4958,4957,5234,5283,5282,1986,5100,4967,491,490,2547,2549,2548,4986,4987 ]] from [Properties: Get tee times by course Parameters.courseIds] to [Test Request: Get Deal Times.request.courseIds]
+------------ source path -------------
+
+------------ target path -------------
+
+centerPointLat transferred [[34.0489281]] from [Properties: Get tee times by course Parameters.centerPointLat] to [Test Request: Get Deal Times.request.centerPointLat]
+centerPointLon transferred [[-111.0937311]] from [Properties: Get tee times by course Parameters.centerPointLon] to [Test Request: Get Deal Times.request.centerPointLon]
+beginTime transferred [[5:00 AM]] from [Properties: Get tee times by course Parameters.beginTime] to [Test Request: Get Deal Times.request.beginTime]
+endTime transferred [[11:59 PM]] from [Properties: Get tee times by course Parameters.endTime] to [Test Request: Get Deal Times.request.endTime]
+numberOfHoles transferred [[null]] from [Properties: Get tee times by course Parameters.numberOfHoles] to [Test Request: Get Deal Times.request.numberOfHoles]
+numberOfPlayers transferred [[null]] from [Properties: Get tee times by course Parameters.numberOfPlayers] to [Test Request: Get Deal Times.request.numberOfPlayers]
+minPrice transferred [[0]] from [Properties: Get tee times by course Parameters.minPrice] to [Test Request: Get Deal Times.request.minPrice]
+maxPrice transferred [[999]] from [Properties: Get tee times by course Parameters.maxPrice] to [Test Request: Get Deal Times.request.maxPrice]
+maxDistance transferred [[null]] from [Properties: Get tee times by course Parameters.maxDistance] to [Test Request: Get Deal Times.request.maxDistance]
+minDistance transferred [[null]] from [Properties: Get tee times by course Parameters.minDistance] to [Test Request: Get Deal Times.request.minDistance]
+hasDrivingRange transferred [[null]] from [Properties: Get tee times by course Parameters.hasDrivingRange] to [Test Request: Get Deal Times.request.hasDrivingRange]
+hasPuttingGreen transferred [[null]] from [Properties: Get tee times by course Parameters.hasPuttingGreen] to [Test Request: Get Deal Times.request.hasPuttingGreen]
+hasChippingArea transferred [[null]] from [Properties: Get tee times by course Parameters.hasChippingArea] to [Test Request: Get Deal Times.request.hasChippingArea]
+hasGPS transferred [[null]] from [Properties: Get tee times by course Parameters.hasGPS] to [Test Request: Get Deal Times.request.hasGPS]
+hasClubRental transferred [[null]] from [Properties: Get tee times by course Parameters.hasClubRental] to [Test Request: Get Deal Times.request.hasClubRental]
+hasShoeRental transferred [[null]] from [Properties: Get tee times by course Parameters.hasShoeRental] to [Test Request: Get Deal Times.request.hasShoeRental]
+hasLockerRoom transferred [[null]] from [Properties: Get tee times by course Parameters.hasLockerRoom] to [Test Request: Get Deal Times.request.hasLockerRoom]
+hasFood transferred [[null]] from [Properties: Get tee times by course Parameters.hasFood] to [Test Request: Get Deal Times.request.hasFood]
+hasBeverages transferred [[null]] from [Properties: Get tee times by course Parameters.hasBeverages] to [Test Request: Get Deal Times.request.hasBeverages]
+hasPracticeBunker transferred [[null]] from [Properties: Get tee times by course Parameters.hasPracticeBunker] to [Test Request: Get Deal Times.request.hasPracticeBunker]
+hasCartIncluded transferred [[null]] from [Properties: Get tee times by course Parameters.hasCartIncluded] to [Test Request: Get Deal Times.request.hasCartIncluded]
+hasProShop transferred [[null]] from [Properties: Get tee times by course Parameters.hasProShop] to [Test Request: Get Deal Times.request.hasProShop]
+hasLessons transferred [[null]] from [Properties: Get tee times by course Parameters.hasLessons] to [Test Request: Get Deal Times.request.hasLessons]

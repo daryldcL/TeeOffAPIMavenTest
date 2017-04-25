@@ -1,0 +1,49 @@
+Status: OK
+Time Taken: 2281
+Size: 1160
+Timestamp: Wed Mar 08 13:30:10 SGT 2017
+TestStep: Test Request: Book Reservation - Successful
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: POST
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Reservation/BookReservation?sessionId=57124b8a-20d0-4a22-9193-4c585fddc9dd
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [63]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/Reservation/BookReservation?sessionId=57124b8a-20d0-4a22-9193-4c585fddc9dd HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 63
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+{
+   "OriginatingContactId": "26574452",
+   "CardId": "28531"
+}
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [POST]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:30:14 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":[{"AffiliateAID":"","AffiliateConfirmId":"","AffiliatePID":"","AffiliateSID":"","AffiliateTrackingCode":"ExternalApi","Amount":80.00,"AmountDueAtCourse":80.00,"AmountPaid":0.00,"CanGroupAndInternetUserCancel":false,"CancelAmount":100.00,"ConfirmId":321190219,"ContactId":26574452,"CouponDiscount":0.0,"CourseAddress":"8440 S. 35th Ave., Laveen, AZ 85339","CourseId":2544,"CourseName":"Aguila Golf Course","CoursePhoto":"//cdn.teeoff.com/course/2544/2544-41723.jpg","CurrencyLocaleId":1033,"ErrorId":0,"FeeId":300464,"FeeName":"","Golfers":4,"IsCaptain":true,"IsPrepaid":false,"Latitude":33.3699773,"Longitude":-112.1398355,"PageURL":"aguila-golf-course-laveen-az-85339-tee-times","PartnerId":"","PortalId":"","PricePerPlayer":20.00,"ProtocolText":"","RegularPrice":20.00,"ReservationFeeGolferAmount":0.00,"SavedAmount":0.0,"StatusDescription":"Tee time is reserved and paid.","StatusId":1,"TaxPercent":0.0,"Taxes":0.0,"TeeTimeTypeId":1,"TransactionFee":0.00,"TeeTimeCancelDate":"2017-03-09T05:01:00","TeeTimeDate":"2017-03-10T05:01:00","TeeTimeCancelDateUtc":"2017-03-09T12:01:00","TeeTimeDateUtc":"2017-03-10T12:01:00"}]}

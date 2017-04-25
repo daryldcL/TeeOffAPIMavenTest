@@ -1,0 +1,41 @@
+Status: OK
+Time Taken: 1166
+Size: 41
+Timestamp: Tue Mar 07 18:30:11 SGT 2017
+TestStep: Test Request: GetTeeTimesByCourse (Setting beginTime/endTime))
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: GET
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse?sessionId=203e8ef3-909f-44ca-9b85-4eae9a4e1d0d&request.courseIds=2537%2C100077%2C100082%2C100084%2C100078%2C100076%2C100074%2C100070%2C100075%2C100071%2C100083%2C3843%2C2530%2C2798%2C2531%2C2411%2C4623%2C3137%2C2883%2C2885%2C4619%2C2961%2C3381%2C2889%2C2753%2C3417%2C5007%2C2897%2C1225%2C4659%2C2827%2C4114%2C4113%2C2881%2C3964%2C2941%2C3415%2C2887%2C2899%2C3398%2C2901%2C1717%2C2891%2C3988%2C5008%2C4997%2C4998%2C1489%2C2895%2C4418%2C4621%2C2978%2C2831%2C2833%2C2943%2C2755%2C4219%2C3412%2C3177%2C3112%2C3226%2C3227%2C3228%2C2835%2C5000%2C4999%2C3668%2C3426%2C2489%2C2984%2C2982%2C3399%2C1716%2C1715%2C1714%2C2408&request.playDate=03%2F09%2F2017&request.centerPointLat=34.0489281&request.centerPointLon=-111.0937311&request.beginTime=5%3A01%20AM&request.endTime=5%3A03%20AM&request.numberOfHoles=null&request.numberOfPlayers=null&request.minPrice=0&request.maxPrice=999&request.maxDistance=null&request.minDistance=null&request.hasDrivingRange=null&request.hasPuttingGreen=null&request.hasChippingArea=null&request.hasGPS=null&request.hasClubRental=null&request.hasShoeRental=null&request.hasLockerRoom=null&request.hasFood=null&request.hasBeverages=null&request.hasPracticeBunker=null&request.hasCartIncluded=null&request.hasProShop=null&request.hasLessons=null
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse?sessionId=203e8ef3-909f-44ca-9b85-4eae9a4e1d0d&request.courseIds=2537%2C100077%2C100082%2C100084%2C100078%2C100076%2C100074%2C100070%2C100075%2C100071%2C100083%2C3843%2C2530%2C2798%2C2531%2C2411%2C4623%2C3137%2C2883%2C2885%2C4619%2C2961%2C3381%2C2889%2C2753%2C3417%2C5007%2C2897%2C1225%2C4659%2C2827%2C4114%2C4113%2C2881%2C3964%2C2941%2C3415%2C2887%2C2899%2C3398%2C2901%2C1717%2C2891%2C3988%2C5008%2C4997%2C4998%2C1489%2C2895%2C4418%2C4621%2C2978%2C2831%2C2833%2C2943%2C2755%2C4219%2C3412%2C3177%2C3112%2C3226%2C3227%2C3228%2C2835%2C5000%2C4999%2C3668%2C3426%2C2489%2C2984%2C2982%2C3399%2C1716%2C1715%2C1714%2C2408&request.playDate=03%2F09%2F2017&request.centerPointLat=34.0489281&request.centerPointLon=-111.0937311&request.beginTime=5%3A01%20AM&request.endTime=5%3A03%20AM&request.numberOfHoles=null&request.numberOfPlayers=null&request.minPrice=0&request.maxPrice=999&request.maxDistance=null&request.minDistance=null&request.hasDrivingRange=null&request.hasPuttingGreen=null&request.hasChippingArea=null&request.hasGPS=null&request.hasClubRental=null&request.hasShoeRental=null&request.hasLockerRoom=null&request.hasFood=null&request.hasBeverages=null&request.hasPracticeBunker=null&request.hasCartIncluded=null&request.hasProShop=null&request.hasLessons=null HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Tue, 07 Mar 2017 10:30:14 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":[]}

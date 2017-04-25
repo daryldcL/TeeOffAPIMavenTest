@@ -1,0 +1,70 @@
+Status: OK
+Time Taken: 1337
+Size: 1518
+Timestamp: Wed Mar 08 13:30:09 SGT 2017
+TestStep: Test Request: ProcessTeeTimeCheckout
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: POST
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Reservation/ProcessTeeTimeCheckout?sessionId=57124b8a-20d0-4a22-9193-4c585fddc9dd
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [642]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/Reservation/ProcessTeeTimeCheckout?sessionId=57124b8a-20d0-4a22-9193-4c585fddc9dd HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 642
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+{
+   "CancellationPeriod": "24",
+   "AllowFive": "false",
+   "ReservationTypeId": "25587",
+   "NumberOfPlayers": "4",
+   "FeeId": "300464",
+   "TransactionFee": "2.15",
+   "AllowThree": "true",
+   "AllowTwo": "true",
+   "MaxPlayers": "4",
+   "ReservationString": "374E60F703AEF1559322435BA610A5D3",
+   "AllowOne": "true",
+   "OriginatingContactId": "26574452",
+   "Utilization": "50.0",
+   "CourseId": "2544",
+   "SavedAmount": "13.0",
+   "TeeTimeTypeId": "1",
+   "Price": "20.0",
+   "MinPlayers": "1",
+   "CurrencyLocaleId": "1033",
+   "AllowFour": "true",
+   "RegularPrice": "33.0",
+   "TeeTime": "2017-03-10T05:01:00",
+   "Sku": "string"
+}
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [POST]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:30:12 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":[{"ResultMessage":"","ResultCode":0,"CartId":107956,"CartReservationItemId":113270,"SponsorId":6085,"ItineraryId":0,"ConfirmId":0,"OrderNumber":"","ReservationTypeId":25587,"ReservationProtocolId":0,"ProtocolText":"","TeeTime":"2017-03-10T05:01:00","TeeTimeCancelBy":"3/9/2017 5:01:00 AM","NumberOfPlayers":4,"HasCourseNote":true,"CourseNote":"Test 3 Golfers","AllowPromos":true,"TeeTimeTypeId":1,"CancellationPeriod":24,"CourseInfo":{"CourseId":2544,"CourseName":"Aguila Golf Course","CourseAddress":"8440 S. 35th Ave., Laveen, AZ 85339","CourseLocation":"","Distance":4950.88,"Latitude":0.0,"Longitude":0.0,"CurrencyLocaleId":0,"CoursePhoto":"","AllowPromos":true,"TimeOffsetUtc":""},"Purchase":{"Price":20.0000,"TransactionFee":0.0000,"Total":80.0000,"DueNow":0.0000,"DueAtCourse":20.0000,"SavedAmount":13.0000,"SavedPercent":39.0000,"GrandTotal":80.0000,"Taxes":0.0,"TaxPercent":0.0,"TotalTransactionFees":0.0000,"TotalDueNow":0.0000,"TotalDueAtCourse":80.0000,"TotalSavedAmount":52.0000,"CouponDescription":"","CouponDiscount":0.0,"TotalDueNowAfterCoupon":0.0000},"TeeTimeRules":{"MaxPlayers":4,"MinPlayers":1,"AllowOne":true,"AllowTwo":true,"AllowThree":true,"AllowFour":true,"AllowFive":false},"IsDealTime":false,"ShowPromoBox":false,"AddResultCode":0,"AddResultMessage":"The tee time was successfully added to the cart.","PersistentNote":"","MessageType":"Directory Course Times","MessageHeader":"RESERVATION INFORMATION","Message":"Course cancellation policies apply."}]}

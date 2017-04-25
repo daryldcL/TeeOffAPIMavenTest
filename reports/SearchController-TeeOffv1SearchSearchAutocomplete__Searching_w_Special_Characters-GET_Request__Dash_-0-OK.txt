@@ -1,0 +1,41 @@
+Status: OK
+Time Taken: 823
+Size: 2349
+Timestamp: Wed Mar 08 13:31:40 SGT 2017
+TestStep: GET Request - Dash -
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: GET
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete?criteria=-
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/SearchAutocomplete?criteria=- HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:31:43 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":[{"SearchId":163369,"Criteria":"Gaylord Area - North Central MI","CriteriaHighlight":"Gaylord Area <span id=\"searchHighlight\">-</span> North Central MI","CriteriaAddress":"","CriteriaHeader":"LOCATION","Class":"Area","PageURL":""},{"SearchId":163455,"Criteria":"Traverse City Area - Northwest MI","CriteriaHighlight":"Traverse City Area <span id=\"searchHighlight\">-</span> Northwest MI","CriteriaAddress":"","CriteriaHeader":"","Class":"Area","PageURL":""},{"SearchId":163476,"Criteria":"Rostov-on-Don Area","CriteriaHighlight":"Rostov<span id=\"searchHighlight\">-</span>on<span id=\"searchHighlight\">-</span>Don Area","CriteriaAddress":"","CriteriaHeader":"","Class":"Area","PageURL":""},{"SearchId":162870,"Criteria":"Rostov-on-Don, Russia Area","CriteriaHighlight":"Rostov<span id=\"searchHighlight\">-</span>on<span id=\"searchHighlight\">-</span>Don, Russia Area","CriteriaAddress":"","CriteriaHeader":"","Class":"Area","PageURL":""},{"SearchId":116460,"Criteria":"Howey-in-the-Hills, FL","CriteriaHighlight":"Howey<span id=\"searchHighlight\">-</span>in<span id=\"searchHighlight\">-</span>the<span id=\"searchHighlight\">-</span>Hills, FL","CriteriaAddress":"","CriteriaHeader":"","Class":"City","PageURL":""},{"SearchId":146162,"Criteria":"A-Ga-Ming Resort - Sundance Golf Course","CriteriaHighlight":"A<span id=\"searchHighlight\">-</span>Ga<span id=\"searchHighlight\">-</span>Ming Resort <span id=\"searchHighlight\">-</span> Sundance Golf Course","CriteriaAddress":"Kewadin, MI","CriteriaHeader":"COURSES","Class":"Course","PageURL":"gs-a-ga-ming-resort-sundance-golf-course-kewadin-mi-49648-tee-times"},{"SearchId":146163,"Criteria":"A-Ga-Ming Resort - Torch Golf Course","CriteriaHighlight":"A<span id=\"searchHighlight\">-</span>Ga<span id=\"searchHighlight\">-</span>Ming Resort <span id=\"searchHighlight\">-</span> Torch Golf Course","CriteriaAddress":"Kewadin, MI","CriteriaHeader":"","Class":"Course","PageURL":"gs-a-ga-ming-resort-torch-golf-course-kewadin-mi-49648-tee-times"},{"SearchId":165284,"Criteria":"Admiral Baker Golf Course  - North","CriteriaHighlight":"Admiral Baker Golf Course  <span id=\"searchHighlight\">-</span> North","CriteriaAddress":"San Diego, CA","CriteriaHeader":"","Class":"Course","PageURL":"admiral-baker-golf-course-north-san-diego-ca-92120-tee-times"}]}

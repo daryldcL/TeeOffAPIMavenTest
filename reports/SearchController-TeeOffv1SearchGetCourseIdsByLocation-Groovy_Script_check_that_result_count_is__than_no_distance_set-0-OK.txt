@@ -1,0 +1,7 @@
+Status: OK
+Time Taken: 33
+Size: 0
+Timestamp: Wed Mar 08 13:33:33 SGT 2017
+TestStep: Groovy Script: check that result count is < than no distance set
+
+----------------- Messages ------------------------------

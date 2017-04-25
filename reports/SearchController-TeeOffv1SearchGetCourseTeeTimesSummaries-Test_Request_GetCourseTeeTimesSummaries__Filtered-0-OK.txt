@@ -1,0 +1,41 @@
+Status: OK
+Time Taken: 1744
+Size: 1020
+Timestamp: Wed Mar 08 13:32:53 SGT 2017
+TestStep: Test Request: GetCourseTeeTimesSummaries - Filtered
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: GET
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/GetCourseTeeTimesSummaries?sessionId=5e68bd9d-c33b-4da5-9844-f56806f492ab&request.courseIds=2934%2C%205704%2C%20100051%2C100026%2C100025%2C100297%2C100052%2C100031%2C100030%2C100059%2C100044%2C100038%2C100037%2C100299%2C100045%2C100053%2C100050%2C100049%2C100043%2C100301%2C100303%2C100027%2C100018%2C100023%2C100062%2C100063%2C100300%2C100017%2C100060%2C100302%2C100054%2C100040%2C100061%2C100056%2C100057%2C100055%2C100028%2C100034%2C100035%2C100048%2C100039%2C100024%2C100029%2C100298%2C100058%2C100033%2C100032%2C100036%2C100022%2C100042%2C100305%2C100306%2C100304%2C4971%2C2544%2C2546%2C485%2C5704%2C3881%2C3883%2C2416%2C2418%2C880%2C881%2C1899%2C2220%2C4970%2C4969%2C4980%2C482%2C483%2C2061%2C2550%2C5290%2C498%2C4976%2C22039%2C5090%2C2957%2C2269%2C3447%2C3187%2C2537%2C4968%2C5287%2C5262%2C4960%2C1499%2C1498%2C1500%2C3189%2C2552%2C2554%2C269%2C3191%2C4985%2C1081%2C5288%2C5289%2C3673%2C5093%2C487%2C489%2C488%2C4975%2C982%2C984%2C983%2C882%2C5094%2C4963%2C5095%2C1863%2C1959%2C2555%2C4974%2C2526%2C2528%2C4961%2C4982%2C5236%2C2768%2C5237%2C5238%2C5092%2C5102%2C4725%2C5184%2C2559%2C3481%2C4979%2C2934%2C1247%2C1581%2C2191%2C3193%2C4973%2C4977%2C4962%2C2792%2C4983%2C2224%2C3208%2C2222%2C5091%2C4981%2C5377%2C2985%2C3195%2C3986%2C1861%2C4959%2C2846%2C888%2C1070%2C3954%2C4965%2C5286%2C5285%2C5284%2C4964%2C4978%2C4972%2C764%2C765%2C2540%2C2570%2C2572%2C3579%2C4966%2C2265%2C2266%2C2267%2C4984%2C4958%2C4957%2C5234%2C5283%2C5282%2C1986%2C5100%2C4967%2C491%2C490%2C2547%2C2549%2C2548%2C4986%2C4987&request.playDate=03%2F10%2F2017&request.centerPointLat=34.0489281&request.centerPointLon=-111.0937311&request.beginTime=5%3A00%20AM&request.endTime=11%3A59%20PM&request.numberOfHoles=null&request.numberOfPlayers=null&request.minPrice=30&request.maxPrice=100&request.maxDistance=60&request.minDistance=10&request.hasDrivingRange=false&request.hasPuttingGreen=false&request.hasChippingArea=false&request.hasGPS=false&request.hasClubRental=false&request.hasShoeRental=false&request.hasLockerRoom=false&request.hasFood=false&request.hasBeverages=false&request.hasPracticeBunker=false&request.hasCartIncluded=false&request.hasProShop=false&request.hasLessons=false
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/GetCourseTeeTimesSummaries?sessionId=5e68bd9d-c33b-4da5-9844-f56806f492ab&request.courseIds=2934%2C%205704%2C%20100051%2C100026%2C100025%2C100297%2C100052%2C100031%2C100030%2C100059%2C100044%2C100038%2C100037%2C100299%2C100045%2C100053%2C100050%2C100049%2C100043%2C100301%2C100303%2C100027%2C100018%2C100023%2C100062%2C100063%2C100300%2C100017%2C100060%2C100302%2C100054%2C100040%2C100061%2C100056%2C100057%2C100055%2C100028%2C100034%2C100035%2C100048%2C100039%2C100024%2C100029%2C100298%2C100058%2C100033%2C100032%2C100036%2C100022%2C100042%2C100305%2C100306%2C100304%2C4971%2C2544%2C2546%2C485%2C5704%2C3881%2C3883%2C2416%2C2418%2C880%2C881%2C1899%2C2220%2C4970%2C4969%2C4980%2C482%2C483%2C2061%2C2550%2C5290%2C498%2C4976%2C22039%2C5090%2C2957%2C2269%2C3447%2C3187%2C2537%2C4968%2C5287%2C5262%2C4960%2C1499%2C1498%2C1500%2C3189%2C2552%2C2554%2C269%2C3191%2C4985%2C1081%2C5288%2C5289%2C3673%2C5093%2C487%2C489%2C488%2C4975%2C982%2C984%2C983%2C882%2C5094%2C4963%2C5095%2C1863%2C1959%2C2555%2C4974%2C2526%2C2528%2C4961%2C4982%2C5236%2C2768%2C5237%2C5238%2C5092%2C5102%2C4725%2C5184%2C2559%2C3481%2C4979%2C2934%2C1247%2C1581%2C2191%2C3193%2C4973%2C4977%2C4962%2C2792%2C4983%2C2224%2C3208%2C2222%2C5091%2C4981%2C5377%2C2985%2C3195%2C3986%2C1861%2C4959%2C2846%2C888%2C1070%2C3954%2C4965%2C5286%2C5285%2C5284%2C4964%2C4978%2C4972%2C764%2C765%2C2540%2C2570%2C2572%2C3579%2C4966%2C2265%2C2266%2C2267%2C4984%2C4958%2C4957%2C5234%2C5283%2C5282%2C1986%2C5100%2C4967%2C491%2C490%2C2547%2C2549%2C2548%2C4986%2C4987&request.playDate=03%2F10%2F2017&request.centerPointLat=34.0489281&request.centerPointLon=-111.0937311&request.beginTime=5%3A00%20AM&request.endTime=11%3A59%20PM&request.numberOfHoles=null&request.numberOfPlayers=null&request.minPrice=30&request.maxPrice=100&request.maxDistance=60&request.minDistance=10&request.hasDrivingRange=false&request.hasPuttingGreen=false&request.hasChippingArea=false&request.hasGPS=false&request.hasClubRental=false&request.hasShoeRental=false&request.hasLockerRoom=false&request.hasFood=false&request.hasBeverages=false&request.hasPracticeBunker=false&request.hasCartIncluded=false&request.hasProShop=false&request.hasLessons=false HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:32:56 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":[{"CourseId":2537,"CourseName":"Desert Canyon","CourseLocation":"Fountain Hills, AZ","CourseImageURL":"//cdn.teeoff.com/course/2537/2537-01569.jpg","Distance":47.89,"TotalTeeTimes":14,"MinTeeTime":"3/10/2017 6:50:00 AM","MaxTeeTime":"3/10/2017 4:50:00 PM","PriceFrom":42.00,"PriceTo":86.00,"TotalDealsAvailable":0,"MinPlayers":1,"MaxPlayers":4,"DealDiscountPercentage":0.0,"CourseDiscountPercentage":0.0,"DealDiscountedFromRate":0.0,"CourseDiscountedFromRate":86.00,"AllowPromos":false},{"CourseId":5091,"CourseName":"Scottsdale Silverado Golf Club","CourseLocation":"Scottsdale, AZ","CourseImageURL":"//cdn.teeoff.com/course/default2.jpg","Distance":59.00,"TotalTeeTimes":11,"MinTeeTime":"3/10/2017 11:09:00 AM","MaxTeeTime":"3/10/2017 1:49:00 PM","PriceFrom":35.00,"PriceTo":35.00,"TotalDealsAvailable":11,"MinPlayers":1,"MaxPlayers":4,"DealDiscountPercentage":39.0,"CourseDiscountPercentage":0.0,"DealDiscountedFromRate":57.00,"CourseDiscountedFromRate":0.0,"AllowPromos":true}]}

@@ -1,0 +1,23 @@
+Status: FAILED
+Time Taken: 1
+Size: 0
+Timestamp: Thu Mar 09 20:46:37 SGT 2017
+TestStep: Property Transfer: Transfer ContactId
+Error:com.eviware.soapui.impl.wsdl.teststeps.PropertyTransferException: Missing source property
+
+----------------- Messages ------------------------------
+Performed transfer [OriginatingContactId]
+Error performing transfer [TransferContactIDToBookReservation] - Missing source property
+----------------------------------------------------
+OriginatingContactId transferred [[26574452]] from [Test Request: Register Guest - Login as Guest.ResponseAsXml] to [Test Request: ProcessTeeTimeCheckout.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/RegisterGuest';
+//ns1:Response[1]/ns1:Data[1]/ns1:ContactId[1]
+------------ target path -------------
+$['OriginatingContactId']
+TransferContactIDToBookReservation transferred [[Missing source property]] from [Test Request: Register Guest - Login as Guest.null] to [Test Request: Book Reservation.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AuthenticateUser';
+//ns1:Response[1]/ns1:Data[1]/ns1:ContactId[1]
+------------ target path -------------
+$['OriginatingContactId']

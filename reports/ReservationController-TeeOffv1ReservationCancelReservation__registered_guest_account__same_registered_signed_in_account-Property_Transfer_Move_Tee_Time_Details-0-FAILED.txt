@@ -1,0 +1,100 @@
+Status: FAILED
+Time Taken: 43
+Size: 0
+Timestamp: Tue Mar 07 18:28:50 SGT 2017
+TestStep: Property Transfer: Move Tee Time Details
+Error:com.eviware.soapui.impl.wsdl.teststeps.PropertyTransferException: Missing source property
+
+----------------- Messages ------------------------------
+Performed transfer [courseId]
+Performed transfer [TeeTime]
+Performed transfer [TeeTimeTypeId]
+Performed transfer [Price]
+Performed transfer [TransactionFee]
+Performed transfer [RegularPrice]
+Performed transfer [SavedAmount]
+Performed transfer [CancellationPeriod]
+Performed transfer [CurrencyLocaled]
+Performed transfer [FeeId]
+Performed transfer [ReservationTypeId]
+Performed transfer [NumberOfPlayers]
+Error performing transfer [OriginatingContactId] - Missing source property
+----------------------------------------------------
+courseId transferred [[2001]] from [Test Request: Get tee times by Course.ResponseAsXml] to [Test Request: ProcessTeeTimeCheckout.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:e[1]/ns1:CourseId[1]
+------------ target path -------------
+$['CourseId']
+TeeTime transferred [[2017-03-15T06:54:00]] from [Test Request: Get tee times by Course.ResponseAsXml] to [Test Request: ProcessTeeTimeCheckout.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:e[1]/ns1:TeeTimes[1]/ns1:e[1]/ns1:CourseTeeTime[1]
+------------ target path -------------
+$['TeeTime']
+TeeTimeTypeId transferred [[1]] from [Test Request: Get tee times by Course.ResponseAsXml] to [Test Request: ProcessTeeTimeCheckout.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:e[1]/ns1:TeeTimes[1]/ns1:e[1]/ns1:TeeTimeTypeId[1]
+------------ target path -------------
+$['TeeTimeTypeId']
+Price transferred [[40.0]] from [Test Request: Get tee times by Course.ResponseAsXml] to [Test Request: ProcessTeeTimeCheckout.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:e[1]/ns1:TeeTimes[1]/ns1:e[1]/ns1:TeeTimePurchase[1]/ns1:Price[1]
+------------ target path -------------
+$['Price']
+TransactionFee transferred [[2.15]] from [Test Request: Get tee times by Course.ResponseAsXml] to [Test Request: ProcessTeeTimeCheckout.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:e[1]/ns1:TeeTimes[1]/ns1:e[1]/ns1:TeeTimePurchase[1]/ns1:TransactionFee[1]
+------------ target path -------------
+$['TransactionFee']
+RegularPrice transferred [[40.0]] from [Test Request: Get tee times by Course.ResponseAsXml] to [Test Request: ProcessTeeTimeCheckout.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:e[1]/ns1:TeeTimes[1]/ns1:e[1]/ns1:TeeTimePurchase[1]/ns1:RegularPrice[1]
+------------ target path -------------
+$['RegularPrice']
+SavedAmount transferred [[0.0]] from [Test Request: Get tee times by Course.ResponseAsXml] to [Test Request: ProcessTeeTimeCheckout.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:e[1]/ns1:TeeTimes[1]/ns1:e[1]/ns1:TeeTimePurchase[1]/ns1:SavingsAmount[1]
+------------ target path -------------
+$['SavedAmount']
+CancellationPeriod transferred [[48]] from [Test Request: Get tee times by Course.ResponseAsXml] to [Test Request: ProcessTeeTimeCheckout.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:e[1]/ns1:TeeTimes[1]/ns1:e[1]/ns1:TeeTimeInformation[1]/ns1:CancellationPeriod[1]
+------------ target path -------------
+$['CancellationPeriod']
+CurrencyLocaled transferred [[1033]] from [Test Request: Get tee times by Course.ResponseAsXml] to [Test Request: ProcessTeeTimeCheckout.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:e[1]/ns1:CurrencyLocaleId[1]
+------------ target path -------------
+$['CurrencyLocaleId']
+FeeId transferred [[115247]] from [Test Request: Get tee times by Course.ResponseAsXml] to [Test Request: ProcessTeeTimeCheckout.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:e[1]/ns1:TeeTimes[1]/ns1:e[1]/ns1:FeeId[1]
+------------ target path -------------
+$['FeeId']
+ReservationTypeId transferred [[25587]] from [Test Request: Get tee times by Course.ResponseAsXml] to [Test Request: ProcessTeeTimeCheckout.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:e[1]/ns1:TeeTimes[1]/ns1:e[1]/ns1:ReservationTypeId[1]
+------------ target path -------------
+$['ReservationTypeId']
+NumberOfPlayers transferred [[4]] from [Test Request: Get tee times by Course.ResponseAsXml] to [Test Request: ProcessTeeTimeCheckout.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Data[1]/ns1:e[1]/ns1:TeeTimes[1]/ns1:e[1]/ns1:TeeTimeInformation[1]/ns1:PlayersAvailable[1]
+------------ target path -------------
+$['NumberOfPlayers']
+OriginatingContactId transferred [[Missing source property]] from [Test Request: Get tee times by Course.null] to [Test Request: ProcessTeeTimeCheckout.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AuthenticateUser';
+//ns1:Response[1]/ns1:Data[1]/ns1:ContactId[1]
+------------ target path -------------
+$['OriginatingContactId']

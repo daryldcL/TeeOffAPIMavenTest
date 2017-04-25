@@ -1,0 +1,44 @@
+Status: OK
+Time Taken: 1440
+Size: 147
+Timestamp: Wed Mar 08 13:38:48 SGT 2017
+TestStep: REST Request - Invalid Param3/ TeeTimeDateTime
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.ezlinks.com
+Method: GET
+StatusCode: 200
+URL: https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=TeeTimeValidate&Param1=208&Param2=530&Param3=wewe&Param4=4&Param5=10.00
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [api.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=TeeTimeValidate&Param1=208&Param2=530&Param3=wewe&Param4=4&Param5=10.00 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: api.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Cache-Control: [private]
+Server: [Microsoft-IIS/7.0]
+Connection: [close]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Date: [Wed, 08 Mar 2017 05:38:51 GMT]
+Content-Type: [text/xml]
+X-Powered-By: [ASP.NET]
+
+<?ezxml version="5.0"?>
+<Error>
+   <ErrorValue>29</ErrorValue>
+   <ErrorDescription>INVALID_DATETIME</ErrorDescription>
+</Error>

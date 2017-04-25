@@ -1,0 +1,40 @@
+Status: OK
+Time Taken: 847
+Size: 419
+Timestamp: Wed Mar 08 13:31:45 SGT 2017
+TestStep: Get Request - Course
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Encoding: UTF-8
+Method: GET
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/SearchCourses?sessionId=f132a3b7-1a4d-4b56-bb17-b88a65d74f8e&criteria=Desert%20Canyon
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/SearchCourses?sessionId=f132a3b7-1a4d-4b56-bb17-b88a65d74f8e&criteria=Desert%20Canyon HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:31:47 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":{"SearchResult":[{"CourseId":2537,"Latitude":33.584806,"Longitude":-111.71245}],"ReferenceData":{"centerPointLat":"33.584806","centerPointLon":"-111.71245","searchCriteria":"Desert Canyon","searchTypeId":"6","landingPageId":"6","breadcrumbCountry":"United States","breadcrumbRegion":"Arizona","breadcrumbArea":"Phoenix/Scottsdale/Mesa Area","breadcrumbCity":"Fountain Hills, AZ"}}}

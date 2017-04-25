@@ -1,0 +1,43 @@
+Status: OK
+Time Taken: 2048
+Size: 379
+Timestamp: Wed Mar 08 13:29:47 SGT 2017
+TestStep: REST Request - Cancel Booked Reservation
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Method: POST
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Reservation/CancelReservation?sessionId=4b53d222-3ba5-4141-80f8-eac3ae39ea23&confirmId=321190217
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [0]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/Reservation/CancelReservation?sessionId=4b53d222-3ba5-4141-80f8-eac3ae39ea23&confirmId=321190217 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 0
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [POST]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:29:51 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":{"ResultCode":"0","ResultMessage":"","CartReservationItemId":0,"SponsorId":6085,"CourseId":2001,"TeeTime":"2017-03-10T06:27:00","TeeTimeTypeId":1,"Price":160.0000,"Taxes":1.5100,"TaxPercent":6.3,"SavedAmount":0.0,"TransactionFee":0.0000,"RegularPrice":0.0,"GrandTotal":161.5100,"CancelId":35736642,"RefundAmount":25.5100,"IsDealTime":false}}

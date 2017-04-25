@@ -1,0 +1,15 @@
+Status: OK
+Time Taken: 4
+Size: 0
+Timestamp: Wed Mar 08 13:29:09 SGT 2017
+TestStep: Property Transfer: Transfer ContactId
+
+----------------- Messages ------------------------------
+Performed transfer [TransferContactIDToBookReservation]
+----------------------------------------------------
+TransferContactIDToBookReservation transferred [[26574452]] from [Test Request: Signin.ResponseAsXml] to [Test Request: Book Reservation.Request]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AuthenticateUser';
+//ns1:Response[1]/ns1:Data[1]/ns1:ContactId[1]
+------------ target path -------------
+$['OriginatingContactId']

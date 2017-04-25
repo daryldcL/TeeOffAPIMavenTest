@@ -1,0 +1,26 @@
+Status: OK
+Time Taken: 27
+Size: 0
+Timestamp: Wed Mar 08 13:26:29 SGT 2017
+TestStep: Property Transfer: Move User Details
+
+----------------- Messages ------------------------------
+Performed transfer [TransferFirstName]
+Performed transfer [TransferLastName]
+Performed transfer [TransferPassword]
+Performed transfer [TransferPostalCode]
+----------------------------------------------------
+TransferFirstName transferred [[Limesource]] from [Properties: User Details.FirstName] to [Test Request: Register User.Request]
+------------ source path -------------
+
+------------ target path -------------
+$['FirstName']
+TransferLastName transferred [[Tester]] from [Properties: User Details.LastName] to [Test Request: Register User.Request]
+------------ target path -------------
+$['LastName']
+TransferPassword transferred [[limesource?01]] from [Properties: User Details.Password] to [Test Request: Register User.Request]
+------------ target path -------------
+$['Password']
+TransferPostalCode transferred [[80978]] from [Properties: User Details.PostalCode] to [Test Request: Register User.Request]
+------------ target path -------------
+$['PostalCode']

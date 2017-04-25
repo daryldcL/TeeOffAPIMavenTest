@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="8d73b332-5d62-4e00-9f13-f7697d0e9e67" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/TeeOff/v1/User/UpdateUserPreference" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="84fc7ba9-a055-452a-a6ab-46c44908fcd7fileName">%2FTeeOff%2Fv1%2FUser%2FUpdateUserPreference</con:setting><con:setting id="8d73b332-5d62-4e00-9f13-f7697d0e9e67fileName">%2FTeeOff%2Fv1%2FUser%2FUpdateUserPreference</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Start Session" id="b14cc86a-3032-43b3-9db9-ae8010658439"><con:settings/><con:config service="OpenTee.ExternalApi" methodName="UserController_SessionStart" resourcePath="/TeeOff/v1/User/SessionStart" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Start Session" id="eb8fbbf8-c2f4-4866-b50d-ccddebd96197" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/User/SessionStart</con:originalUri><con:assertion type="XPath Match" id="f9d12f47-0505-4c43-b9c8-a83caeaaa770" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Sign In" id="3d74ad7c-510e-4ccc-abac-aa58813a34f5"><con:settings/><con:config service="OpenTee.ExternalApi" methodName="UserController_AuthenticateUser" resourcePath="/TeeOff/v1/User/AuthenticateUser" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Sign In" id="47ff500e-e8f7-4c65-b56c-b8a49acd0114" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request>{
+   "username": "limesourcetester01@gmail.com",
+   "password": "limesource?01"
+}</con:request><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/User/AuthenticateUser</con:originalUri><con:assertion type="XPath Match" id="45e0e7e3-235d-4f00-bf79-9ea074985691" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AuthenticateUser';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="sessionId" value="${Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request - UpdateUserPreference (Set All to True)" id="223f5ab8-3ceb-4c38-83d1-8b1f08b87522"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/User/UpdateUserPreference" methodName="UserController_UpdateUserPreference" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request - UpdateUserPreference (Set All to True)" id="74c1263a-df21-4058-8075-02d6eddcb52e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request>{
+   "AllowNewsLetter": true,
+   "AllowAlerts": true,
+   "AllowDealsDiscounts": true,
+   "ContactId": "${Sign In#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AuthenticateUser'; //ns1:Response[1]/ns1:Data[1]/ns1:ContactId[1]}"
+}</con:request><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference</con:originalUri><con:assertion type="XPath Match" id="e9fc7b35-a764-402e-9f62-999b1fc38862" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="fb842b41-3f09-4762-9a96-890243098106" name="JsonPath Match - AllowNewsLetter is True"><con:configuration><path>$['Data'][NewsLetter]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="fb842b41-3f09-4762-9a96-890243098106" name="JsonPath Match - AllowAlerts is True"><con:configuration><path>$['Data'][Alerts]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="fb842b41-3f09-4762-9a96-890243098106" name="JsonPath Match - AllowDealsDiscounts is True"><con:configuration><path>$['Data'][DealsDiscounts]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="sessionId" value="${Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request - UpdateUserPreference (Set All to False)" id="24a51f54-cc9a-420c-ac84-8746bfb3afe1"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/User/UpdateUserPreference" methodName="UserController_UpdateUserPreference" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request - UpdateUserPreference (Set All to False)" id="74c1263a-df21-4058-8075-02d6eddcb52e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request>{
+   "AllowNewsLetter": false,
+   "AllowAlerts": false,
+   "AllowDealsDiscounts": false,
+   "ContactId": "${Sign In#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AuthenticateUser'; //ns1:Response[1]/ns1:Data[1]/ns1:ContactId[1]}"
+}</con:request><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference</con:originalUri><con:assertion type="XPath Match" id="ccacfbdd-f899-4856-88c3-9054aa52b206" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" id="3cfc6193-4668-4c7f-a56e-ae2aca83903b" name="AllowNewsLetter is False"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference';
+//ns1:Response[1]/ns1:Data[1]/ns1:Alerts[1]</con:xpath><con:element>Alerts</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>false</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference';
+//ns1:Response[1]/ns1:Data[1]/ns1:DealsDiscounts[1]</con:xpath><con:element>DealsDiscounts</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>false</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference';
+//ns1:Response[1]/ns1:Data[1]/ns1:NewsLetter[1]</con:xpath><con:element>NewsLetter</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>false</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference">
+   <Data>
+      <Address01>Dimataga</Address01>
+      <Address02>Humay-Humay</Address02>
+      <AddressType>Home</AddressType>
+      <Alerts>false</Alerts>
+      <BrandOfClubs>Carbite</BrandOfClubs>
+      <BrandOfIrons>Henry Griffitts</BrandOfIrons>
+      <City>Lapu-Lapu</City>
+      <ClubsYear>1973</ClubsYear>
+      <ContactId>26571295</ContactId>
+      <CountryId>0</CountryId>
+      <CustomGolfDestination>Boulder Creek, CA</CustomGolfDestination>
+      <DateBirth>5/19/2016 12:00:00 AM</DateBirth>
+      <DateCreated>5/12/2016 1:33:04 AM</DateCreated>
+      <DateModified>11/16/2016 7:49:35 PM</DateModified>
+      <DealsDiscounts>false</DealsDiscounts>
+      <DominantHand>Right</DominantHand>
+      <Email>daisy@limesource.se</Email>
+      <EmailNotify>0</EmailNotify>
+      <ErrorId>0</ErrorId>
+      <FavoriteBrandOfBalls>Srixon</FavoriteBrandOfBalls>
+      <FavoriteGolfDestinations>
+         <e>
+            <DestinationId>1</DestinationId>
+            <DestinationName>Atlanta</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>2</DestinationId>
+            <DestinationName>Caribbean</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>3</DestinationId>
+            <DestinationName>Chicago</DestinationName>
+            <IsSelected>true</IsSelected>
+         </e>
+         <e>
+            <DestinationId>4</DestinationId>
+            <DestinationName>Hawaii</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>5</DestinationId>
+            <DestinationName>Las Vegas</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>6</DestinationId>
+            <DestinationName>Mexico</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>7</DestinationId>
+            <DestinationName>New York Metro Area</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>8</DestinationId>
+            <DestinationName>Northern California</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>9</DestinationId>
+            <DestinationName>Northern Michigan</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>10</DestinationId>
+            <DestinationName>Orlando</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>11</DestinationId>
+            <DestinationName>Palm Springs</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>12</DestinationId>
+            <DestinationName>Phoenix/Scottsdale</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>13</DestinationId>
+            <DestinationName>South Florida</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>14</DestinationId>
+            <DestinationName>Tucson</DestinationName>
+            <IsSelected>true</IsSelected>
+         </e>
+         <e>
+            <DestinationId>15</DestinationId>
+            <DestinationName>Washington DC</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+      </FavoriteGolfDestinations>
+      <FirstName>Daisy</FirstName>
+      <Gender>F</Gender>
+      <Handicap/>
+      <HomePhone>09260387756</HomePhone>
+      <IronsYear>1970</IronsYear>
+      <IsOneTimeUsePassword>false</IsOneTimeUsePassword>
+      <LastName>Atim</LastName>
+      <LowestScore18>0</LowestScore18>
+      <LowestScore9>0</LowestScore9>
+      <Message/>
+      <MobileNumber/>
+      <NewsLetter>false</NewsLetter>
+      <Notes/>
+      <PartnershipOffers>false</PartnershipOffers>
+      <Password/>
+      <PlayFrequency/>
+      <PostalCode>80909</PostalCode>
+      <PreferFriday>false</PreferFriday>
+      <PreferMonday>false</PreferMonday>
+      <PreferSaturday>false</PreferSaturday>
+      <PreferSunday>false</PreferSunday>
+      <PreferThursday>false</PreferThursday>
+      <PreferTuesday>false</PreferTuesday>
+      <PreferWednesday>false</PreferWednesday>
+      <Province/>
+      <ReturnCode/>
+      <SessionId>edd3dcc2-dbd5-41d9-960b-beab1ba02595</SessionId>
+      <StartTime/>
+      <State/>
+      <Username>daisyatim</Username>
+      <WorkNumber/>
+      <YearsPlaying>0</YearsPlaying>
+   </Data>
+   <Message null="true"/>
+   <Success>true</Success>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" id="3cfc6193-4668-4c7f-a56e-ae2aca83903b" name="AllowAlerts is False"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference';
+//ns1:Response[1]/ns1:Data[1]/ns1:Alerts[1]</con:xpath><con:element>Alerts</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>false</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference';
+//ns1:Response[1]/ns1:Data[1]/ns1:DealsDiscounts[1]</con:xpath><con:element>DealsDiscounts</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>false</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference';
+//ns1:Response[1]/ns1:Data[1]/ns1:NewsLetter[1]</con:xpath><con:element>NewsLetter</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>false</con:enabled><con:expectedValue>false</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference">
+   <Data>
+      <Address01>Dimataga</Address01>
+      <Address02>Humay-Humay</Address02>
+      <AddressType>Home</AddressType>
+      <Alerts>false</Alerts>
+      <BrandOfClubs>Carbite</BrandOfClubs>
+      <BrandOfIrons>Henry Griffitts</BrandOfIrons>
+      <City>Lapu-Lapu</City>
+      <ClubsYear>1973</ClubsYear>
+      <ContactId>26571295</ContactId>
+      <CountryId>0</CountryId>
+      <CustomGolfDestination>Boulder Creek, CA</CustomGolfDestination>
+      <DateBirth>5/19/2016 12:00:00 AM</DateBirth>
+      <DateCreated>5/12/2016 1:33:04 AM</DateCreated>
+      <DateModified>11/16/2016 7:49:35 PM</DateModified>
+      <DealsDiscounts>false</DealsDiscounts>
+      <DominantHand>Right</DominantHand>
+      <Email>daisy@limesource.se</Email>
+      <EmailNotify>0</EmailNotify>
+      <ErrorId>0</ErrorId>
+      <FavoriteBrandOfBalls>Srixon</FavoriteBrandOfBalls>
+      <FavoriteGolfDestinations>
+         <e>
+            <DestinationId>1</DestinationId>
+            <DestinationName>Atlanta</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>2</DestinationId>
+            <DestinationName>Caribbean</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>3</DestinationId>
+            <DestinationName>Chicago</DestinationName>
+            <IsSelected>true</IsSelected>
+         </e>
+         <e>
+            <DestinationId>4</DestinationId>
+            <DestinationName>Hawaii</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>5</DestinationId>
+            <DestinationName>Las Vegas</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>6</DestinationId>
+            <DestinationName>Mexico</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>7</DestinationId>
+            <DestinationName>New York Metro Area</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>8</DestinationId>
+            <DestinationName>Northern California</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>9</DestinationId>
+            <DestinationName>Northern Michigan</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>10</DestinationId>
+            <DestinationName>Orlando</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>11</DestinationId>
+            <DestinationName>Palm Springs</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>12</DestinationId>
+            <DestinationName>Phoenix/Scottsdale</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>13</DestinationId>
+            <DestinationName>South Florida</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>14</DestinationId>
+            <DestinationName>Tucson</DestinationName>
+            <IsSelected>true</IsSelected>
+         </e>
+         <e>
+            <DestinationId>15</DestinationId>
+            <DestinationName>Washington DC</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+      </FavoriteGolfDestinations>
+      <FirstName>Daisy</FirstName>
+      <Gender>F</Gender>
+      <Handicap/>
+      <HomePhone>09260387756</HomePhone>
+      <IronsYear>1970</IronsYear>
+      <IsOneTimeUsePassword>false</IsOneTimeUsePassword>
+      <LastName>Atim</LastName>
+      <LowestScore18>0</LowestScore18>
+      <LowestScore9>0</LowestScore9>
+      <Message/>
+      <MobileNumber/>
+      <NewsLetter>false</NewsLetter>
+      <Notes/>
+      <PartnershipOffers>false</PartnershipOffers>
+      <Password/>
+      <PlayFrequency/>
+      <PostalCode>80909</PostalCode>
+      <PreferFriday>false</PreferFriday>
+      <PreferMonday>false</PreferMonday>
+      <PreferSaturday>false</PreferSaturday>
+      <PreferSunday>false</PreferSunday>
+      <PreferThursday>false</PreferThursday>
+      <PreferTuesday>false</PreferTuesday>
+      <PreferWednesday>false</PreferWednesday>
+      <Province/>
+      <ReturnCode/>
+      <SessionId>edd3dcc2-dbd5-41d9-960b-beab1ba02595</SessionId>
+      <StartTime/>
+      <State/>
+      <Username>daisyatim</Username>
+      <WorkNumber/>
+      <YearsPlaying>0</YearsPlaying>
+   </Data>
+   <Message null="true"/>
+   <Success>true</Success>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" id="6d0dd833-d489-4a38-8fb3-b0882af87ccf" name="AllowDealsDiscounts is False"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference';
+//ns1:Response[1]/ns1:Data[1]/ns1:DealsDiscounts[1]</con:xpath><con:element>DealsDiscounts</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>false</con:expectedValue><con:hasValue>false</con:hasValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference">
+   <Data>
+      <Address01>Dimataga</Address01>
+      <Address02>Humay-Humay</Address02>
+      <AddressType>Home</AddressType>
+      <Alerts>false</Alerts>
+      <BrandOfClubs>Carbite</BrandOfClubs>
+      <BrandOfIrons>Henry Griffitts</BrandOfIrons>
+      <City>Lapu-Lapu</City>
+      <ClubsYear>1973</ClubsYear>
+      <ContactId>26571295</ContactId>
+      <CountryId>0</CountryId>
+      <CustomGolfDestination>Boulder Creek, CA</CustomGolfDestination>
+      <DateBirth>5/19/2016 12:00:00 AM</DateBirth>
+      <DateCreated>5/12/2016 1:33:04 AM</DateCreated>
+      <DateModified>11/16/2016 7:49:35 PM</DateModified>
+      <DealsDiscounts>false</DealsDiscounts>
+      <DominantHand>Right</DominantHand>
+      <Email>daisy@limesource.se</Email>
+      <EmailNotify>0</EmailNotify>
+      <ErrorId>0</ErrorId>
+      <FavoriteBrandOfBalls>Srixon</FavoriteBrandOfBalls>
+      <FavoriteGolfDestinations>
+         <e>
+            <DestinationId>1</DestinationId>
+            <DestinationName>Atlanta</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>2</DestinationId>
+            <DestinationName>Caribbean</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>3</DestinationId>
+            <DestinationName>Chicago</DestinationName>
+            <IsSelected>true</IsSelected>
+         </e>
+         <e>
+            <DestinationId>4</DestinationId>
+            <DestinationName>Hawaii</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>5</DestinationId>
+            <DestinationName>Las Vegas</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>6</DestinationId>
+            <DestinationName>Mexico</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>7</DestinationId>
+            <DestinationName>New York Metro Area</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>8</DestinationId>
+            <DestinationName>Northern California</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>9</DestinationId>
+            <DestinationName>Northern Michigan</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>10</DestinationId>
+            <DestinationName>Orlando</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>11</DestinationId>
+            <DestinationName>Palm Springs</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>12</DestinationId>
+            <DestinationName>Phoenix/Scottsdale</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>13</DestinationId>
+            <DestinationName>South Florida</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+         <e>
+            <DestinationId>14</DestinationId>
+            <DestinationName>Tucson</DestinationName>
+            <IsSelected>true</IsSelected>
+         </e>
+         <e>
+            <DestinationId>15</DestinationId>
+            <DestinationName>Washington DC</DestinationName>
+            <IsSelected>false</IsSelected>
+         </e>
+      </FavoriteGolfDestinations>
+      <FirstName>Daisy</FirstName>
+      <Gender>F</Gender>
+      <Handicap/>
+      <HomePhone>09260387756</HomePhone>
+      <IronsYear>1970</IronsYear>
+      <IsOneTimeUsePassword>false</IsOneTimeUsePassword>
+      <LastName>Atim</LastName>
+      <LowestScore18>0</LowestScore18>
+      <LowestScore9>0</LowestScore9>
+      <Message/>
+      <MobileNumber/>
+      <NewsLetter>false</NewsLetter>
+      <Notes/>
+      <PartnershipOffers>false</PartnershipOffers>
+      <Password/>
+      <PlayFrequency/>
+      <PostalCode>80909</PostalCode>
+      <PreferFriday>false</PreferFriday>
+      <PreferMonday>false</PreferMonday>
+      <PreferSaturday>false</PreferSaturday>
+      <PreferSunday>false</PreferSunday>
+      <PreferThursday>false</PreferThursday>
+      <PreferTuesday>false</PreferTuesday>
+      <PreferWednesday>false</PreferWednesday>
+      <Province/>
+      <ReturnCode/>
+      <SessionId>edd3dcc2-dbd5-41d9-960b-beab1ba02595</SessionId>
+      <StartTime/>
+      <State/>
+      <Username>daisyatim</Username>
+      <WorkNumber/>
+      <YearsPlaying>0</YearsPlaying>
+   </Data>
+   <Message null="true"/>
+   <Success>true</Success>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="956380cb-c4e9-40b2-b0c5-796eb266b506" name="JsonPath Match - AllowNewsLetter is False"><con:configuration><path>$['Data'][NewsLetter]</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="956380cb-c4e9-40b2-b0c5-796eb266b506" name="JsonPath Match - AllowAlerts is False"><con:configuration><path>$['Data'][Alerts]</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="956380cb-c4e9-40b2-b0c5-796eb266b506" name="JsonPath Match - DealsDiscounts is False"><con:configuration><path>$['Data'][DealsDiscounts]</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="sessionId" value="${Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request - UpdateUserPreference (Set only AllowNewsLetter to True)" id="be7cfdf1-8c58-4c3a-8c8d-5da50e9809e9"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/User/UpdateUserPreference" methodName="UserController_UpdateUserPreference" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request - UpdateUserPreference (Set only AllowNewsLetter to True)" id="74c1263a-df21-4058-8075-02d6eddcb52e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request>{
+   "AllowNewsLetter": true,
+   "AllowDealsDiscounts": false,
+   "AllowAlerts": false,
+   "ContactId": "${Sign In#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AuthenticateUser'; //ns1:Response[1]/ns1:Data[1]/ns1:ContactId[1]}"
+}</con:request><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference</con:originalUri><con:assertion type="XPath Match" id="ccacfbdd-f899-4856-88c3-9054aa52b206" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="e357ca27-e5c3-4856-92d6-5b098e3e1bb0" name="JsonPath Match - AllowNewsLetter is True"><con:configuration><path>$['Data'][NewsLetter]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="e357ca27-e5c3-4856-92d6-5b098e3e1bb0" name="JsonPath Match - AllowAlerts is False"><con:configuration><path>$['Data'][Alerts]</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="e357ca27-e5c3-4856-92d6-5b098e3e1bb0" name="JsonPath Match - AllowDealsDiscounts is False"><con:configuration><path>$['Data'][DealsDiscounts]</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="sessionId" value="${Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request - UpdateUserPreference (Set only AllowAlerts to True)" id="d3d5db99-2727-4e0d-950f-d8877a50c223"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/User/UpdateUserPreference" methodName="UserController_UpdateUserPreference" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request - UpdateUserPreference (Set only AllowAlerts to True)" id="74c1263a-df21-4058-8075-02d6eddcb52e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request>{
+   "AllowNewsLetter": false,
+   "AllowDealsDiscounts": false,
+   "AllowAlerts": true,
+   "ContactId": "${Sign In#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AuthenticateUser'; //ns1:Response[1]/ns1:Data[1]/ns1:ContactId[1]}"
+}</con:request><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference</con:originalUri><con:assertion type="XPath Match" id="ccacfbdd-f899-4856-88c3-9054aa52b206" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="e357ca27-e5c3-4856-92d6-5b098e3e1bb0" name="JsonPath Match - AllowNewsLetter is False"><con:configuration><path>$['Data'][NewsLetter]</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="e357ca27-e5c3-4856-92d6-5b098e3e1bb0" name="JsonPath Match - AllowAlerts is True"><con:configuration><path>$['Data'][Alerts]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="e357ca27-e5c3-4856-92d6-5b098e3e1bb0" name="JsonPath Match - AllowDealsDiscounts is False"><con:configuration><path>$['Data'][DealsDiscounts]</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="sessionId" value="${Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request - UpdateUserPreference (Set only AllowDealsDiscounts to True)" id="3341e755-8654-426c-9272-06c09d2c8b77"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/User/UpdateUserPreference" methodName="UserController_UpdateUserPreference" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request - UpdateUserPreference (Set only AllowDealsDiscounts to True)" id="74c1263a-df21-4058-8075-02d6eddcb52e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request>{
+   "AllowNewsLetter": false,
+   "AllowDealsDiscounts": true,
+   "AllowAlerts": false,
+   "ContactId": "${Sign In#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AuthenticateUser'; //ns1:Response[1]/ns1:Data[1]/ns1:ContactId[1]}"
+}</con:request><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference</con:originalUri><con:assertion type="XPath Match" id="ccacfbdd-f899-4856-88c3-9054aa52b206" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="e357ca27-e5c3-4856-92d6-5b098e3e1bb0" name="JsonPath Match - AllowNewsLetter is False"><con:configuration><path>$['Data'][NewsLetter]</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="e357ca27-e5c3-4856-92d6-5b098e3e1bb0" name="JsonPath Match - AllowAlerts is False"><con:configuration><path>$['Data'][Alerts]</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="e357ca27-e5c3-4856-92d6-5b098e3e1bb0" name="JsonPath Match - AllowDealsDiscounts is True"><con:configuration><path>$['Data'][DealsDiscounts]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="sessionId" value="${Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request - UpdateUserPreference (Wrong/Empty SessionID)" id="e9ddcf3c-a7f4-4ffd-917a-a407047c07c7"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/User/UpdateUserPreference" methodName="UserController_UpdateUserPreference" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request - UpdateUserPreference (Wrong/Empty SessionID)" id="74c1263a-df21-4058-8075-02d6eddcb52e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request>{
+   "AllowNewsLetter": false,
+   "AllowAlerts": false,
+   "AllowDealsDiscounts": false,
+   "ContactId": "${Sign In#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AuthenticateUser'; //ns1:Response[1]/ns1:Data[1]/ns1:ContactId[1]}"
+}</con:request><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference</con:originalUri><con:assertion type="XPath Match" id="3dece7bc-b17d-4d43-b132-f42408ca9692" name="Invalid/missing request object."><con:configuration><path>//data[1]</path><content>&lt;data contentType="text/plain; charset=utf-8" contentLength="31">Invalid/missing request object.&lt;/data></content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request - UpdateUserPreference (Wrong ContactID)" id="157da79b-2716-498e-9e1d-35f71aef5dab"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/User/UpdateUserPreference" methodName="UserController_UpdateUserPreference" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request - UpdateUserPreference (Wrong ContactID)" id="74c1263a-df21-4058-8075-02d6eddcb52e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request>{
+   "AllowNewsLetter": false,
+   "AllowAlerts": false,
+   "AllowDealsDiscounts": false,
+   "ContactId": "26571295954"
+}</con:request><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/User/UpdateUserPreference</con:originalUri><con:assertion type="XPath Match" id="685fa445-28e1-4238-b319-e856f3c17d10" name="Invalid/missing request object."><con:configuration><path>//data[1]</path><content>&lt;data contentType="text/plain; charset=utf-8" contentLength="31">Invalid/missing request object.&lt;/data></content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="sessionId" value="${Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>9d0dc8b8-f29a-4b57-9fe6-642b19334bdc</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>fc640b87-d48c-43c7-a314-d3c896dc90f5</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase>

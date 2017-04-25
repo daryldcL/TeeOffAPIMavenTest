@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="dfcc2259-b44e-43c2-b07d-b24c1350ee2c" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/TeeOff/v1/Search/GetTeeTimesByCourse - Filtered" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="67e10e9f-1425-414a-bf2d-3daa48603a85fileName">%2FTeeOff%2Fv1%2FSearch%2FGetTeeTimesByCourse</con:setting><con:setting id="81a47b79-63a3-42eb-a098-86d1b294fb0ffileName">%2FTeeOff%2Fv1%2FSearch%2FGetTeeTimesByCourse</con:setting><con:setting id="dfcc2259-b44e-43c2-b07d-b24c1350ee2cfileName">%2FTeeOff%2Fv1%2FSearch%2FGetTeeTimesByCourse---Filtered</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Test Request: Start Session" id="8b432e25-3824-45bd-9412-52e92f4c565c"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/User/SessionStart" methodName="UserController_SessionStart" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: Start Session" id="361af8ca-7e28-4076-9924-c385f0b5db38" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/User/SessionStart</con:originalUri><con:assertion type="XPath Match" id="a91ad1b8-c8c3-49bb-8f6d-67ac3fed9906" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request: GetTeeTimesByCourse - Set HasDrivingRange = true" id="005b4999-7963-4dc4-9e61-aa742e07094b"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/GetTeeTimesByCourse" methodName="SearchController_GetTeeTimesByCourse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: GetTeeTimesByCourse - Set HasDrivingRange = true" id="9ff32a37-8139-44a0-81dc-79faa9983918" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse</con:originalUri><con:assertion type="XPath Match" id="2f090509-a124-4a75-8e66-1b9299056720" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="f458204f-614f-400b-acdd-8e87f7e367f8" name="All results returns HasDrivingRange = true"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def jsonResp = context.expand( '${Test Request: GetTeeTimesByCourse - Set HasDrivingRange = true#Response#$[\'Data\'][*][\'Amenities\']}' )
+def jsonElements = new JsonSlurper().parseText(jsonResp)
+
+
+for ( value in jsonElements ) {
+	def ivalue = value["HasDrivingRange"]
+
+	assert ivalue.toString() == "true"
+}</scriptText></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="request.hasLessons" value="null"/>
+  <con:entry key="request.minPrice" value="0"/>
+  <con:entry key="request.hasFood" value="null"/>
+  <con:entry key="request.endTime" value="11:59 PM"/>
+  <con:entry key="request.hasProShop" value="null"/>
+  <con:entry key="request.minDistance" value="null"/>
+  <con:entry key="request.hasClubRental" value="null"/>
+  <con:entry key="request.hasPracticeBunker" value="null"/>
+  <con:entry key="request.centerPointLon" value="-112.8534494"/>
+  <con:entry key="request.numberOfHoles" value="null"/>
+  <con:entry key="request.playDate" value="${#Project#playDate}"/>
+  <con:entry key="request.courseIds" value="100077,100082,100084,100078,100076,100074,100070,100075,100071,100083,3843,2530,2798,2531,2411,4623,3137,2883,2885,4619,2961,3381,2889,2753,3417,5007,2897,1225,4659,2827,4114,4113,2881,3964,2941,3415,2887,2899,3398,2901,1717,2891,3988,5008,4997,4998,1489,2895,4418,4621,2978,2831,2833,2943,2755,4219,3412,3177,3112,3226,3227,3228,2835,5000,4999,3668,3426,2489,2984,2982,3399,1716,1715,1714,2408"/>
+  <con:entry key="request.hasPuttingGreen" value="null"/>
+  <con:entry key="request.hasGPS" value="null"/>
+  <con:entry key="request.hasDrivingRange" value="true"/>
+  <con:entry key="request.hasBeverages" value="null"/>
+  <con:entry key="sessionId" value="${Test Request: Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}"/>
+  <con:entry key="request.hasLockerRoom" value="null"/>
+  <con:entry key="request.hasChippingArea" value="null"/>
+  <con:entry key="request.hasCartIncluded" value="null"/>
+  <con:entry key="request.numberOfPlayers" value="null"/>
+  <con:entry key="request.maxPrice" value="999"/>
+  <con:entry key="request.centerPointLat" value="32.4614248"/>
+  <con:entry key="request.maxDistance" value="null"/>
+  <con:entry key="request.hasShoeRental" value="null"/>
+  <con:entry key="request.beginTime" value="5:00 AM"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request: GetTeeTimesByCourse - Set HasPuttingGreen = true" id="c4a52890-74df-48ec-a386-6217a3c8c01a"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/GetTeeTimesByCourse" methodName="SearchController_GetTeeTimesByCourse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: GetTeeTimesByCourse - Set HasPuttingGreen = true" id="9ff32a37-8139-44a0-81dc-79faa9983918" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse</con:originalUri><con:assertion type="XPath Match" id="2f090509-a124-4a75-8e66-1b9299056720" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="f458204f-614f-400b-acdd-8e87f7e367f8" name="All results returns HasPuttingGreen = true"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def jsonResp = context.expand( '${Test Request: GetTeeTimesByCourse - Set HasPuttingGreen = true#Response#$[\'Data\'][*][\'Amenities\']}' )
+def jsonElements = new JsonSlurper().parseText(jsonResp)
+
+
+for ( value in jsonElements ) {
+	def ivalue = value["HasPuttingGreen"]
+
+	assert ivalue.toString() == "true"
+}</scriptText></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="request.hasLessons" value="null"/>
+  <con:entry key="request.minPrice" value="0"/>
+  <con:entry key="request.hasFood" value="null"/>
+  <con:entry key="request.endTime" value="11:59 PM"/>
+  <con:entry key="request.hasProShop" value="null"/>
+  <con:entry key="request.minDistance" value="null"/>
+  <con:entry key="request.hasClubRental" value="null"/>
+  <con:entry key="request.hasPracticeBunker" value="null"/>
+  <con:entry key="request.centerPointLon" value="-112.8534494"/>
+  <con:entry key="request.numberOfHoles" value="null"/>
+  <con:entry key="request.playDate" value="${#Project#playDate}"/>
+  <con:entry key="request.courseIds" value="100077,100082,100084,100078,100076,100074,100070,100075,100071,100083,3843,2530,2798,2531,2411,4623,3137,2883,2885,4619,2961,3381,2889,2753,3417,5007,2897,1225,4659,2827,4114,4113,2881,3964,2941,3415,2887,2899,3398,2901,1717,2891,3988,5008,4997,4998,1489,2895,4418,4621,2978,2831,2833,2943,2755,4219,3412,3177,3112,3226,3227,3228,2835,5000,4999,3668,3426,2489,2984,2982,3399,1716,1715,1714,2408"/>
+  <con:entry key="request.hasPuttingGreen" value="true"/>
+  <con:entry key="request.hasGPS" value="null"/>
+  <con:entry key="request.hasDrivingRange" value="null"/>
+  <con:entry key="request.hasBeverages" value="null"/>
+  <con:entry key="sessionId" value="${Test Request: Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}"/>
+  <con:entry key="request.hasLockerRoom" value="null"/>
+  <con:entry key="request.hasChippingArea" value="null"/>
+  <con:entry key="request.hasCartIncluded" value="null"/>
+  <con:entry key="request.numberOfPlayers" value="null"/>
+  <con:entry key="request.maxPrice" value="999"/>
+  <con:entry key="request.centerPointLat" value="32.4614248"/>
+  <con:entry key="request.maxDistance" value="null"/>
+  <con:entry key="request.hasShoeRental" value="null"/>
+  <con:entry key="request.beginTime" value="5:00 AM"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request: GetTeeTimesByCourse - Set HasChippingArea = true" id="5f7d7815-07d7-4a08-b667-f4588fa0153c"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/GetTeeTimesByCourse" methodName="SearchController_GetTeeTimesByCourse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: GetTeeTimesByCourse - Set HasChippingArea = true" id="9ff32a37-8139-44a0-81dc-79faa9983918" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse</con:originalUri><con:assertion type="XPath Match" id="2f090509-a124-4a75-8e66-1b9299056720" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="f458204f-614f-400b-acdd-8e87f7e367f8" name="All results returns HasChippingArea = true"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def jsonResp = context.expand( '${Test Request: GetTeeTimesByCourse - Set HasChippingArea = true#Response#$[\'Data\'][*][\'Amenities\']}' )
+def jsonElements = new JsonSlurper().parseText(jsonResp)
+
+
+for ( value in jsonElements ) {
+	def ivalue = value["HasChippingArea"]
+
+	assert ivalue.toString() == "true"
+}</scriptText></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="request.hasLessons" value="null"/>
+  <con:entry key="request.minPrice" value="0"/>
+  <con:entry key="request.hasFood" value="null"/>
+  <con:entry key="request.endTime" value="11:59 PM"/>
+  <con:entry key="request.hasProShop" value="null"/>
+  <con:entry key="request.minDistance" value="null"/>
+  <con:entry key="request.hasClubRental" value="null"/>
+  <con:entry key="request.hasPracticeBunker" value="null"/>
+  <con:entry key="request.centerPointLon" value="-112.8534494"/>
+  <con:entry key="request.numberOfHoles" value="null"/>
+  <con:entry key="request.playDate" value="${#Project#playDate}"/>
+  <con:entry key="request.courseIds" value="100077,100082,100084,100078,100076,100074,100070,100075,100071,100083,3843,2530,2798,2531,2411,4623,3137,2883,2885,4619,2961,3381,2889,2753,3417,5007,2897,1225,4659,2827,4114,4113,2881,3964,2941,3415,2887,2899,3398,2901,1717,2891,3988,5008,4997,4998,1489,2895,4418,4621,2978,2831,2833,2943,2755,4219,3412,3177,3112,3226,3227,3228,2835,5000,4999,3668,3426,2489,2984,2982,3399,1716,1715,1714,2408"/>
+  <con:entry key="request.hasPuttingGreen" value="null"/>
+  <con:entry key="request.hasGPS" value="null"/>
+  <con:entry key="request.hasDrivingRange" value="null"/>
+  <con:entry key="request.hasBeverages" value="null"/>
+  <con:entry key="sessionId" value="${Test Request: Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}"/>
+  <con:entry key="request.hasLockerRoom" value="null"/>
+  <con:entry key="request.hasChippingArea" value="true"/>
+  <con:entry key="request.hasCartIncluded" value="null"/>
+  <con:entry key="request.numberOfPlayers" value="null"/>
+  <con:entry key="request.maxPrice" value="999"/>
+  <con:entry key="request.centerPointLat" value="32.4614248"/>
+  <con:entry key="request.maxDistance" value="null"/>
+  <con:entry key="request.hasShoeRental" value="null"/>
+  <con:entry key="request.beginTime" value="5:00 AM"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request: GetTeeTimesByCourse - Set HasGPSAvailable = true" id="cea4a45a-92f2-43ba-83f8-db0170a82add"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/GetTeeTimesByCourse" methodName="SearchController_GetTeeTimesByCourse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: GetTeeTimesByCourse - Set HasGPSAvailable = true" id="9ff32a37-8139-44a0-81dc-79faa9983918" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse</con:originalUri><con:assertion type="XPath Match" id="2f090509-a124-4a75-8e66-1b9299056720" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="f458204f-614f-400b-acdd-8e87f7e367f8" name="All results returns HasGPSAvailable =true"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def jsonResp = context.expand( '${Test Request: GetTeeTimesByCourse - Set HasGPSAvailable = true#Response#$[\'Data\'][*][\'Amenities\']}' )
+def jsonElements = new JsonSlurper().parseText(jsonResp)
+
+
+for ( value in jsonElements ) {
+	def ivalue = value["HasGPSAvailable"]
+
+	assert ivalue.toString() == "true"
+}</scriptText></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="request.hasLessons" value="null"/>
+  <con:entry key="request.minPrice" value="0"/>
+  <con:entry key="request.hasFood" value="null"/>
+  <con:entry key="request.endTime" value="11:59 PM"/>
+  <con:entry key="request.hasProShop" value="null"/>
+  <con:entry key="request.minDistance" value="null"/>
+  <con:entry key="request.hasClubRental" value="null"/>
+  <con:entry key="request.hasPracticeBunker" value="null"/>
+  <con:entry key="request.centerPointLon" value="-112.8534494"/>
+  <con:entry key="request.numberOfHoles" value="null"/>
+  <con:entry key="request.playDate" value="${#Project#playDate}"/>
+  <con:entry key="request.courseIds" value="100077,100082,100084,100078,100076,100074,100070,100075,100071,100083,3843,2530,2798,2531,2411,4623,3137,2883,2885,4619,2961,3381,2889,2753,3417,5007,2897,1225,4659,2827,4114,4113,2881,3964,2941,3415,2887,2899,3398,2901,1717,2891,3988,5008,4997,4998,1489,2895,4418,4621,2978,2831,2833,2943,2755,4219,3412,3177,3112,3226,3227,3228,2835,5000,4999,3668,3426,2489,2984,2982,3399,1716,1715,1714,2408"/>
+  <con:entry key="request.hasPuttingGreen" value="null"/>
+  <con:entry key="request.hasGPS" value="true"/>
+  <con:entry key="request.hasDrivingRange" value="null"/>
+  <con:entry key="request.hasBeverages" value="null"/>
+  <con:entry key="sessionId" value="${Test Request: Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}"/>
+  <con:entry key="request.hasLockerRoom" value="null"/>
+  <con:entry key="request.hasChippingArea" value="null"/>
+  <con:entry key="request.hasCartIncluded" value="null"/>
+  <con:entry key="request.numberOfPlayers" value="null"/>
+  <con:entry key="request.maxPrice" value="999"/>
+  <con:entry key="request.centerPointLat" value="32.4614248"/>
+  <con:entry key="request.maxDistance" value="null"/>
+  <con:entry key="request.hasShoeRental" value="null"/>
+  <con:entry key="request.beginTime" value="5:00 AM"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request: GetTeeTimesByCourse - Set HasRentalClubs = true" id="07a30984-59df-4680-be22-a6d3f71fada2"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/GetTeeTimesByCourse" methodName="SearchController_GetTeeTimesByCourse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: GetTeeTimesByCourse - Set HasRentalClubs = true" id="9ff32a37-8139-44a0-81dc-79faa9983918" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse</con:originalUri><con:assertion type="XPath Match" id="2f090509-a124-4a75-8e66-1b9299056720" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="f458204f-614f-400b-acdd-8e87f7e367f8" name="All results returns HasRentalClubs = true"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def jsonResp = context.expand( '${Test Request: GetTeeTimesByCourse - Set HasRentalClubs = true#Response#$[\'Data\'][*][\'Amenities\']}' )
+def jsonElements = new JsonSlurper().parseText(jsonResp)
+
+
+for ( value in jsonElements ) {
+	def ivalue = value["HasRentalClubs"]
+
+	assert ivalue.toString() == "true"
+}</scriptText></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="request.hasLessons" value="null"/>
+  <con:entry key="request.minPrice" value="0"/>
+  <con:entry key="request.hasFood" value="null"/>
+  <con:entry key="request.endTime" value="11:59 PM"/>
+  <con:entry key="request.hasProShop" value="null"/>
+  <con:entry key="request.minDistance" value="null"/>
+  <con:entry key="request.hasClubRental" value="true"/>
+  <con:entry key="request.hasPracticeBunker" value="null"/>
+  <con:entry key="request.centerPointLon" value="-112.8534494"/>
+  <con:entry key="request.numberOfHoles" value="null"/>
+  <con:entry key="request.playDate" value="${#Project#playDate}"/>
+  <con:entry key="request.courseIds" value="100077,100082,100084,100078,100076,100074,100070,100075,100071,100083,3843,2530,2798,2531,2411,4623,3137,2883,2885,4619,2961,3381,2889,2753,3417,5007,2897,1225,4659,2827,4114,4113,2881,3964,2941,3415,2887,2899,3398,2901,1717,2891,3988,5008,4997,4998,1489,2895,4418,4621,2978,2831,2833,2943,2755,4219,3412,3177,3112,3226,3227,3228,2835,5000,4999,3668,3426,2489,2984,2982,3399,1716,1715,1714,2408"/>
+  <con:entry key="request.hasPuttingGreen" value="null"/>
+  <con:entry key="request.hasGPS" value="null"/>
+  <con:entry key="request.hasDrivingRange" value="null"/>
+  <con:entry key="request.hasBeverages" value="null"/>
+  <con:entry key="sessionId" value="${Test Request: Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}"/>
+  <con:entry key="request.hasLockerRoom" value="null"/>
+  <con:entry key="request.hasChippingArea" value="null"/>
+  <con:entry key="request.hasCartIncluded" value="null"/>
+  <con:entry key="request.numberOfPlayers" value="null"/>
+  <con:entry key="request.maxPrice" value="999"/>
+  <con:entry key="request.centerPointLat" value="32.4614248"/>
+  <con:entry key="request.maxDistance" value="null"/>
+  <con:entry key="request.hasShoeRental" value="null"/>
+  <con:entry key="request.beginTime" value="5:00 AM"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request: GetTeeTimesByCourse - Set HasLockerRoom = true" id="9ec93b99-ce40-470c-9262-7f23e7c8974c"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/GetTeeTimesByCourse" methodName="SearchController_GetTeeTimesByCourse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: GetTeeTimesByCourse - Set HasLockerRoom = true" id="9ff32a37-8139-44a0-81dc-79faa9983918" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse</con:originalUri><con:assertion type="XPath Match" id="2f090509-a124-4a75-8e66-1b9299056720" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="f458204f-614f-400b-acdd-8e87f7e367f8" name="All results returns HasLockerRoom = true"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def jsonResp = context.expand( '${Test Request: GetTeeTimesByCourse - Set HasLockerRoom = true#Response#$[\'Data\'][*][\'Amenities\']}' )
+def jsonElements = new JsonSlurper().parseText(jsonResp)
+
+
+for ( value in jsonElements ) {
+	def ivalue = value["HasLockerRoom"]
+
+	assert ivalue.toString() == "true"
+}</scriptText></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="request.hasLessons" value="null"/>
+  <con:entry key="request.minPrice" value="0"/>
+  <con:entry key="request.hasFood" value="null"/>
+  <con:entry key="request.endTime" value="11:59 PM"/>
+  <con:entry key="request.hasProShop" value="null"/>
+  <con:entry key="request.minDistance" value="null"/>
+  <con:entry key="request.hasClubRental" value="null"/>
+  <con:entry key="request.hasPracticeBunker" value="null"/>
+  <con:entry key="request.centerPointLon" value="-112.8534494"/>
+  <con:entry key="request.numberOfHoles" value="null"/>
+  <con:entry key="request.playDate" value="${#Project#playDate}"/>
+  <con:entry key="request.courseIds" value="100077,100082,100084,100078,100076,100074,100070,100075,100071,100083,3843,2530,2798,2531,2411,4623,3137,2883,2885,4619,2961,3381,2889,2753,3417,5007,2897,1225,4659,2827,4114,4113,2881,3964,2941,3415,2887,2899,3398,2901,1717,2891,3988,5008,4997,4998,1489,2895,4418,4621,2978,2831,2833,2943,2755,4219,3412,3177,3112,3226,3227,3228,2835,5000,4999,3668,3426,2489,2984,2982,3399,1716,1715,1714,2408"/>
+  <con:entry key="request.hasPuttingGreen" value="null"/>
+  <con:entry key="request.hasGPS" value="null"/>
+  <con:entry key="request.hasDrivingRange" value="null"/>
+  <con:entry key="request.hasBeverages" value="null"/>
+  <con:entry key="sessionId" value="${Test Request: Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}"/>
+  <con:entry key="request.hasLockerRoom" value="true"/>
+  <con:entry key="request.hasChippingArea" value="null"/>
+  <con:entry key="request.hasCartIncluded" value="null"/>
+  <con:entry key="request.numberOfPlayers" value="null"/>
+  <con:entry key="request.maxPrice" value="999"/>
+  <con:entry key="request.centerPointLat" value="32.4614248"/>
+  <con:entry key="request.maxDistance" value="null"/>
+  <con:entry key="request.hasShoeRental" value="null"/>
+  <con:entry key="request.beginTime" value="5:00 AM"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request: GetTeeTimesByCourse - Set HasFood = true" id="066d680b-270b-4029-b105-10d1a3532744"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/GetTeeTimesByCourse" methodName="SearchController_GetTeeTimesByCourse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: GetTeeTimesByCourse - Set HasFood = true" id="9ff32a37-8139-44a0-81dc-79faa9983918" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse</con:originalUri><con:assertion type="XPath Match" id="2f090509-a124-4a75-8e66-1b9299056720" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="f458204f-614f-400b-acdd-8e87f7e367f8" name="All results returns HasFood = true"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def jsonResp = context.expand( '${Test Request: GetTeeTimesByCourse - Set HasFood = true#Response#$[\'Data\'][*][\'Amenities\']}' )
+def jsonElements = new JsonSlurper().parseText(jsonResp)
+
+
+for ( value in jsonElements ) {
+	def ivalue = value["HasFood"]
+
+	assert ivalue.toString() == "true"
+}</scriptText></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="request.hasLessons" value="null"/>
+  <con:entry key="request.minPrice" value="0"/>
+  <con:entry key="request.hasFood" value="true"/>
+  <con:entry key="request.endTime" value="11:59 PM"/>
+  <con:entry key="request.hasProShop" value="null"/>
+  <con:entry key="request.minDistance" value="null"/>
+  <con:entry key="request.hasClubRental" value="null"/>
+  <con:entry key="request.hasPracticeBunker" value="null"/>
+  <con:entry key="request.centerPointLon" value="-112.8534494"/>
+  <con:entry key="request.numberOfHoles" value="null"/>
+  <con:entry key="request.playDate" value="${#Project#playDate}"/>
+  <con:entry key="request.courseIds" value="100077,100082,100084,100078,100076,100074,100070,100075,100071,100083,3843,2530,2798,2531,2411,4623,3137,2883,2885,4619,2961,3381,2889,2753,3417,5007,2897,1225,4659,2827,4114,4113,2881,3964,2941,3415,2887,2899,3398,2901,1717,2891,3988,5008,4997,4998,1489,2895,4418,4621,2978,2831,2833,2943,2755,4219,3412,3177,3112,3226,3227,3228,2835,5000,4999,3668,3426,2489,2984,2982,3399,1716,1715,1714,2408"/>
+  <con:entry key="request.hasPuttingGreen" value="null"/>
+  <con:entry key="request.hasGPS" value="null"/>
+  <con:entry key="request.hasDrivingRange" value="null"/>
+  <con:entry key="request.hasBeverages" value="null"/>
+  <con:entry key="sessionId" value="${Test Request: Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}"/>
+  <con:entry key="request.hasLockerRoom" value="null"/>
+  <con:entry key="request.hasChippingArea" value="null"/>
+  <con:entry key="request.hasCartIncluded" value="null"/>
+  <con:entry key="request.numberOfPlayers" value="null"/>
+  <con:entry key="request.maxPrice" value="999"/>
+  <con:entry key="request.centerPointLat" value="32.4614248"/>
+  <con:entry key="request.maxDistance" value="null"/>
+  <con:entry key="request.hasShoeRental" value="null"/>
+  <con:entry key="request.beginTime" value="5:00 AM"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request: GetTeeTimesByCourse - Set HasBeverages = true" id="c6cc88a5-2438-4758-bd28-b2f703557ce2"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/GetTeeTimesByCourse" methodName="SearchController_GetTeeTimesByCourse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: GetTeeTimesByCourse - Set HasBeverages = true" id="9ff32a37-8139-44a0-81dc-79faa9983918" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse</con:originalUri><con:assertion type="XPath Match" id="2f090509-a124-4a75-8e66-1b9299056720" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="f458204f-614f-400b-acdd-8e87f7e367f8" name="All results returns HasBeverages = true"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def jsonResp = context.expand( '${Test Request: GetTeeTimesByCourse - Set HasBeverages = true#Response#$[\'Data\'][*][\'Amenities\']}' )
+def jsonElements = new JsonSlurper().parseText(jsonResp)
+
+
+for ( value in jsonElements ) {
+	def ivalue = value["HasBeverages"]
+
+	assert ivalue.toString() == "true"
+}</scriptText></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="request.hasLessons" value="null"/>
+  <con:entry key="request.minPrice" value="0"/>
+  <con:entry key="request.hasFood" value="null"/>
+  <con:entry key="request.endTime" value="11:59 PM"/>
+  <con:entry key="request.hasProShop" value="null"/>
+  <con:entry key="request.minDistance" value="null"/>
+  <con:entry key="request.hasClubRental" value="null"/>
+  <con:entry key="request.hasPracticeBunker" value="null"/>
+  <con:entry key="request.centerPointLon" value="-112.8534494"/>
+  <con:entry key="request.numberOfHoles" value="null"/>
+  <con:entry key="request.playDate" value="${#Project#playDate}"/>
+  <con:entry key="request.courseIds" value="100077,100082,100084,100078,100076,100074,100070,100075,100071,100083,3843,2530,2798,2531,2411,4623,3137,2883,2885,4619,2961,3381,2889,2753,3417,5007,2897,1225,4659,2827,4114,4113,2881,3964,2941,3415,2887,2899,3398,2901,1717,2891,3988,5008,4997,4998,1489,2895,4418,4621,2978,2831,2833,2943,2755,4219,3412,3177,3112,3226,3227,3228,2835,5000,4999,3668,3426,2489,2984,2982,3399,1716,1715,1714,2408"/>
+  <con:entry key="request.hasPuttingGreen" value="null"/>
+  <con:entry key="request.hasGPS" value="null"/>
+  <con:entry key="request.hasDrivingRange" value="null"/>
+  <con:entry key="request.hasBeverages" value="true"/>
+  <con:entry key="sessionId" value="${Test Request: Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}"/>
+  <con:entry key="request.hasLockerRoom" value="null"/>
+  <con:entry key="request.hasChippingArea" value="null"/>
+  <con:entry key="request.hasCartIncluded" value="null"/>
+  <con:entry key="request.numberOfPlayers" value="null"/>
+  <con:entry key="request.maxPrice" value="999"/>
+  <con:entry key="request.centerPointLat" value="32.4614248"/>
+  <con:entry key="request.maxDistance" value="null"/>
+  <con:entry key="request.hasShoeRental" value="null"/>
+  <con:entry key="request.beginTime" value="5:00 AM"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request: GetTeeTimesByCourse - Set HasRentalShoes = false" id="4ede944f-6e1f-4455-b426-893b17de20bd"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/GetTeeTimesByCourse" methodName="SearchController_GetTeeTimesByCourse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: GetTeeTimesByCourse - Set HasRentalShoes = false" id="9ff32a37-8139-44a0-81dc-79faa9983918" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse</con:originalUri><con:assertion type="XPath Match" id="2f090509-a124-4a75-8e66-1b9299056720" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="f458204f-614f-400b-acdd-8e87f7e367f8" name="All results returns HasRentalShoes = false"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def jsonResp = context.expand( '${Test Request: GetTeeTimesByCourse - Set HasRentalShoes = false#Response#$[\'Data\'][*][\'Amenities\']}' )
+def jsonElements = new JsonSlurper().parseText(jsonResp)
+
+
+for ( value in jsonElements ) {
+	def ivalue = value["HasRentalShoes"]
+
+	assert ivalue.toString() == "false"
+}</scriptText></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="request.hasLessons" value="null"/>
+  <con:entry key="request.minPrice" value="0"/>
+  <con:entry key="request.hasFood" value="null"/>
+  <con:entry key="request.endTime" value="11:59 PM"/>
+  <con:entry key="request.hasProShop" value="null"/>
+  <con:entry key="request.minDistance" value="null"/>
+  <con:entry key="request.hasClubRental" value="null"/>
+  <con:entry key="request.hasPracticeBunker" value="null"/>
+  <con:entry key="request.centerPointLon" value="-112.8534494"/>
+  <con:entry key="request.numberOfHoles" value="null"/>
+  <con:entry key="request.playDate" value="${#Project#playDate}"/>
+  <con:entry key="request.courseIds" value="100077,100082,100084,100078,100076,100074,100070,100075,100071,100083,3843,2530,2798,2531,2411,4623,3137,2883,2885,4619,2961,3381,2889,2753,3417,5007,2897,1225,4659,2827,4114,4113,2881,3964,2941,3415,2887,2899,3398,2901,1717,2891,3988,5008,4997,4998,1489,2895,4418,4621,2978,2831,2833,2943,2755,4219,3412,3177,3112,3226,3227,3228,2835,5000,4999,3668,3426,2489,2984,2982,3399,1716,1715,1714,2408"/>
+  <con:entry key="request.hasPuttingGreen" value="null"/>
+  <con:entry key="request.hasGPS" value="null"/>
+  <con:entry key="request.hasDrivingRange" value="null"/>
+  <con:entry key="request.hasBeverages" value="null"/>
+  <con:entry key="sessionId" value="${Test Request: Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}"/>
+  <con:entry key="request.hasLockerRoom" value="null"/>
+  <con:entry key="request.hasChippingArea" value="null"/>
+  <con:entry key="request.hasCartIncluded" value="null"/>
+  <con:entry key="request.numberOfPlayers" value="null"/>
+  <con:entry key="request.maxPrice" value="999"/>
+  <con:entry key="request.centerPointLat" value="32.4614248"/>
+  <con:entry key="request.maxDistance" value="null"/>
+  <con:entry key="request.hasShoeRental" value="false"/>
+  <con:entry key="request.beginTime" value="5:00 AM"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request: GetTeeTimesByCourse - Set HasPracticeBunker = true" id="b1768ef8-d244-4dd9-bb84-71f89a794eab"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/GetTeeTimesByCourse" methodName="SearchController_GetTeeTimesByCourse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: GetTeeTimesByCourse - Set HasPracticeBunker = true" id="9ff32a37-8139-44a0-81dc-79faa9983918" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse</con:originalUri><con:assertion type="XPath Match" id="2f090509-a124-4a75-8e66-1b9299056720" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="f458204f-614f-400b-acdd-8e87f7e367f8" name="All results returns HasPracticeBunker = true"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def jsonResp = context.expand( '${Test Request: GetTeeTimesByCourse - Set HasPracticeBunker = true#Response#$[\'Data\'][*][\'Amenities\']}' )
+def jsonElements = new JsonSlurper().parseText(jsonResp)
+
+
+for ( value in jsonElements ) {
+	def ivalue = value["HasPracticeBunker"]
+
+	assert ivalue.toString() == "true"
+}</scriptText></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="request.hasLessons" value="null"/>
+  <con:entry key="request.minPrice" value="0"/>
+  <con:entry key="request.hasFood" value="null"/>
+  <con:entry key="request.endTime" value="11:59 PM"/>
+  <con:entry key="request.hasProShop" value="null"/>
+  <con:entry key="request.minDistance" value="null"/>
+  <con:entry key="request.hasClubRental" value="null"/>
+  <con:entry key="request.hasPracticeBunker" value="true"/>
+  <con:entry key="request.centerPointLon" value="-112.8534494"/>
+  <con:entry key="request.numberOfHoles" value="null"/>
+  <con:entry key="request.playDate" value="${#Project#playDate}"/>
+  <con:entry key="request.courseIds" value="100077,100082,100084,100078,100076,100074,100070,100075,100071,100083,3843,2530,2798,2531,2411,4623,3137,2883,2885,4619,2961,3381,2889,2753,3417,5007,2897,1225,4659,2827,4114,4113,2881,3964,2941,3415,2887,2899,3398,2901,1717,2891,3988,5008,4997,4998,1489,2895,4418,4621,2978,2831,2833,2943,2755,4219,3412,3177,3112,3226,3227,3228,2835,5000,4999,3668,3426,2489,2984,2982,3399,1716,1715,1714,2408"/>
+  <con:entry key="request.hasPuttingGreen" value="null"/>
+  <con:entry key="request.hasGPS" value="null"/>
+  <con:entry key="request.hasDrivingRange" value="null"/>
+  <con:entry key="request.hasBeverages" value="null"/>
+  <con:entry key="sessionId" value="${Test Request: Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}"/>
+  <con:entry key="request.hasLockerRoom" value="null"/>
+  <con:entry key="request.hasChippingArea" value="null"/>
+  <con:entry key="request.hasCartIncluded" value="null"/>
+  <con:entry key="request.numberOfPlayers" value="null"/>
+  <con:entry key="request.maxPrice" value="999"/>
+  <con:entry key="request.centerPointLat" value="32.4614248"/>
+  <con:entry key="request.maxDistance" value="null"/>
+  <con:entry key="request.hasShoeRental" value="null"/>
+  <con:entry key="request.beginTime" value="5:00 AM"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request: GetTeeTimesByCourse - Set HasGolfShop = true" id="86b75f33-66b8-436d-a95a-05f418e3432d"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/GetTeeTimesByCourse" methodName="SearchController_GetTeeTimesByCourse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: GetTeeTimesByCourse - Set HasGolfShop = true" id="9ff32a37-8139-44a0-81dc-79faa9983918" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse</con:originalUri><con:assertion type="XPath Match" id="2f090509-a124-4a75-8e66-1b9299056720" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="f458204f-614f-400b-acdd-8e87f7e367f8" name="All results returns HasGolfShop = true"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def jsonResp = context.expand( '${Test Request: GetTeeTimesByCourse - Set HasGolfShop = true#Response#$[\'Data\'][*][\'Amenities\']}' )
+def jsonElements = new JsonSlurper().parseText(jsonResp)
+
+
+for ( value in jsonElements ) {
+	def ivalue = value["HasGolfShop"]
+
+	assert ivalue.toString() == "true"
+}</scriptText></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="request.hasLessons" value="null"/>
+  <con:entry key="request.minPrice" value="0"/>
+  <con:entry key="request.hasFood" value="null"/>
+  <con:entry key="request.endTime" value="11:59 PM"/>
+  <con:entry key="request.hasProShop" value="true"/>
+  <con:entry key="request.minDistance" value="null"/>
+  <con:entry key="request.hasClubRental" value="null"/>
+  <con:entry key="request.hasPracticeBunker" value="null"/>
+  <con:entry key="request.centerPointLon" value="-112.8534494"/>
+  <con:entry key="request.numberOfHoles" value="null"/>
+  <con:entry key="request.playDate" value="${#Project#playDate}"/>
+  <con:entry key="request.courseIds" value="100077,100082,100084,100078,100076,100074,100070,100075,100071,100083,3843,2530,2798,2531,2411,4623,3137,2883,2885,4619,2961,3381,2889,2753,3417,5007,2897,1225,4659,2827,4114,4113,2881,3964,2941,3415,2887,2899,3398,2901,1717,2891,3988,5008,4997,4998,1489,2895,4418,4621,2978,2831,2833,2943,2755,4219,3412,3177,3112,3226,3227,3228,2835,5000,4999,3668,3426,2489,2984,2982,3399,1716,1715,1714,2408"/>
+  <con:entry key="request.hasPuttingGreen" value="null"/>
+  <con:entry key="request.hasGPS" value="null"/>
+  <con:entry key="request.hasDrivingRange" value="null"/>
+  <con:entry key="request.hasBeverages" value="null"/>
+  <con:entry key="sessionId" value="${Test Request: Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}"/>
+  <con:entry key="request.hasLockerRoom" value="null"/>
+  <con:entry key="request.hasChippingArea" value="null"/>
+  <con:entry key="request.hasCartIncluded" value="null"/>
+  <con:entry key="request.numberOfPlayers" value="null"/>
+  <con:entry key="request.maxPrice" value="999"/>
+  <con:entry key="request.centerPointLat" value="32.4614248"/>
+  <con:entry key="request.maxDistance" value="null"/>
+  <con:entry key="request.hasShoeRental" value="null"/>
+  <con:entry key="request.beginTime" value="5:00 AM"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Test Request: GetTeeTimesByCourse - Set HasCartIncluded = true" id="550f30a7-4bc4-42ac-a328-e6be446ffaaf"><con:settings/><con:config service="OpenTee.ExternalApi" resourcePath="/TeeOff/v1/Search/GetTeeTimesByCourse" methodName="SearchController_GetTeeTimesByCourse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Test Request: GetTeeTimesByCourse - Set HasCartIncluded = true" id="9ff32a37-8139-44a0-81dc-79faa9983918" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dev-api.opentee.com</con:endpoint><con:request/><con:originalUri>https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse</con:originalUri><con:assertion type="XPath Match" id="2f090509-a124-4a75-8e66-1b9299056720" name="Success"><con:configuration><path>declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetTeeTimesByCourse';
+//ns1:Response[1]/ns1:Success[1]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="f458204f-614f-400b-acdd-8e87f7e367f8" name="All results returns HasCartIncluded = true"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def jsonResp = context.expand( '${Test Request: GetTeeTimesByCourse - Set HasCartIncluded = true#Response#$[\'Data\'][*][\'Amenities\']}' )
+def jsonElements = new JsonSlurper().parseText(jsonResp)
+
+
+for ( value in jsonElements ) {
+	def ivalue = value["HasGolfCartIncluded"]
+
+	assert ivalue.toString() == "true"
+}</scriptText></con:configuration></con:assertion><con:credentials><con:username>test</con:username><con:password>test</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="request.hasLessons" value="null"/>
+  <con:entry key="request.minPrice" value="0"/>
+  <con:entry key="request.hasFood" value="null"/>
+  <con:entry key="request.endTime" value="11:59 PM"/>
+  <con:entry key="request.hasProShop" value="null"/>
+  <con:entry key="request.minDistance" value="null"/>
+  <con:entry key="request.hasClubRental" value="null"/>
+  <con:entry key="request.hasPracticeBunker" value="null"/>
+  <con:entry key="request.centerPointLon" value="-112.8534494"/>
+  <con:entry key="request.numberOfHoles" value="null"/>
+  <con:entry key="request.playDate" value="${#Project#playDate}"/>
+  <con:entry key="request.courseIds" value="100077,100082,100084,100078,100076,100074,100070,100075,100071,100083,3843,2530,2798,2531,2411,4623,3137,2883,2885,4619,2961,3381,2889,2753,3417,5007,2897,1225,4659,2827,4114,4113,2881,3964,2941,3415,2887,2899,3398,2901,1717,2891,3988,5008,4997,4998,1489,2895,4418,4621,2978,2831,2833,2943,2755,4219,3412,3177,3112,3226,3227,3228,2835,5000,4999,3668,3426,2489,2984,2982,3399,1716,1715,1714,2408"/>
+  <con:entry key="request.hasPuttingGreen" value="null"/>
+  <con:entry key="request.hasGPS" value="null"/>
+  <con:entry key="request.hasDrivingRange" value="null"/>
+  <con:entry key="request.hasBeverages" value="null"/>
+  <con:entry key="sessionId" value="${Test Request: Start Session#ResponseAsXml#declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart'; //ns1:Response[1]/ns1:Data[1]}"/>
+  <con:entry key="request.hasLockerRoom" value="null"/>
+  <con:entry key="request.hasChippingArea" value="null"/>
+  <con:entry key="request.hasCartIncluded" value="true"/>
+  <con:entry key="request.numberOfPlayers" value="null"/>
+  <con:entry key="request.maxPrice" value="20"/>
+  <con:entry key="request.centerPointLat" value="32.4614248"/>
+  <con:entry key="request.maxDistance" value="null"/>
+  <con:entry key="request.hasShoeRental" value="null"/>
+  <con:entry key="request.beginTime" value="5:00 AM"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:setupScript>def dateToday = new Date()
+
+playDate = dateToday + 2
+playDateMoreThanSevenDays = dateToday + 8
+
+testRunner.testCase.testSuite.project.setPropertyValue("playDate", playDate.format("MM/dd/yyyy"))
+testRunner.testCase.testSuite.project.setPropertyValue("playDateMoreThanSevenDays", playDateMoreThanSevenDays.format("MM/dd/yyyy"))
+testRunner.testCase.testSuite.project.setPropertyValue("dateToday", dateToday.format("MM/dd/yyyy"))</con:setupScript><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>019b3d90-309b-41ce-bc4b-e98693fcebf3</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>c9b2f206-4339-4866-bc72-4139dd2c8b54</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>5c16b4a4-c684-40f3-928f-a946a3a046ca</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>b48173d7-2fd0-4ef6-8764-e374b0f68160</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>b797b611-3f95-4a50-a7ca-3af1b8ac8bfd</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>701378c5-1431-4ce9-a420-72bb6073b87a</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>51d3fd81-9d71-4fbd-adfa-c40ec4621ef9</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>4709f2d8-c604-45e9-8e7a-d745d5a21cf9</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase>

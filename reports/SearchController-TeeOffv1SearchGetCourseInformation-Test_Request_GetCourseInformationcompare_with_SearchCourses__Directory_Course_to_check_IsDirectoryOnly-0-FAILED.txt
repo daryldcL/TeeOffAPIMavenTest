@@ -1,0 +1,47 @@
+Status: FAILED
+Time Taken: 1304
+Size: 3997
+Timestamp: Thu Mar 09 20:49:11 SGT 2017
+TestStep: Test Request: GetCourseInformation(compare with /SearchCourses - Directory Course to check IsDirectoryOnly)
+
+----------------- Messages ------------------------------
+[same IsDirectoryOnly with /SearchCourses - Directory Course] XPathContains comparison failed for path [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetCourseInformation';
+//ns1:Response[1]/ns1:Data[1]/ns1:IsDirectoryOnly[1]], expecting [true], actual was [false]
+
+----------------- Properties ------------------------------
+StatusCode: 200
+Method: GET
+Password: test
+Username: test
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/GetCourseInformation?sessionId=af42109b-7c78-44de-af27-7973d747857b&courseId=7262
+
+---------------- Request ---------------------------
+Authorization: [Basic dGVzdDp0ZXN0]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/GetCourseInformation?sessionId=af42109b-7c78-44de-af27-7973d747857b&courseId=7262 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+Authorization: Basic dGVzdDp0ZXN0
+
+
+---------------- Response --------------------------
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Thu, 09 Mar 2017 12:49:16 GMT]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Content-Length: [1701]
+Content-Encoding: [gzip]
+Access-Control-Allow-Methods: [GET]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+Server: [Microsoft-IIS/8.5]
+
+{"Success":true,"Message":null,"Data":{"CourseId":7262,"FacilityId":3729,"CountryId":"1","Name":"Sun 'n Lake Golf Club - Deer Run","Address":"5223 Sun N Lake Blvd Sebring, FL 33872 Sebring FL 33872","City":"Sebring","State":"FL","PostalCode":"33872","Description":"Sun 'n Lake Golf Club - Deer Run is a par 72 daily fee course located in Sebring, FL. Designed by Don Dyer, the 18 hole course opened in 1975.  ","WebSite":"www.sunlakegolfclub.com","Architect":"Don Dyer","YearEstablished":"1975","TotalYards":"7037","Latitude":27.5335,"Longitude":-81.517,"PageUrl":"sun-n-lake-golf-club-deer-run-sebring-fl-33872-tee-times","Distance":3246.75,"IsDirectoryOnly":false,"DateCreated":"2013-11-21T22:07:01","DateModified":"2013-11-21T22:07:01","StatusCode":null,"AllowPromos":false,"TimeOffsetUtc":"-300","CourseAmenities":{"HasDrivingRange":false,"HasPuttingGreen":false,"HasChippingArea":false,"HasGPSAvailable":false,"HasRentalClubs":false,"HasLockerRoom":false,"HasFood":false,"HasBeverages":false,"HasRentalShoes":false,"HasPracticeBunker":false,"HasGolfShop":false,"HasNineHolesOnly":false,"HasLessons":false,"HasGolfCartIncluded":false},"CourseImages":[{"ImageSource":"//cdn.teeoff.com/course/default3.jpg","AlternateText":"Default Image"}],"CourseScorecards":[{"Description":"Black Tees","Slope":"133","Rating":"73.9","Hole01":"341","Hole02":"536","Hole03":"427","Hole04":"169","Hole05":"545","Hole06":"415","Hole07":"411","Hole08":"460","Hole09":"180","OutTotal":"3484","Hole10":"411","Hole11":"204","Hole12":"432","Hole13":"528","Hole14":"360","Hole15":"430","Hole16":"363","Hole17":"224","Hole18":"601","InTotal":"3553","CourseTotal":"7037","RecordTypeId":"1"},{"Description":"Blue Tees","Slope":"130","Rating":"72.7","Hole01":"325","Hole02":"520","Hole03":"402","Hole04":"162","Hole05":"530","Hole06":"390","Hole07":"397","Hole08":"431","Hole09":"172","OutTotal":"3329","Hole10":"390","Hole11":"195","Hole12":"413","Hole13":"513","Hole14":"350","Hole15":"417","Hole16":"348","Hole17":"205","Hole18":"579","InTotal":"3410","CourseTotal":"6739","RecordTypeId":"1"},{"Description":"White Tees","Slope":"125","Rating":"70.8","Hole01":"317","Hole02":"509","Hole03":"382","Hole04":"148","Hole05":"522","Hole06":"369","Hole07":"384","Hole08":"405","Hole09":"163","OutTotal":"3199","Hole10":"368","Hole11":"179","Hole12":"396","Hole13":"492","Hole14":"333","Hole15":"402","Hole16":"333","Hole17":"183","Hole18":"554","InTotal":"3240","CourseTotal":"6439","RecordTypeId":"1"},{"Description":"Gold Tees","Slope":"120","Rating":"69.7","Hole01":"310","Hole02":"495","Hole03":"367","Hole04":"138","Hole05":"512","Hole06":"349","Hole07":"369","Hole08":"395","Hole09":"155","OutTotal":"3090","Hole10":"353","Hole11":"154","Hole12":"386","Hole13":"477","Hole14":"308","Hole15":"377","Hole16":"323","Hole17":"153","Hole18":"509","InTotal":"3040","CourseTotal":"6130","RecordTypeId":"1"},{"Description":"Gold (L) Tees","Slope":"131","Rating":"75.4","Hole01":"310","Hole02":"495","Hole03":"367","Hole04":"138","Hole05":"512","Hole06":"349","Hole07":"369","Hole08":"395","Hole09":"155","OutTotal":"3090","Hole10":"353","Hole11":"154","Hole12":"386","Hole13":"477","Hole14":"308","Hole15":"377","Hole16":"323","Hole17":"153","Hole18":"509","InTotal":"3040","CourseTotal":"6130","RecordTypeId":"1"},{"Description":"Par","Slope":"","Rating":"","Hole01":"4","Hole02":"5","Hole03":"4","Hole04":"3","Hole05":"5","Hole06":"4","Hole07":"4","Hole08":"4","Hole09":"3","OutTotal":"36","Hole10":"4","Hole11":"3","Hole12":"4","Hole13":"5","Hole14":"4","Hole15":"4","Hole16":"4","Hole17":"3","Hole18":"5","InTotal":"36","CourseTotal":"72","RecordTypeId":"2"},{"Description":"Handicap","Slope":"","Rating":"","Hole01":"13","Hole02":"3","Hole03":"7","Hole04":"17","Hole05":"9","Hole06":"11","Hole07":"13","Hole08":"1","Hole09":"15","OutTotal":"81","Hole10":"10","Hole11":"18","Hole12":"12","Hole13":"8","Hole14":"12","Hole15":"10","Hole16":"14","Hole17":"16","Hole18":"4","InTotal":"90","CourseTotal":"","RecordTypeId":"3"}]}}

@@ -1,0 +1,49 @@
+Status: FAILED
+Time Taken: 758
+Size: 37
+Timestamp: Tue Mar 07 18:29:23 SGT 2017
+TestStep: Test Request: Cancel Reservation
+
+----------------- Messages ------------------------------
+[Success] The XPathContains assertion failed for the following path: [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Reservation/CancelReservation';
+//ns1:Response[1]/ns1:Success[1]]. Expected value: [true]; Actual value: [].
+[Cancelled Tee time return Cancellation Number.] Comparison failed. Path: [$['Data']['CancelId']]; Expected value: [1]; Actual value: [0].
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: POST
+Domain: 
+StatusCode: 400
+URL: https://dev-api.opentee.com/TeeOff/v1/Reservation/CancelReservation?sessionId=92588df8-b1fc-4e6f-9a0c-d03fb9d130e1&confirmId=
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [0]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/Reservation/CancelReservation?sessionId=92588df8-b1fc-4e6f-9a0c-d03fb9d130e1&confirmId= HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 0
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [POST]
+#status#: [HTTP/1.1 400 Bad Request]
+Content-Length: [37]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Tue, 07 Mar 2017 10:29:24 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Message":"The request is invalid."}

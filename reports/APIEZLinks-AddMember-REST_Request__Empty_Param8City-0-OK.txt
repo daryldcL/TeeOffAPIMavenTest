@@ -1,0 +1,44 @@
+Status: OK
+Time Taken: 1751
+Size: 142
+Timestamp: Wed Mar 08 13:36:47 SGT 2017
+TestStep: REST Request - Empty Param8/City
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.ezlinks.com
+Method: GET
+StatusCode: 200
+URL: https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=AddMember&Param1=208&Param2=Tester&Param3=Limesource&Param4=Cortes&Param5=Limesource&Param6=Dimataga%20Village&Param7=Gun-ob&Param9=None&Param10=6015&Param11=Philippines&Param12=5555-5555-5555&Param13=5555-55-5-55-5&Param14=55-555-5&Param15=09260387756&Param16=938393&Param17=member35%40member.com&Param18=limesource%3F01&Param19=member35%40member.com&Param20=1&Param21=111111&Param22=03%2F08%2F2017&Param23=02%2F20%2F9999&Param24=3518&Param25=0
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [api.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=AddMember&Param1=208&Param2=Tester&Param3=Limesource&Param4=Cortes&Param5=Limesource&Param6=Dimataga%20Village&Param7=Gun-ob&Param9=None&Param10=6015&Param11=Philippines&Param12=5555-5555-5555&Param13=5555-55-5-55-5&Param14=55-555-5&Param15=09260387756&Param16=938393&Param17=member35%40member.com&Param18=limesource%3F01&Param19=member35%40member.com&Param20=1&Param21=111111&Param22=03%2F08%2F2017&Param23=02%2F20%2F9999&Param24=3518&Param25=0 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: api.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Cache-Control: [private]
+Server: [Microsoft-IIS/7.0]
+Connection: [close]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Date: [Wed, 08 Mar 2017 05:36:50 GMT]
+Content-Type: [text/xml]
+X-Powered-By: [ASP.NET]
+
+<?ezxml version="5.0"?>
+<Error>
+   <ErrorValue>8</ErrorValue>
+   <ErrorDescription>REQUIRE_CITY</ErrorDescription>
+</Error>

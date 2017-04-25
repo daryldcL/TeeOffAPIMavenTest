@@ -1,0 +1,40 @@
+Status: OK
+Time Taken: 830
+Size: 440
+Timestamp: Wed Mar 08 13:30:14 SGT 2017
+TestStep: SearchCourses - Course
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Encoding: UTF-8
+Method: GET
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/SearchCourses?sessionId=90d52ab1-d9d9-4bdd-9828-bbaade8383a4&criteria=1757%20Golf%20Club
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/SearchCourses?sessionId=90d52ab1-d9d9-4bdd-9828-bbaade8383a4&criteria=1757%20Golf%20Club HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:30:17 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":{"SearchResult":[{"CourseId":3650,"Latitude":37.8200225830078,"Longitude":-80.4182510375977}],"ReferenceData":{"centerPointLat":"37.8200225830078","centerPointLon":"-80.4182510375977","searchCriteria":"1757 Golf Club","searchTypeId":"6","landingPageId":"6","breadcrumbCountry":"United States","breadcrumbRegion":"West Virginia","breadcrumbArea":"Charleston, WV Area","breadcrumbCity":"Lewisburg, WV"}}}

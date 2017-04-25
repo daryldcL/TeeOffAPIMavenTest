@@ -1,0 +1,22 @@
+Status: FAILED
+Time Taken: 31
+Size: 0
+Timestamp: Thu Mar 09 21:19:50 SGT 2017
+TestStep: Groovy Script: Other Assertions - Checking Course Tee Times
+Error:Assertion failed: 
+
+assert  value["distance"].toInteger() > 0
+        |    |            |           |
+        |    0.96         0           false
+        [courseCity:Las Vegas, totalTeeTimesByCourse:27, maxPlayers:4, firstTeeTime:11:23 AM, priceFrom:35, coursePhoto://cdn.teeoff.com/course/1025/1025-000002.jpg, totalDealsAvailableByCourse:0, minPlayers:1, maxDiscountPercentage:36, lastTeeTime:5:45 PM, courseId:1025, maxDiscountedFromRate:65, allowPromos:false, courseState:NV, courseUrl:las-vegas-golf-club-las-vegas-nv-89107-tee-times, priceTo:55, distance:0.96, longitude:-115.198066711426, latitude:36.1810913085937, courseName:Las Vegas Golf Club]
+
+
+----------------- Messages ------------------------------
+Assertion failed: 
+
+assert  value["distance"].toInteger() > 0
+        |    |            |           |
+        |    0.96         0           false
+        [courseCity:Las Vegas, totalTeeTimesByCourse:27, maxPlayers:4, firstTeeTime:11:23 AM, priceFrom:35, coursePhoto://cdn.teeoff.com/course/1025/1025-000002.jpg, totalDealsAvailableByCourse:0, minPlayers:1, maxDiscountPercentage:36, lastTeeTime:5:45 PM, courseId:1025, maxDiscountedFromRate:65, allowPromos:false, courseState:NV, courseUrl:las-vegas-golf-club-las-vegas-nv-89107-tee-times, priceTo:55, distance:0.96, longitude:-115.198066711426, latitude:36.1810913085937, courseName:Las Vegas Golf Club]
+
+error at line: 38

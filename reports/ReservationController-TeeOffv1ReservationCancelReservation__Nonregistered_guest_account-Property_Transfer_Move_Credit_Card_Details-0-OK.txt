@@ -1,0 +1,46 @@
+Status: OK
+Time Taken: 4
+Size: 0
+Timestamp: Wed Mar 08 13:31:17 SGT 2017
+TestStep: Property Transfer: Move Credit Card Details
+
+----------------- Messages ------------------------------
+Performed transfer [CardToken]
+Performed transfer [CardType]
+Performed transfer [LastFour]
+Performed transfer [ExpireMonth]
+Performed transfer [ExpireYear]
+Performed transfer [ZipCode]
+Performed transfer [NameOnCard]
+Performed transfer [IsDefault]
+Performed transfer [IsStored]
+----------------------------------------------------
+CardToken transferred [[5555945780064444]] from [Properties: Guest Credit Card Details.CardToken] to [Test Request: Add Guest Credit Card.Request]
+------------ source path -------------
+
+------------ target path -------------
+$['CardToken']
+CardType transferred [[mastercard]] from [Properties: Guest Credit Card Details.CardType] to [Test Request: Add Guest Credit Card.Request]
+------------ target path -------------
+$['CardType']
+LastFour transferred [[4444]] from [Properties: Guest Credit Card Details.LastFour] to [Test Request: Add Guest Credit Card.Request]
+------------ target path -------------
+$['LastFour']
+ExpireMonth transferred [[10]] from [Properties: Guest Credit Card Details.ExpireMonth] to [Test Request: Add Guest Credit Card.Request]
+------------ target path -------------
+$['ExpireMonth']
+ExpireYear transferred [[2018]] from [Properties: Guest Credit Card Details.ExpireYear] to [Test Request: Add Guest Credit Card.Request]
+------------ target path -------------
+$['ExpireYear']
+ZipCode transferred [[8909]] from [Properties: Guest Credit Card Details.ZipCode] to [Test Request: Add Guest Credit Card.Request]
+------------ target path -------------
+$['ZipCode']
+NameOnCard transferred [[Guest User]] from [Properties: Guest Credit Card Details.NameOnCard] to [Test Request: Add Guest Credit Card.Request]
+------------ target path -------------
+$['NameOnCard']
+IsDefault transferred [[true]] from [Properties: Guest Credit Card Details.IsDefault] to [Test Request: Add Guest Credit Card.Request]
+------------ target path -------------
+$['IsDefault']
+IsStored transferred [[true]] from [Properties: Guest Credit Card Details.IsStored] to [Test Request: Add Guest Credit Card.Request]
+------------ target path -------------
+$['IsStored']

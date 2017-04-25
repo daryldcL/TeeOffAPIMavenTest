@@ -1,0 +1,8 @@
+Status: OK
+Time Taken: 9
+Size: 0
+Timestamp: Tue Mar 07 18:30:44 SGT 2017
+TestStep: DataSource (results for 18 holes only)
+
+----------------- Messages ------------------------------
+Missing property values in the Data Source row

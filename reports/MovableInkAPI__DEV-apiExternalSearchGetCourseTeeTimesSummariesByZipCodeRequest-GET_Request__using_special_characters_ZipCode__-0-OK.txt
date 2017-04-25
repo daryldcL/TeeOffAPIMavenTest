@@ -1,0 +1,36 @@
+Status: OK
+Time Taken: 392
+Size: 219
+Timestamp: Wed Mar 08 13:33:42 SGT 2017
+TestStep: GET Request - using special characters ZipCode - ?
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dist-dev.ezlinks.com
+Method: GET
+StatusCode: 400
+URL: https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/%3F/03-10-2017
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dist-dev.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dist-dev.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/%3F/03-10-2017 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dist-dev.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Server: [Microsoft-HTTPAPI/2.0]
+#status#: [HTTP/1.1 400 Bad Request]
+Date: [Wed, 08 Mar 2017 05:33:44 GMT]
+Via: [1.1 FRONTEND-1]
+
+{"Success":false,"Data":null,"Reference":[],"Errors":[],"Notifications":[{"TimeStamp":null,"IconCls":"warning","Type":"warning","Message":"TeeTime Summary Results: ZipCode is not valid."}],"Page":1,"Limit":10,"Total":0}

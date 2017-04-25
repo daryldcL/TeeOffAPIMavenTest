@@ -1,0 +1,35 @@
+Status: OK
+Time Taken: 4
+Size: 0
+Timestamp: Wed Mar 08 13:31:11 SGT 2017
+TestStep: Property Transfer: Move SessionID
+
+----------------- Messages ------------------------------
+Performed transfer [TransferSessionID]
+Performed transfer [TransferSessionIDToGetTeetimesByCourse]
+Performed transfer [TransferSessionIDToProcessTeeTimeCheckout]
+Performed transfer [TransferSessionIDToBookReservation]
+Performed transfer [TransferSessionIDToCancelReservation]
+----------------------------------------------------
+TransferSessionID transferred [[c90ef016-a6c0-48ab-91d1-2ffa33474286]] from [Test Request: Start Session.ResponseAsXml] to [Test Request: Register Guest - Login as Guest.sessionId]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart';
+//ns1:Response[1]/ns1:Data[1]
+------------ target path -------------
+
+TransferSessionIDToGetTeetimesByCourse transferred [[c90ef016-a6c0-48ab-91d1-2ffa33474286]] from [Test Request: Start Session.ResponseAsXml] to [Test Request: Get tee times by Course.sessionId]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart';
+//ns1:Response[1]/ns1:Data[1]
+TransferSessionIDToProcessTeeTimeCheckout transferred [[c90ef016-a6c0-48ab-91d1-2ffa33474286]] from [Test Request: Start Session.ResponseAsXml] to [Test Request: ProcessTeeTimeCheckout.sessionId]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart';
+//ns1:Response[1]/ns1:Data[1]
+TransferSessionIDToBookReservation transferred [[c90ef016-a6c0-48ab-91d1-2ffa33474286]] from [Test Request: Start Session.ResponseAsXml] to [Test Request: Book Reservation.sessionId]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart';
+//ns1:Response[1]/ns1:Data[1]
+TransferSessionIDToCancelReservation transferred [[c90ef016-a6c0-48ab-91d1-2ffa33474286]] from [Test Request: Start Session.ResponseAsXml] to [Test Request: Cancel Reservation.sessionId]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/SessionStart';
+//ns1:Response[1]/ns1:Data[1]

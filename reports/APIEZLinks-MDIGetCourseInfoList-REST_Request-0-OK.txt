@@ -1,0 +1,370 @@
+Status: OK
+Time Taken: 1768
+Size: 14013
+Timestamp: Wed Mar 08 13:34:27 SGT 2017
+TestStep: REST Request
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.ezlinks.com
+Method: GET
+StatusCode: 200
+URL: https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectID=MDIGetCourseInfoList&Param1=208
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [api.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectID=MDIGetCourseInfoList&Param1=208 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: api.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Cache-Control: [private]
+Server: [Microsoft-IIS/7.0]
+Connection: [close]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Date: [Wed, 08 Mar 2017 05:34:30 GMT]
+Content-Type: [text/xml]
+X-Powered-By: [ASP.NET]
+
+<?ezxml version="5.0"?>
+<MDIGetCourseInfoList>
+   <MDIGetCourseInfoListRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>977</CourseID>
+      <CourseName>DEMO (AM's) McGwire Ridge GC</CourseName>
+      <StreetAddress>35271 Prestwick Court</StreetAddress>
+      <CityName>Sykeston</CityName>
+      <State>WI</State>
+      <Country>USA</Country>
+      <ZipCode>20141</ZipCode>
+      <CourseHoles>18</CourseHoles>
+      <CourseArchitect>John Barleycorn</CourseArchitect>
+      <CCTypeAccepted>ADMSV</CCTypeAccepted>
+      <EMailAddress/>
+      <WebSite>www.ezlinks.com/nowebsitestored.htm</WebSite>
+      <CityID>456</CityID>
+      <AreaID>242</AreaID>
+      <RegionID>150</RegionID>
+      <FacilityID>57</FacilityID>
+      <DrivingDirections>FROM AIRPORT:  Go East
+
+
+FROM WEST: Go East</DrivingDirections>
+      <Information>****Golf course very dry. High fire watch today. Avoid smoking cigars and cigarettes while on the course today.
+
+DESCRIPTION:  Very hilly with lots of water.  Not a course for the weak-hearted.  Carts are mandatory at all times due to the changes in elevation.
+
+PRACTICE FACILITIES:  
+  Driving range open M-F 8 a.m. - 8 p.m. , Sat/Sun 8am - 5p.m.
+  Range balls  - $7.00 per bucket
+  Last bucket sold at dusk.
+  Putting, chipping, and sand play areas available.
+
+LOCKER ROOM:  Available
+
+CLUB RENTAL:  
+  Rental Clubs: $15.00
+  Ranger Balls: $7.00/bucket
+
+FOOD SERVICE:  Full service restaurant, snack bar, and beverage cart available.
+
+APPROX. PACE-of-PLAY:  4 1/2 hours</Information>
+      <DressCode>Collared shirts required at all times.
+Bermuda-length shorts acceptable.
+Denim is prohibited.
+
+SPIKE POLICY:  Softspikes are required at all times.</DressCode>
+      <Weather>Attn: Hole #10 fairway is under maintenance from 6/1-6/30, hole #10 will remain open during this time.</Weather>
+      <Lat>39.1414768</Lat>
+      <Lon>-77.779537</Lon>
+      <MSACode>47900</MSACode>
+      <PhoneNumber/>
+   </MDIGetCourseInfoListRecord>
+   <MDIGetCourseInfoListRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>978</CourseID>
+      <CourseName>DEMO (AM's) Slicer's Bluff GC</CourseName>
+      <StreetAddress>203 Cregar Road</StreetAddress>
+      <CityName>Wrightsville</CityName>
+      <State>WI</State>
+      <Country>USA</Country>
+      <ZipCode>08829</ZipCode>
+      <CourseHoles>18</CourseHoles>
+      <CourseArchitect>John Mengel</CourseArchitect>
+      <CCTypeAccepted>ADMSV</CCTypeAccepted>
+      <EMailAddress/>
+      <WebSite>www.ezlinks.com/nowebsitestored.htm</WebSite>
+      <CityID>454</CityID>
+      <AreaID>242</AreaID>
+      <RegionID>150</RegionID>
+      <FacilityID>60</FacilityID>
+      <DrivingDirections>FROM AIRPORT: Head South on Airport Rd. until you reach Jefferson (Rt. 52) Turn Left on Jefferson and continue to N.E. Frontage Rd. and turn Right.
+Take Frontage Rd. approx 1 mile until you reach Black Rd. Turn Right on Black Rd. Location will be on your Right. 
+
+
+FROM WEST:
+Take I-80 East to I-55 N (towards Chicago) Exit I-55 at Jefferson st. and make a right. Make an immediate left to N.E. Frontage Rd. and turn Right.
+Take Frontage Rd. approx. 1 mile until you reach Black Rd. Turn right onto Black rd. Location will be on your right.</DrivingDirections>
+      <Information>DESCRIPTION:  Tree-lined layout, water on 3 holes.  Plays very tight.
+
+PRACTICE FACILITIES:  
+  Driving range - Range Balls: $5 per Bucket
+  Putting, chipping, and sand play areas available.
+
+
+LOCKER ROOM:  Not available
+
+CLUB RENTAL: 
+$20.00 per set
+Men's &amp; Women's 
+
+
+FOOD SERVICE:  Full service restaurant, snack bar, and beverage cart available.
+
+.</Information>
+      <DressCode>Collared shirts required at all times.
+Bermuda-length shorts acceptable.
+Denim is allowed, but not cut-off shorts.
+
+SPIKE POLICY:  Metal spikes allowed</DressCode>
+      <Weather>DATE:  July 27, 2011		
+
+CURRENT COURSE CONDITIONS:  Greens are hard and fast!
+
+
+
+UPCOMING COURSE MAINTENANCE:  Greens are being aerified July 19, 2012.</Weather>
+      <Lat>40.6673377</Lat>
+      <Lon>-74.8916458</Lon>
+      <MSACode>35620</MSACode>
+      <PhoneNumber/>
+   </MDIGetCourseInfoListRecord>
+   <MDIGetCourseInfoListRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <StreetAddress>401 S. LaSalle Street, Suite 500</StreetAddress>
+      <CityName>Sykeston</CityName>
+      <State>WI</State>
+      <Country>USA</Country>
+      <ZipCode>60439</ZipCode>
+      <CourseHoles>18</CourseHoles>
+      <CourseArchitect>Steven McKenna &amp; Andy Weeks</CourseArchitect>
+      <CCTypeAccepted>ADMSV</CCTypeAccepted>
+      <EMailAddress/>
+      <WebSite>www.ezlinks.com/nowebsitestored.htm</WebSite>
+      <CityID>456</CityID>
+      <AreaID>242</AreaID>
+      <RegionID>150</RegionID>
+      <FacilityID>1</FacilityID>
+      <DrivingDirections>******************************************************************************************************
+*From the north or south: 
+Take Highway 101 to the Indian Bend Road exit (Exit 44) and go east at the traffic light. Continue 1.5 miles to the dead end, then turn left onto the drive leading to the course.
+
+*From the airport: 
+Take Highway 202 East to Highway 101 North to the Indian Bend Road exit (Exit 44) and go east at the traffic light. Continue 1.5 miles to the dead end, then turn left onto the drive leading to the course.
+
+*Address:
+9998 East Indian Bend Road
+Scottsdale, AZ 85256
+Phone: 480-860-2221
+
+-----------------------------------------------------------------------------------
+*From Bushwood National Golf Club: (Scottsdale, AZ) 
+The Phoenician- 15/20 minutes
+Kierland- 20 minutes
+Lookout Mountain Golf Club- 30 minutes
+Troon North- 30/40 minutes
+Quintero- 1 hour
+Whirlwind- 40 minutes
+Southern Dune- 50 minutes
+Copper Canyon- 1 hour 10 minutes
+------------------------------------------------------------------------------------
+*Web site:  
+www.troongolf.com  &amp;  www.bushwoodnationalgolfclub.com</DrivingDirections>
+      <Information>******************************************************************************************************
+Built in 1996 by McKenna &amp; Weeks, Bushwood Golf Club winds around pristine lakes and massive oak trees.  With fairways cut through the Burr Ridge Canyon, views are panoramic and spectacular.  
+The signature hole is #16, a 660-yard par 4 with the tee 200 feet above the fairway, and a green surrounded by a 30 foot deep alligator pit.
+
+*GOLF SHOP HOURS
+Whenever we want
+
+*PACE OF PLAY
+4- 41/2 Hours
+
+*DRIVING RANGE
+Driving range (8 a.m.-6 p.m).  $3 for a small and $5 for a large.  
+***Dress code does apply to practice facilities
+
+*PRACTICE FACILITIES
+Putting, chipping, and sand box play areas available.
+
+*CLUB RENTALS/ SHOE RENTALS
+Men's:  $19 (King Cobra)
+Women's:  $19 (Callaway)
+Left-handed: Not Available
+***Shoes available for $6 a pair
+
+*TAX
+Not included. 9.6% on greens fees and 10% on merchandise
+
+*CARTS
+Carts are not mandatory- walking is allowed
+90 degree rule
+GPS on carts
+
+*CLUB AMENITIES
+Lockers and showers available
+Restaurant located next to golf shop
+Banquet hall in clubhouse</Information>
+      <DressCode>******************************************************************************************************
+*APPROPRIATE ATTIRE- Required at all times while on property, including practice facility
+MEN must wear a collared or mocked neck shirt.  Shorts with a minimum 6' inseam (Bermuda type shorts) are allowed.
+WOMEN may wear a collared shirt or a golf blouse with medium length shorts, skirt or slacks. Tennis shoes allowed.
+
+*INAPPROPRIATE ATTIRE
+Denim, T-shirts, Cut-offs, Mesh shirts, swim suits, sweat clothes are not allowed
+
+*SHOE RENTALS
+No shoe rentals available
+
+*GOLF SPIKE RULE
+Metal and Soft Spikes are allowed; tennis shoes are allowed as well</DressCode>
+      <Weather>******************************************************************************************************
+*DATE
+September 8 - September 14
+
+*CURRENT COURSE CONDITIONS
+Course in great condition
+
+*CART RESTRICITONS
+90 DEGREE CART RULE
+
+*PIN POSITION
+2
+
+*BEVERAGE CART
+available on course
+
+*DRIVING RANGE STATUS
+Open after 2:00pm to public except on Mondays and Thursdays
+Range closed Mondays and Thursdays at 2:00pm
+
+*DELAYS
+None
+
+*LARGE TOURNAMENT GROUPS
+None
+
+[UPCOMING MAINTENANCE]
+
+*2012 OVERSEED SCHEDULE
+-COURSE:   Course Closed Sept 24 - Oct 12, 2012 for overseeding
+                   -PRACTICE FACILITY: Closed for Overseeding September 17th - September 21st.  (Range closed at 2:00pm September 22nd - October 28th)  
+                   -PRACTICE GREEN: Closed for Overseeding September 17th - October 7th
+
+***ALTERNATE FACILTIES WHEN BUSHWOOD NATIONAL IS NOT AVAILABLE
+Copper Canyon, Kierland, Phoenician, Pointe Golf Club, Poston Butte, Quintero, Southern Dunes, Troon North, Whirlwind</Weather>
+      <Lat>41.6729486</Lat>
+      <Lon>-87.962884</Lon>
+      <MSACode>16980</MSACode>
+      <PhoneNumber/>
+   </MDIGetCourseInfoListRecord>
+   <MDIGetCourseInfoListRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>1524</CourseID>
+      <CourseName>MICROS TEST COURSE</CourseName>
+      <StreetAddress>8440 S. 35th Avenue</StreetAddress>
+      <CityName>Vilamoura</CityName>
+      <State>Portugal</State>
+      <Country>Portugal</Country>
+      <ZipCode>85339</ZipCode>
+      <CourseHoles>18</CourseHoles>
+      <CourseArchitect>Andrew D. Weeks</CourseArchitect>
+      <CCTypeAccepted>ADMSV</CCTypeAccepted>
+      <EMailAddress/>
+      <WebSite>www.ezlinks.com</WebSite>
+      <CityID>947</CityID>
+      <AreaID>370</AreaID>
+      <RegionID>171</RegionID>
+      <FacilityID>58</FacilityID>
+      <DrivingDirections>From Houston: 
+
+I-10 East. Merge right onto the I-210 Loop at Exit #25. Go over the I-210 E bridge. Take the Nelson Road Exit #4. 
+Remain in the far left lane and continue following the signs to CASINO AREA. The exit will veer left and cross 
+under the I-210 Bypass. After crossing under the I-210 Bypass the underpass will veer left again. Proceed to
+the far right lane following the CASINO AREA / EXIT ONLY sign. The exit will veer right. Turn left into the
+L'AUBERGE PROPERTY / AVENUE L'AUBERGE
+
+
+From Dallas/Fort Worth:
+
+Take I-45 South. Merge onto I-610 E via Exit #51. Merge onto I-10 E via Exit #26A. Merge right onto the I-210 Loop
+at Exit #25. Go over the I-210 E bridge. Take the Nelson Road Exit #4. Turn left onto Nelson Road and follow the 
+signs straight into L'Auberge du Lac.
+
+
+From New Orleans: 
+
+Take I-10 West to Lake Charles. Merge West onto the I-210 Loop. Take Exit #4 at Nelson Road. Veer right off the 
+Exit ramp onto Nelson Road. Follow Nelson Road straight into L'Auberge du Lac.</DrivingDirections>
+      <Information>The Contraband Bayou Golf Club, designed by world-renowned golf architect Tom Fazio, emphasizes the marsh and 
+lowland features of the natural Louisiana environment to enhance this unique 7,000 yard, par-71 championship 18-hole golf course. 
+
+*     The only public Tom Fazio golf course in Louisiana 
+
+*     400,000 cubic yards of dirt were moved to build this course
+
+*     The tees, fairways and rough are 419 Bermuda grass   
+
+*     Greens are grown in with Tifdwarf Bermuda grass
+
+
+A combination of aquatic and natural vegetation on the edges of eight spectacular lakes will challenge golfers of all skill levels. 
+At least four sets of tee boxes on every hole will provide a unique playing experience for all. The golfer's experience will be 
+complete with beverage cart service that will include sandwiches and a visit to the clubhouse, featuring a variety of golf apparel.</Information>
+      <DressCode>[DRESS CODE]:
+
+[GOLF SPIKE RULE]:  
+Non-Metal spikes ONLY
+**Change over available for $9
+Shoes must be flat-heeled.
+Gym shoes are allowed
+
+
+[APPROPRIATE DRESS INCLUDES]:
+Shirts with sleeves and collars are required
+Shorts must be at least 17'' in length or slacks...Commonly referred to as 'Bermuda' length shorts.
+
+
+[INAPPROPRIATE DRESS INCLUDES]:
+Short Shorts
+T-shirts
+Denim
+Tank Tops
+Swim Attire
+Jogging or Tennis shorts.</DressCode>
+      <Weather>[COURSE CONDITIONS]:
+
+
+aerification begins 7/1
+
+[Overseeding]:
+*No Overseeding is scheduled at this time.</Weather>
+      <Lat>37.062</Lat>
+      <Lon>-95.67706</Lon>
+      <MSACode>38060</MSACode>
+      <PhoneNumber/>
+   </MDIGetCourseInfoListRecord>
+</MDIGetCourseInfoList>

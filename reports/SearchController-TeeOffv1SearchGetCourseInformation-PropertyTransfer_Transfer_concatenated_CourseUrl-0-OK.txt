@@ -1,0 +1,15 @@
+Status: OK
+Time Taken: 11
+Size: 0
+Timestamp: Wed Mar 08 13:33:18 SGT 2017
+TestStep: PropertyTransfer: Transfer concatenated CourseUrl
+
+----------------- Messages ------------------------------
+Performed transfer [pageUrl]
+----------------------------------------------------
+pageUrl transferred [[https://dev-azure.teeoff.com/golf-course/tonto-verde-ranch-rio-verde-az-85263-tee-times]] from [Test Request: GetCourseInformation.ResponseAsXml] to [HTTP Request - check if correct pageUrl.Endpoint]
+------------ source path -------------
+declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/Search/GetCourseInformation';
+concat('https://dev-azure.teeoff.com/golf-course/' , //ns1:Response[1]/ns1:Data[1]/ns1:PageUrl[1])
+------------ target path -------------
+

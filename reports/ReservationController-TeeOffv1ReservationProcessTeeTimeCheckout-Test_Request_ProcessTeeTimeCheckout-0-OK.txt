@@ -1,0 +1,70 @@
+Status: OK
+Time Taken: 1331
+Size: 1588
+Timestamp: Wed Mar 08 13:29:06 SGT 2017
+TestStep: Test Request: ProcessTeeTimeCheckout
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: POST
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Reservation/ProcessTeeTimeCheckout?sessionId=e5fc0565-4c12-4a79-8484-0456d3cfe194
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [642]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/Reservation/ProcessTeeTimeCheckout?sessionId=e5fc0565-4c12-4a79-8484-0456d3cfe194 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 642
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+{
+   "CancellationPeriod": "48",
+   "AllowFive": "false",
+   "ReservationTypeId": "25587",
+   "NumberOfPlayers": "4",
+   "FeeId": "115247",
+   "TransactionFee": "2.15",
+   "AllowThree": "true",
+   "AllowTwo": "true",
+   "MaxPlayers": "4",
+   "ReservationString": "01366E3C95513F8EBBC96B179C73DA33",
+   "AllowOne": "false",
+   "OriginatingContactId": "26571295",
+   "Utilization": "50.0",
+   "CourseId": "2001",
+   "SavedAmount": "0.0",
+   "TeeTimeTypeId": "1",
+   "Price": "40.0",
+   "MinPlayers": "2",
+   "CurrencyLocaleId": "1033",
+   "AllowFour": "true",
+   "RegularPrice": "40.0",
+   "TeeTime": "2017-03-10T06:36:00",
+   "Sku": "string"
+}
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [POST]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:29:09 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":[{"ResultMessage":"","ResultCode":0,"CartId":107949,"CartReservationItemId":113264,"SponsorId":6085,"ItineraryId":0,"ConfirmId":0,"OrderNumber":"","ReservationTypeId":25587,"ReservationProtocolId":0,"ProtocolText":"","TeeTime":"2017-03-10T06:36:00","TeeTimeCancelBy":"3/8/2017 6:36:00 AM","NumberOfPlayers":4,"HasCourseNote":false,"CourseNote":"","AllowPromos":true,"TeeTimeTypeId":1,"CancellationPeriod":48,"CourseInfo":{"CourseId":2001,"CourseName":"Whirlwind Golf Club - Cattail","CourseAddress":"5692 W. North Loop Road, Chandler, AZ 85226","CourseLocation":"","Distance":4958.5,"Latitude":0.0,"Longitude":0.0,"CurrencyLocaleId":0,"CoursePhoto":"","AllowPromos":true,"TimeOffsetUtc":""},"Purchase":{"Price":40.0000,"TransactionFee":0.0000,"Total":160.0000,"DueNow":6.3775,"DueAtCourse":34.0000,"SavedAmount":0.0,"SavedPercent":0.0,"GrandTotal":161.5100,"Taxes":1.5100,"TaxPercent":6.3,"TotalTransactionFees":0.0000,"TotalDueNow":25.5100,"TotalDueAtCourse":136.0000,"TotalSavedAmount":0.0,"CouponDescription":"","CouponDiscount":0.0,"TotalDueNowAfterCoupon":25.5100},"TeeTimeRules":{"MaxPlayers":4,"MinPlayers":2,"AllowOne":false,"AllowTwo":true,"AllowThree":true,"AllowFour":true,"AllowFive":false},"IsDealTime":false,"ShowPromoBox":false,"AddResultCode":0,"AddResultMessage":"The tee time was successfully added to the cart.","PersistentNote":"","MessageType":"Cancellation Information","MessageHeader":"RESERVATION INFORMATION","Message":"Tee Time Deposits are fully refundable if reservation is cancelled within course cancellation policy."}]}

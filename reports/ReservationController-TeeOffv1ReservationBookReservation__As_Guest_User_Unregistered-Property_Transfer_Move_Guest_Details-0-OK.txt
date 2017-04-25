@@ -1,0 +1,22 @@
+Status: OK
+Time Taken: 2
+Size: 0
+Timestamp: Wed Mar 08 13:29:55 SGT 2017
+TestStep: Property Transfer: Move Guest Details
+
+----------------- Messages ------------------------------
+Performed transfer [GuestEmail]
+Performed transfer [GuestFirstName]
+Performed transfer [GuestLastName]
+----------------------------------------------------
+GuestEmail transferred [[guest@limesource.se]] from [Properties: Guest Details.GuestEmail] to [Test Request: Register Guest.Request]
+------------ source path -------------
+
+------------ target path -------------
+$['GuestEmail']
+GuestFirstName transferred [[Guest FirstName]] from [Properties: Guest Details.GuestFirstName] to [Test Request: Register Guest.Request]
+------------ target path -------------
+$['GuestFirstName']
+GuestLastName transferred [[Guest LastName]] from [Properties: Guest Details.GuestLastName] to [Test Request: Register Guest.Request]
+------------ target path -------------
+$['GuestLastName']

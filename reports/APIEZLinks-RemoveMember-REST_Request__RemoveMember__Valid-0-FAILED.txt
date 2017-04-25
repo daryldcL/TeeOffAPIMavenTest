@@ -1,0 +1,45 @@
+Status: FAILED
+Time Taken: 1407
+Size: 169
+Timestamp: Tue Mar 07 21:04:30 SGT 2017
+TestStep: REST Request - RemoveMember - Valid
+
+----------------- Messages ------------------------------
+[Not Contains Object logic failure exception raised.] Response contains token [Object logic failure]
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.ezlinks.com
+Method: GET
+StatusCode: 200
+URL: https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=RemoveMember&Param1=208&Param2=38504819&Param3=8600748
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [api.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=RemoveMember&Param1=208&Param2=38504819&Param3=8600748 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: api.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Cache-Control: [private]
+Server: [Microsoft-IIS/7.0]
+Connection: [close]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Date: [Tue, 07 Mar 2017 13:04:33 GMT]
+Content-Type: [text/xml]
+X-Powered-By: [ASP.NET]
+
+<?ezxml version="5.0"?>
+<Error>
+   <ErrorValue>99</ErrorValue>
+   <ErrorDescription>Object logic failure exception raised.</ErrorDescription>
+</Error>

@@ -1,0 +1,40 @@
+Status: OK
+Time Taken: 847
+Size: 2139
+Timestamp: Wed Mar 08 13:31:48 SGT 2017
+TestStep: Get Request - ZipCode
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Encoding: UTF-8
+Method: GET
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/Search/SearchCourses?sessionId=f132a3b7-1a4d-4b56-bb17-b88a65d74f8e&criteria=86351
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://dev-api.opentee.com/TeeOff/v1/Search/SearchCourses?sessionId=f132a3b7-1a4d-4b56-bb17-b88a65d74f8e&criteria=86351 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [GET]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:31:50 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":{"SearchResult":[{"CourseId":100017,"Latitude":34.2311325073242,"Longitude":-111.355010986328},{"CourseId":100024,"Latitude":33.8236541748047,"Longitude":-111.924560546875},{"CourseId":100298,"Latitude":34.2308692932129,"Longitude":-111.325134277344},{"CourseId":100033,"Latitude":33.7452507019043,"Longitude":-111.856475830078},{"CourseId":100032,"Latitude":33.7452507019043,"Longitude":-111.856475830078},{"CourseId":100022,"Latitude":33.7333946228027,"Longitude":-111.676834106445},{"CourseId":3881,"Latitude":34.6400188,"Longitude":-112.4312693},{"CourseId":3883,"Latitude":34.6400188,"Longitude":-112.4312693},{"CourseId":2416,"Latitude":33.8653,"Longitude":-112.11016},{"CourseId":2418,"Latitude":33.8653,"Longitude":-112.11016},{"CourseId":4960,"Latitude":33.7897088,"Longitude":-111.9921964},{"CourseId":4963,"Latitude":33.80541,"Longitude":-111.87711},{"CourseId":5762,"Latitude":34.7816681,"Longitude":-111.7748339},{"CourseId":1581,"Latitude":33.8394797,"Longitude":-112.4238394},{"CourseId":2191,"Latitude":33.833215,"Longitude":-111.955456},{"CourseId":4981,"Latitude":35.0456,"Longitude":-111.73339},{"CourseId":3954,"Latitude":34.567521,"Longitude":-112.3414278},{"CourseId":2570,"Latitude":33.8261204,"Longitude":-111.9243569},{"CourseId":2572,"Latitude":33.8261204,"Longitude":-111.9243569},{"CourseId":4958,"Latitude":33.73445,"Longitude":-111.68039},{"CourseId":4957,"Latitude":33.73445,"Longitude":-111.68039},{"CourseId":5234,"Latitude":33.72976,"Longitude":-111.67878},{"CourseId":5283,"Latitude":33.729769,"Longitude":-111.678783},{"CourseId":5282,"Latitude":33.729769,"Longitude":-111.678783},{"CourseId":491,"Latitude":33.746115,"Longitude":-111.8586077},{"CourseId":490,"Latitude":33.746115,"Longitude":-111.8586077},{"CourseId":5311,"Latitude":33.7423559,"Longitude":-111.7040229}],"ReferenceData":{"centerPointLat":"34.769334","centerPointLon":"-111.779295","searchCriteria":"86351","searchTypeId":"7","landingPageId":"7","breadcrumbCountry":"United States","breadcrumbRegion":"Arizona","breadcrumbArea":"Sedona/Flagstaff/Prescott, AZ Area","breadcrumbCity":"Sedona, AZ"}}}

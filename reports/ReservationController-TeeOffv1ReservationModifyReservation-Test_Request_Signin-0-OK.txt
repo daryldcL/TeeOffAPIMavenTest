@@ -1,0 +1,49 @@
+Status: OK
+Time Taken: 895
+Size: 2289
+Timestamp: Wed Mar 08 13:29:31 SGT 2017
+TestStep: Test Request: Signin
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Username: test
+Method: POST
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/User/AuthenticateUser?sessionId=c7017ae9-7765-4147-af32-ea7427a9a6ba
+Password: test
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [72]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/User/AuthenticateUser?sessionId=c7017ae9-7765-4147-af32-ea7427a9a6ba HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 72
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+{
+   "UserName": "daisy@limesource.se",
+   "Password": "limesource?01"
+}
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [POST]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:29:33 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":{"Address01":"Dimataga","Address02":"Humay-Humay","AddressType":"Home","Alerts":true,"BrandOfClubs":"Carbite","BrandOfIrons":"Henry Griffitts","City":"Lapu-Lapu","ClubsYear":"1973","ContactId":26571295,"CountryId":"0","CustomGolfDestination":"Boulder Creek, CA","DateBirth":"5/19/2016 12:00:00 AM","DateCreated":"5/12/2016 1:33:04 AM","DateModified":"2/14/2017 4:28:18 AM","DealsDiscounts":true,"DominantHand":"Right","Email":"daisy@limesource.se","EmailNotify":"0","ErrorId":"0","FavoriteBrandOfBalls":"Srixon","FavoriteGolfDestinations":[{"DestinationId":1,"DestinationName":"Atlanta","IsSelected":false},{"DestinationId":2,"DestinationName":"Caribbean","IsSelected":false},{"DestinationId":3,"DestinationName":"Chicago","IsSelected":true},{"DestinationId":4,"DestinationName":"Hawaii","IsSelected":false},{"DestinationId":5,"DestinationName":"Las Vegas","IsSelected":false},{"DestinationId":6,"DestinationName":"Mexico","IsSelected":false},{"DestinationId":7,"DestinationName":"New York Metro Area","IsSelected":false},{"DestinationId":8,"DestinationName":"Northern California","IsSelected":false},{"DestinationId":9,"DestinationName":"Northern Michigan","IsSelected":false},{"DestinationId":10,"DestinationName":"Orlando","IsSelected":false},{"DestinationId":11,"DestinationName":"Palm Springs","IsSelected":false},{"DestinationId":12,"DestinationName":"Phoenix/Scottsdale","IsSelected":false},{"DestinationId":13,"DestinationName":"South Florida","IsSelected":false},{"DestinationId":14,"DestinationName":"Tucson","IsSelected":true},{"DestinationId":15,"DestinationName":"Washington DC","IsSelected":false}],"FirstName":"Daisy","Gender":"F","Handicap":"","HomePhone":"09260387756","IronsYear":"1970","IsOneTimeUsePassword":false,"LastName":"Atim","LowestScore18":0,"LowestScore9":0,"Message":"","MobileNumber":"","NewsLetter":true,"Notes":"","PartnershipOffers":false,"PlayFrequency":"","PostalCode":"1234567890","PreferFriday":false,"PreferMonday":false,"PreferSaturday":false,"PreferSunday":false,"PreferThursday":false,"PreferTuesday":false,"PreferWednesday":false,"Province":"","ReturnCode":"","SessionId":"c7017ae9-7765-4147-af32-ea7427a9a6ba","StartTime":"","State":"","Username":"daisyatim","Password":"","WorkNumber":"","YearsPlaying":0}}

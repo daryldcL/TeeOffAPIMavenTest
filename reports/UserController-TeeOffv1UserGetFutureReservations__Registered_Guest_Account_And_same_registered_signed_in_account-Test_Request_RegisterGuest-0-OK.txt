@@ -1,0 +1,48 @@
+Status: OK
+Time Taken: 919
+Size: 2251
+Timestamp: Wed Mar 08 13:29:00 SGT 2017
+TestStep: Test Request: RegisterGuest
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+Method: POST
+StatusCode: 200
+URL: https://dev-api.opentee.com/TeeOff/v1/User/RegisterGuest?sessionId=37ceb0dd-992d-44a3-9e7d-19dad39e0585
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [dev-api.opentee.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [120]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/User/RegisterGuest?sessionId=37ceb0dd-992d-44a3-9e7d-19dad39e0585 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 120
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+{
+   "GuestEmail": "limesourcetester01@gmail.com",
+   "GuestFirstName": "GuestFname",
+   "GuestLastName": "GuestLname"
+}
+
+---------------- Response --------------------------
+Server: [Microsoft-IIS/8.5]
+Access-Control-Allow-Methods: [POST]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Wed, 08 Mar 2017 05:29:03 GMT]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+
+{"Success":true,"Message":null,"Data":{"Address01":"Dimataga","Address02":"Humay-Humay","AddressType":"Home","Alerts":false,"BrandOfClubs":"","BrandOfIrons":"","City":"Lapu-Lapu","ClubsYear":"","ContactId":26574452,"CountryId":"1","CustomGolfDestination":"","DateBirth":"","DateCreated":"12/15/2016 12:14:36 AM","DateModified":"3/7/2017 11:27:35 PM","DealsDiscounts":true,"DominantHand":"","Email":"limesourcetester01@gmail.com","EmailNotify":"0","ErrorId":"0","FavoriteBrandOfBalls":"","FavoriteGolfDestinations":[{"DestinationId":1,"DestinationName":"Atlanta","IsSelected":false},{"DestinationId":2,"DestinationName":"Caribbean","IsSelected":false},{"DestinationId":3,"DestinationName":"Chicago","IsSelected":false},{"DestinationId":4,"DestinationName":"Hawaii","IsSelected":false},{"DestinationId":5,"DestinationName":"Las Vegas","IsSelected":false},{"DestinationId":6,"DestinationName":"Mexico","IsSelected":false},{"DestinationId":7,"DestinationName":"New York Metro Area","IsSelected":false},{"DestinationId":8,"DestinationName":"Northern California","IsSelected":false},{"DestinationId":9,"DestinationName":"Northern Michigan","IsSelected":false},{"DestinationId":10,"DestinationName":"Orlando","IsSelected":false},{"DestinationId":11,"DestinationName":"Palm Springs","IsSelected":false},{"DestinationId":12,"DestinationName":"Phoenix/Scottsdale","IsSelected":false},{"DestinationId":13,"DestinationName":"South Florida","IsSelected":false},{"DestinationId":14,"DestinationName":"Tucson","IsSelected":false},{"DestinationId":15,"DestinationName":"Washington DC","IsSelected":false}],"FirstName":"Limesource","Gender":"","Handicap":"","HomePhone":"09260387756","IronsYear":"","IsOneTimeUsePassword":false,"LastName":"Developers","LowestScore18":0,"LowestScore9":0,"Message":"","MobileNumber":"","NewsLetter":false,"Notes":"","PartnershipOffers":false,"PlayFrequency":"","PostalCode":"80909","PreferFriday":false,"PreferMonday":false,"PreferSaturday":false,"PreferSunday":false,"PreferThursday":false,"PreferTuesday":false,"PreferWednesday":false,"Province":"","ReturnCode":"","SessionId":"37ceb0dd-992d-44a3-9e7d-19dad39e0585","StartTime":"","State":"CA","Username":"limesourcetester01@gmail.com","Password":"","WorkNumber":"","YearsPlaying":0}}

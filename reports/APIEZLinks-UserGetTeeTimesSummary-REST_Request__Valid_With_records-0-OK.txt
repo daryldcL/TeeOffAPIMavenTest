@@ -1,0 +1,420 @@
+Status: OK
+Time Taken: 1546
+Size: 13481
+Timestamp: Wed Mar 08 13:36:27 SGT 2017
+TestStep: REST Request - Valid (With records)
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.ezlinks.com
+Method: GET
+StatusCode: 200
+URL: https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=UserGetTeeTimesSummary&Param1=user1%40gmail.com&Param2=limesource%3F01
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [api.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=UserGetTeeTimesSummary&Param1=user1%40gmail.com&Param2=limesource%3F01 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: api.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Cache-Control: [private]
+Server: [Microsoft-IIS/7.0]
+Connection: [close]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Date: [Wed, 08 Mar 2017 05:36:30 GMT]
+Content-Type: [text/xml]
+X-Powered-By: [ASP.NET]
+
+<?ezxml version="5.0"?>
+<UserGetTeeTimesSummary>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/10/2017 6:08:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekend (Advanced)</FeeName>
+      <Amount>352</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>352</CancellationFee>
+      <CancellationDate>3/9/2017 6:08:00 AM</CancellationDate>
+      <ConfirmID>392358730</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/9/2017 6:32:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekday</FeeName>
+      <Amount>260</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>240</CancellationFee>
+      <CancellationDate>3/8/2017 6:32:00 AM</CancellationDate>
+      <ConfirmID>392298479</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/9/2017 6:24:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekday</FeeName>
+      <Amount>260</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>240</CancellationFee>
+      <CancellationDate>3/8/2017 6:24:00 AM</CancellationDate>
+      <ConfirmID>392295626</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/9/2017 6:16:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekday</FeeName>
+      <Amount>260</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>240</CancellationFee>
+      <CancellationDate>3/8/2017 6:16:00 AM</CancellationDate>
+      <ConfirmID>392295277</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/9/2017 6:08:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekday</FeeName>
+      <Amount>260</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>240</CancellationFee>
+      <CancellationDate>3/8/2017 6:08:00 AM</CancellationDate>
+      <ConfirmID>392292759</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/8/2017 7:20:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekday</FeeName>
+      <Amount>260</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>240</CancellationFee>
+      <CancellationDate>3/7/2017 7:20:00 AM</CancellationDate>
+      <ConfirmID>392231611</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/8/2017 7:12:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekday</FeeName>
+      <Amount>260</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>240</CancellationFee>
+      <CancellationDate>3/7/2017 7:12:00 AM</CancellationDate>
+      <ConfirmID>392229107</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/8/2017 7:04:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekday</FeeName>
+      <Amount>260</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>240</CancellationFee>
+      <CancellationDate>3/7/2017 7:04:00 AM</CancellationDate>
+      <ConfirmID>392228902</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/8/2017 6:56:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekday</FeeName>
+      <Amount>260</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>240</CancellationFee>
+      <CancellationDate>3/7/2017 6:56:00 AM</CancellationDate>
+      <ConfirmID>392228469</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/8/2017 6:48:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekday</FeeName>
+      <Amount>260</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>240</CancellationFee>
+      <CancellationDate>3/7/2017 6:48:00 AM</CancellationDate>
+      <ConfirmID>392228416</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/8/2017 6:40:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekday</FeeName>
+      <Amount>260</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>240</CancellationFee>
+      <CancellationDate>3/7/2017 6:40:00 AM</CancellationDate>
+      <ConfirmID>392228357</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/8/2017 6:32:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekday</FeeName>
+      <Amount>260</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>240</CancellationFee>
+      <CancellationDate>3/7/2017 6:32:00 AM</CancellationDate>
+      <ConfirmID>392227755</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/8/2017 6:24:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekday</FeeName>
+      <Amount>260</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>240</CancellationFee>
+      <CancellationDate>3/7/2017 6:24:00 AM</CancellationDate>
+      <ConfirmID>392227473</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/8/2017 6:16:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekday</FeeName>
+      <Amount>260</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>240</CancellationFee>
+      <CancellationDate>3/7/2017 6:16:00 AM</CancellationDate>
+      <ConfirmID>392227289</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/8/2017 6:08:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekday</FeeName>
+      <Amount>260</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>240</CancellationFee>
+      <CancellationDate>3/7/2017 6:08:00 AM</CancellationDate>
+      <ConfirmID>392226195</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/5/2017 6:16:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekend (Advanced)</FeeName>
+      <Amount>352</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>352</CancellationFee>
+      <CancellationDate>3/4/2017 6:16:00 AM</CancellationDate>
+      <ConfirmID>392049512</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/5/2017 6:08:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekend (Advanced)</FeeName>
+      <Amount>352</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>352</CancellationFee>
+      <CancellationDate>3/4/2017 6:08:00 AM</CancellationDate>
+      <ConfirmID>392048430</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/4/2017 7:04:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekend (Advanced)</FeeName>
+      <Amount>352</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>352</CancellationFee>
+      <CancellationDate>3/3/2017 7:04:00 AM</CancellationDate>
+      <ConfirmID>391980117</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/4/2017 6:48:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekend (Advanced)</FeeName>
+      <Amount>352</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>352</CancellationFee>
+      <CancellationDate>3/3/2017 6:48:00 AM</CancellationDate>
+      <ConfirmID>391979966</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/4/2017 6:40:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekend (Advanced)</FeeName>
+      <Amount>352</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>352</CancellationFee>
+      <CancellationDate>3/3/2017 6:40:00 AM</CancellationDate>
+      <ConfirmID>391979964</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/4/2017 6:32:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekend (Advanced)</FeeName>
+      <Amount>352</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>352</CancellationFee>
+      <CancellationDate>3/3/2017 6:32:00 AM</CancellationDate>
+      <ConfirmID>391979961</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/4/2017 6:24:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekend (Advanced)</FeeName>
+      <Amount>352</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>352</CancellationFee>
+      <CancellationDate>3/3/2017 6:24:00 AM</CancellationDate>
+      <ConfirmID>391979951</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/4/2017 6:16:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekend (Advanced)</FeeName>
+      <Amount>352</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>352</CancellationFee>
+      <CancellationDate>3/3/2017 6:16:00 AM</CancellationDate>
+      <ConfirmID>391979931</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/4/2017 6:08:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekend (Advanced)</FeeName>
+      <Amount>352</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>352</CancellationFee>
+      <CancellationDate>3/3/2017 6:08:00 AM</CancellationDate>
+      <ConfirmID>391979928</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>3/4/2017 6:00:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekend (Advanced)</FeeName>
+      <Amount>352</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>352</CancellationFee>
+      <CancellationDate>3/3/2017 6:00:00 AM</CancellationDate>
+      <ConfirmID>391979922</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>2/22/2017 6:08:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekday</FeeName>
+      <Amount>260</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>240</CancellationFee>
+      <CancellationDate>2/21/2017 6:08:00 AM</CancellationDate>
+      <ConfirmID>391469451</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+   <UserGetTeeTimesSummaryRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTimeDate>2/22/2017 6:00:00 AM</TeeTimeDate>
+      <Golfers>4</Golfers>
+      <FeeName>Weekday</FeeName>
+      <Amount>260</Amount>
+      <ReservationFee>0</ReservationFee>
+      <CancellationFee>240</CancellationFee>
+      <CancellationDate>2/21/2017 6:00:00 AM</CancellationDate>
+      <ConfirmID>391469446</ConfirmID>
+      <CourseName>DEMO -Bushwood National</CourseName>
+      <IsCancelled>0</IsCancelled>
+   </UserGetTeeTimesSummaryRecord>
+</UserGetTeeTimesSummary>

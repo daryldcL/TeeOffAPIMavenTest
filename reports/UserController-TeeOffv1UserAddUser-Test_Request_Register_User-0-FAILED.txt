@@ -1,0 +1,66 @@
+Status: FAILED
+Time Taken: 24329510
+Size: 109
+Timestamp: Thu Mar 09 13:54:39 SGT 2017
+TestStep: Test Request: Register User
+
+----------------- Messages ------------------------------
+[FirstName is correct.] XPathContains assertion failed for path [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AddUser';
+//ns1:Response[1]/ns1:Data[1]/ns1:FirstName[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AddUser';
+//ns1:Response[1]/ns1:Data[1]/ns1:FirstName[1]] in Response
+[LastName is correct.] XPathContains assertion failed for path [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AddUser';
+//ns1:Response[1]/ns1:Data[1]/ns1:LastName[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AddUser';
+//ns1:Response[1]/ns1:Data[1]/ns1:LastName[1]] in Response
+[Email is correct.] XPathContains assertion failed for path [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AddUser';
+//ns1:Response[1]/ns1:Data[1]/ns1:Email[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AddUser';
+//ns1:Response[1]/ns1:Data[1]/ns1:Email[1]] in Response
+[Postal Code is correct.] XPathContains assertion failed for path [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AddUser';
+//ns1:Response[1]/ns1:Data[1]/ns1:PostalCode[1]] : Exception:Missing content for xpath [declare namespace ns1='https://dev-api.opentee.com/TeeOff/v1/User/AddUser';
+//ns1:Response[1]/ns1:Data[1]/ns1:PostalCode[1]] in Response
+
+----------------- Properties ------------------------------
+StatusCode: 400
+Method: POST
+Password: test
+Username: test
+HTTP Version: HTTP/1.1
+Endpoint: https://dev-api.opentee.com
+URL: https://dev-api.opentee.com/TeeOff/v1/User/AddUser?sessionId=269d32c7-7d4f-400e-b88b-4defc39d879f
+
+---------------- Request ---------------------------
+Authorization: [Basic dGVzdDp0ZXN0]
+Host: [dev-api.opentee.com]
+Content-Length: [153]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+Content-Type: [application/json]
+
+POST https://dev-api.opentee.com/TeeOff/v1/User/AddUser?sessionId=269d32c7-7d4f-400e-b88b-4defc39d879f HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 153
+Host: dev-api.opentee.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+Authorization: Basic dGVzdDp0ZXN0
+
+{
+   "PostalCode": "80978",
+   "Email": "testEmail167@gmail.com",
+   "Password": "limesource?01",
+   "FirstName": "Limesource",
+   "LastName": "Tester"
+}
+
+---------------- Response --------------------------
+Access-Control-Allow-Headers: [Authorization, Content-Type]
+Date: [Thu, 09 Mar 2017 12:40:11 GMT]
+#status#: [HTTP/1.1 400 Bad Request]
+Content-Length: [109]
+Access-Control-Allow-Methods: [POST]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+Server: [Microsoft-IIS/8.5]
+
+{"Success":false,"Message":"User Name [testEmail167@gmail.com] error. This user already exists.","Data":null}

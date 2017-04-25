@@ -1,0 +1,65 @@
+Status: OK
+Time Taken: 4737
+Size: 1498
+Timestamp: Wed Mar 08 13:38:52 SGT 2017
+TestStep: TeeTimeSearch - Valid
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.ezlinks.com
+Method: GET
+StatusCode: 200
+URL: https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=TeeTimeSearch&Param1=208&Param2=530&Param3=03%2F10%2F2017&Param4=4
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [api.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=TeeTimeSearch&Param1=208&Param2=530&Param3=03%2F10%2F2017&Param4=4 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: api.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Cache-Control: [private]
+Server: [Microsoft-IIS/7.0]
+Connection: [close]
+Vary: [Accept-Encoding]
+#status#: [HTTP/1.1 200 OK]
+Date: [Wed, 08 Mar 2017 05:38:59 GMT]
+Content-Type: [text/xml]
+X-Powered-By: [ASP.NET]
+
+<?ezxml version="5.0"?>
+<TeeTimeSearch>
+   <TeeTimeSearchRecord>
+      <SiteServerID>1</SiteServerID>
+      <CourseID>530</CourseID>
+      <TeeTime>3/10/2017 6:00:00 AM</TeeTime>
+      <ReserveString>530,03/10/2017 06:00:00,4,06:00:00,4,4</ReserveString>
+      <FeeString>36938,"Weekend (Advanced)",88.00,88.00,24,1,1,0.00,0.00|52944,"Referral Round Fee",136.00,35.00,0,1,1,0.00,0.00|99424,"Member Fee - 9 Holes",20.00,20.00,24,1,1,0.00,0.00|101409,"Member Fee",0.00,0.00,24,1,1,0.00,0.00|109510,"Weekend",75.00,75.00,24,1,1,0.00,0.00</FeeString>
+      <CCTypeAccepted>ADMSV</CCTypeAccepted>
+      <ResFeeGolfer>0</ResFeeGolfer>
+      <InternetProtocolID>683</InternetProtocolID>
+      <CCAuthorizationType_GF>0</CCAuthorizationType_GF>
+      <CCAuthorizationType_RFG>0</CCAuthorizationType_RFG>
+      <CancelPolicy_NormalBefore_GF>0</CancelPolicy_NormalBefore_GF>
+      <CancelPolicy_NormalBefore_RFG>0</CancelPolicy_NormalBefore_RFG>
+      <CancelPolicy_NormalAfter_GF>0</CancelPolicy_NormalAfter_GF>
+      <CancelPolicy_NormalAfter_RFG>0</CancelPolicy_NormalAfter_RFG>
+      <CancelPolicy_NormalAfter_CF>0</CancelPolicy_NormalAfter_CF>
+      <CancelPolicy_NoShow_GF>0</CancelPolicy_NoShow_GF>
+      <CancelPolicy_NoShow_RFG>0</CancelPolicy_NoShow_RFG>
+      <CancelPolicy_NoShow_CF>0</CancelPolicy_NoShow_CF>
+      <CancelPolicy_RainCheck_GF>0</CancelPolicy_RainCheck_GF>
+      <CancelPolicy_RainCheck_RFG>0</CancelPolicy_RainCheck_RFG>
+      <GetPaymentInfo>0</GetPaymentInfo>
+   </TeeTimeSearchRecord>
+</TeeTimeSearch>

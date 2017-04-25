@@ -1,0 +1,20 @@
+Status: OK
+Time Taken: 1
+Size: 0
+Timestamp: Wed Mar 08 13:34:07 SGT 2017
+TestStep: PropertyTransfer: Transfer concatenated CourseUrl
+
+----------------- Messages ------------------------------
+Performed transfer [courseUrl]
+Performed transfer [coursePhoto]
+----------------------------------------------------
+courseUrl transferred [[https://www.teeoff.com/golf-course/las-vegas-golf-club-las-vegas-nv-89107-tee-times]] from [GET Request - MovableInkAPI - Checking Course(compared to OT ExternalAPI).ResponseAsXml] to [HTTP Request - check url if it will redirect to existing page in teeOff.Endpoint]
+------------ source path -------------
+declare namespace ns1='https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85263/10-19-2015';
+concat('https://www.teeoff.com/golf-course/', //ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:courseUrl[1])
+------------ target path -------------
+
+coursePhoto transferred [[https://cdn.teeoff.com/course/1025/1025-000002.jpg]] from [GET Request - MovableInkAPI - Checking Course(compared to OT ExternalAPI).ResponseAsXml] to [HTTP Request - checking coursePhoto as valid url.Endpoint]
+------------ source path -------------
+declare namespace ns1='https://dist.ezlinks.com/api/External/Search/GetCourseTeeTimesSummaries/85263/10-19-2015';
+concat('https:',  //ns1:Response[1]/ns1:data[1]/ns1:e[1]/ns1:coursePhoto[1])

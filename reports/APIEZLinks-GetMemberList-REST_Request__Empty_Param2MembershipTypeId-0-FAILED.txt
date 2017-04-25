@@ -1,0 +1,46 @@
+Status: FAILED
+Time Taken: 1439
+Size: 144
+Timestamp: Thu Mar 09 21:22:44 SGT 2017
+TestStep: REST Request - Empty Param2/MembershipTypeId
+
+----------------- Messages ------------------------------
+[INVALID_MEMBERSHIPTYPEID] XPathContains comparison failed for path [//Error[1]/ErrorDescription[1]], expecting [INVALID_MEMBERSHIPTYPEID], actual was [ACCESS_DENIED]
+
+----------------- Properties ------------------------------
+StatusCode: 200
+Method: GET
+HTTP Version: HTTP/1.1
+Endpoint: https://api.ezlinks.com
+URL: https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=GetMemberList&Param1=208
+
+---------------- Request ---------------------------
+Host: [api.ezlinks.com]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+
+GET https://api.ezlinks.com/ETNObject.asp?DOM=1&Timeout=60&Subscriber=XMLDemo&Password=ttdemo14&ObjectId=GetMemberList&Param1=208 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: api.ezlinks.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Vary: [Accept-Encoding]
+Date: [Thu, 09 Mar 2017 13:22:48 GMT]
+#status#: [HTTP/1.1 200 OK]
+Content-Encoding: [gzip]
+Connection: [close]
+Content-Type: [text/xml]
+X-Powered-By: [ASP.NET]
+Server: [Microsoft-IIS/7.0]
+Cache-Control: [private]
+
+<?ezxml version="5.0"?>
+<Error>
+   <ErrorValue>32</ErrorValue>
+   <ErrorDescription>ACCESS_DENIED</ErrorDescription>
+</Error>
